@@ -69,19 +69,26 @@ if [[ "${NEWS_RADAR_PUSH:-0}" != "1" ]]; then
   exit 0
 fi
 
-# Scoped to this project's data only: the repo holds unrelated work that must not
-# be swept into an automated commit.
-git add data/reach-raw.json data/items.json data/index.html data/seen-history.json data/digest-state.json 2>/dev/null
+# Only reach-raw.json. This machine's unique product is the collection; the render
+# outputs (items.json, index.html) and the state files (seen-history, digest-state)
+# belong to the Actions run. Committing them from both sides made every push a
+# conflict in generated files, with no meaningful side to prefer.
+git add data/reach-raw.json 2>/dev/null
 if git diff --cached --quiet 2>/dev/null; then
-  log "done (no data changes to commit)"
+  log "done (no new collection to commit)"
   exit 0
 fi
 
 git -c user.email="40420772+mrpet88@users.noreply.github.com" -c user.name="news-radar" \
   commit -m "news-radar: collect $(date -u +%FT%TZ)" >/dev/null 2>&1 || { log "commit failed"; exit 1; }
 
-if git push >/dev/null 2>&1; then
+# Actions pushes render state between our runs, so the remote is routinely ahead.
+# Rebase first (autostash covers the locally-rendered files we deliberately do not
+# commit) rather than letting the push fail every time.
+git pull --rebase --autostash -q origin main >/dev/null 2>&1 || log "warning: rebase failed; pushing may be rejected"
+
+if git push -q >/dev/null 2>&1; then
   log "done (pushed)"
 else
-  log "done (commit made, push failed — will go with the next push)"
+  log "done (commit made, push failed — will go with the next run)"
 fi

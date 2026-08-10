@@ -11,7 +11,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "ec416e94667b541d",
@@ -26,7 +26,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "72e4e10fc59cbf0a",
@@ -41,7 +41,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "36c5d547a3de5402",
@@ -56,7 +56,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "0467e8b80f8541a3",
@@ -72,7 +72,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "cf0c73d5ad2a2e63",
@@ -87,7 +87,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "cabcda7347488529",
@@ -102,7 +102,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "55f8eb58ff3ce9e7",
@@ -118,7 +118,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "939381e707f31036",
@@ -134,7 +134,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9b24d8c6c6fcca45",
@@ -150,7 +150,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a0b68296801048f0",
@@ -166,7 +166,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e6c6f2e7ae5a0da5",
@@ -182,7 +182,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d592ce28d92a5ba3",
@@ -198,7 +198,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a9b5d455942db92e",
@@ -214,7 +214,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "bbfc472e53b24816",
@@ -230,7 +230,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "57a1aa4f96274e69",
@@ -246,7 +246,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "645d1a4de93ec05c",
@@ -262,7 +262,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "f2deacd462e1ba8c",
@@ -278,7 +278,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a8a354829593c69c",
@@ -294,7 +294,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6e22fd80accc6b8b",
@@ -310,7 +310,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6758ba6be03c4eef",
@@ -327,7 +327,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d9380c55369ad8da",
@@ -343,7 +343,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "046061c2f25e12a7",
@@ -359,7 +359,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "5167a8a37a4f63c0",
@@ -375,7 +375,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "85c90e4183ef80c4",
@@ -391,7 +391,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d8837e86c5a41ed9",
@@ -407,7 +407,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7ad4a211f53df928",
@@ -423,7 +423,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9688a4d5369c3ea2",
@@ -439,7 +439,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9ab34c2f4468b3ee",
@@ -455,7 +455,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1834986c7c56818d",
@@ -471,7 +471,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "27146b6e231b6f1c",
@@ -487,7 +487,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d467e62ce6f1280c",
@@ -503,7 +503,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "2421baba1d7a7f5b",
@@ -519,7 +519,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "494b95298a3e790b",
@@ -535,7 +535,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "32551f2b0cf0597f",
@@ -549,7 +549,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "baab19dff2c9b9be",
@@ -565,7 +565,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d5d32327e22f56eb",
@@ -581,7 +581,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "592739a697b55ee2",
@@ -597,7 +597,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 6,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fac7c54b0d53de91",
@@ -613,6 +613,6 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 5.4,
-    "isNew": true
+    "isNew": false
   }
 ]
