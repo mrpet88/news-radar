@@ -150,7 +150,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "939381e707f31036",
@@ -182,7 +182,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9b24d8c6c6fcca45",
@@ -230,7 +230,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9f332d136a48de40",
@@ -246,7 +246,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a0595e976fb6b614",
@@ -262,7 +262,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "f2deacd462e1ba8c",
