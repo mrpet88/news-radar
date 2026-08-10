@@ -19,10 +19,11 @@ on:
         description: "Render a digest even if nothing is new (tests the mail path)"
         type: boolean
         default: false
-  # Uncomment once the secrets are in place. 06:30 UTC ≈ 08:30 CEST, which lands
-  # after the 06:45 local collection has had time to push.
-  # schedule:
-  #   - cron: "30 6 * * *"
+  # 06:30 UTC ≈ 08:30 CEST — comfortably after the 06:45 local collection has run
+  # and pushed. If the Mac was asleep, the 24h freshness gate blocks the email and
+  # only the dashboard updates.
+  schedule:
+    - cron: "30 6 * * *"
 
 permissions:
   contents: write
@@ -30,8 +31,13 @@ permissions:
 jobs:
   deliver:
     runs-on: ubuntu-latest
+    # Secrets are not readable from a step's `if:`, so they are lifted to job env
+    # to be testable there. Both must be present: with a username but no app
+    # password the mail step would attempt SMTP and fail the run, where skipping
+    # is the correct behaviour until delivery is fully configured.
     env:
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+      MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,7 +54,7 @@ jobs:
 
       # Fires for both a digest and the 3-day heartbeat — the subject says which.
       - name: Email digest
-        if: steps.render.outputs.send == 'true' && env.MAIL_USERNAME != ''
+        if: steps.render.outputs.send == 'true' && env.MAIL_USERNAME != '' && env.MAIL_PASSWORD != ''
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
