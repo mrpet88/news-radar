@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "collectedAt": "2026-08-10T21:52:31.725Z",
+  "collectedAt": "2026-08-10T21:59:52.183Z",
   "host": "localhost",
   "agentReachVersion": "Agent Reach v1.5.0",
   "channels": [
@@ -8,48 +8,60 @@
       "channel": "exa",
       "ok": true,
       "count": 36,
-      "ms": 27772
+      "ms": 32869
     },
     {
       "channel": "github",
       "ok": true,
       "count": 25,
-      "ms": 4338
+      "ms": 4949
     },
     {
       "channel": "rss",
       "ok": true,
       "count": 78,
-      "ms": 7621
+      "ms": 6985
     },
     {
       "channel": "reddit",
       "ok": true,
       "count": 32,
-      "ms": 54333
+      "ms": 70290
     },
     {
       "channel": "twitter",
       "ok": true,
       "count": 24,
-      "ms": 52740
+      "ms": 44218
     }
   ],
   "items": [
     {
+      "id": "439f838afddd526a",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "exa",
+      "source": "bugpilot.io",
+      "title": "Holistic Quality Engineering: Comprehensive QA Strategy Guide | bugpilot.io",
+      "url": "https://bugpilot.io/2026/08/09/holistic-quality-engineering-comprehensive-qa-strategy-guide/",
+      "publishedAt": "2026-08-09T00:00:00.000Z",
+      "author": "x1",
+      "summary": "Holistic Quality Engineering: Comprehensive QA Strategy Guide | bugpilot.io   # Holistic Quality Engineering: Comprehensive QA Strategy Guide   by x1 | Aug 9, 2026 | Blog | 0 comments   # Holistic Quality Engineering: The Comprehensive QA Strategy Guide for Modern Software Teams   The paradigm of software quality is shifting—fast. Where traditional QA (quality assurance) once marched behind coding",
+      "laneHint": "qa"
+    },
+    {
       "id": "4b3622adc778ab44",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "fullscale.io",
-      "title": "Software Testing Strategies Are a Leadership Decision, Not a QA Checklist",
+      "title": "Software Testing Strategies Are a Leadership Decision, Not a QA ...",
       "url": "https://fullscale.io/blog/software-testing-strategies/",
-      "publishedAt": "2026-06-15T00:00:00.000Z",
+      "publishedAt": "2026-07-24T00:00:00.000Z",
       "summary": "Software Testing Strategies Are a Leadership Decision, Not a QA Checklist   - The question that actually sets your strategy - Most teams test too much, not too little - The hill I will die on: early-stage software needs the least testing - The testing types still matter, they just don’t lead - Automate by risk, not by trend - “Outsourcing QA” isn’t really a thing - How to write a testing strategy",
       "laneHint": "qa"
     },
     {
       "id": "6f624589703ee40a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "totalshiftleft.com",
       "title": "CTO's Guide to Quality Engineering: Strategy & ROI | Total Shift Left",
@@ -60,20 +72,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "6e53714757fef7b9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "exa",
-      "source": "danashby.co.uk",
-      "title": "Quality Isn’t an Activity… It’s a System! – Dan Ashby",
-      "url": "https://danashby.co.uk/2026/06/29/quality-isnt-an-activity-its-a-system/",
-      "publishedAt": "2026-06-29T00:00:00.000Z",
-      "author": "Dan Ashby",
-      "summary": "Quality Isn’t an Activity… It’s a System! – Dan Ashby   Part 1 of 4: Rethinking the quality operating model for AI-native engineering   ## Testing isn’t dying. It’s evolving. And “testing” was never the same thing as “quality”.   I am not saying testers are becoming less important. I think the opposite is true (although I do think testers should utilise AI tools more to enhance and evolve their te",
-      "laneHint": "qa"
-    },
-    {
       "id": "7f64eff82df56a02",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "sdtimes.com",
       "title": "The AI-augmented tester is here. So is a new problem: proving your tests actually work - SD Times",
@@ -85,7 +85,7 @@
     },
     {
       "id": "ff6b646a603ed5a4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "viney.ca",
       "title": "The test strategy trap: why quality plans fail | Ouray Viney’s blog",
@@ -96,20 +96,20 @@
       "laneHint": "qa"
     },
     {
-      "id": "99c2e45e936b7deb",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "6e53714757fef7b9",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "3pillar.ai",
-      "title": "Agentic Testing: Moving Quality From Checkpoint to Control Layer - 3Pillar",
-      "url": "https://www.3pillar.ai/insights/blog/agentic-testing-checkpoint-to-control-layer/",
-      "publishedAt": "2026-05-14T00:00:00.000Z",
-      "author": "Kailash Pathak",
-      "summary": "Agentic Testing: Moving Quality From Checkpoint to Control Layer - 3Pillar   # Agentic Testing: Moving Quality From Checkpoint to Control Layer   Agentic testing raises the bar for quality leadership. As AI agents enter test planning, scenario generation, script creation, execution, failure analysis, and self-healing, QA leaders are no longer governing only test assets, automation suites, and defe",
+      "source": "danashby.co.uk",
+      "title": "Quality Isn’t an Activity… It’s a System! – Dan Ashby",
+      "url": "https://danashby.co.uk/2026/06/29/quality-isnt-an-activity-its-a-system/",
+      "publishedAt": "2026-06-29T00:00:00.000Z",
+      "author": "Dan Ashby",
+      "summary": "Quality Isn’t an Activity… It’s a System! – Dan Ashby   Part 1 of 4: Rethinking the quality operating model for AI-native engineering   ## Testing isn’t dying. It’s evolving. And “testing” was never the same thing as “quality”.   I am not saying testers are becoming less important. I think the opposite is true (although I do think testers should utilise AI tools more to enhance and evolve their te",
       "laneHint": "qa"
     },
     {
       "id": "6aa83eadf71211f9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "global.moneyforward-dev.jp",
       "title": "Shifting Left: Why We Built Lager API Testing Framework – Money Forward Developers Blog",
@@ -120,7 +120,7 @@
     },
     {
       "id": "cb9848388ca96fb5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "medium.com",
       "title": "Shift-Left in Practice: What Changed in My Sprint | by Higor Mesquita | Jul, 2026 | Medium",
@@ -132,7 +132,7 @@
     },
     {
       "id": "d037da5284e81a0a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "triplepat.com",
       "title": "Shifting Left to Help a Small Team Move Quickly | Triple Pat",
@@ -143,7 +143,7 @@
     },
     {
       "id": "f8979cc391a7ab8d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "blog.paypay.ne.jp",
       "title": "Shift Left Testing Approach At PayPay: Effectiveness and Implementation",
@@ -155,7 +155,7 @@
     },
     {
       "id": "f41172346f1d0140",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "global.moneyforward-dev.jp",
       "title": "Scaling API Test Automation Across Multiple Products – Money Forward Developers Blog",
@@ -165,30 +165,19 @@
       "laneHint": "qa"
     },
     {
-      "id": "6dcf26009f75d31f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "dc1ff6e8b42591c2",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "uber.com",
-      "title": "Shifting E2E Testing Left at Uber",
-      "url": "https://www.uber.com/us/en/blog/shifting-e2e-testing-left/",
-      "summary": "Shifting E2E Testing Left at Uber   # Shifting E2E Testing Left at Uber   A few years ago, Uber primarily relied on incremental rollout and production probing/alerts to catch regressions. While this approach is sound, it became very operationally expensive and we also experienced many leakages. Detecting issues late requires developers to bisect the exact bad change and then go back through the wh",
-      "laneHint": "qa"
-    },
-    {
-      "id": "592739a697b55ee2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "exa",
-      "source": "joeywang.github.io",
-      "title": "The CI failures that moved every time you reran them | Joey",
-      "url": "https://joeywang.github.io/posts/the-ci-failure-that-moved-every-rerun/",
-      "publishedAt": "2026-08-07T00:00:00.000Z",
-      "author": "Joey Wang",
-      "summary": "The CI failures that moved every time you reran them | Joey   # The CI failures that moved every time you reran them   How a moving set of Rails CI flakes exposed shared download state, Chrome/Selenium stale-node retries, and feature specs that asserted before the browser had settled. Posted Aug 7, 2026 By Every time we reran the failing CI job, a different spec failed. Same error message, differe",
+      "source": "globalbit.co.il",
+      "title": "Shift-Left Testing: Catching $100 Bugs Before They Become $10,000 Fires | Globalbit_ Blog",
+      "url": "https://globalbit.co.il/blog/shift-left-testing-catch-bugs-early",
+      "publishedAt": "2026-03-19T00:00:00.000Z",
+      "summary": "Shift-Left Testing: Catching $100 Bugs Before They Become $10,000 Fires | Globalbit_ Blog   # Shift-Left Testing: Catching $100 Bugs Before They Become $10,000 Fires   March 19, 2026·Sasha Feldman   TL;DR: The cost of fixing a bug multiplies by 10× at each stage it escapes to. $100 in development. $1,000 in staging. $10,000 in production. Shift-left testing embeds quality checks earlier in the pip",
       "laneHint": "qa"
     },
     {
       "id": "b59853285e6d7b7d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "atlassian.com",
       "title": "Introducing Flaky Test Detection in Bitbucket Tests - Inside Atlassian",
@@ -199,19 +188,31 @@
       "laneHint": "qa"
     },
     {
-      "id": "18772a99592e864f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "592739a697b55ee2",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "docker.com",
-      "title": "Achieve Reliable Native E2E Tests Beyond Fixing Flakes | Docker",
-      "url": "https://www.docker.com/blog/native-e2e-test-reliability/",
-      "publishedAt": "2026-03-13T00:00:00.000Z",
-      "summary": "# Achieving Test Reliability for Native E2E Testing: Beyond Fixing Broken Tests   Posted Mar 13, 2026   The fragmented device ecosystem, gaps in test frameworks, network inconsistencies, unstable test environments, and constantly changing UI all contribute to test flakiness. Teams easily get trapped in a cycle of constantly fixing failing tests due to UI changes or environment instability rather t",
+      "source": "joeywang.github.io",
+      "title": "The CI failures that moved every time you reran them | Joey",
+      "url": "https://joeywang.github.io/posts/the-ci-failure-that-moved-every-rerun/",
+      "publishedAt": "2026-08-07T00:00:00.000Z",
+      "author": "Joey Wang",
+      "summary": "The CI failures that moved every time you reran them | Joey   # The CI failures that moved every time you reran them   How a moving set of Rails CI flakes exposed shared download state, Chrome/Selenium stale-node retries, and feature specs that asserted before the browser had settled. Posted Aug 7, 2026 By Every time we reran the failing CI job, a different spec failed. Same error message, differe",
+      "laneHint": "qa"
+    },
+    {
+      "id": "a7fc2ecdd089e5a9",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "exa",
+      "source": "dev.to",
+      "title": "Most “Flaky Tests” Are Really Architecture Tests - DEV Community",
+      "url": "https://dev.to/randomsquirrel802/most-flaky-tests-are-really-architecture-tests-34na",
+      "publishedAt": "2026-08-08T00:00:00.000Z",
+      "summary": "Most “Flaky Tests” Are Really Architecture Tests - DEV Community Posted on Aug 8 # Most “Flaky Tests” Are Really Architecture Tests There’s a point in almost every browser automation project where someone says:   But increasingly, I think “flaky test” is becoming a catch-all phrase for something much broader: Modern frontends have become surprisingly difficult environments to observe deterministic",
       "laneHint": "qa"
     },
     {
       "id": "fcb5eafd47b399c9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "iamanuragh.in",
       "title": "🎲 Flaky Tests: Schrödinger's CI Pipeline — Anuragh KP",
@@ -222,8 +223,19 @@
       "laneHint": "qa"
     },
     {
+      "id": "5954d1d1b63878bd",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "exa",
+      "source": "dev.to",
+      "title": "Why Flaky Tests Are Rarely About the Test - DEV Community",
+      "url": "https://dev.to/marxjenes/why-flaky-tests-are-rarely-about-the-test-3951",
+      "publishedAt": "2026-08-06T12:42:52.000Z",
+      "summary": "# Why Flaky Tests Are Rarely About the Test - DEV Community   Why Flaky Tests Are Rarely About the Test   # Why Flaky Tests Are Rarely About the Test   We had a checkout test at my last job that everyone called \"the coin flip.\" Green for a week, red twice on a Tuesday, green again. Someone eventually wrapped it in a retry and it sat like that for eight months before anyone looked at it again. Turn",
+      "laneHint": "qa"
+    },
+    {
       "id": "f50e035958076b7d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "tianpan.co",
       "title": "Flaky Tests Poison Agent Loops Faster Than They Ever Hurt Humans",
@@ -233,19 +245,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "46bac66f5a3ee5a3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "exa",
-      "source": "currents.dev",
-      "title": "What Breaks When Your Test Suite Grows From 20 to 500 Tests<!-- --> | <!-- -->Apr 2026<!-- --> | Currents.dev Blog",
-      "url": "https://currents.dev/posts/what-breaks-when-your-test-suite-grows-from-20-to-500-tests",
-      "publishedAt": "2026-04-08T00:00:00.000Z",
-      "summary": "What Breaks When Your Test Suite Grows From 20 to 500 Tests | Apr 2026 | Currents.dev Blog   # What Breaks When Your Test Suite Grows From 20 to 500 Tests   Learn what breaks when a Playwright suite scales from 20 to 500 tests, and how to fix it with test data isolation, flakiness math, smarter retries, and faster CI pipelines.   A growing test suite exposes three realities that basic tutorials ig",
-      "laneHint": "qa"
-    },
-    {
       "id": "ec85e99367a9eed7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "devblogs.microsoft.com",
       "title": "The Microsoft Agent Framework Harness is now released | Microsoft Agent Framework",
@@ -257,7 +258,7 @@
     },
     {
       "id": "f225d1e69e19b282",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "infoq.com",
       "title": "Microsoft Agent Framework Harness and Hosted Agents Reach General Availability - InfoQ",
@@ -268,7 +269,7 @@
     },
     {
       "id": "31a5d4b9ec98ba2f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "devblogs.microsoft.com",
       "title": "Microsoft Agent Framework Version 1.0 | Microsoft Agent Framework",
@@ -279,20 +280,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "2d248bc459c805ce",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "exa",
-      "source": "devblogs.microsoft.com",
-      "title": "Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more | Microsoft Agent Framework",
-      "url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "author": "Shawn Henry",
-      "summary": "Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more | Microsoft Agent Framework   # Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more   BUILD 2026 is underway, and the Microsoft Agent Framework team have a round-up of exciting announcements! Microsoft Agent Framework (MAF) is our open-source SDK and runtime for building AI",
-      "laneHint": "ai"
-    },
-    {
       "id": "0467e8b80f8541a3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "devblogs.microsoft.com",
       "title": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework | Microsoft Agent Framework",
@@ -303,20 +292,32 @@
       "laneHint": "ai"
     },
     {
-      "id": "91d1d4738fe3fc1c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "2d248bc459c805ce",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "visualstudiomagazine.com",
-      "title": "Microsoft Ships Production-Ready Agent Framework 1.0 for .NET and Python -- Visual Studio Magazine",
-      "url": "https://visualstudiomagazine.com/articles/2026/04/06/microsoft-ships-production-ready-agent-framework-1-0-for-net-and-python.aspx",
-      "publishedAt": "2026-04-06T00:00:00.000Z",
-      "author": "David Ramel 04/06/2026",
-      "summary": "Microsoft Ships Production-Ready Agent Framework 1.0 for .NET and Python -- Visual Studio Magazine   ### Microsoft Ships Production-Ready Agent Framework 1.0 for .NET and Python   Microsoft has released version 1.0 of Microsoft Agent Framework, marking what the company calls the production-ready milestone for its open-source SDK and runtime for building AI agents and multi-agent workflows.   The r",
+      "source": "devblogs.microsoft.com",
+      "title": "Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more | Microsoft Agent Framework",
+      "url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "author": "Shawn Henry",
+      "summary": "Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more | Microsoft Agent Framework   # Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more   BUILD 2026 is underway, and the Microsoft Agent Framework team have a round-up of exciting announcements! Microsoft Agent Framework (MAF) is our open-source SDK and runtime for building AI",
+      "laneHint": "ai"
+    },
+    {
+      "id": "9d0e097815d9afeb",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "exa",
+      "source": "marktechpost.com",
+      "title": "NVIDIA AI Releases NOOA: An Object-Oriented Python Framework That Turns an AI Agent Into a Single Python Class - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/08/07/nvidia-ai-releases-nooa-an-object-oriented-python-framework/",
+      "publishedAt": "2026-08-07T00:00:00.000Z",
+      "author": "Asif Razzaq",
+      "summary": "NVIDIA AI Releases NOOA: An Object-Oriented Python Framework That Turns an AI Agent Into a Single Python Class - MarkTechPost   Home Editors Pick Agentic AI NVIDIA AI Releases NOOA: An Object-Oriented Python Framework That Turns an AI    NVIDIA Labs has open-sourced NOOA (NVIDIA Object-Oriented Agents), a model-agnostic Python framework for building AI agents. Agent development today is split acro",
       "laneHint": "ai"
     },
     {
       "id": "a5a652bb8f639765",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "tomodahinata.com",
       "title": "MCP Production Server Guide 2026 | Model Context Protocol, OAuth 2.1 Auth, Tool Safety",
@@ -328,7 +329,7 @@
     },
     {
       "id": "9b4c4e4edb7da2a3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "theroadtoenterprise.com",
       "title": "Build an MCP Server in TypeScript: A Production Guide",
@@ -340,7 +341,7 @@
     },
     {
       "id": "393be271977f1c18",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "rocket.new",
       "title": "MCP Developer Guide TypeScript: From Protocol to Production",
@@ -352,7 +353,7 @@
     },
     {
       "id": "36c5d547a3de5402",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "developers.googleblog.com",
       "title": "Scaling AI Agent Infrastructure with the MCP Stateless updates",
@@ -363,7 +364,7 @@
     },
     {
       "id": "eb9c696c1eefa131",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "Building a production MCP server with NestJS - DEV Community",
@@ -374,7 +375,7 @@
     },
     {
       "id": "26dd62ff1c752fa3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "thestackstories.com",
       "title": "Model Context Protocol (MCP) in Production: An 18-Month Field Report | The Stack Stories",
@@ -386,7 +387,7 @@
     },
     {
       "id": "e9e10c436d2b3e15",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "cloud.google.com",
       "title": "From \"Vibe Checks\" to Continuous Evaluation: Engineering Reliable AI Agents | Google Cloud Blog",
@@ -397,7 +398,7 @@
     },
     {
       "id": "32551f2b0cf0597f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "anthropic.com",
       "title": "Demystifying evals for AI agents \\ Anthropic",
@@ -407,7 +408,7 @@
     },
     {
       "id": "81c74d26634691d3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "medium.com",
       "title": "Medium",
@@ -418,32 +419,30 @@
       "laneHint": "ai"
     },
     {
-      "id": "38a833340befbfe6",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "642c9d4150bda936",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "igor-ya.com",
-      "title": "LLM Agent Evals: Graders, Metrics, and Release Gates",
-      "url": "https://igor-ya.com/posts/llm-agent-evals-production-framework/",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "author": "Igor Yakushev",
-      "summary": "LLM Agent Evals: Graders, Metrics, and Release Gates   TL;DR: Agent evals are an engineering control loop with the same status as tool contracts and observability. The working minimum has five parts: a capability suite for target scenarios, a regression suite built from real incidents, trajectory checks at the tool-call level, a calibrated LLM-as-judge, and online monitoring on a traffic sample. R",
+      "source": "aws.amazon.com",
+      "title": "Evaluating AI agents: Real-world lessons from building ... - AWS",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "publishedAt": "2026-02-18T00:00:00.000Z",
+      "summary": "# Evaluating AI agents: Real-world lessons from building agentic systems at Amazon   We have witnessed this evolution in Amazon; since 2025, there have been thousands of agents built across Amazon organizations. While single-model benchmarks serve as a crucial foundation for assessing individual LLM performance in LLM-driven applications, agentic AI systems require a fundamental shift in evaluatio",
       "laneHint": "ai"
     },
     {
-      "id": "939381e707f31036",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "f0807db7d252d867",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
-      "source": "kunalganglani.com",
-      "title": "Agent Evaluation Harness [2026]: Replay + CI Gates",
-      "url": "https://www.kunalganglani.com/blog/agent-evaluation-harness-replay",
-      "publishedAt": "2026-08-05T00:00:00.000Z",
-      "author": "Kunal Ganglani",
-      "summary": "Agent Evaluation Harness [2026]: Replay + CI Gates   Agent evaluation harness is the missing layer between “we ran some evals once” and “we have traces in prod.” In 2026, with multi-tool agents and MCP-style tool ecosystems, reliability failures are increasingly about step sequences, side effects, and state. A harness gives you a repeatable way to define golden tasks, replay tool calls determinist",
+      "source": "aws.amazon.com",
+      "title": "Evaluating Deep Agents using LangSmith on AWS | Artificial Intelligence",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-deep-agents-using-langsmith-on-aws/",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "# Evaluating Deep Agents using LangSmith on AWS   Validating AI agent behavior before production is one of the hardest problems in applied AI. Agents are non-deterministic, multi-step where errors in early steps can affect downstream results. A single bad tool call can cascade through an entire workflow. LangSmith on AWS gives you the evaluation framework to catch these issues early, track them in",
       "laneHint": "ai"
     },
     {
       "id": "c654e8cf1b31eb6a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "exa",
       "source": "slavadubrov.github.io",
       "title": "Evaluating AI Agents in Production: From Traces to Test Suites - Edge of Context: Practical AI Engineering",
@@ -455,7 +454,7 @@
     },
     {
       "id": "b7f39f15ac58a954",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
       "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
@@ -467,7 +466,7 @@
     },
     {
       "id": "86c79c8e98b40157",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "reqnroll/Reqnroll — Open-source Cucumber-style BDD test automation framework for .NET.",
       "url": "https://github.com/reqnroll/Reqnroll",
@@ -479,7 +478,7 @@
     },
     {
       "id": "e9bcd0f74a9836eb",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "BoykaFramework/boyka-framework —  🎉 Ultimate test automation framework for automating any application on any platform",
       "url": "https://github.com/BoykaFramework/boyka-framework",
@@ -491,7 +490,7 @@
     },
     {
       "id": "3ba2a23caefcf5c6",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
       "url": "https://github.com/maester365/maester",
@@ -503,7 +502,7 @@
     },
     {
       "id": "1c3c6d118c920a98",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "atata-framework/atata — C#/.NET test automation framework for web",
       "url": "https://github.com/atata-framework/atata",
@@ -515,7 +514,7 @@
     },
     {
       "id": "f2deacd462e1ba8c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
       "url": "https://github.com/ahx/openapi_first",
@@ -527,7 +526,7 @@
     },
     {
       "id": "a8a354829593c69c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
       "url": "https://github.com/pact-foundation/pact-js",
@@ -539,7 +538,7 @@
     },
     {
       "id": "9ab34c2f4468b3ee",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
       "url": "https://github.com/pact-foundation/pact-js-core",
@@ -551,7 +550,7 @@
     },
     {
       "id": "1834986c7c56818d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
       "url": "https://github.com/pact-foundation/pact-jvm",
@@ -563,7 +562,7 @@
     },
     {
       "id": "baab19dff2c9b9be",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
       "url": "https://github.com/speakeasy-api/speakeasy",
@@ -575,19 +574,19 @@
     },
     {
       "id": "9b24d8c6c6fcca45",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
       "url": "https://github.com/omnigent-ai/omnigent",
       "source": "omnigent-ai",
       "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
       "stars": 8492,
-      "publishedAt": "2026-08-10T21:52:28Z",
+      "publishedAt": "2026-08-10T21:58:26Z",
       "laneHint": "ai"
     },
     {
       "id": "a0b68296801048f0",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "Rose22/openlumara — AI agent framework, written from scratch (not based on openclaw), focused on stripping it down to the bare necessities, optimizing token count, reducing security risks. modular so ",
       "url": "https://github.com/Rose22/openlumara",
@@ -599,7 +598,7 @@
     },
     {
       "id": "645d1a4de93ec05c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "pydantic/pydantic-ai — AI Agent Framework, the Pydantic way",
       "url": "https://github.com/pydantic/pydantic-ai",
@@ -611,7 +610,7 @@
     },
     {
       "id": "6e22fd80accc6b8b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. ",
       "url": "https://github.com/openonion/connectonion",
@@ -623,7 +622,7 @@
     },
     {
       "id": "7ad4a211f53df928",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b",
       "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
@@ -634,8 +633,44 @@
       "laneHint": "ai"
     },
     {
+      "id": "7818a46b02d0372e",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "github",
+      "title": "googleapis/mcp-toolbox — MCP Toolbox for Databases is an open source MCP server for databases.",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "source": "googleapis",
+      "summary": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "stars": 16146,
+      "publishedAt": "2026-08-10T21:58:22Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "57a1aa4f96274e69",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "github",
+      "title": "alisaitteke/photoshop-mcp — MCP server for Adobe Photoshop — 102 tools, recipe workflows, generative AI, standalone web UI. Control Photoshop from Cursor, Claude, or natural language.",
+      "url": "https://github.com/alisaitteke/photoshop-mcp",
+      "source": "alisaitteke",
+      "summary": "MCP server for Adobe Photoshop — 102 tools, recipe workflows, generative AI, standalone web UI. Control Photoshop from Cursor, Claude, or natural language.",
+      "stars": 292,
+      "publishedAt": "2026-08-10T21:58:12Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "b55a78b125524c5e",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "github",
+      "title": "MCPJam/inspector — Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
+      "url": "https://github.com/MCPJam/inspector",
+      "source": "MCPJam",
+      "summary": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
+      "stars": 2122,
+      "publishedAt": "2026-08-10T22:00:00Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "e6c6f2e7ae5a0da5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "bethington/ghidra-mcp — Ghidra MCP Server — 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server ",
       "url": "https://github.com/bethington/ghidra-mcp",
@@ -647,7 +682,7 @@
     },
     {
       "id": "d592ce28d92a5ba3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "lyonzin/knowledge-rag — Local RAG MCP server for Claude Code — hybrid search (semantic + BM25), cross-encoder reranking, 13 MCP tools, 20 format parsers. Zero external servers, zero API keys.",
       "url": "https://github.com/lyonzin/knowledge-rag",
@@ -658,44 +693,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "a9b5d455942db92e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "github",
-      "title": "tufantunc/ssh-mcp — MCP server exposing SSH control for Linux servers via Model Context Protocol.",
-      "url": "https://github.com/tufantunc/ssh-mcp",
-      "source": "tufantunc",
-      "summary": "MCP server exposing SSH control for Linux servers via Model Context Protocol.",
-      "stars": 586,
-      "publishedAt": "2026-08-10T21:46:02Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "bbfc472e53b24816",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "github",
-      "title": "Softeria/ms-365-mcp-server — A Model Context Protocol (MCP) server for interacting with Microsoft 365 and Office services through the Graph API",
-      "url": "https://github.com/Softeria/ms-365-mcp-server",
-      "source": "Softeria",
-      "summary": "A Model Context Protocol (MCP) server for interacting with Microsoft 365 and Office services through the Graph API",
-      "stars": 908,
-      "publishedAt": "2026-08-10T21:43:52Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "57a1aa4f96274e69",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "github",
-      "title": "alisaitteke/photoshop-mcp — MCP server for Adobe Photoshop automation - Control Photoshop from AI assistants with 50+ tools for design, image editing, and workflow automation",
-      "url": "https://github.com/alisaitteke/photoshop-mcp",
-      "source": "alisaitteke",
-      "summary": "MCP server for Adobe Photoshop automation - Control Photoshop from AI assistants with 50+ tools for design, image editing, and workflow automation",
-      "stars": 292,
-      "publishedAt": "2026-08-10T21:36:16Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "046061c2f25e12a7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
       "url": "https://github.com/langwatch/langwatch",
@@ -707,7 +706,7 @@
     },
     {
       "id": "fea546fd1c85ee01",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "Xuchen-Li/llm-arxiv-daily — Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.",
       "url": "https://github.com/Xuchen-Li/llm-arxiv-daily",
@@ -719,7 +718,7 @@
     },
     {
       "id": "209e5df372815a58",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "confident-ai/deepeval — The LLM Evaluation Framework",
       "url": "https://github.com/confident-ai/deepeval",
@@ -730,7 +729,7 @@
     },
     {
       "id": "a1f71d3e49ce51b5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "OpenBMB/UltraEval-Audio — Your faithful, impartial partner for audio evaluation — know yourself, know your rivals. 真实评测，知己知彼。A unified benchmark framework for ASR/TTS/Audio Codec/audio LLM evaluation",
       "url": "https://github.com/OpenBMB/UltraEval-Audio",
@@ -742,7 +741,7 @@
     },
     {
       "id": "d8837e86c5a41ed9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "github",
       "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets.",
       "url": "https://github.com/open-compass/opencompass",
@@ -754,7 +753,7 @@
     },
     {
       "id": "e00ca30bc04e7064",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Prefactoring: Clear the Way for Your New Feature",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8884432057120197221",
@@ -766,7 +765,7 @@
     },
     {
       "id": "8e2f9c77fc00bc9e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Choosing Values for Robust Tests",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5437075393467068071",
@@ -778,7 +777,7 @@
     },
     {
       "id": "b72d38a9b4620f11",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Code Review Responses: Add Context When It Counts",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2884239116763954560",
@@ -790,7 +789,7 @@
     },
     {
       "id": "0e1575ad398d5c3c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Construct with Collaborators, Call with Work",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3181133154081323895",
@@ -802,7 +801,7 @@
     },
     {
       "id": "7172c133cbf14e77",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "One Map Key, One Lookup",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/449797108832062882",
@@ -814,7 +813,7 @@
     },
     {
       "id": "640fe85adb274f61",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Way of TDD",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2209662025920551181",
@@ -826,7 +825,7 @@
     },
     {
       "id": "bb3649dcefdecbab",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Set Safe Defaults for Flags",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/7470985732802821212",
@@ -838,7 +837,7 @@
     },
     {
       "id": "e9ca4e287aeff87b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Simplify Your Code: Functional Core, Imperative Shell",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8012847255464638866",
@@ -850,7 +849,7 @@
     },
     {
       "id": "bc4b3c887a24017c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Sort Lines in Source Code",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3190209407406038686",
@@ -862,7 +861,7 @@
     },
     {
       "id": "e11ef2e9a4272cf2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Arrange Your Code to Communicate Data Flow",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5121163949762592729",
@@ -874,7 +873,7 @@
     },
     {
       "id": "12a7f49f5c3290a2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2772563543852506376",
@@ -886,7 +885,7 @@
     },
     {
       "id": "a6d27ce5739f0ac1",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "SMURF: Beyond the Test Pyramid",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/4057571564322162588",
@@ -898,7 +897,7 @@
     },
     {
       "id": "d149355e8b46dad9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – March 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-14-2025/",
@@ -910,7 +909,7 @@
     },
     {
       "id": "7f15f5c2bdcc97e8",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – March 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-7-2025/",
@@ -922,7 +921,7 @@
     },
     {
       "id": "2d3020633aa4a5ea",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 21, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-21-2025/",
@@ -934,7 +933,7 @@
     },
     {
       "id": "861763aec3cbbe18",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-14-2025/",
@@ -946,7 +945,7 @@
     },
     {
       "id": "1ba8ca3549fb082a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-7-2025/",
@@ -958,7 +957,7 @@
     },
     {
       "id": "a84264437c0458c7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 24, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-24-2025/",
@@ -970,7 +969,7 @@
     },
     {
       "id": "ebf91f5754317d81",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 17, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-17-2025/",
@@ -982,7 +981,7 @@
     },
     {
       "id": "d4dd978b454c6948",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 10, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-10-2025/",
@@ -994,7 +993,7 @@
     },
     {
       "id": "059e2df34bdf9800",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 22, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-22-2024/",
@@ -1006,7 +1005,7 @@
     },
     {
       "id": "d1afbd8af105d8a4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 15, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-november-15-2025/",
@@ -1018,7 +1017,7 @@
     },
     {
       "id": "f1c246e25374f9b5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 8, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-8-2024/",
@@ -1030,7 +1029,7 @@
     },
     {
       "id": "7bf07835591bb09f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 1, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-1-2024/",
@@ -1042,7 +1041,7 @@
     },
     {
       "id": "1c2cdfe93c2ff4f9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Real Bottleneck in AI-Native Quality Is Trust!",
       "url": "https://danashby.co.uk/2026/07/29/the-real-bottleneck-in-ai-native-quality-is-trust/",
@@ -1054,7 +1053,7 @@
     },
     {
       "id": "6056a6e8783b4725",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Quality Isn’t an Activity… It’s a System!",
       "url": "https://danashby.co.uk/2026/06/29/quality-isnt-an-activity-its-a-system/",
@@ -1066,7 +1065,7 @@
     },
     {
       "id": "539677aac036af52",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "I Let BearQ Loose on My Own App Through Two Lenses: Tester and Engineering Leader",
       "url": "https://danashby.co.uk/2026/05/07/i-let-bearq-loose-on-my-own-app-through-two-lenses-tester-and-engineering-leader/",
@@ -1078,7 +1077,7 @@
     },
     {
       "id": "9bdf24543de2d5fc",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Autonomous Testing has Landed: Welcome BearQ, by SmartBear",
       "url": "https://danashby.co.uk/2026/03/31/autonomous-testing-has-landed-welcome-bearq-by-smartbear/",
@@ -1090,7 +1089,7 @@
     },
     {
       "id": "74dfd2254e54606c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 2)",
       "url": "https://danashby.co.uk/2026/03/15/the-autonomous-testing-tipping-point-part-2/",
@@ -1102,7 +1101,7 @@
     },
     {
       "id": "5ec456d4c8929d56",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 1)",
       "url": "https://danashby.co.uk/2026/03/05/the-autonomous-testing-tipping-point-part-1/",
@@ -1114,7 +1113,7 @@
     },
     {
       "id": "3790d0c385c48608",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Communities… They’re Great! But Let’s Break The Silos.",
       "url": "https://danashby.co.uk/2022/12/03/communities-theyre-great-but-lets-break-the-silos/",
@@ -1126,7 +1125,7 @@
     },
     {
       "id": "bbe3e345047ac2ff",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "8 Perspectives of Quality: A Model",
       "url": "https://danashby.co.uk/2022/07/22/8-perspectives-of-quality-a-model/",
@@ -1138,7 +1137,7 @@
     },
     {
       "id": "cfc0e7aa5453140a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "What’s the quality of your product?",
       "url": "https://danashby.co.uk/2022/07/21/whats-the-quality-of-your-product/",
@@ -1150,7 +1149,7 @@
     },
     {
       "id": "b7ed6cbed4cc47d3",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Adapting Crosby’s 4 absolutes of quality into a software context",
       "url": "https://danashby.co.uk/2019/09/30/adapting-crosbys-4-absolutes-of-quality-into-a-software-context/",
@@ -1162,7 +1161,7 @@
     },
     {
       "id": "2b9c4755bd66f0e9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Some Class Recordings Are Available",
       "url": "https://www.satisfice.com/blog/archives/488173",
@@ -1174,7 +1173,7 @@
     },
     {
       "id": "f6b9bf6adfa2236e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Public Service Announcement: Don’t Say You Use AI for Writing",
       "url": "https://www.satisfice.com/blog/archives/488148",
@@ -1186,7 +1185,7 @@
     },
     {
       "id": "77115efe0d052f4d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Humans In The Way",
       "url": "https://www.satisfice.com/blog/archives/488130",
@@ -1198,7 +1197,7 @@
     },
     {
       "id": "d312e460f1f42c40",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Responsibility is the Human Moat",
       "url": "https://www.satisfice.com/blog/archives/488082",
@@ -1210,7 +1209,7 @@
     },
     {
       "id": "937538447e40ae25",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "So, You “10x’d” Your Work…",
       "url": "https://www.satisfice.com/blog/archives/488009",
@@ -1222,7 +1221,7 @@
     },
     {
       "id": "ad61354fefa73216",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Everyone is NOT Responsible for Quality",
       "url": "https://www.satisfice.com/blog/archives/487632",
@@ -1234,7 +1233,7 @@
     },
     {
       "id": "41ae506929aebbde",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "“Slop Coding” and Responsible Testers",
       "url": "https://www.satisfice.com/blog/archives/487969",
@@ -1246,7 +1245,7 @@
     },
     {
       "id": "d114ab7408757541",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Book is Here",
       "url": "https://www.satisfice.com/blog/archives/487967",
@@ -1258,7 +1257,7 @@
     },
     {
       "id": "857dc0a6d07d2ef5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Serious Data From Testing LLMs",
       "url": "https://www.satisfice.com/blog/archives/487962",
@@ -1270,7 +1269,7 @@
     },
     {
       "id": "6ee0d047db5c59dd",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Seriously Testing LLMs",
       "url": "https://www.satisfice.com/blog/archives/487957",
@@ -1282,7 +1281,7 @@
     },
     {
       "id": "27adb66e4509ba76",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Quoting OpenClaw",
       "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
@@ -1293,7 +1292,7 @@
     },
     {
       "id": "ec416e94667b541d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Quoting Claude Opus 5 system prompt",
       "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
@@ -1304,7 +1303,7 @@
     },
     {
       "id": "5753db288e5188d5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "GitHub Models is now retired",
       "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
@@ -1315,7 +1314,7 @@
     },
     {
       "id": "bbd4812026edf086",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "SQLite compressed text-history prototypes",
       "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
@@ -1326,7 +1325,7 @@
     },
     {
       "id": "72e4e10fc59cbf0a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
       "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
@@ -1337,7 +1336,7 @@
     },
     {
       "id": "cf0c73d5ad2a2e63",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
       "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
@@ -1348,7 +1347,7 @@
     },
     {
       "id": "13fcd542c12ca913",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Quoting John Gruber",
       "url": "https://simonwillison.net/2026/Aug/8/john-gruber/#atom-everything",
@@ -1359,7 +1358,7 @@
     },
     {
       "id": "45613b3a17337122",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
       "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
@@ -1370,7 +1369,7 @@
     },
     {
       "id": "cabcda7347488529",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
       "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
@@ -1381,7 +1380,7 @@
     },
     {
       "id": "35a2da714844eb36",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
       "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
@@ -1392,7 +1391,7 @@
     },
     {
       "id": "63964db4d1f7429b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "datasette-auth-tokens 0.4a13",
       "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
@@ -1403,7 +1402,7 @@
     },
     {
       "id": "77a6c4af5d816448",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "datasette 1.0a38",
       "url": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
@@ -1414,7 +1413,7 @@
     },
     {
       "id": "9b21f30ec12d356f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Illinois Just Passed a Law That Puts Linux on the Hook for Age Verification",
       "url": "https://linuxstans.com/illinois-hb5511-operating-system-age-verification/",
@@ -1424,7 +1423,7 @@
     },
     {
       "id": "45882fc54cd06e76",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
       "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
@@ -1434,7 +1433,7 @@
     },
     {
       "id": "00574099c59131ec",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
       "url": "https://cactuscompute.com/needle",
@@ -1443,18 +1442,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "372da1d95e6fb14a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "rss",
-      "title": "Rust SIMD on the GPU",
-      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
-      "source": "Hacker News",
-      "publishedAt": "2026-08-10T18:12:49.000Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "b92101adfeddbd07",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Sonic Pi v5",
       "url": "https://www.patreon.com/samaaron/posts/sonic-pi-v5-166001392",
@@ -1463,18 +1452,18 @@
       "laneHint": "ai"
     },
     {
-      "id": "306ebc808bfba051",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "372da1d95e6fb14a",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
-      "title": "Mark Zuckerberg attacks &#x27;closed&#x27; AI rivals as Meta returns to open models",
-      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "title": "Rust SIMD on the GPU",
+      "url": "https://www.vectorware.com/blog/simd-on-gpu/",
       "source": "Hacker News",
-      "publishedAt": "2026-08-10T14:06:22.000Z",
+      "publishedAt": "2026-08-10T18:12:49.000Z",
       "laneHint": "ai"
     },
     {
       "id": "756a94b246c05c61",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Publishing Schematics Before \"Open Source\" Was a Word",
       "url": "https://fabscene.medium.com/publishing-schematics-before-open-source-was-a-word-55-years-of-akizuki-denshi-japans-be7ca9629704",
@@ -1483,8 +1472,18 @@
       "laneHint": "ai"
     },
     {
+      "id": "306ebc808bfba051",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "rss",
+      "title": "Mark Zuckerberg attacks &#x27;closed&#x27; AI rivals as Meta returns to open models",
+      "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+      "source": "Hacker News",
+      "publishedAt": "2026-08-10T14:06:22.000Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "3bc7b56b989c4b5c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Launch HN: Stoa Markets (YC S26) – A Marketplace for GPUs and AI Servers",
       "url": "https://www.stoaexchange.com",
@@ -1494,7 +1493,7 @@
     },
     {
       "id": "67aefc963121ff56",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Exploiting System Management Mode with a very long interrupt",
       "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
@@ -1503,18 +1502,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "3c90295da49a5fac",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "rss",
-      "title": "Squeak 6.1",
-      "url": "https://squeak.org/release_notes/6.1/",
-      "source": "Hacker News",
-      "publishedAt": "2026-08-10T12:15:53.000Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "b6df74be1ef22fdf",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The Psychedelic Toad of the Sonoran Desert",
       "url": "https://en.wikipedia.org/wiki/Bufo_Alvarius:_the_Psychedelic_Toad_of_the_Sonoran_Desert",
@@ -1523,18 +1512,28 @@
       "laneHint": "ai"
     },
     {
-      "id": "cc94b9a0131bb87e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "c6ad121248dc7553",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
-      "title": "Stop Killing Games: It&#x27;s time to sue Sony, join us",
-      "url": "https://www.massaschadeconsument.nl/collectieve-acties/playstation/",
+      "title": "How Claude marks AI-generated content",
+      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
       "source": "Hacker News",
-      "publishedAt": "2026-08-10T20:47:13.000Z",
+      "publishedAt": "2026-08-10T21:36:56.000Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "3c90295da49a5fac",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "rss",
+      "title": "Squeak 6.1",
+      "url": "https://squeak.org/release_notes/6.1/",
+      "source": "Hacker News",
+      "publishedAt": "2026-08-10T12:15:53.000Z",
       "laneHint": "ai"
     },
     {
       "id": "53ae965843b914a7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Using the GitHub Copilot SDK for Java",
       "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
@@ -1546,7 +1545,7 @@
     },
     {
       "id": "2421baba1d7a7f5b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "A guide to slash commands in the GitHub Copilot app",
       "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
@@ -1558,7 +1557,7 @@
     },
     {
       "id": "edb64ab5883cd4f2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "How we took malware advisories beyond npm",
       "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
@@ -1570,7 +1569,7 @@
     },
     {
       "id": "494b95298a3e790b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
       "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
@@ -1582,7 +1581,7 @@
     },
     {
       "id": "8473d412574fda86",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Turn one giant AI-generated pull request to a reviewable stack",
       "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
@@ -1594,7 +1593,7 @@
     },
     {
       "id": "f56bf0b1cbb30ca2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Don’t stop early: Case-folding source code at memory speed",
       "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
@@ -1606,7 +1605,7 @@
     },
     {
       "id": "aedeca426f939b7c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Stacked sessions and pull requests in the GitHub Copilot app",
       "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
@@ -1618,7 +1617,7 @@
     },
     {
       "id": "3a4b68ba9e7eabf9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
       "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
@@ -1630,7 +1629,7 @@
     },
     {
       "id": "eb04b81cd39d8f0b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "Disrupting supply chain attacks on npm and GitHub Actions",
       "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
@@ -1642,7 +1641,7 @@
     },
     {
       "id": "5c9884b60e588824",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "rss",
       "title": "The harness is all you need (mostly)",
       "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
@@ -1654,7 +1653,7 @@
     },
     {
       "id": "46f57db3195334fe",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "How do you usually store your test data / test cases? CSV, JSON, YAML, or something else?",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vku14d/how_do_you_usually_store_your_test_data_test/",
@@ -1666,7 +1665,7 @@
     },
     {
       "id": "10be848c9cecc8d4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "I know this question has been asked several times before, but how do I start?",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vktt7a/i_know_this_question_has_been_asked_several_times/",
@@ -1678,7 +1677,7 @@
     },
     {
       "id": "ee9495dfa1d5e795",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "What to put at the end of steps to reproduce?",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vkr43i/what_to_put_at_the_end_of_steps_to_reproduce/",
@@ -1690,7 +1689,7 @@
     },
     {
       "id": "d5d32327e22f56eb",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Dont know what salary to ask for",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vko211/dont_know_what_salary_to_ask_for/",
@@ -1702,7 +1701,7 @@
     },
     {
       "id": "474fabe60b8b65f2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Looking for test management tool that scales with a growing team",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vklo8a/looking_for_test_management_tool_that_scales_with/",
@@ -1714,7 +1713,7 @@
     },
     {
       "id": "866b46c4861be4d4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Test Data Ideas",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vkjgge/test_data_ideas/",
@@ -1726,7 +1725,7 @@
     },
     {
       "id": "2b85b7f954da9ef4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "8D Problem Solving Templates",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vkhjgw/8d_problem_solving_templates/",
@@ -1738,7 +1737,7 @@
     },
     {
       "id": "9e34fc62e2648f8d",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "If you are currently in qa/sdet, tell me your YOE and CTC over the years and what is right now.",
       "url": "https://www.reddit.com/r/QualityAssurance/comments/1vkghqh/if_you_are_currently_in_qasdet_tell_me_your_yoe/",
@@ -1750,7 +1749,7 @@
     },
     {
       "id": "35cfed707cf796b7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "How are people testing LLM changes without just rereading 200 outputs?",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vky2t1/how_are_people_testing_llm_changes_without_just/",
@@ -1762,7 +1761,7 @@
     },
     {
       "id": "6028cd0731c55dd0",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Best resources for an experienced software engineer to learn software testing?",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vj316e/best_resources_for_an_experienced_software/",
@@ -1774,7 +1773,7 @@
     },
     {
       "id": "a5c8ccdc47527709",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "How do you deal with intermittent bugs?",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vh2hb4/how_do_you_deal_with_intermittent_bugs/",
@@ -1786,7 +1785,7 @@
     },
     {
       "id": "27146b6e231b6f1c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Vibecoded applications",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vg97kx/vibecoded_applications/",
@@ -1798,7 +1797,7 @@
     },
     {
       "id": "fac7c54b0d53de91",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Suggest some API testing project ideas, please",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vfwucz/suggest_some_api_testing_project_ideas_please/",
@@ -1810,7 +1809,7 @@
     },
     {
       "id": "50d7561b96543eaf",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "yesterday was my first day in QA",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vfd4wz/yesterday_was_my_first_day_in_qa/",
@@ -1822,7 +1821,7 @@
     },
     {
       "id": "d467e62ce6f1280c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Software testing with Playwright",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1vf8kx9/software_testing_with_playwright/",
@@ -1834,7 +1833,7 @@
     },
     {
       "id": "c9f57abd7440f187",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Anyone here got into hardware SDET type work?",
       "url": "https://www.reddit.com/r/softwaretesting/comments/1veqnnc/anyone_here_got_into_hardware_sdet_type_work/",
@@ -1846,7 +1845,7 @@
     },
     {
       "id": "11fed1a23bc2271f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "I trained a 1B-parameter LLM from scratch on 20B tokens for about $200",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkydi5/i_trained_a_1bparameter_llm_from_scratch_on_20b/",
@@ -1858,7 +1857,7 @@
     },
     {
       "id": "fc70686a63b56dcb",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Muse glimmer benchmark",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkxpnd/muse_glimmer_benchmark/",
@@ -1870,7 +1869,7 @@
     },
     {
       "id": "636479e2df13f359",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Why don't we have more 7bit / q7_0 quants???? Fucking sucks that hugginface quant providers only do 1,2,3,4,5,6 (skips 7), 8 bit quants. Makes no sense",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkxg4c/why_dont_we_have_more_7bit_q7_0_quants_fucking/",
@@ -1882,7 +1881,7 @@
     },
     {
       "id": "f2ea600e233d568f",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Question abt Fable Fusion DavidAU",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkwufc/question_abt_fable_fusion_davidau/",
@@ -1894,7 +1893,7 @@
     },
     {
       "id": "d9380c55369ad8da",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Going from -np (parallel) 1 on llama.cpp to parallel requests on vllm?",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkwivo/going_from_np_parallel_1_on_llamacpp_to_parallel/",
@@ -1906,7 +1905,7 @@
     },
     {
       "id": "0b915076f9c3cdcd",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "0.0044 KLD on first heretic attempt - An experiment vibe heretic'ing Muse 30B purely with local models (deepseek-v4-flash-0731)",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkwide/00044_kld_on_first_heretic_attempt_an_experiment/",
@@ -1918,7 +1917,7 @@
     },
     {
       "id": "5167a8a37a4f63c0",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Muse Spark 1.2 Open Source before Llama 4 Behemoth!!?",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkw0f7/muse_spark_12_open_source_before_llama_4_behemoth/",
@@ -1930,7 +1929,7 @@
     },
     {
       "id": "85c90e4183ef80c4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Added cost based tensor split mode to llama.cpp - ~3-4% TG improvement on some mixed-speed multi-GPU setups with some models.",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkvmw7/added_cost_based_tensor_split_mode_to_llamacpp_34/",
@@ -1942,7 +1941,7 @@
     },
     {
       "id": "0eec376f276cd800",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "fru - Fast Random Forest Implementation [P]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkrvks/fru_fast_random_forest_implementation_p/",
@@ -1954,7 +1953,7 @@
     },
     {
       "id": "ec909472786b528b",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Transformers are famously bad at arithmetic, so I set one's weights by hand (no training) and it multiplies with 100% accuracy [P]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkrnb5/transformers_are_famously_bad_at_arithmetic_so_i/",
@@ -1966,7 +1965,7 @@
     },
     {
       "id": "39fa04e8d49d431a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "How to file a complaint about a published CVPR paper? [R]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkn5x9/how_to_file_a_complaint_about_a_published_cvpr/",
@@ -1978,7 +1977,7 @@
     },
     {
       "id": "55f8eb58ff3ce9e7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Semi Edge Inference Idea [D]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkhl99/semi_edge_inference_idea_d/",
@@ -1990,7 +1989,7 @@
     },
     {
       "id": "9688a4d5369c3ea2",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "Comparing embedding models with synthetic query probing [R]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkh1ul/comparing_embedding_models_with_synthetic_query/",
@@ -2002,7 +2001,7 @@
     },
     {
       "id": "aedef3e7ac4d4d0e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "3 Collapsing models [R]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vkg921/3_collapsing_models_r/",
@@ -2014,7 +2013,7 @@
     },
     {
       "id": "8f9ea73adf49a2a1",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) [R]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vjvzm4/a_mechanistic_explanation_of_prompt_injection_and/",
@@ -2025,7 +2024,7 @@
     },
     {
       "id": "84ab56142ced38af",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "reddit",
       "title": "I never understood positional encoding until I read this article. [D]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vju3ym/i_never_understood_positional_encoding_until_i/",
@@ -2036,58 +2035,58 @@
     },
     {
       "id": "ced611fd7606ecd4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "I am probably just thinking out loud here, but becoming a Cardano DRep has taken me much deeper into this ecosystem than I ever expected. Somewhere along the way it stopped feeling like something I si",
       "url": "https://x.com/i/status/2086898685728674233",
       "source": "@ItsDave_ADA",
       "summary": "I am probably just thinking out loud here, but becoming a Cardano DRep has taken me much deeper into this ecosystem than I ever expected. Somewhere along the way it stopped feeling like something I simply participated in and became something I think about constantly. Today, more than 74 million ADA is delegated to me for governance, worth around $14.3 million at current prices. My stake pool also",
       "author": "ItsDave_ADA",
-      "points": 62,
+      "points": 64,
       "publishedAt": "2026-08-10T19:33:14.000Z",
       "laneHint": "qa"
     },
     {
       "id": "c2a9ab40e918792a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "NIMASA INTRODUCES NEW STANDARDS FOR SEAFARERS’ EDUCATION, TRAINING & CERTIFICATION The Nigerian Maritime Administration and Safety Agency (NIMASA) has introduced comprehensive new standards for the ed",
       "url": "https://x.com/i/status/2086901181993852964",
       "source": "@nimasaofficial",
       "summary": "NIMASA INTRODUCES NEW STANDARDS FOR SEAFARERS’ EDUCATION, TRAINING & CERTIFICATION The Nigerian Maritime Administration and Safety Agency (NIMASA) has introduced comprehensive new standards for the education, training, assessment, examination, certification, revalidation, endorsement and medical fitness certification of Nigerian seafarers. The reforms, issued under the Merchant Shipping (STCW) Reg",
       "author": "nimasaofficial",
-      "points": 22,
+      "points": 27,
       "publishedAt": "2026-08-10T19:43:09.000Z",
       "laneHint": "qa"
     },
     {
-      "id": "fd48209444a341a7",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "twitter",
-      "title": "Today, I joined @GovRonDeSantis and @FDOT Secretary Jared Perdue at SunTrax to announce @PolkState as a preferred partner for training the highly skilled workforce needed to support the future of tran",
-      "url": "https://x.com/i/status/2086894267113316461",
-      "source": "@StasiKamoutsas",
-      "summary": "Today, I joined @GovRonDeSantis and @FDOT Secretary Jared Perdue at SunTrax to announce @PolkState as a preferred partner for training the highly skilled workforce needed to support the future of transportation in Florida. We are committed to providing quality training in areas including aviation, advanced manufacturing and engineering technology, which position both our state and students for suc",
-      "author": "StasiKamoutsas",
-      "points": 17,
-      "publishedAt": "2026-08-10T19:15:40.000Z",
-      "laneHint": "qa"
-    },
-    {
       "id": "598979f26db8cd76",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "https://t.co/UwL9XuaHPl",
       "url": "https://x.com/i/status/2086917664522600726",
       "source": "@SERobinsonJr",
       "author": "SERobinsonJr",
-      "points": 14,
+      "points": 15,
       "publishedAt": "2026-08-10T20:48:38.000Z",
       "laneHint": "qa"
     },
     {
+      "id": "d31bc7fe99c4934f",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "twitter",
+      "title": "𝗜𝗻𝘃𝗶𝘁𝗮𝘁𝗶𝗼𝗻 𝘁𝗼 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝘁𝗵𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗼𝗳 𝗮 𝗖𝗮𝗿𝗱𝗶𝗮𝗰 𝗖𝗮𝘁𝗵𝗲𝘁𝗲𝗿𝗶𝘇𝗮𝘁𝗶𝗼𝗻 𝗣𝗿𝗼𝗴𝗿𝗮𝗺 Dear Colleagues, I hope this message finds you well. We are ",
+      "url": "https://x.com/i/status/2086931467397927313",
+      "source": "@tesfanews",
+      "summary": "𝗜𝗻𝘃𝗶𝘁𝗮𝘁𝗶𝗼𝗻 𝘁𝗼 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝘁𝗵𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗼𝗳 𝗮 𝗖𝗮𝗿𝗱𝗶𝗮𝗰 𝗖𝗮𝘁𝗵𝗲𝘁𝗲𝗿𝗶𝘇𝗮𝘁𝗶𝗼𝗻 𝗣𝗿𝗼𝗴𝗿𝗮𝗺 Dear Colleagues, I hope this message finds you well. We are seeking experienced professionals who may be interested in volunteering their expertise to support the establishment of a new cardiac angiography and catheterization program in my home country #Eritre",
+      "author": "tesfanews",
+      "points": 6,
+      "publishedAt": "2026-08-10T21:43:29.000Z",
+      "laneHint": "qa"
+    },
+    {
       "id": "543a98354a882f69",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "Wouldn't you say it's more of a dismissal of the importance of code in general rather than a statement about the relative difficulty of coding as work? \"Code was never the hard part.\" is something I h",
       "url": "https://x.com/i/status/2086915280454955061",
@@ -2100,7 +2099,7 @@
     },
     {
       "id": "d8d9eac555d9c01c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "Türkiye’s Aksa Enerji tests new financing model in Burkina Faso https://t.co/mdJzms3JJu",
       "url": "https://x.com/i/status/2086905831451480506",
@@ -2111,33 +2110,21 @@
       "laneHint": "qa"
     },
     {
-      "id": "598979f26db8cd76",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "twitter",
-      "title": "https://t.co/UwL9XuaHPl",
-      "url": "https://x.com/i/status/2086917664522600726",
-      "source": "@SERobinsonJr",
-      "author": "SERobinsonJr",
-      "points": 15,
-      "publishedAt": "2026-08-10T20:48:38.000Z",
-      "laneHint": "qa"
-    },
-    {
       "id": "be2eadfaa3f41e6e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "🚨The Islamic Republic is telling you it’s strong. But showing you it is weak. Take the latest musical chairs for example, which amounts to rearranging deck chairs on the Titanic. At the SNSC we now h",
       "url": "https://x.com/i/status/2086927987463553353",
       "source": "@therealBehnamBT",
       "summary": "🚨The Islamic Republic is telling you it’s strong. But showing you it is weak. Take the latest musical chairs for example, which amounts to rearranging deck chairs on the Titanic. At the SNSC we now have Mohsen Rezaie, a 70-something year old IRGC Commander and Iran-Iraq War veteran who replaced Mohammad Bagher Zolghadr, another 70-something IRGC General and Iran-Iraq War veteran. This is not abou",
       "author": "therealBehnamBT",
-      "points": 12,
+      "points": 16,
       "publishedAt": "2026-08-10T21:29:40.000Z",
       "laneHint": "qa"
     },
     {
       "id": "c10baab5c89000ce",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "$IMDX Q2 2026 earnings: Race Against the Clock: Pre-Commercial Pivot Drains Cash Insight Molecular Diagnostics is in a high-stakes waiting period. With Q2 2026 revenue at just $239,000 as the company ",
       "url": "https://x.com/i/status/2086925686481010862",
@@ -2149,8 +2136,21 @@
       "laneHint": "qa"
     },
     {
+      "id": "f773ea46e1b13ae8",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "twitter",
+      "title": "$DH Q2 2026 earnings: Revenue Contraction Deepens Despite Retention Green Shoots Definitive Healthcare delivered another quarter of declining top-line performance, with Q2 revenue falling 9% YoY to $5",
+      "url": "https://x.com/i/status/2086925663034859903",
+      "source": "@Finsee_main",
+      "summary": "$DH Q2 2026 earnings: Revenue Contraction Deepens Despite Retention Green Shoots Definitive Healthcare delivered another quarter of declining top-line performance, with Q2 revenue falling 9% YoY to $55.2M. While management points to a second consecutive quarter of improving net dollar retention and \"win-back momentum,\" these leading indicators are not yet halting the revenue bleed. Adjusted EBITDA",
+      "author": "Finsee_main",
+      "points": 1,
+      "publishedAt": "2026-08-10T21:20:25.000Z",
+      "laneHint": "qa"
+    },
+    {
       "id": "87121fc248eaee43",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "WHEN ADULTS ROAMED THE EARTH Most of you will remember Casper Weinberger president Reagan’s Sec of DEFENSE. In his speech, delivered in November 1984, Cap Weinberger (Reagan Sec DOD) declared that any",
       "url": "https://x.com/i/status/2086921186806579293",
@@ -2163,7 +2163,7 @@
     },
     {
       "id": "62f1ba031ee16b49",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "🚨 BREAKING XRP UPDATE — AUGUST 🚨 📉 XRP IS FALLING — BUT WHAT DO THE REAL NUMBERS TELL US? AND AS MARKET PRESSURE BUILDS, COULD MICHAEL SAYLOR’S BITCOIN STRATEGY FACE A MAJOR TEST? 👀 🔥 XRP PRICE A",
       "url": "https://x.com/i/status/2086930980854489496",
@@ -2175,93 +2175,98 @@
       "laneHint": "qa"
     },
     {
-      "id": "d4e8c639e62a27a4",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "6dbe5be40482f069",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "Behavioral changes are all you need https://t.co/km5H8hbLs3",
-      "url": "https://x.com/i/status/2086919869480489147",
-      "source": "@PALabs_",
-      "author": "PALabs_",
+      "title": "@kofookesola Write a test strategy md file and you should be good to go",
+      "url": "https://x.com/i/status/2086929760106459145",
+      "source": "@SOrjiude",
+      "author": "SOrjiude",
       "points": 1,
-      "publishedAt": "2026-08-10T20:57:24.000Z",
+      "publishedAt": "2026-08-10T21:36:42.000Z",
       "laneHint": "qa"
     },
     {
-      "id": "b0bd0e3906f61c9e",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "7becc27cc00a23c9",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "@WomanCorn They've continuously been successful at making AI agents more powerful. Let's not bet the fate of humanity on the hope that this trend will stop at a convenient time",
-      "url": "https://x.com/i/status/2086932719930601510",
-      "source": "@HumanHarlan",
-      "author": "HumanHarlan",
+      "title": "This is the unlock. More agents → more wallets → more autonomous transactions → an entirely new financial stack built for machines. Coinbase is validating the direction of travel with AgentKit/CDP. Th",
+      "url": "https://x.com/i/status/2086935659361825258",
+      "source": "@VannDough",
+      "summary": "This is the unlock. More agents → more wallets → more autonomous transactions → an entirely new financial stack built for machines. Coinbase is validating the direction of travel with AgentKit/CDP. The next layer is making those wallets truly useful across chains, protocols and payment rails — identity, permissions, execution, payments and autonomous financial workflows. That’s exactly why I’ve be",
+      "author": "VannDough",
       "points": 1,
-      "publishedAt": "2026-08-10T21:48:28.000Z",
+      "publishedAt": "2026-08-10T22:00:09.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "91be6f288e9f0f84",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "a4252b201c71f780",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "Another edition of the Weekly AI Digest!! https://t.co/wIGbt48Zz7",
-      "url": "https://x.com/i/status/2086933771316584783",
-      "source": "@calebknappdc",
-      "author": "calebknappdc",
+      "title": "Build _______ with Gemini. Fill in the blank at #BuildwithGemini, a complimentary, hands-on workshop on building, scaling, and deploying secure, production-ready AI agents. Find an event near you → ht",
+      "url": "https://x.com/i/status/2086935674247152036",
+      "source": "@googlecloud",
+      "summary": "Build _______ with Gemini. Fill in the blank at #BuildwithGemini, a complimentary, hands-on workshop on building, scaling, and deploying secure, production-ready AI agents. Find an event near you → https://t.co/JEwAgJ98ex https://t.co/6FP55m9qPt",
+      "author": "googlecloud",
+      "points": 0,
+      "publishedAt": "2026-08-10T22:00:12.000Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "c837ad1cfee62515",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "twitter",
+      "title": "Omega-Floquet, Neurophysics Operator -Lobster Coin: AI-agent infrastructure combining Fourier/Floquet operators, physics-informed learning & research swarms. Helps devs build, monetize & continuously ",
+      "url": "https://x.com/i/status/2086935749232931160",
+      "source": "@MedicalToo59606",
+      "summary": "Omega-Floquet, Neurophysics Operator -Lobster Coin: AI-agent infrastructure combining Fourier/Floquet operators, physics-informed learning & research swarms. Helps devs build, monetize & continuously improve physics-aware agents & scientific simulations. https://t.co/qUAzw6NGRV https://t.co/Lns1WFuN08",
+      "author": "MedicalToo59606",
       "points": 1,
-      "publishedAt": "2026-08-10T21:52:39.000Z",
+      "publishedAt": "2026-08-10T22:00:30.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "de892a8d316aa8c9",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "08608e5466c9043a",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "@ns123abc Can the ai labs watermark the agents/ models instead that sometimes go rogue as we have recently seen? if they do this to customers, surely they can do this to agents. why not?",
-      "url": "https://x.com/i/status/2086933440985772214",
-      "source": "@mylandros",
-      "author": "mylandros",
+      "title": "What does an AI agent actually pay for? Data. So pick one niche. Pick one city. Track 100 businesses, not more. For example: Prices, review counts, top complaints, recent posts, visible ad changes, hi",
+      "url": "https://x.com/i/status/2086935628768215087",
+      "source": "@startupideaspod",
+      "summary": "What does an AI agent actually pay for? Data. So pick one niche. Pick one city. Track 100 businesses, not more. For example: Prices, review counts, top complaints, recent posts, visible ad changes, hiring signals. The raw material already exists. It's sitting in Google Maps, job posts, reviews, local directories, PDFs, pricing pages. Your job is refining it. Then build 10 outputs off that one shee",
+      "author": "startupideaspod",
       "points": 0,
-      "publishedAt": "2026-08-10T21:51:20.000Z",
+      "publishedAt": "2026-08-10T22:00:01.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "9ec0cb9e33a88238",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "5e224cb0dd50810f",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "https://t.co/LktoBEcOEx Want to make money and save time with AI? Get AI Coaching, Support & Courses 👉 https://t.co/OuuLmdvTmm Get a FREE AI Course + 1000 NEW AI Agents 👉 https://t.co/2rK7SLQfZK",
-      "url": "https://x.com/i/status/2086932820841373769",
-      "source": "@JulianGoldieSEO",
-      "author": "JulianGoldieSEO",
-      "points": 0,
-      "publishedAt": "2026-08-10T21:48:52.000Z",
+      "title": "The language around AI has become complicated very quickly. Agents, orchestration, models, autonomous workflows, retrieval systems, fine-tuning. If you're working directly in technology, those things ",
+      "url": "https://x.com/i/status/2086935632169844987",
+      "source": "@JanRautenbach7",
+      "summary": "The language around AI has become complicated very quickly. Agents, orchestration, models, autonomous workflows, retrieval systems, fine-tuning. If you're working directly in technology, those things matter. But I'm not convinced that's where the average business should begin its AI conversation. If I were sitting with a business owner tomorrow, I'd be more interested in what happened inside their",
+      "author": "JanRautenbach7",
+      "points": 1,
+      "publishedAt": "2026-08-10T22:00:02.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "02707f34c5a8af2c",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "id": "830ccf6fcd9715b9",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
-      "title": "Day 20/30. In January, a new social network called Moltbook let AI agents post and comment while humans just watched. Within weeks, it had around 200,000 verified agents, with millions more lurking. I",
-      "url": "https://x.com/i/status/2086932905188630798",
-      "source": "@Udoh_Graceee",
-      "summary": "Day 20/30. In January, a new social network called Moltbook let AI agents post and comment while humans just watched. Within weeks, it had around 200,000 verified agents, with millions more lurking. In March, Meta acquired it. A researcher who studied the platform’s interactions put it plainly: a gathering of bots at that scale had never happened before. At first glance, it looked like the agents",
-      "author": "Udoh_Graceee",
+      "title": "The future belongs to AI agents that can access reliable market intelligence, understand real-world assets, and act on-chain with speed and precision. #BBNaija Super facon Neche Funke akindele Asuu Pe",
+      "url": "https://x.com/i/status/2086935972806054398",
+      "source": "@isaia42602",
+      "summary": "The future belongs to AI agents that can access reliable market intelligence, understand real-world assets, and act on-chain with speed and precision. #BBNaija Super facon Neche Funke akindele Asuu Perez Hilton #23yrsofglonigeria",
+      "author": "isaia42602",
       "points": 0,
-      "publishedAt": "2026-08-10T21:49:12.000Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "ae1f93d91d7e5872",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "twitter",
-      "title": "🔗 GitHub: https://t.co/g5CLEKKN4r --- ✉️ If you’re into AI, ML, agents, and building real systems, join my newsletter (it’s free): https://t.co/zJ9uwd6qSd",
-      "url": "https://x.com/i/status/2086933498095452532",
-      "source": "@DanKornas",
-      "author": "DanKornas",
-      "points": 0,
-      "publishedAt": "2026-08-10T21:51:33.000Z",
+      "publishedAt": "2026-08-10T22:01:23.000Z",
       "laneHint": "ai"
     },
     {
       "id": "86cd86522d5cb8b5",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "https://t.co/nu4KWsdEVm",
       "url": "https://x.com/i/status/2086896332862886283",
@@ -2272,8 +2277,21 @@
       "laneHint": "ai"
     },
     {
+      "id": "55bae5aff759ce35",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
+      "channel": "twitter",
+      "title": "Trust is becoming a condition of interconnection. In July, Ofcom finalised new rules requiring UK mobile providers and business messaging aggregators to strengthen customer and traffic checks, block s",
+      "url": "https://x.com/i/status/2086921337524699561",
+      "source": "@Minutes_Network",
+      "summary": "Trust is becoming a condition of interconnection. In July, Ofcom finalised new rules requiring UK mobile providers and business messaging aggregators to strengthen customer and traffic checks, block scam messages and act against spoofed caller identities. In the US, the FCC is applying the same principle through enforcement. Providers that fail robocall-mitigation requirements can be removed from",
+      "author": "Minutes_Network",
+      "points": 17,
+      "publishedAt": "2026-08-10T21:03:14.000Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "61cfb6880dac4405",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "I found the official learning path to become a Claude Certified Architect. If I were preparing from scratch, this is the exact order I’d follow: 1. Start with Anthropic Academy Begin with the free tra",
       "url": "https://x.com/i/status/2086890534304649340",
@@ -2285,21 +2303,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "55bae5aff759ce35",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
-      "channel": "twitter",
-      "title": "Trust is becoming a condition of interconnection. In July, Ofcom finalised new rules requiring UK mobile providers and business messaging aggregators to strengthen customer and traffic checks, block s",
-      "url": "https://x.com/i/status/2086921337524699561",
-      "source": "@Minutes_Network",
-      "summary": "Trust is becoming a condition of interconnection. In July, Ofcom finalised new rules requiring UK mobile providers and business messaging aggregators to strengthen customer and traffic checks, block scam messages and act against spoofed caller identities. In the US, the FCC is applying the same principle through enforcement. Providers that fail robocall-mitigation requirements can be removed from",
-      "author": "Minutes_Network",
-      "points": 16,
-      "publishedAt": "2026-08-10T21:03:14.000Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "68bfceaf4df16573",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "https://t.co/SgkclaVwTj",
       "url": "https://x.com/i/status/2086911989134028865",
@@ -2311,7 +2316,7 @@
     },
     {
       "id": "6758ba6be03c4eef",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "\"As reasoning models mature and tool-use protocols stabilise — Anthropic’s Model Context Protocol (MCP) is the current standard bearer here — companies will start handing agents autonomous budget auth",
       "url": "https://x.com/i/status/2086915743166111857",
@@ -2324,7 +2329,7 @@
     },
     {
       "id": "9876963d2cf35f5a",
-      "collectedAt": "2026-08-10T21:52:31.725Z",
+      "collectedAt": "2026-08-10T21:59:52.183Z",
       "channel": "twitter",
       "title": "🚀 Streamlining Oil & Gas Reserves Workflows with an Open-Source MCP Server! Fetching and formatting benchmark pricing data for reserves processes can be an unnecessary bottleneck. To simplify this wo",
       "url": "https://x.com/i/status/2086902215885668460",
