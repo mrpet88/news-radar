@@ -135,6 +135,9 @@ export const noise = {
   globalExclude: [
     "crypto", "bitcoin", "ethereum", "xrp", "solana", "altcoin", "airdrop", "nft",
     "token price", "presale", "pump", "moon", "hodl",
+    // "coin" as a bare word catches the long tail of made-up tokens that dress
+    // themselves as AI infrastructure — "Lobster Coin: AI-agent infrastructure…".
+    "coin", "memecoin", "tokenomics",
     "giveaway", "retweet to win", "dm me", "link in bio", "discount code", "coupon",
     "onlyfans", "casino", "betting", "forex",
   ],
@@ -212,6 +215,19 @@ export const channelWeight: Record<string, number> = {
 
 // ── Collector limits (per run, per lane) ──
 export const collector = {
+  // Channels the scheduled run collects.
+  //
+  // twitter is OFF deliberately, not because it is broken — it works fine via
+  // OpenCLI. Open search on X simply does not carry this kind of news: across
+  // repeated runs it yielded ~1 usable item per 24 collected, and three rounds of
+  // filtering each caught that round's junk while the next brought different junk
+  // (crypto, then contests, then listicles). It costs ~60s a run for that.
+  //
+  // To turn it on usefully, put handles in a lane's `twitterHandles` and add
+  // "twitter" here — searching named accounts is a different proposition from
+  // searching the firehose.
+  enabled: ["exa", "github", "rss", "reddit"] as string[],
+
   exaResultsPerQuery: 6,
   githubResultsPerQuery: 5,
   // Quality floor for repo search. Without it, `--sort updated` returns whatever

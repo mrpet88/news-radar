@@ -70,13 +70,23 @@ cookies are. A `.env` with `TWITTER_AUTH_TOKEN`/`TWITTER_CT0` is therefore **not
 and can be deleted. The loader in `reach-collect.mjs` stays for any future channel that
 does need a credential.
 
-⚠️ **Twitter is the weakest channel.** Open search on X yields roughly 1 usable item per
-24 collected for these topics — the rest is marketing, engagement bait and off-topic
-matches, and it costs ~50s per run. The filters in `noise` (global spam list, hype
-patterns, mention-stuffing) hold the junk back, but the durable fix is curated accounts
-rather than open search: add `--from <handle>` per query in `collectTwitter`, or build an
-X list and read it with `opencli twitter list-tweets`. Consider dropping the channel if
-it does not earn its 50 seconds.
+⚠️ **Twitter is OFF by default** (`collector.enabled` in `config.ts`) — working, but not
+earning its ~60s. Open search on X yielded ~1 usable item per 24 collected here, and
+three rounds of filtering each caught that round's junk while the next brought different
+junk: crypto tokens, then marketing contests, then listicles. That is a source problem,
+not a filter problem.
+
+To make it useful, name the accounts worth reading and switch it on:
+
+```ts
+// in a lane
+twitterHandles: ["simonw", "swyx"],
+// and
+enabled: ["exa", "github", "rss", "reddit", "twitter"],
+```
+
+Handles become a `from:` clause, so it reads those accounts instead of the firehose.
+`opencli twitter list-tweets` is the other option if you keep a curated X list.
 
 ## Why this lives in ~/Projects and not ~/Documents
 macOS TCC blocks a LaunchAgent from reading `~/Documents`, `~/Desktop` and
@@ -92,7 +102,7 @@ Moving this project back under `~/Documents` will break the schedule.
 | rss | working | 4 QA + 3 AI feeds. `martinfowler.com/feed.atom` refuses connections, so it is out |
 | reddit | working | needs Chrome open; `--window background` keeps it from stealing focus |
 | github | working | star floor of 120, else `--sort updated` returns only fresh personal repos |
-| twitter | working | via OpenCLI + Chrome, not twitter-cli (0.8.5 is broken against X). Low signal: ~1 keeper per 24 |
+| twitter | works, **disabled** | via OpenCLI + Chrome, not twitter-cli (0.8.5 is broken against X). Off in `collector.enabled`: ~1 keeper per 24, ~60s/run |
 
 ## Email gating
 The digest is written **only** when the reach payload is <24h old *and* there are new

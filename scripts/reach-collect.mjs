@@ -195,9 +195,22 @@ async function collectReddit(lane) {
 async function collectTwitter(lane) {
   const items = [];
   for (const q of lane.twitterQueries ?? []) {
+    // X operators pass through the query unchanged, so a handle list becomes a
+    // from: clause. This is the difference between reading named accounts and
+    // reading the firehose.
+    const handles = lane.twitterHandles ?? [];
+    const query = handles.length
+      ? `(${handles.map((h) => `from:${h.replace(/^@/, "")}`).join(" OR ")}) ${q}`
+      : q;
+
     const raw = await sh("opencli", [
-      "twitter", "search", q,
+      "twitter", "search", query,
       "--product", "live",            // the Latest tab, not algorithmic Top
+      // Require an outbound link. This is the single strongest signal available:
+      // news links to a source, while bait, replies and hot takes do not. Keyword
+      // matching cannot tell those apart on 200 characters of text.
+      "--has", "links",
+      "--exclude", "replies",
       "--exclude", "retweets",
       "--limit", String(collector.twitterPerQuery),
       // Re-rank by weighted engagement and keep the best few. X has no quality
@@ -294,8 +307,14 @@ async function main() {
   const reports = [];
 
   for (const [channel, fn] of CHANNELS) {
-    if (!wanted(channel)) {
-      reports.push({ channel, ok: false, count: 0, ms: 0, skipped: "not in REACH_CHANNELS" });
+    // REACH_CHANNELS is the ad-hoc override for testing; collector.enabled is the
+    // standing configuration. An explicit override wins so a disabled channel can
+    // still be exercised by hand.
+    if (ONLY.length ? !wanted(channel) : !collector.enabled.includes(channel)) {
+      reports.push({
+        channel, ok: false, count: 0, ms: 0,
+        skipped: ONLY.length ? "not in REACH_CHANNELS" : "disabled in collector.enabled",
+      });
       continue;
     }
     const t0 = Date.now();

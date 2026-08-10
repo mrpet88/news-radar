@@ -68,6 +68,9 @@ export interface Lane {
   githubQueries?: string[];// `gh search repos` queries
   subreddits?: string[];   // reddit channel, when it's reachable
   twitterQueries?: string[];
+  // Accounts to restrict the twitter channel to. Empty means open search, which
+  // is why the channel is disabled by default — see `collector.enabled`.
+  twitterHandles?: string[];
   feeds?: { name: string; url: string }[];
   maxPerDigest: number;    // hard cap on rows this lane contributes to the email
 }
