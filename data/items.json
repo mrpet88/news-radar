@@ -1,7 +1,7 @@
 [
   {
     "id": "00574099c59131ec",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
     "url": "https://cactuscompute.com/needle",
@@ -11,11 +11,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "ec416e94667b541d",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "Quoting Claude Opus 5 system prompt",
     "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
@@ -26,11 +26,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "72e4e10fc59cbf0a",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
     "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
@@ -41,11 +41,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "439f838afddd526a",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "bugpilot.io",
     "title": "Holistic Quality Engineering: Comprehensive QA Strategy Guide | bugpilot.io",
@@ -57,41 +57,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 18,
-    "isNew": true
-  },
-  {
-    "id": "a7fc2ecdd089e5a9",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "exa",
-    "source": "dev.to",
-    "title": "Most “Flaky Tests” Are Really Architecture Tests - DEV Community",
-    "url": "https://dev.to/randomsquirrel802/most-flaky-tests-are-really-architecture-tests-34na",
-    "publishedAt": "2026-08-08T00:00:00.000Z",
-    "summary": "Most “Flaky Tests” Are Really Architecture Tests - DEV Community Posted on Aug 8 # Most “Flaky Tests” Are Really Architecture Tests There’s a point in almost every browser automation project where someone says:   But increasingly, I think “flaky test” is becoming a catch-all phrase for something much broader: Modern frontends have become surprisingly difficult environments to observe deterministic",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 18,
-    "isNew": true
-  },
-  {
-    "id": "5954d1d1b63878bd",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "exa",
-    "source": "dev.to",
-    "title": "Why Flaky Tests Are Rarely About the Test - DEV Community",
-    "url": "https://dev.to/marxjenes/why-flaky-tests-are-rarely-about-the-test-3951",
-    "publishedAt": "2026-08-06T12:42:52.000Z",
-    "summary": "# Why Flaky Tests Are Rarely About the Test - DEV Community   Why Flaky Tests Are Rarely About the Test   # Why Flaky Tests Are Rarely About the Test   We had a checkout test at my last job that everyone called \"the coin flip.\" Green for a week, red twice on a Tuesday, green again. Someone eventually wrapped it in a retry and it sat like that for eight months before anyone looked at it again. Turn",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "36c5d547a3de5402",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "developers.googleblog.com",
     "title": "Scaling AI Agent Infrastructure with the MCP Stateless updates",
@@ -102,11 +72,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "0467e8b80f8541a3",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "devblogs.microsoft.com",
     "title": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework | Microsoft Agent Framework",
@@ -118,11 +88,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "cf0c73d5ad2a2e63",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
     "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
@@ -133,11 +103,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "cabcda7347488529",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
     "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
@@ -148,11 +118,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "55f8eb58ff3ce9e7",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Semi Edge Inference Idea [D]",
     "url": "https://www.reddit.com/r/MachineLearning/comments/1vkhl99/semi_edge_inference_idea_d/",
@@ -164,11 +134,27 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
+    "isNew": false
+  },
+  {
+    "id": "b9a61c5b8b2a31c4",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "exa",
+    "source": "okoone.com",
+    "title": "The software testing strategies every leader should know | Okoone",
+    "url": "https://www.okoone.com/spark/strategy-transformation/the-software-testing-strategies-every-leader-should-know/",
+    "publishedAt": "2026-08-05T00:00:00.000Z",
+    "author": "Alexander Procter",
+    "summary": "The software testing strategies every leader should know | Okoone   # The software testing strategies every leader should know   Software testing is a business decision, not just an engineering task. A focused test strategy aligns testing with risk, improves executive visibility, supports AI adoption, enables earlier defect detection, and creates a repeatable framework that strengthens software qu",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 12,
     "isNew": true
   },
   {
     "id": "939381e707f31036",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "kunalganglani.com",
     "title": "Agent Evaluation Harness [2026]: Replay + CI Gates",
@@ -180,18 +166,18 @@
     "lane": "ai",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
-    "id": "9944ecaed373a1c6",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "id": "5c9900fd88d164a4",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
-    "title": "PrefectHQ/fastmcp — 🚀 The fast, Pythonic way to build MCP servers and clients.",
-    "url": "https://github.com/PrefectHQ/fastmcp",
-    "source": "PrefectHQ",
-    "summary": "🚀 The fast, Pythonic way to build MCP servers and clients.",
-    "stars": 27161,
-    "publishedAt": "2026-08-10T21:08:35Z",
+    "title": "awslabs/mcp — Open source MCP Servers for AWS",
+    "url": "https://github.com/awslabs/mcp",
+    "source": "awslabs",
+    "summary": "Open source MCP Servers for AWS",
+    "stars": 9579,
+    "publishedAt": "2026-08-10T21:30:28Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -200,14 +186,46 @@
   },
   {
     "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
     "url": "https://github.com/omnigent-ai/omnigent",
     "source": "omnigent-ai",
     "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
     "stars": 8491,
-    "publishedAt": "2026-08-10T21:07:55Z",
+    "publishedAt": "2026-08-10T21:29:59Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "fa46e15d8521484c",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "atom2ueki/mcp-server-synology — 💾 Model Context Protocol (MCP) server for Synology NAS - Enables AI assistants (Claude, Cursor, Continue) to manage files, downloads, and system operations through sec",
+    "url": "https://github.com/atom2ueki/mcp-server-synology",
+    "source": "atom2ueki",
+    "summary": "💾 Model Context Protocol (MCP) server for Synology NAS - Enables AI assistants (Claude, Cursor, Continue) to manage files, downloads, and system operations through secure API integration. Features Docker deployment, auto-authentication, and comprehensive file system tools.",
+    "stars": 160,
+    "publishedAt": "2026-08-10T21:27:41Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "57a1aa4f96274e69",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "alisaitteke/photoshop-mcp — MCP server for Adobe Photoshop automation - Control Photoshop from AI assistants with 50+ tools for design, image editing, and workflow automation",
+    "url": "https://github.com/alisaitteke/photoshop-mcp",
+    "source": "alisaitteke",
+    "summary": "MCP server for Adobe Photoshop automation - Control Photoshop from AI assistants with 50+ tools for design, image editing, and workflow automation",
+    "stars": 292,
+    "publishedAt": "2026-08-10T21:24:42Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -215,8 +233,72 @@
     "isNew": true
   },
   {
+    "id": "9f332d136a48de40",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "homeassistant-ai/ha-mcp — The Unofficial and Awesome Home Assistant MCP Server",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "source": "homeassistant-ai",
+    "summary": "The Unofficial and Awesome Home Assistant MCP Server",
+    "stars": 4333,
+    "publishedAt": "2026-08-10T21:22:30Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
+  },
+  {
+    "id": "a0595e976fb6b614",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "stacklok/toolhive — ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+    "url": "https://github.com/stacklok/toolhive",
+    "source": "stacklok",
+    "summary": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+    "stars": 1998,
+    "publishedAt": "2026-08-10T21:22:28Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
+  },
+  {
+    "id": "f2deacd462e1ba8c",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
+    "url": "https://github.com/ahx/openapi_first",
+    "source": "ahx",
+    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
+    "stars": 219,
+    "publishedAt": "2026-08-10T21:11:55Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "a8a354829593c69c",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "url": "https://github.com/pact-foundation/pact-js",
+    "source": "pact-foundation",
+    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "stars": 1795,
+    "publishedAt": "2026-08-10T21:10:49Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
     "id": "6e22fd80accc6b8b",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. ",
     "url": "https://github.com/openonion/connectonion",
@@ -228,75 +310,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "fbc91648d10da434",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, deskto",
-    "url": "https://github.com/t8y2/dbx",
-    "source": "t8y2",
-    "summary": "20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 70+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。",
-    "stars": 13956,
-    "publishedAt": "2026-08-10T21:03:31Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "55036821c3418afc",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "Dicklesworthstone/mcp_agent_mail_rust — Rust MCP server for multi-agent coordination: 34 tools, Git-backed archive, SQLite indexing, advisory file locks, and an interactive TUI console",
-    "url": "https://github.com/Dicklesworthstone/mcp_agent_mail_rust",
-    "source": "Dicklesworthstone",
-    "summary": "Rust MCP server for multi-agent coordination: 34 tools, Git-backed archive, SQLite indexing, advisory file locks, and an interactive TUI console",
-    "stars": 121,
-    "publishedAt": "2026-08-10T20:59:35Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "e3f2ae76b0258673",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "sceneview/sceneview — 3D & AR SDK for Android (Jetpack Compose + Filament), iOS (SwiftUI + RealityKit), and Web. AI-first: llms.txt, MCP server, Copilot/Cursor rules. The only Compose-native 3D librar",
-    "url": "https://github.com/sceneview/sceneview",
-    "source": "sceneview",
-    "summary": "3D & AR SDK for Android (Jetpack Compose + Filament), iOS (SwiftUI + RealityKit), and Web. AI-first: llms.txt, MCP server, Copilot/Cursor rules. The only Compose-native 3D library.",
-    "stars": 1278,
-    "publishedAt": "2026-08-10T20:59:31Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "fa46e15d8521484c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "atom2ueki/mcp-server-synology — 💾 Model Context Protocol (MCP) server for Synology NAS - Enables AI assistants (Claude, Cursor, Continue) to manage files, downloads, and system operations through sec",
-    "url": "https://github.com/atom2ueki/mcp-server-synology",
-    "source": "atom2ueki",
-    "summary": "💾 Model Context Protocol (MCP) server for Synology NAS - Enables AI assistants (Claude, Cursor, Continue) to manage files, downloads, and system operations through secure API integration. Features Docker deployment, auto-authentication, and comprehensive file system tools.",
-    "stars": 160,
-    "publishedAt": "2026-08-10T20:57:46Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "645d1a4de93ec05c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "pydantic/pydantic-ai — AI Agent Framework, the Pydantic way",
     "url": "https://github.com/pydantic/pydantic-ai",
@@ -308,11 +326,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d9380c55369ad8da",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Going from -np (parallel) 1 on llama.cpp to parallel requests on vllm?",
     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkwivo/going_from_np_parallel_1_on_llamacpp_to_parallel/",
@@ -324,11 +342,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "046061c2f25e12a7",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
     "url": "https://github.com/langwatch/langwatch",
@@ -340,11 +358,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "5167a8a37a4f63c0",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Muse Spark 1.2 Open Source before Llama 4 Behemoth!!?",
     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkw0f7/muse_spark_12_open_source_before_llama_4_behemoth/",
@@ -356,11 +374,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "85c90e4183ef80c4",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Added cost based tensor split mode to llama.cpp - ~3-4% TG improvement on some mixed-speed multi-GPU setups with some models.",
     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkvmw7/added_cost_based_tensor_split_mode_to_llamacpp_34/",
@@ -372,11 +390,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets.",
     "url": "https://github.com/open-compass/opencompass",
@@ -388,11 +406,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7ad4a211f53df928",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b",
     "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
@@ -404,11 +422,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a0b68296801048f0",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "Rose22/openlumara — AI agent framework, written from scratch (not based on openclaw), focused on stripping it down to the bare necessities, optimizing token count, reducing security risks. modular so ",
     "url": "https://github.com/Rose22/openlumara",
@@ -420,11 +438,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9688a4d5369c3ea2",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Comparing embedding models with synthetic query probing [R]",
     "url": "https://www.reddit.com/r/MachineLearning/comments/1vkh1ul/comparing_embedding_models_with_synthetic_query/",
@@ -436,43 +454,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "a8a354829593c69c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "url": "https://github.com/pact-foundation/pact-js",
-    "source": "pact-foundation",
-    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "stars": 1795,
-    "publishedAt": "2026-08-10T09:43:21Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "f2deacd462e1ba8c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
-    "channel": "github",
-    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "url": "https://github.com/ahx/openapi_first",
-    "source": "ahx",
-    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "stars": 219,
-    "publishedAt": "2026-08-10T08:06:10Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9ab34c2f4468b3ee",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
     "url": "https://github.com/pact-foundation/pact-js-core",
@@ -484,11 +470,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1834986c7c56818d",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
     "url": "https://github.com/pact-foundation/pact-jvm",
@@ -500,11 +486,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "27146b6e231b6f1c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Vibecoded applications",
     "url": "https://www.reddit.com/r/softwaretesting/comments/1vg97kx/vibecoded_applications/",
@@ -516,11 +502,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d467e62ce6f1280c",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Software testing with Playwright",
     "url": "https://www.reddit.com/r/softwaretesting/comments/1vf8kx9/software_testing_with_playwright/",
@@ -532,11 +518,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "2421baba1d7a7f5b",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "A guide to slash commands in the GitHub Copilot app",
     "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
@@ -548,11 +534,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "494b95298a3e790b",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "rss",
     "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
     "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
@@ -564,11 +550,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "32551f2b0cf0597f",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "anthropic.com",
     "title": "Demystifying evals for AI agents \\ Anthropic",
@@ -578,11 +564,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "baab19dff2c9b9be",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "github",
     "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
     "url": "https://github.com/speakeasy-api/speakeasy",
@@ -594,11 +580,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d5d32327e22f56eb",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Dont know what salary to ask for",
     "url": "https://www.reddit.com/r/QualityAssurance/comments/1vko211/dont_know_what_salary_to_ask_for/",
@@ -610,11 +596,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "592739a697b55ee2",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "exa",
     "source": "joeywang.github.io",
     "title": "The CI failures that moved every time you reran them | Joey",
@@ -626,11 +612,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 6,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fac7c54b0d53de91",
-    "collectedAt": "2026-08-10T21:10:04.067Z",
+    "collectedAt": "2026-08-10T21:29:53.291Z",
     "channel": "reddit",
     "title": "Suggest some API testing project ideas, please",
     "url": "https://www.reddit.com/r/softwaretesting/comments/1vfwucz/suggest_some_api_testing_project_ideas_please/",
@@ -642,6 +628,6 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 5.4,
-    "isNew": true
+    "isNew": false
   }
 ]
