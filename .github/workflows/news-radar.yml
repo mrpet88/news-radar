@@ -1,0 +1,97 @@
+# News Radar — delivery half of the pipeline.
+#
+# ⚠️  GitHub Actions only reads workflows from the REPOSITORY ROOT. This file does
+#     nothing where it currently sits. To activate it:
+#         mkdir -p ../../.github/workflows
+#         cp .github/workflows/news-radar.yml ../../.github/workflows/
+#     (paths below already assume it runs from the repo root)
+#
+# It deliberately does NOT collect. Collection needs this Mac's Chrome session and
+# mcporter config, so a runner cannot do it — Actions only renders and delivers what
+# scripts/run-local.sh last pushed. That is what keeps the email agent-reach-backed.
+#
+# Before enabling the schedule, add these repo secrets (same ones job-radar uses):
+#   MAIL_USERNAME  — the Gmail address
+#   MAIL_PASSWORD  — a Gmail *app password*, not the account password
+#   MAIL_TO        — where the digest goes
+# Without MAIL_USERNAME the mail step skips cleanly, so a dry run is safe.
+
+name: news-radar
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_digest:
+        description: "Render a digest even if nothing is new (tests the mail path)"
+        type: boolean
+        default: false
+  # Uncomment once the secrets are in place. 06:30 UTC ≈ 08:30 CEST, which lands
+  # after the 06:45 local collection has had time to push.
+  # schedule:
+  #   - cron: "30 6 * * *"
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    working-directory: coding/news-radar
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    env:
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci || npm install
+      - run: npm run build
+
+      - name: Render digest and dashboard
+        id: render
+        env:
+          NEWS_RADAR_DIGEST_FORCE: ${{ inputs.force_digest }}
+          NEWS_RADAR_DASHBOARD_URL: ${{ vars.NEWS_RADAR_DASHBOARD_URL }}
+        run: npm start
+
+      # Fires for both a digest and the 3-day heartbeat — the subject says which.
+      - name: Email digest
+        if: steps.render.outputs.send == 'true' && env.MAIL_USERNAME != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: News Radar <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: ${{ steps.render.outputs.subject }}
+          html_body: file://coding/news-radar/digest.html
+          convert_markdown: false
+
+      # seen-history must persist or every run re-mails the same items. The Mac
+      # writes reach-raw.json and this job writes the render state, so rebase
+      # rather than assume this runner is the only writer.
+      - name: Commit render state
+        run: |
+          git config user.name "news-radar-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/seen-history.json data/digest-state.json data/items.json data/index.html
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "news-radar: render $(date -u +%FT%TZ)"
+          git pull --rebase --autostash origin ${{ github.ref_name }}
+          git push
+
+      # NOTE: no Pages deploy. personal-projects is private, and GitHub Pages on a
+      # private repo needs a paid plan. Options, when you want the hosted dashboard:
+      #   a) split news-radar into its own public repo (job-radar's setup), or
+      #   b) keep reading data/index.html locally — it is written on every run.
+      - name: Upload dashboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-radar-dashboard
+          path: coding/news-radar/data/index.html
+          retention-days: 7

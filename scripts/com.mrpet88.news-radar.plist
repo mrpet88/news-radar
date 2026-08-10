@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  News Radar local collector.
+
+  Install:
+    cp scripts/com.mrpet88.news-radar.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
+
+  Reload after editing:
+    launchctl bootout gui/$(id -u)/com.mrpet88.news-radar
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
+
+  Run once now (ignores the schedule, still honours the script's own guards):
+    launchctl kickstart -k gui/$(id -u)/com.mrpet88.news-radar
+
+  Four fire times, not one: the script works at most once per 20h, so these are
+  chances to catch the Mac awake rather than four separate collections. A missed
+  slot is also re-run by launchd at next wake.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.mrpet88.news-radar</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/user/Documents/personal-projects/coding/news-radar/scripts/run-local.sh</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- The scheduled run is the only path that commits and pushes. -->
+    <key>NEWS_RADAR_PUSH</key>
+    <string>1</string>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>45</integer></dict>
+    <dict><key>Hour</key><integer>22</integer><key>Minute</key><integer>45</integer></dict>
+  </array>
+
+  <!-- Never on load: installing the agent should not immediately drive Chrome. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/user/Documents/personal-projects/coding/news-radar</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/user/Documents/personal-projects/coding/news-radar/data/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/user/Documents/personal-projects/coding/news-radar/data/launchd.log</string>
+
+  <!-- Collection is background work; keep it off the interactive CPU. -->
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+</dict>
+</plist>

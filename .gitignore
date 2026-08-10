@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# Email body for one run — regenerated every time, never committed or published.
+digest.html
+.DS_Store
