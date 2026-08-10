@@ -45,6 +45,22 @@ jobs:
       - run: npm ci || npm install
       - run: npm run build
 
+      # TEMPORARY diagnostic. Prints only lengths and whitespace flags, never the
+      # values — enough to tell a 16-character app password from one carrying
+      # Google's display spaces, or from an account password pasted by mistake.
+      - name: Inspect mail secret shape
+        run: |
+          printf 'MAIL_USERNAME  length=%s\n' "${#MAIL_USERNAME}"
+          printf 'MAIL_PASSWORD  length=%s\n' "${#MAIL_PASSWORD}"
+          printf 'MAIL_TO        length=%s\n' "${#MAIL_TO}"
+          case "$MAIL_USERNAME" in *[[:space:]]*) echo "!! MAIL_USERNAME contains whitespace";; esac
+          case "$MAIL_PASSWORD" in *[[:space:]]*) echo "!! MAIL_PASSWORD contains whitespace";; esac
+          case "$MAIL_TO" in *[[:space:]]*) echo "!! MAIL_TO contains whitespace";; esac
+          case "$MAIL_USERNAME" in *@*) echo "MAIL_USERNAME looks like an address";; *) echo "!! MAIL_USERNAME is not an address";; esac
+          echo "(expected: username ~19, password 16, to ~19)"
+        env:
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+
       - name: Render digest and dashboard
         id: render
         env:
