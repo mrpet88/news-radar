@@ -20,6 +20,20 @@ const execFileAsync = promisify(execFile);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "reach-raw.json");
 
+// Optional .env, loaded here as well as in run-local.sh so a credential-backed
+// channel behaves the same however the collector is started. No channel currently
+// needs one — twitter goes through OpenCLI's browser session — but the loader stays
+// so a future one does not repeat the bug where running this script directly
+// silently skipped a channel that the scheduled run collected.
+// Existing environment wins: an explicitly exported value is the deliberate one.
+try {
+  const env = await fs.readFile(path.join(ROOT, ".env"), "utf8");
+  for (const line of env.split("\n")) {
+    const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*)$/.exec(line);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim().replace(/^["']|["']$/g, "");
+  }
+} catch { /* no .env — twitter will report a precondition skip */ }
+
 let lanes, collector;
 try {
   ({ lanes, collector } = await import(path.join(ROOT, "dist", "config.js")));
@@ -173,37 +187,44 @@ async function collectReddit(lane) {
   return items;
 }
 
-// ── twitter: twitter-cli, needs TWITTER_AUTH_TOKEN + TWITTER_CT0 ──────────────
+// ── twitter: OpenCLI, via the logged-in Chrome session ───────────────────────
+// Not twitter-cli: 0.8.5 cannot build the x-client-transaction-id header X now
+// requires, so every call — even `whoami` — fails with HTTP 400 regardless of how
+// valid the cookies are. OpenCLI drives the real browser and sidesteps that
+// entirely, which also means this channel needs no stored credentials.
 async function collectTwitter(lane) {
-  if (!process.env.TWITTER_AUTH_TOKEN || !process.env.TWITTER_CT0) {
-    const e = new Error("no TWITTER_AUTH_TOKEN / TWITTER_CT0 in env");
-    e.precondition = true;
-    throw e;
-  }
   const items = [];
   for (const q of lane.twitterQueries ?? []) {
-    const raw = await sh("twitter", [
-      "search", q,
-      "-t", "latest",
+    const raw = await sh("opencli", [
+      "twitter", "search", q,
+      "--product", "live",            // the Latest tab, not algorithmic Top
       "--exclude", "retweets",
-      "--min-likes", String(collector.twitterMinLikes),
-      "-n", String(collector.twitterPerQuery),
-      "--json",
+      "--limit", String(collector.twitterPerQuery),
+      // Re-rank by weighted engagement and keep the best few. X has no quality
+      // floor of its own, and this replaces twitter-cli's --min-likes.
+      "--top-by-engagement", String(collector.twitterTopByEngagement),
+      "--window", "background",
+      "-f", "json",
     ], collector.timeoutMs.twitter);
+
     let tweets;
     try { tweets = JSON.parse(raw); } catch { continue; }
     for (const t of Array.isArray(tweets) ? tweets : tweets.tweets ?? []) {
-      if (!t.id && !t.url) continue;
-      const url = t.url ?? `https://x.com/${t.username ?? "i"}/status/${t.id}`;
+      const url = t.url ?? (t.id ? `https://x.com/i/status/${t.id}` : null);
+      const text = stripHtml(t.text ?? "");
+      if (!url || !text) continue;
+      // X's created_at ("Thu Aug 06 18:30:43 +0000 2026") is not a standard format;
+      // keep it only when it actually parses.
+      const ts = t.created_at ? Date.parse(t.created_at) : NaN;
       items.push(mkItem({
         channel: "twitter",
-        title: stripHtml(t.text ?? "").slice(0, 200),
+        title: text.slice(0, 200),
         url,
-        source: t.username ? `@${t.username}` : "x.com",
-        summary: stripHtml(t.text ?? "").slice(0, 400),
-        author: t.username,
-        points: t.likes ?? t.favorite_count,
-        publishedAt: t.created_at ? new Date(t.created_at).toISOString() : undefined,
+        source: t.author ? `@${t.author}` : "x.com",
+        summary: text.slice(0, 400),
+        author: t.author,
+        points: t.likes,
+        publishedAt: Number.isNaN(ts) ? undefined : new Date(ts).toISOString(),
       }));
     }
   }

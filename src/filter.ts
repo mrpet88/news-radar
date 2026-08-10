@@ -62,6 +62,14 @@ export function scoreItem(item: Item, lanes: Lane[]): Item | null {
   const title = (item.title || "").toLowerCase();
   const body = `${title} ${(item.summary || "").toLowerCase()} ${(item.source || "").toLowerCase()}`;
 
+  // Spam and engagement bait are killed for every lane at once. Per-lane lists
+  // alone let crypto through whichever lane happened not to list it.
+  if (matchAny(body, noise.globalExclude)) return null;
+  if (noise.hypePatterns.some((re) => re.test(item.title || ""))) return null;
+  // Mention-stuffed posts are announcements and tagging chains, not news. Keyword
+  // exclusions cannot catch these: the give-away is the shape, not the vocabulary.
+  if (item.channel === "twitter" && (item.title.match(/@\w+/g) ?? []).length >= 3) return null;
+
   let best: { lane: string; tier: string; score: number } | null = null;
 
   for (const lane of lanes) {

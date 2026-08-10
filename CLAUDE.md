@@ -61,22 +61,22 @@ password). Its `schedule:` block is commented out until those exist; without
 `MAIL_USERNAME` the mail step skips cleanly, so a dry run via **Actions → Run
 workflow** is safe.
 
-**3. Twitter/X** is the one dark channel. It needs two cookie values from a
-logged-in x.com session:
+**3. Twitter/X** needs nothing — it runs through OpenCLI against the logged-in Chrome
+session, same as reddit. Just keep Chrome open and logged in to x.com.
 
-1. In Chrome, logged in to x.com, open the **Cookie-Editor** extension.
-2. Copy the values of `auth_token` and `ct0`.
-3. Write them to a gitignored `.env` in this folder:
+Not twitter-cli: version 0.8.5 cannot build the `x-client-transaction-id` header X now
+requires, so every call including `whoami` fails with HTTP 400 no matter how valid the
+cookies are. A `.env` with `TWITTER_AUTH_TOKEN`/`TWITTER_CT0` is therefore **not needed**
+and can be deleted. The loader in `reach-collect.mjs` stays for any future channel that
+does need a credential.
 
-```bash
-printf 'TWITTER_AUTH_TOKEN=%s\nTWITTER_CT0=%s\n' "PASTE_AUTH_TOKEN" "PASTE_CT0" > .env && chmod 600 .env
-```
-
-`run-local.sh` sources `.env` before collecting, so the scheduled run picks them up
-with no change to the plist — the tokens stay out of both the repo and launchd's
-environment. They are session cookies and **expire**; when the twitter channel starts
-reporting a precondition skip again, repeat the steps above. Everything else works
-without any credential.
+⚠️ **Twitter is the weakest channel.** Open search on X yields roughly 1 usable item per
+24 collected for these topics — the rest is marketing, engagement bait and off-topic
+matches, and it costs ~50s per run. The filters in `noise` (global spam list, hype
+patterns, mention-stuffing) hold the junk back, but the durable fix is curated accounts
+rather than open search: add `--from <handle>` per query in `collectTwitter`, or build an
+X list and read it with `opencli twitter list-tweets`. Consider dropping the channel if
+it does not earn its 50 seconds.
 
 ## Why this lives in ~/Projects and not ~/Documents
 macOS TCC blocks a LaunchAgent from reading `~/Documents`, `~/Desktop` and
@@ -92,7 +92,7 @@ Moving this project back under `~/Documents` will break the schedule.
 | rss | working | 4 QA + 3 AI feeds. `martinfowler.com/feed.atom` refuses connections, so it is out |
 | reddit | working | needs Chrome open; `--window background` keeps it from stealing focus |
 | github | working | star floor of 120, else `--sort updated` returns only fresh personal repos |
-| twitter | needs cookies | skips cleanly, reported as a precondition rather than a failure |
+| twitter | working | via OpenCLI + Chrome, not twitter-cli (0.8.5 is broken against X). Low signal: ~1 keeper per 24 |
 
 ## Email gating
 The digest is written **only** when the reach payload is <24h old *and* there are new

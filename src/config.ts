@@ -48,6 +48,10 @@ export const lanes: Lane[] = [
       "pharmaceutical", "gmp", "iso 9001", "food safety", "haccp",
       "clinical", "medical device", "manufacturing quality", "welding",
       "air quality", "water quality", "sleep quality", "audio quality",
+      // Physical-world "testing" that shares the vocabulary and nothing else — a
+      // tweet about an autonomous-vehicle test track scored as QA leadership.
+      "test track", "crash test", "drug test", "blood test", "covid test",
+      "soil test", "emissions test", "highway", "raceway",
     ],
     // Exa rewards a description of the ideal *page*, not keywords — and it has no
     // date filter, so "recently published blog post" is the only recency lever we
@@ -125,6 +129,30 @@ export const lanes: Lane[] = [
 // first run was 4/6 documentation, so reference material is filtered structurally
 // rather than by hoping the query wording keeps it out.
 export const noise = {
+  // Applied to EVERY lane. Exclusions used to be per-lane only, which let crypto
+  // spam through the QA lane because only the AI lane listed it — a tweet about
+  // "REAL NUMBERS" and XRP matched a QA keyword and sailed straight into the digest.
+  globalExclude: [
+    "crypto", "bitcoin", "ethereum", "xrp", "solana", "altcoin", "airdrop", "nft",
+    "token price", "presale", "pump", "moon", "hodl",
+    "giveaway", "retweet to win", "dm me", "link in bio", "discount code", "coupon",
+    "onlyfans", "casino", "betting", "forex",
+  ],
+  // Promotional and engagement-bait shapes, matched against the title. X's
+  // engagement ranking actively rewards these, so the twitter channel needs a
+  // filter that likes and retweets cannot provide.
+  hypePatterns: [
+    /🚨|🔥{2,}|🚀{2,}|💰|📉|📈/u,
+    /\bBREAKING\b/,
+    // Opening on an emoji is the marketing/thread house style. High precision:
+    // a legitimate post almost never leads with one, a promo post usually does.
+    /^\s*[\p{Extended_Pictographic}]/u,
+    /\b(thread|mega[- ]?thread)\s*[:🧵]/i,
+    /\bhere('| i)s (how|why|what)\b.{0,40}\b(nobody|no one|everyone)\b/i,
+    /\b(steal|stole) (my|this)\b/i,
+    /\bif i were (starting|preparing)\b/i,
+    /\b\d+\s+(tips|tricks|hacks|secrets|lessons)\b/i,
+  ],
   // Matched against the URL (case-insensitive substring).
   docUrlPatterns: [
     "/docs/", "/doc/", "/reference/", "/api-reference", "/getting-started",
@@ -175,7 +203,9 @@ export const channelWeight: Record<string, number> = {
   rss: 1.15,      // editorial, dated, deliberately published
   exa: 1.0,
   reddit: 0.9,
-  twitter: 0.85,
+  // Lowest of the read channels. Even after the spam filters, X's median result is
+  // commentary rather than news, so a tweet has to match unusually well to lead.
+  twitter: 0.6,
   github: 0.6,    // interesting, but a push is not an announcement
   v2ex: 0.8,
 };
@@ -189,9 +219,9 @@ export const collector = {
   // repos. A star floor is the cheapest available proxy for "anyone else cares".
   githubMinStars: 120,
   redditPostsPerSub: 8,
-  twitterPerQuery: 8,
-  // X has no quality floor of its own; likes are the only cheap proxy available.
-  twitterMinLikes: 25,
+  // Read this many from the Latest tab, then keep the best few by engagement.
+  twitterPerQuery: 25,
+  twitterTopByEngagement: 6,
   feedItemsPerFeed: 12,
   // Each channel gets its own wall-clock budget. Reddit/Twitter routinely hang
   // when their backend is not connected, and a hung channel must not stall the run.
