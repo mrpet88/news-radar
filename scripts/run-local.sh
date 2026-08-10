@@ -14,6 +14,14 @@ cd "$ROOT" || exit 1
 # launchd hands over a minimal PATH; every tool this needs lives in Homebrew.
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# Twitter/X cookies, if present. Kept in a gitignored .env rather than the plist
+# so the tokens never reach the repo — see the twitter section in CLAUDE.md.
+if [[ -f .env ]]; then
+  set -a
+  source .env
+  set +a
+fi
+
 log() { print -r -- "$(date '+%Y-%m-%d %H:%M:%S') $*"; }
 
 # ── Guard 1: Chrome must be running ───────────────────────────────────────────

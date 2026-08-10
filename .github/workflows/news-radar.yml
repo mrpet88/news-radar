@@ -1,11 +1,5 @@
 # News Radar — delivery half of the pipeline.
 #
-# ⚠️  GitHub Actions only reads workflows from the REPOSITORY ROOT. This file does
-#     nothing where it currently sits. To activate it:
-#         mkdir -p ../../.github/workflows
-#         cp .github/workflows/news-radar.yml ../../.github/workflows/
-#     (paths below already assume it runs from the repo root)
-#
 # It deliberately does NOT collect. Collection needs this Mac's Chrome session and
 # mcporter config, so a runner cannot do it — Actions only renders and delivers what
 # scripts/run-local.sh last pushed. That is what keeps the email agent-reach-backed.
@@ -32,10 +26,6 @@ on:
 
 permissions:
   contents: write
-
-defaults:
-  run:
-    working-directory: coding/news-radar
 
 jobs:
   deliver:
@@ -69,7 +59,7 @@ jobs:
           from: News Radar <${{ secrets.MAIL_USERNAME }}>
           to: ${{ secrets.MAIL_TO }}
           subject: ${{ steps.render.outputs.subject }}
-          html_body: file://coding/news-radar/digest.html
+          html_body: file://digest.html
           convert_markdown: false
 
       # seen-history must persist or every run re-mails the same items. The Mac
@@ -85,13 +75,27 @@ jobs:
           git pull --rebase --autostash origin ${{ github.ref_name }}
           git push
 
-      # NOTE: no Pages deploy. personal-projects is private, and GitHub Pages on a
-      # private repo needs a paid plan. Options, when you want the hosted dashboard:
-      #   a) split news-radar into its own public repo (job-radar's setup), or
-      #   b) keep reading data/index.html locally — it is written on every run.
       - name: Upload dashboard artifact
         uses: actions/upload-artifact@v4
         with:
           name: news-radar-dashboard
-          path: coding/news-radar/data/index.html
+          path: data/index.html
           retention-days: 7
+
+# ── Hosting the dashboard ────────────────────────────────────────────────────
+# This repo is private, and GitHub Pages on a private repo needs a paid plan, so
+# there is no Pages deploy above — the dashboard is `data/index.html`, written on
+# every local run. To host it, flip the repo to Public (Settings → General →
+# Danger Zone), enable Pages (Settings → Pages → Source: GitHub Actions), then add
+# `pages: write` and `id-token: write` to permissions above and append:
+#
+#   - uses: actions/upload-pages-artifact@v3
+#     with: { path: data }
+#   deploy:
+#     needs: deliver
+#     runs-on: ubuntu-latest
+#     environment: { name: github-pages }
+#     steps:
+#       - uses: actions/deploy-pages@v4
+#
+# Then set the NEWS_RADAR_DASHBOARD_URL repo variable so the email links to it.

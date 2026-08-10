@@ -3,6 +3,11 @@
 <!--
   News Radar local collector.
 
+  This project lives at ~/Projects, NOT ~/Documents, and that is load-bearing.
+  macOS TCC blocks a LaunchAgent from reading ~/Documents (and ~/Desktop,
+  ~/Downloads) unless you grant Full Disk Access to the interpreter. Keeping the
+  project outside those folders avoids needing any privacy permission at all.
+
   Install:
     cp scripts/com.mrpet88.news-radar.plist ~/Library/LaunchAgents/
     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
@@ -26,7 +31,7 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/zsh</string>
-    <string>/Users/user/Documents/personal-projects/coding/news-radar/scripts/run-local.sh</string>
+    <string>/Users/user/Projects/news-radar/scripts/run-local.sh</string>
   </array>
 
   <key>EnvironmentVariables</key>
@@ -51,12 +56,12 @@
   <false/>
 
   <key>WorkingDirectory</key>
-  <string>/Users/user/Documents/personal-projects/coding/news-radar</string>
+  <string>/Users/user/Projects/news-radar</string>
 
   <key>StandardOutPath</key>
-  <string>/Users/user/Documents/personal-projects/coding/news-radar/data/launchd.log</string>
+  <string>/Users/user/Projects/news-radar/data/launchd.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/user/Documents/personal-projects/coding/news-radar/data/launchd.log</string>
+  <string>/Users/user/Projects/news-radar/data/launchd.log</string>
 
   <!-- Collection is background work; keep it off the interactive CPU. -->
   <key>ProcessType</key>

@@ -2,4 +2,8 @@ node_modules/
 dist/
 # Email body for one run — regenerated every time, never committed or published.
 digest.html
+# launchd's stdout/stderr for the scheduled collector.
+data/launchd.log
+# Twitter/X cookies for the twitter channel. Never commit these.
+.env
 .DS_Store

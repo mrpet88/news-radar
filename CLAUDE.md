@@ -7,6 +7,9 @@ Sibling of `job-radar` (`~/Documents/projects/job-radar`) and deliberately mirro
 shape: zero runtime deps, `config.ts` as the only file you edit to retune, seen-history
 so only genuinely new items get mailed.
 
+Own repo: <https://github.com/mrpet88/news-radar> (private). Extracted from
+`personal-projects` via `git subtree split`, so its history is preserved there.
+
 ## Stack
 TypeScript → `dist/`, Node 22+, **no runtime dependencies** (native `fetch` only).
 The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd can run it with no build step.
@@ -52,14 +55,35 @@ Fires 06:45 / 12:45 / 18:45 / 22:45, works at most once per 20h, skips silently 
 Chrome is closed. Logs to `data/launchd.log`. Force a run with
 `launchctl kickstart -k gui/$(id -u)/com.mrpet88.news-radar`.
 
-**2. Email delivery** — `.github/workflows/news-radar.yml` must be copied to the
-**repo root** (`personal-projects/.github/workflows/`) to run at all, and needs
-`MAIL_USERNAME` / `MAIL_PASSWORD` / `MAIL_TO` secrets. Its `schedule:` block is
-commented out until those exist. Without secrets the mail step skips cleanly.
+**2. Email delivery** — `.github/workflows/news-radar.yml` needs `MAIL_USERNAME` /
+`MAIL_PASSWORD` / `MAIL_TO` repo secrets (a Gmail **app password**, not the account
+password). Its `schedule:` block is commented out until those exist; without
+`MAIL_USERNAME` the mail step skips cleanly, so a dry run via **Actions → Run
+workflow** is safe.
 
-**3. Twitter/X** is the one dark channel — it needs `TWITTER_AUTH_TOKEN` and
-`TWITTER_CT0` exported (`agent-reach configure twitter-cookies`). Everything else
-works today.
+**3. Twitter/X** is the one dark channel. It needs two cookie values from a
+logged-in x.com session:
+
+1. In Chrome, logged in to x.com, open the **Cookie-Editor** extension.
+2. Copy the values of `auth_token` and `ct0`.
+3. Write them to a gitignored `.env` in this folder:
+
+```bash
+printf 'TWITTER_AUTH_TOKEN=%s\nTWITTER_CT0=%s\n' "PASTE_AUTH_TOKEN" "PASTE_CT0" > .env && chmod 600 .env
+```
+
+`run-local.sh` sources `.env` before collecting, so the scheduled run picks them up
+with no change to the plist — the tokens stay out of both the repo and launchd's
+environment. They are session cookies and **expire**; when the twitter channel starts
+reporting a precondition skip again, repeat the steps above. Everything else works
+without any credential.
+
+## Why this lives in ~/Projects and not ~/Documents
+macOS TCC blocks a LaunchAgent from reading `~/Documents`, `~/Desktop` and
+`~/Downloads`. A job scheduled from there fails with `can't open input file` unless
+you grant Full Disk Access to `/bin/zsh` — which would hand FDA to every script any
+launchd job runs. Living outside those folders needs no privacy permission at all.
+Moving this project back under `~/Documents` will break the schedule.
 
 ## Channel status (verified 2026-08-11)
 | channel | state | notes |
