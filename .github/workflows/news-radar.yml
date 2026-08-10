@@ -57,7 +57,14 @@ jobs:
           case "$MAIL_PASSWORD" in *[[:space:]]*) echo "!! MAIL_PASSWORD contains whitespace";; esac
           case "$MAIL_TO" in *[[:space:]]*) echo "!! MAIL_TO contains whitespace";; esac
           case "$MAIL_USERNAME" in *@*) echo "MAIL_USERNAME looks like an address";; *) echo "!! MAIL_USERNAME is not an address";; esac
-          echo "(expected: username ~19, password 16, to ~19)"
+          # [[:space:]] misses U+00A0. Counting the alphanumerics instead catches
+          # any separator, non-breaking spaces included.
+          ALNUM=$(printf '%s' "$MAIL_PASSWORD" | LC_ALL=C tr -cd 'a-zA-Z0-9' | wc -c | tr -d ' ')
+          printf 'MAIL_PASSWORD alphanumeric-only length=%s\n' "$ALNUM"
+          if [ "$ALNUM" = "16" ] && [ "${#MAIL_PASSWORD}" != "16" ]; then
+            echo "!! 16 real characters padded to ${#MAIL_PASSWORD} — separators are being stored"
+          fi
+          echo "(expected: username 20, password 16, to 20)"
         env:
           MAIL_TO: ${{ secrets.MAIL_TO }}
 
