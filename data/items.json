@@ -11,7 +11,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "00574099c59131ec",
@@ -70,7 +70,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9d0e097815d9afeb",
@@ -163,7 +163,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "939381e707f31036",
@@ -211,7 +211,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "b55a78b125524c5e",
@@ -243,7 +243,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "645d1a4de93ec05c",
@@ -275,7 +275,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6e22fd80accc6b8b",
@@ -307,7 +307,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e00b65a6a8b410c2",
@@ -323,7 +323,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "920a878adb00a619",
@@ -339,7 +339,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7b4fff2b1f4e4470",
@@ -355,7 +355,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "046061c2f25e12a7",
@@ -435,7 +435,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fbcfa22bd346aec8",
@@ -451,7 +451,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9688a4d5369c3ea2",
@@ -561,7 +561,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "94f3935badbd275a",
@@ -577,7 +577,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "cb15b31b72e1b177",
@@ -593,7 +593,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d5d32327e22f56eb",
