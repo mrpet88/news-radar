@@ -61,7 +61,9 @@ jobs:
       # Fires for both a digest and the 3-day heartbeat — the subject says which.
       - name: Email digest
         if: steps.render.outputs.send == 'true' && env.MAIL_USERNAME != '' && env.MAIL_PASSWORD != ''
-        uses: dawidd6/action-send-mail@v3
+        # v17, not v3: v3 runs on Node 20, which GitHub has deprecated. Every input
+        # used here carries the same name in v17, so the bump is a drop-in.
+        uses: dawidd6/action-send-mail@v17
         with:
           server_address: smtp.gmail.com
           server_port: 465

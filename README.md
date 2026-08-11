@@ -17,6 +17,7 @@ News Radar — 9 new (2 QA / Testing, 7 AI / Agents)
 ```
 
 Built with zero runtime dependencies — Node's own `fetch` and nothing else.
+MIT licensed.
 
 ---
 

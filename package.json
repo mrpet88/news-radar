@@ -10,7 +10,7 @@
     "dev": "tsc && node dist/index.js",
     "all": "node scripts/reach-collect.mjs && tsc && node dist/index.js"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.9.3",
     "typescript": "^6.0.3"
