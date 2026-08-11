@@ -4,11 +4,16 @@
 # mcporter config, so a runner cannot do it — Actions only renders and delivers what
 # scripts/run-local.sh last pushed. That is what keeps the email agent-reach-backed.
 #
-# Before enabling the schedule, add these repo secrets (same ones job-radar uses):
+# Delivery needs three repo secrets, all set:
 #   MAIL_USERNAME  — the Gmail address
-#   MAIL_PASSWORD  — a Gmail *app password*, not the account password
+#   MAIL_PASSWORD  — a Gmail *app password*, stripped of the non-breaking spaces
+#                    Google's UI puts between the four groups (16 chars, not 19)
 #   MAIL_TO        — where the digest goes
-# Without MAIL_USERNAME the mail step skips cleanly, so a dry run is safe.
+# The mail step needs both USERNAME and PASSWORD present or it skips, so running
+# this workflow is safe even if a secret is later removed.
+#
+# Actions are pinned to Node 24-era majors; anything still on Node 20 emits a
+# deprecation warning on every run and will eventually stop working.
 
 name: news-radar
 
@@ -39,8 +44,8 @@ jobs:
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
       MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: "22" }
       - run: npm ci || npm install
       - run: npm run build
@@ -90,7 +95,7 @@ jobs:
           git push
 
       - name: Upload dashboard artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: news-radar-dashboard
           path: data/index.html
@@ -103,13 +108,13 @@ jobs:
 # Danger Zone), enable Pages (Settings → Pages → Source: GitHub Actions), then add
 # `pages: write` and `id-token: write` to permissions above and append:
 #
-#   - uses: actions/upload-pages-artifact@v3
+#   - uses: actions/upload-pages-artifact@v4
 #     with: { path: data }
 #   deploy:
 #     needs: deliver
 #     runs-on: ubuntu-latest
 #     environment: { name: github-pages }
 #     steps:
-#       - uses: actions/deploy-pages@v4
+#       - uses: actions/deploy-pages@v5
 #
 # Then set the NEWS_RADAR_DASHBOARD_URL repo variable so the email links to it.
