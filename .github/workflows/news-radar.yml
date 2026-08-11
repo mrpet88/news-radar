@@ -32,6 +32,13 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+# Serialise Pages deployments so concurrent runs cannot collide.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deliver:
@@ -94,27 +101,28 @@ jobs:
           git pull --rebase --autostash origin ${{ github.ref_name }}
           git push
 
-      - name: Upload dashboard artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: news-radar-dashboard
-          path: data/index.html
-          retention-days: 7
+      # Only the dashboard is published. data/ also holds the raw collection and the
+      # state files: already public in the repo, but there is no reason to serve them
+      # from the site as well.
+      - name: Stage the site
+        run: mkdir -p _site && cp data/index.html _site/index.html
 
-# ── Hosting the dashboard ────────────────────────────────────────────────────
-# This repo is private, and GitHub Pages on a private repo needs a paid plan, so
-# there is no Pages deploy above — the dashboard is `data/index.html`, written on
-# every local run. To host it, flip the repo to Public (Settings → General →
-# Danger Zone), enable Pages (Settings → Pages → Source: GitHub Actions), then add
-# `pages: write` and `id-token: write` to permissions above and append:
-#
-#   - uses: actions/upload-pages-artifact@v4
-#     with: { path: data }
-#   deploy:
-#     needs: deliver
-#     runs-on: ubuntu-latest
-#     environment: { name: github-pages }
-#     steps:
-#       - uses: actions/deploy-pages@v5
-#
-# Then set the NEWS_RADAR_DASHBOARD_URL repo variable so the email links to it.
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: deliver
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Pages intermittently answers "Deployment failed, try again later"; the first
+      # attempt tolerates it so a transient failure does not fail the run.
+      - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      - name: Retry deploy on transient failure
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
