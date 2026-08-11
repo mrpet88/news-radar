@@ -41,7 +41,9 @@ export interface ChannelReport {
 export interface ReachPayload {
   version: 1;
   collectedAt: string;         // ISO — the freshness gate reads this
-  host: string;                // which machine collected (only the Mac can)
+  // Deliberately no hostname. This payload is committed and the repo may be
+  // published; the collecting machine's name would go with it, and with a single
+  // collector it identified nothing useful anyway.
   agentReachVersion?: string;
   channels: ChannelReport[];
   items: Item[];

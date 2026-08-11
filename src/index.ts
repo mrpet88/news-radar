@@ -72,7 +72,7 @@ async function main() {
 
   const laneCount = (id: string) => marked.filter((i) => i.lane === id).length;
   console.log(`\n── News Radar ──`);
-  console.log(`reach payload:    ${reach ? `${raw.length} items, ${ageH === null ? "?" : ageH.toFixed(1)}h old, host ${reach.host}` : "MISSING"}`);
+  console.log(`reach payload:    ${reach ? `${raw.length} items, ${ageH === null ? "?" : ageH.toFixed(1)}h old` : "MISSING"}`);
   console.log(`matched lanes:    ${scored.length}  (${lanes.map((l) => `${l.label} ${laneCount(l.id)}`).join(" · ")})`);
   console.log(`after age+dedupe: ${marked.length}`);
   console.log(`NEW this run:     ${newItems.length}`);

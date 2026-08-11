@@ -7,7 +7,7 @@ Sibling of `job-radar` (`~/Documents/projects/job-radar`) and deliberately mirro
 shape: zero runtime deps, `config.ts` as the only file you edit to retune, seen-history
 so only genuinely new items get mailed.
 
-Own repo: <https://github.com/mrpet88/news-radar> (private). Extracted from
+Own repo: <https://github.com/mrpet88/news-radar>. Extracted from
 `personal-projects` via `git subtree split`, so its history is preserved there.
 
 ## Stack
@@ -16,7 +16,7 @@ The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd can run it w
 
 ## Architecture
 
-    launchd (4×/day, local)          GitHub Actions (07:30)
+    launchd (4×/day, local)          GitHub Actions (06:30 UTC)
     ─────────────────────────        ──────────────────────
     reach-collect.mjs                npm start
       → agent-reach channels           → reads data/reach-raw.json
@@ -48,18 +48,25 @@ Useful env:
 **1. Schedule the local collector** (this is the half that does the work):
 
 ```bash
-cp scripts/com.mrpet88.news-radar.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
+./scripts/install-agent.sh
 ```
+
+The plist is generated from `scripts/news-radar.plist.template` at install time rather
+than committed: launchd needs absolute paths, and a committed absolute path would put
+the local account name in the repository.
 
 Fires 06:45 / 12:45 / 18:45 / 22:45, works at most once per 20h, skips silently when
 Chrome is closed. Logs to `data/launchd.log`. Force a run with
-`launchctl kickstart -k gui/$(id -u)/com.mrpet88.news-radar`.
+`launchctl kickstart -k gui/$(id -u)/local.news-radar`.
 
 **2. Email delivery** — `.github/workflows/news-radar.yml` needs `MAIL_USERNAME` /
 `MAIL_PASSWORD` / `MAIL_TO` repo secrets (a Gmail **app password**, not the account
-password). Its `schedule:` block is commented out until those exist; without
-`MAIL_USERNAME` the mail step skips cleanly, so a dry run via **Actions → Run
-workflow** is safe.
+password). Enabled and running daily at 06:30 UTC. The mail step needs both
+`MAIL_USERNAME` and `MAIL_PASSWORD` present or it skips, so a dry run is safe.
+
+If SMTP ever returns `535 BadCredentials`: Google's app-password box separates the
+four groups with **non-breaking spaces**, which survive a copy and which
+`[[:space:]]` does not match. Store only the 16 alphanumerics.
 
 **3. Twitter/X** needs nothing — it runs through OpenCLI against the logged-in Chrome
 session, same as reddit. Just keep Chrome open and logged in to x.com.
@@ -113,4 +120,6 @@ broken pipeline is distinguishable from a quiet one.
 ## Conventions
 - Edit `src/config.ts` to change what's tracked — topics, tiers, feeds, queries. No code changes.
 - Every collector is best-effort: it records a per-channel status and never fails the run.
-- Never `git init` here — this lives inside the `personal-projects` repo.
+- Nothing personal in tracked files: no absolute home paths, no hostnames, no email
+  addresses. The plist is templated and the collector omits the machine name for
+  exactly this reason. Keep it that way — this repo is publishable.

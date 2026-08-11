@@ -13,7 +13,6 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import fs from "node:fs/promises";
 import path from "node:path";
-import os from "node:os";
 import { fileURLToPath } from "node:url";
 
 const execFileAsync = promisify(execFile);
@@ -365,7 +364,6 @@ async function main() {
   const payload = {
     version: 1,
     collectedAt: NOW,
-    host: os.hostname(),
     agentReachVersion,
     channels: reports,
     items,

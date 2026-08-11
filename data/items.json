@@ -89,22 +89,6 @@
     "isNew": false
   },
   {
-    "id": "0467e8b80f8541a3",
-    "collectedAt": "2026-08-10T22:06:00.728Z",
-    "channel": "exa",
-    "source": "devblogs.microsoft.com",
-    "title": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework | Microsoft Agent Framework",
-    "url": "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
-    "publishedAt": "2026-08-04T00:00:00.000Z",
-    "author": "Giles Odigwe",
-    "summary": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework | Microsoft Agent Framework   The GitHub Copilot integration in Microsoft Agent Framework brings these worlds together. You can now use GitHub Copilot’s agentic harness as the execution engine for your agents while continuing to leverage Agent Framework’s extensibility, tooling model, observability, streaming, and hu",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 15,
-    "isNew": false
-  },
-  {
     "id": "cf0c73d5ad2a2e63",
     "collectedAt": "2026-08-10T22:06:00.728Z",
     "channel": "rss",

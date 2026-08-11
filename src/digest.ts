@@ -64,7 +64,7 @@ export function renderDigest(
     <div style="font:700 18px/1.3 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1a1d23">News Radar — ${items.length} new</div>
     <div style="margin-top:4px;font:400 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#6b7280">${esc(perLane)}${perLane ? " · " : ""}${esc(fmtTime(new Date()))}</div>
     <div style="margin-top:8px;padding:6px 10px;border-radius:6px;background:#f0fdf4;border:1px solid #bbf7d0;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#166534">
-      Collected via agent-reach ${esc(ago(reachAgeHours))} on ${esc(reach.host)} — ${esc(channels || "no channels reported items")}
+      Collected via agent-reach ${esc(ago(reachAgeHours))} — ${esc(channels || "no channels reported items")}
     </div>
     ${degraded.length ? `<div style="margin-top:6px;padding:6px 10px;border-radius:6px;background:#fff7ed;border:1px solid #fed7aa;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#9a3412">Degraded: ${esc(degraded.map((c) => c.channel).join(", "))} did not return this run.</div>` : ""}
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:6px">
@@ -78,7 +78,7 @@ export function renderDigest(
 // to make "quiet" distinguishable from "broken" without adding inbox noise.
 export function renderHeartbeat(reach: ReachPayload | null, reachAgeHours: number | null, quietDays: number): string {
   const last = reach && reachAgeHours !== null
-    ? `agent-reach last collected ${ago(reachAgeHours)} on ${esc(reach.host)} (${reach.items.length} items).`
+    ? `agent-reach last collected ${ago(reachAgeHours)} (${reach.items.length} items).`
     : "agent-reach has not produced a collection yet.";
   const bad = reach?.channels.filter((c) => !c.ok && !c.skipped).map((c) => `${c.channel}: ${c.error ?? "failed"}`) ?? [];
   return shell(`

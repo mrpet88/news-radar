@@ -79,8 +79,10 @@ if git diff --cached --quiet 2>/dev/null; then
   exit 0
 fi
 
-git -c user.email="40420772+mrpet88@users.noreply.github.com" -c user.name="news-radar" \
-  commit -m "news-radar: collect $(date -u +%FT%TZ)" >/dev/null 2>&1 || { log "commit failed"; exit 1; }
+# Identity comes from the repo-local git config, which install-agent.sh checks for.
+# Hardcoding an address here would publish it; inheriting a global one silently is
+# how a work address ends up on a personal project.
+git commit -m "news-radar: collect $(date -u +%FT%TZ)" >/dev/null 2>&1 || { log "commit failed"; exit 1; }
 
 # Actions pushes render state between our runs, so the remote is routinely ahead.
 # Rebase first (autostash covers the locally-rendered files we deliberately do not

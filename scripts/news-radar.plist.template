@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  News Radar local collector.
+  News Radar local collector — TEMPLATE.
 
-  This project lives at ~/Projects, NOT ~/Documents, and that is load-bearing.
-  macOS TCC blocks a LaunchAgent from reading ~/Documents (and ~/Desktop,
-  ~/Downloads) unless you grant Full Disk Access to the interpreter. Keeping the
-  project outside those folders avoids needing any privacy permission at all.
+  Do not install this file directly. `scripts/install-agent.sh` substitutes
+  __PROJECT_DIR__ and installs the result, which keeps absolute paths (and so the
+  local account name) out of the repository.
 
-  Install:
-    cp scripts/com.mrpet88.news-radar.plist ~/Library/LaunchAgents/
-    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
+  The project must live outside ~/Documents, ~/Desktop and ~/Downloads: macOS TCC
+  blocks a LaunchAgent from reading those, and the job fails with "can't open input
+  file" even though the same script runs fine by hand.
 
   Reload after editing:
-    launchctl bootout gui/$(id -u)/com.mrpet88.news-radar
-    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.mrpet88.news-radar.plist
+    launchctl bootout gui/$(id -u)/local.news-radar
+    ./scripts/install-agent.sh
 
   Run once now (ignores the schedule, still honours the script's own guards):
-    launchctl kickstart -k gui/$(id -u)/com.mrpet88.news-radar
+    launchctl kickstart -k gui/$(id -u)/local.news-radar
 
   Four fire times, not one: the script works at most once per 20h, so these are
   chances to catch the Mac awake rather than four separate collections. A missed
@@ -26,12 +25,12 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.mrpet88.news-radar</string>
+  <string>local.news-radar</string>
 
   <key>ProgramArguments</key>
   <array>
     <string>/bin/zsh</string>
-    <string>/Users/user/Projects/news-radar/scripts/run-local.sh</string>
+    <string>__PROJECT_DIR__/scripts/run-local.sh</string>
   </array>
 
   <key>EnvironmentVariables</key>
@@ -56,12 +55,12 @@
   <false/>
 
   <key>WorkingDirectory</key>
-  <string>/Users/user/Projects/news-radar</string>
+  <string>__PROJECT_DIR__</string>
 
   <key>StandardOutPath</key>
-  <string>/Users/user/Projects/news-radar/data/launchd.log</string>
+  <string>__PROJECT_DIR__/data/launchd.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/user/Projects/news-radar/data/launchd.log</string>
+  <string>__PROJECT_DIR__/data/launchd.log</string>
 
   <!-- Collection is background work; keep it off the interactive CPU. -->
   <key>ProcessType</key>
