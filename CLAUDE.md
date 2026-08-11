@@ -1,125 +1,61 @@
-# News Radar
+# News Radar — working notes
 
-Daily news radar for two lanes: **QA/testing leadership** and **AI & agent tooling**.
-Collects via `agent-reach`, mails a digest, publishes a dashboard.
-
-Sibling of `job-radar` (`~/Documents/projects/job-radar`) and deliberately mirrors its
-shape: zero runtime deps, `config.ts` as the only file you edit to retune, seen-history
-so only genuinely new items get mailed.
-
-Own repo: <https://github.com/mrpet88/news-radar>. Extracted from
-`personal-projects` via `git subtree split`, so its history is preserved there.
+**Read [README.md](README.md) first.** It covers what this is, the architecture, setup,
+configuration and the design decisions. This file holds only what is specific to working
+*on* the code.
 
 ## Stack
 TypeScript → `dist/`, Node 22+, **no runtime dependencies** (native `fetch` only).
-The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd can run it with no build step.
-
-## Architecture
-
-    launchd (4×/day, local)          GitHub Actions (06:30 UTC)
-    ─────────────────────────        ──────────────────────
-    reach-collect.mjs                npm start
-      → agent-reach channels           → reads data/reach-raw.json
-      → data/reach-raw.json            → score, dedupe, diff vs seen-history
-      → git commit + push              → digest.html + data/index.html
-                                       → email (gated) + Pages
-
-**Collection only happens locally.** agent-reach needs this Mac's Chrome session and
-`mcporter` config, neither of which exists on a CI runner. Actions never collects — it
-renders and delivers what the Mac last pushed. That's what makes the email
-agent-reach-backed by construction.
-
-## Run commands
+The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd runs it without a
+build step; it imports the compiled config from `dist/` so there is one source of truth.
 
 ```bash
 npm install && npm run build
-node scripts/reach-collect.mjs      # collect (agent-reach) → data/reach-raw.json
+node scripts/reach-collect.mjs      # collect → data/reach-raw.json
 npm start                           # render → digest.html + data/index.html
-open data/index.html
+npm run all                         # both
 ```
 
-Useful env:
-- `NEWS_RADAR_DIGEST_FORCE=true` — render a digest even when nothing is new (tests the mail path)
-- `NEWS_RADAR_MAX_AGE_HOURS` — override the 24h reach-freshness gate
-- `REACH_CHANNELS=exa,github` — restrict the collector to named channels
-
-## Setup
-
-**1. Schedule the local collector** (this is the half that does the work):
-
-```bash
-./scripts/install-agent.sh
-```
-
-The plist is generated from `scripts/news-radar.plist.template` at install time rather
-than committed: launchd needs absolute paths, and a committed absolute path would put
-the local account name in the repository.
-
-Fires 06:45 / 12:45 / 18:45 / 22:45, works at most once per 20h, skips silently when
-Chrome is closed. Logs to `data/launchd.log`. Force a run with
-`launchctl kickstart -k gui/$(id -u)/local.news-radar`.
-
-**2. Email delivery** — `.github/workflows/news-radar.yml` needs `MAIL_USERNAME` /
-`MAIL_PASSWORD` / `MAIL_TO` repo secrets (a Gmail **app password**, not the account
-password). Enabled and running daily at 06:30 UTC. The mail step needs both
-`MAIL_USERNAME` and `MAIL_PASSWORD` present or it skips, so a dry run is safe.
-
-If SMTP ever returns `535 BadCredentials`: Google's app-password box separates the
-four groups with **non-breaking spaces**, which survive a copy and which
-`[[:space:]]` does not match. Store only the 16 alphanumerics.
-
-**3. Twitter/X** needs nothing — it runs through OpenCLI against the logged-in Chrome
-session, same as reddit. Just keep Chrome open and logged in to x.com.
-
-Not twitter-cli: version 0.8.5 cannot build the `x-client-transaction-id` header X now
-requires, so every call including `whoami` fails with HTTP 400 no matter how valid the
-cookies are. A `.env` with `TWITTER_AUTH_TOKEN`/`TWITTER_CT0` is therefore **not needed**
-and can be deleted. The loader in `reach-collect.mjs` stays for any future channel that
-does need a credential.
-
-⚠️ **Twitter is OFF by default** (`collector.enabled` in `config.ts`) — working, but not
-earning its ~60s. Open search on X yielded ~1 usable item per 24 collected here, and
-three rounds of filtering each caught that round's junk while the next brought different
-junk: crypto tokens, then marketing contests, then listicles. That is a source problem,
-not a filter problem.
-
-To make it useful, name the accounts worth reading and switch it on:
-
-```ts
-// in a lane
-twitterHandles: ["simonw", "swyx"],
-// and
-enabled: ["exa", "github", "rss", "reddit", "twitter"],
-```
-
-Handles become a `from:` clause, so it reads those accounts instead of the firehose.
-`opencli twitter list-tweets` is the other option if you keep a curated X list.
-
-## Why this lives in ~/Projects and not ~/Documents
-macOS TCC blocks a LaunchAgent from reading `~/Documents`, `~/Desktop` and
-`~/Downloads`. A job scheduled from there fails with `can't open input file` unless
-you grant Full Disk Access to `/bin/zsh` — which would hand FDA to every script any
-launchd job runs. Living outside those folders needs no privacy permission at all.
-Moving this project back under `~/Documents` will break the schedule.
-
-## Channel status (verified 2026-08-11)
-| channel | state | notes |
-|---|---|---|
-| exa | working | ~36/run. Semantic search, no date filter — recency enforced in `scoreItem` |
-| rss | working | 4 QA + 3 AI feeds. `martinfowler.com/feed.atom` refuses connections, so it is out |
-| reddit | working | needs Chrome open; `--window background` keeps it from stealing focus |
-| github | working | star floor of 120, else `--sort updated` returns only fresh personal repos |
-| twitter | works, **disabled** | via OpenCLI + Chrome, not twitter-cli (0.8.5 is broken against X). Off in `collector.enabled`: ~1 keeper per 24, ~60s/run |
-
-## Email gating
-The digest is written **only** when the reach payload is <24h old *and* there are new
-items. Stale reach ⇒ no email, but `data/index.html` still updates and shows how old the
-collection is. If nothing has been mailed for 3 days a one-line heartbeat goes out so a
-broken pipeline is distinguishable from a quiet one.
+Sibling project: `job-radar`, same shape, same delivery pattern.
 
 ## Conventions
-- Edit `src/config.ts` to change what's tracked — topics, tiers, feeds, queries. No code changes.
-- Every collector is best-effort: it records a per-channel status and never fails the run.
-- Nothing personal in tracked files: no absolute home paths, no hostnames, no email
-  addresses. The plist is templated and the collector omits the machine name for
-  exactly this reason. Keep it that way — this repo is publishable.
+
+- **`src/config.ts` is the only file to edit to retune** what is tracked. If a change
+  needs code, ask whether it belongs in config instead.
+- **Every collector is best-effort.** Wrap failures, record a per-channel status, never
+  fail the run. A channel that errored must stay distinguishable from one that ran and
+  found nothing — the dashboard and the digest both rely on that.
+- **Nothing personal in tracked files.** No absolute home paths, no hostnames, no email
+  addresses, no third-party usernames. The plist is a template and the collector omits
+  both the machine name and post authors for exactly this reason. This repo is
+  publishable; keep it that way.
+- **One writer per data file.** `reach-raw.json` belongs to the Mac; the render outputs
+  and state files belong to Actions. Both sides writing the same file made every push a
+  conflict in generated content.
+- Commits use the repo-local git identity, which is the GitHub noreply address. Do not
+  add `-c user.email=...` overrides — that publishes whatever is hardcoded.
+
+## Gotchas that cost real time
+
+- **macOS TCC** blocks LaunchAgents from `~/Documents`, `~/Desktop`, `~/Downloads`. The
+  failure is `can't open input file` while the same script runs fine by hand.
+  `install-agent.sh` refuses those locations.
+- **`stripHtml` order is load-bearing.** Feeds deliver entity-encoded markup, so entities
+  must be decoded *before* tags are stripped. Decoding afterwards re-creates the tags as
+  visible text.
+- **`[[:space:]]` does not match U+00A0.** This is why a Gmail app password can look
+  clean and still be rejected — see the README's troubleshooting table.
+- **twitter-cli 0.8.5 is broken against X** (cannot build `x-client-transaction-id`;
+  every call including `whoami` returns HTTP 400). The twitter channel uses OpenCLI's
+  browser session instead, and needs no credential.
+- **Exa has no date filter.** Recency is enforced in `scoreItem`, not at query time.
+
+## Channel status (verified 2026-08-11)
+
+| channel | state | notes |
+|---|---|---|
+| exa | working | ~36/run |
+| rss | working | 4 QA + 3 AI feeds; `martinfowler.com/feed.atom` refuses connections and is out |
+| reddit | working | needs Chrome; `--window background` stops it stealing focus |
+| github | working | star floor 120, else `--sort updated` returns only fresh personal repos |
+| twitter | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |

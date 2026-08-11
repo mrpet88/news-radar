@@ -17,7 +17,8 @@ export interface Item {
   url: string;
   source: string;        // human-readable origin: feed name, subreddit, repo owner…
   summary?: string;      // short snippet, already stripped of markup
-  author?: string;
+  // No author field. Nothing rendered it, and it meant committing the usernames of
+  // ~110 third parties per run into a publishable repo for no benefit.
   publishedAt?: string;  // ISO when the origin reports one
   collectedAt: string;   // ISO — set by the collector, drives the freshness gate
   stars?: number;        // github only

@@ -91,13 +91,11 @@ function parseExaText(text) {
     const url = /^URL:\s*(\S+)$/m.exec(b)?.[1]?.trim();
     if (!title || !url) continue;
     const pub = /^Published:\s*(.+)$/m.exec(b)?.[1]?.trim();
-    const author = /^Author:\s*(.+)$/m.exec(b)?.[1]?.trim();
     const hl = b.split(/^Highlights:\s*$/m)[1] ?? "";
     out.push({
       title,
       url,
       publishedAt: pub && pub !== "N/A" ? pub : undefined,
-      author: author && author !== "N/A" ? author : undefined,
       summary: stripHtml(hl).replace(/\.\.\./g, " ").slice(0, 400),
     });
   }
@@ -177,7 +175,6 @@ async function collectReddit(lane) {
         url: url.startsWith("http") ? url : `https://reddit.com${url}`,
         source: `r/${sub}`,
         summary: stripHtml(p.selftext ?? p.body ?? "").slice(0, 400) || undefined,
-        author: p.author,
         points: p.score ?? p.ups,
         publishedAt: p.created_utc ? new Date(p.created_utc * 1000).toISOString() : undefined,
       }));
@@ -232,9 +229,8 @@ async function collectTwitter(lane) {
         channel: "twitter",
         title: text.slice(0, 200),
         url,
-        source: t.author ? `@${t.author}` : "x.com",
+        source: "x.com",
         summary: text.slice(0, 400),
-        author: t.author,
         points: t.likes,
         publishedAt: Number.isNaN(ts) ? undefined : new Date(ts).toISOString(),
       }));
@@ -264,7 +260,6 @@ function parseFeed(xml, feedName, limit) {
       url: link.trim(),
       source: feedName,
       summary: (pick(b, "description") ?? pick(b, "summary") ?? pick(b, "content"))?.slice(0, 400),
-      author: pick(b, "dc:creator") ?? pick(b, "name"),
       publishedAt: pick(b, "pubDate") ?? pick(b, "published") ?? pick(b, "updated"),
     });
   }
