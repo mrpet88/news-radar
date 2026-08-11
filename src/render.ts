@@ -111,7 +111,10 @@ export function renderHtml(
   <div class="sub">${items.length} tracked · ${newCount} new · generated ${esc(generated)}</div>
   <div class="banner${stale ? "" : " fresh"}">
     ${reach && reachAgeHours !== null
-      ? `agent-reach collected ${esc(ago(reachAgeHours))} on ${esc(reach.host)}${stale ? ` — older than the ${delivery.maxReachAgeHours}h email gate, so no digest goes out until it refreshes` : ""}`
+      // Deliberately no hostname: this page can be published to GitHub Pages, and
+      // the collecting machine's name has no business on a public URL. The email
+      // still names it — that copy only ever goes to the one recipient.
+      ? `agent-reach collected ${esc(ago(reachAgeHours))}${stale ? ` — older than the ${delivery.maxReachAgeHours}h email gate, so no digest goes out until it refreshes` : ""}`
       : "no agent-reach collection yet — run <code>node scripts/reach-collect.mjs</code>"}
   </div>
   <ul class="health">${channelBar}</ul>
