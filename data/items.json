@@ -11,21 +11,6 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
-  },
-  {
-    "id": "ec416e94667b541d",
-    "collectedAt": "2026-08-12T04:17:44.343Z",
-    "channel": "rss",
-    "title": "Quoting Claude Opus 5 system prompt",
-    "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
-    "source": "Simon Willison",
-    "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude",
-    "publishedAt": "2026-08-09T23:31:39.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 20.7,
     "isNew": false
   },
   {
@@ -41,7 +26,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e498788e61df5a93",
@@ -52,6 +37,21 @@
     "source": "Simon Willison",
     "summary": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agentic Task Completion. Muse Glimmer achieves strong success rates on full-task benchmarks including Deep",
     "publishedAt": "2026-08-10T23:56:03.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 17.3,
+    "isNew": false
+  },
+  {
+    "id": "ec416e94667b541d",
+    "collectedAt": "2026-08-12T04:17:44.343Z",
+    "channel": "rss",
+    "title": "Quoting Claude Opus 5 system prompt",
+    "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+    "source": "Simon Willison",
+    "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude",
+    "publishedAt": "2026-08-09T23:31:39.000Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -86,7 +86,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 16.2,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "0481ebb75a1e8572",
@@ -101,7 +101,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 16.2,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9538c66a2b83c411",
@@ -115,7 +115,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "24565da20cc0b688",
@@ -130,7 +130,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "05e685bbfdf8a164",
@@ -145,7 +145,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e2aecf364a44b22e",
@@ -160,7 +160,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1834986c7c56818d",
@@ -227,21 +227,6 @@
     "isNew": false
   },
   {
-    "id": "27146b6e231b6f1c",
-    "collectedAt": "2026-08-12T04:17:44.343Z",
-    "channel": "reddit",
-    "title": "Vibecoded applications",
-    "url": "https://www.reddit.com/r/softwaretesting/comments/1vg97kx/vibecoded_applications/",
-    "source": "r/softwaretesting",
-    "summary": "I know this is a super vague title, but wanted to vent here a bit. I've been doing testing a long time, and this one of the most frustrating projects I've worked on. We have a vibe coded application written by 5 different developer's claude instance, we have claude written acceptance criteria, we have \"requirements\" that are written one time, but never updated, we have a really outdated design. We",
-    "publishedAt": "2026-08-05T14:38:50.000Z",
-    "laneHint": "qa",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "cf0c73d5ad2a2e63",
     "collectedAt": "2026-08-12T04:17:44.343Z",
     "channel": "rss",
@@ -284,7 +269,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "29c15a881bb48d8e",
@@ -299,7 +284,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a653a9da5c5a66a6",
@@ -314,7 +299,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "8218db36c5f48771",
@@ -329,7 +314,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "867950f7ae93d244",
@@ -344,6 +329,6 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   }
 ]
