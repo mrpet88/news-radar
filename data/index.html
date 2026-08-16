@@ -46,114 +46,177 @@
   .empty{margin-top:24px;color:var(--mut);font-size:14px}
 </style></head><body><div class="wrap">
   <h1>News Radar</h1>
-  <div class="sub">19 tracked · 0 new · generated 16 Aug 2026, 12:35 CEST</div>
-  <div class="banner">
-    agent-reach collected 4d ago — older than the 24h email gate, so no digest goes out until it refreshes
+  <div class="sub">30 tracked · 19 new · generated 16 Aug 2026, 13:00 CEST</div>
+  <div class="banner fresh">
+    agent-reach collected 2 min ago
   </div>
-  <ul class="health"><li class="bad"><b>exa</b> <span>timed out after the channel budget (Command failed: mcporter call exa.web_search_exa query=recently published blog post about software test strategy or quality engineering leadership numResults=6 --output json --timeout 60000)</span></li><li class="ok"><b>github</b> <span>10 items · 1387.2s</span></li><li class="ok"><b>rss</b> <span>78 items · 17.5s</span></li><li class="ok"><b>reddit</b> <span>32 items · 61.3s</span></li><li class="skip"><b>twitter</b> <span>disabled in collector.enabled</span></li></ul>
+  <ul class="health"><li class="ok"><b>exa</b> <span>36 items · 21.7s</span></li><li class="ok"><b>github</b> <span>25 items · 3.6s</span></li><li class="ok"><b>rss</b> <span>78 items · 6.1s</span></li><li class="ok"><b>reddit</b> <span>16 items · 30.4s</span></li><li class="skip"><b>twitter</b> <span>disabled in collector.enabled</span></li></ul>
   <div class="filters">
     <button class="chip" data-filter="new" data-value="1">New only</button>
-    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>7</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>12</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>4</span></button><button class="chip alt" data-filter="channel" data-value="reddit">reddit <span>10</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>5</span></button>
+    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>8</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>22</span></button><button class="chip alt" data-filter="channel" data-value="exa">exa <span>7</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>17</span></button><button class="chip alt" data-filter="channel" data-value="reddit">reddit <span>1</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>5</span></button>
   </div>
   <div id="list">
-    <article class="card" data-lane="ai" data-channel="rss" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="exa" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/" target="_blank" rel="noopener">WorldClaw Agentic 3D open-world generation at scale</a>
-        
+        <a class="title" href="https://www.scmp.com/tech/big-tech/article/3364082/launch-deepseeks-harness-marks-its-strategic-pivot-towards-autonomous-agentic-ai" target="_blank" rel="noopener">Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">Hacker News · 11 Aug <span class="ch">rss</span></div>
-      
+      <div class="meta">scmp.com · 14 Aug <span class="ch">exa</span></div>
+      <p class="sum">Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post   # Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI   ### With the launch of Harness, China’s DeepSeek continues to build the foundational digital scaf…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="exa" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://startdebugging.net/2026/08/mcp-server-design-for-a-large-internal-api-surface/" target="_blank" rel="noopener">MCP Server Design for a Large Internal API Surface - Start Debugging</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">startdebugging.net · 14 Aug <span class="ch">exa</span></div>
+      <p class="sum">MCP Server Design for a Large Internal API Surface - Start Debugging # MCP Server Design for a Large Internal API Surface   Mapping 200 internal REST endpoints to 200 MCP tools puts 200 KB of JSON schema in front of every request. The 2026-07-28 spec also made the usual escape hatch illegal: tools/l…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="exa" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://dev.to/hd_gregory/i-ran-4200-trials-testing-llm-agent-reliability-heres-what-broke-4dek" target="_blank" rel="noopener">I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">dev.to · 15 Aug <span class="ch">exa</span></div>
+      <p class="sum"># I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community   I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community   # I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke.   We know when an AI agent gets a response from a too…</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="exa" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://dev.to/qaguardian/from-flaky-scripts-to-stable-coverage-a-practical-reliability-playbook-2ko0" target="_blank" rel="noopener">From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">dev.to · 14 Aug <span class="ch">exa</span></div>
+      <p class="sum"># From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community   From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community   Posted on Aug 14 • Originally published at [qaguardian.com](https://qaguardian.com/blog/from-flaky-to-stable)   # From…</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="exa" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://www.tricentis.com/blog/test-generation-got-free-test-governance-didnt" target="_blank" rel="noopener">Why AI test generation isn’t a testing strategy</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">tricentis.com · 12 Aug <span class="ch">exa</span></div>
+      <p class="sum">Why AI test generation isn’t a testing strategy   AI tools like Claude Code and Playwright have made test generation dramatically faster, but faster test generation isn’t a testing strategy. See why enterprise quality still needs the governance, traceability, and technology coverage no general-purpo…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://simonwillison.net/2026/Aug/13/llm-gemini/" target="_blank" rel="noopener">llm-gemini 0.33</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">Simon Willison · 13 Aug <span class="ch">rss</span></div>
+      <p class="sum">Release: llm-gemini 0.33 It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . The plugin is also upgraded…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://simonwillison.net/2026/Aug/12/florian-herrengt/" target="_blank" rel="noopener">Quoting Florian Herrengt</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">Simon Willison · 12 Aug <span class="ch">rss</span></div>
+      <p class="sum">But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. &quot;So where does the data come from?&quot; &quot;Hmm... actually …</p>
     </article>
     <article class="card" data-lane="ai" data-channel="rss" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything" target="_blank" rel="noopener">Quoting Claude Opus 5 system prompt</a>
-        
-      </div>
-      <div class="meta">Simon Willison · 09 Aug <span class="ch">rss</span></div>
-      <p class="sum">Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthro…</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="rss" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything" target="_blank" rel="noopener">Stealing Reasoning Traces from Proprietary LLM APIs</a>
+        <a class="title" href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/" target="_blank" rel="noopener">Stealing Reasoning Traces from Proprietary LLM APIs</a>
         
       </div>
       <div class="meta">Simon Willison · 11 Aug <span class="ch">rss</span></div>
       <p class="sum">Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models. We take a trace produced by a frontier model,…</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="rss" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="reddit" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything" target="_blank" rel="noopener">Introducing Muse Glimmer</a>
-        
+        <a class="title" href="https://www.reddit.com/r/MachineLearning/comments/1vpa5cv/survival_of_the_fitted_qwen3627bs_jacobian_lens/" target="_blank" rel="noopener">Survival of the Fitted: Qwen3.6-27B’s Jacobian lens reads and steers Qwen3.8-27B with zero refitting [R]</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">Simon Willison · 10 Aug <span class="ch">rss</span></div>
-      <p class="sum">Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agenti…</p>
+      <div class="meta">r/MachineLearning · 15 Aug <span class="ch">reddit</span></div>
+      <p class="sum">Interpretability lenses get fitted to one exact checkpoint, and as far as I can tell nobody had tested what a version update does to one. So this was my question: *when a model line updates, does the fitted instrument survive, or do you refit every release?* I tested the published Jacobian lens for …</p>
     </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="qa" data-channel="exa" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1vlplci/ph_looking_for_qa_leadsupervisor_quality_manager/" target="_blank" rel="noopener">[PH] Looking for QA Lead/Supervisor, Quality Manager, or Operations Team Lead Opportunities (Remote/Hybrid)</a>
-        
+        <a class="title" href="https://www.applause.com/blog/defining-the-10x-qa-team/" target="_blank" rel="noopener">Building the 10X QA team - Applause</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/QualityAssurance · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Hi everyone! I’m currently looking for new opportunities in \\\*\\\*Quality Assurance\\\*\\\* and would appreciate any leads or referrals. I’m open to the following roles: Quality Assurance Analyst (Senior) Quality Assurance Lead / Supervisor Quality Manager Operations Team Lead \\\*\\\*Preferred se…</p>
+      <div class="meta">applause.com · 13 Aug <span class="ch">exa</span></div>
+      <p class="sum">Building the 10X QA team - Applause   # The 10X QA Team: How to Effectively Scale Your QA Strategy   The agentic SDLC is clearly on the rise. But as organizations dive headfirst into AI and automation initiatives, ensuring that sufficient testing methods are in place to handle increased application …</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/MachineLearning/comments/1vllvmn/we_built_the_agentic_world_cup_llms_that_compete/" target="_blank" rel="noopener">We built the Agentic World Cup - LLMs that compete in 1v1 Soccer. [P]</a>
-        
+        <a class="title" href="https://github.com/bilieebiliee1-design/SOMCP" target="_blank" rel="noopener">bilieebiliee1-design/SOMCP — Android-native SO reverse engineering MCP server</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/MachineLearning · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Hey everyone - we've been building something particularly relevant to ML at large - The [Agentic World Cup](https://agenticworldcup.ai/) \- a platform where **Agents compete in sports**. As you know, today's Agents can **code**, do **math**, and **write** \- but they aren't nearly as fluent in **spo…</p>
+      <div class="meta">bilieebiliee1-design · ★ 131 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">Android-native SO reverse engineering MCP server</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vm3fvr/what_unique_custom_qol_upgrades_have_you_given/" target="_blank" rel="noopener">What unique, custom QOL upgrades have you given your local agents?</a>
+        <a class="title" href="https://github.com/HKUDS/nanobot" target="_blank" rel="noopener">HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps</a>
         
       </div>
-      <div class="meta">r/LocalLLaMA · 12 Aug <span class="ch">reddit</span></div>
-      <p class="sum">&gt;**Warning**: Kinda long post. If you don't like reading, please skip for your own sanity. Also, I've got nothing to sell, just a tinkerer, so I just want to share ideas and learn from you guys too. When I recently started my agentic journey, I hit a number of walls, the first being tool use eating …</p>
+      <div class="meta">HKUDS · ★ 47058 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vm3cej/is_the_future_of_ai_selling_hardware_for_open/" target="_blank" rel="noopener">Is the future of AI selling hardware for Open Source/Models?</a>
+        <a class="title" href="https://github.com/omnigent-ai/omnigent" target="_blank" rel="noopener">omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie</a>
         
       </div>
-      <div class="meta">r/LocalLLaMA · 12 Aug <span class="ch">reddit</span></div>
-      <p class="sum">I’m not super knowledgeable of the entire AI industry, but as we see this industry grow and the Cold War that is happening between the US and China on AI development, I can’t help but notice what US companies are backing open source vs those not in support. Those encouraging Open Source/Weight model…</p>
+      <div class="meta">omnigent-ai · ★ 8906 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1vlbnwk/do_i_have_enough_experience_for_top_product/" target="_blank" rel="noopener">Do I have enough experience for top product companies</a>
-        
+        <a class="title" href="https://github.com/spences10/mcp-omnisearch" target="_blank" rel="noopener">spences10/mcp-omnisearch — 🔍 A Model Context Protocol (MCP) server providing unified access to multiple search engines (Tavily, Brave, Kagi, Exa), AI tools (Kagi FastGPT, Exa, Linkup), and content ex</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/QualityAssurance · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">I am a QA with 5 YOE and I work in a mid level product company and we have data intensive testing. I want to know if I am good enough for top product companies as an SDET. Here is what I have done so far. 1) Built custom tools to automate tests( not selenium). Instead of API we use XML here and I bu…</p>
+      <div class="meta">spences10 · ★ 342 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">🔍 A Model Context Protocol (MCP) server providing unified access to multiple search engines (Tavily, Brave, Kagi, Exa), AI tools (Kagi FastGPT, Exa, Linkup), and content extraction services (Firecrawl, Tavily, Kagi). Includes GitHub search. All through a single interface.</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="rss" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0" target="_blank" rel="noopener">OpenAI’s head of ethics leaves less than a year after joining</a>
-        
+        <a class="title" href="https://github.com/t8y2/dbx" target="_blank" rel="noopener">t8y2/dbx — 20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, deskto</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">Hacker News · 11 Aug <span class="ch">rss</span></div>
-      
+      <div class="meta">t8y2 · ★ 15061 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">20 MB lightweight cross-platform database client for 70+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 70+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 M…</p>
     </article>
-    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://github.com/pact-foundation/pact-jvm" target="_blank" rel="noopener">pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s</a>
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/openonion/connectonion" target="_blank" rel="noopener">openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. </a>
         
       </div>
-      <div class="meta">pact-foundation · ★ 1140 · 12 Aug <span class="ch">github</span></div>
-      <p class="sum">JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.</p>
+      <div class="meta">openonion · ★ 1372 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">The Best AI Agent Framework for Agent Collaboration.</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/marc-shade/world-intel-mcp" target="_blank" rel="noopener">marc-shade/world-intel-mcp — 100+ tool MCP server for real-time global intelligence — markets, FX, bonds, earnings, SEC filings, conflict, military, cyber, climate, news, company enrichment, and 30+ d</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">marc-shade · ★ 248 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">100+ tool MCP server for real-time global intelligence — markets, FX, bonds, earnings, SEC filings, conflict, military, cyber, climate, news, company enrichment, and 30+ domains. Live Leaflet dashboard with 20 map layers, SSE streaming, and AI situation briefs.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/langwatch/langwatch" target="_blank" rel="noopener">langwatch/langwatch — The platform for LLM evaluations and AI agent testing</a>
+        
+      </div>
+      <div class="meta">langwatch · ★ 3492 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">The platform for LLM evaluations and AI agent testing</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -161,8 +224,44 @@
         <a class="title" href="https://github.com/speakeasy-api/speakeasy" target="_blank" rel="noopener">speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. </a>
         
       </div>
-      <div class="meta">speakeasy-api · ★ 432 · 11 Aug <span class="ch">github</span></div>
+      <div class="meta">speakeasy-api · ★ 434 · 16 Aug <span class="ch">github</span></div>
       <p class="sum">Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native.</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/kandada/fastclaw" target="_blank" rel="noopener">kandada/fastclaw — A python-based light but strong lobster. A lightweight but powerful AI Agent framework in Python, with multi-channel support, tool calling, cron scheduling and streaming output</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">kandada · ★ 174 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">A python-based light but strong lobster. A lightweight but powerful AI Agent framework in Python, with multi-channel support, tool calling, cron scheduling and streaming output</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia" target="_blank" rel="noopener">tornikebolokadze1-cyber/awesome-ai-pulse-georgia — A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">tornikebolokadze1-cyber · ★ 133 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia</p>
+    </article>
+    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://github.com/pact-foundation/pact-js-core" target="_blank" rel="noopener">pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.</a>
+        
+      </div>
+      <div class="meta">pact-foundation · ★ 152 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/open-compass/opencompass" target="_blank" rel="noopener">open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets.</a>
+        
+      </div>
+      <div class="meta">open-compass · ★ 7307 · 15 Aug <span class="ch">github</span></div>
+      <p class="sum">OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets.</p>
     </article>
     <article class="card" data-lane="qa" data-channel="github" data-new="0">
       <div class="top">
@@ -170,8 +269,17 @@
         <a class="title" href="https://github.com/pact-foundation/pact-python" target="_blank" rel="noopener">pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for</a>
         
       </div>
-      <div class="meta">pact-foundation · ★ 677 · 11 Aug <span class="ch">github</span></div>
+      <div class="meta">pact-foundation · ★ 678 · 15 Aug <span class="ch">github</span></div>
       <p class="sum">Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.</p>
+    </article>
+    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://github.com/ahx/openapi_first" target="_blank" rel="noopener">ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.</a>
+        
+      </div>
+      <div class="meta">ahx · ★ 219 · 15 Aug <span class="ch">github</span></div>
+      <p class="sum">openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.</p>
     </article>
     <article class="card" data-lane="qa" data-channel="github" data-new="0">
       <div class="top">
@@ -179,53 +287,44 @@
         <a class="title" href="https://github.com/pact-foundation/pact-js" target="_blank" rel="noopener">pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</a>
         
       </div>
-      <div class="meta">pact-foundation · ★ 1795 · 11 Aug <span class="ch">github</span></div>
+      <div class="meta">pact-foundation · ★ 1799 · 13 Aug <span class="ch">github</span></div>
       <p class="sum">JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vm4qrs/moe_task_time_comparison/" target="_blank" rel="noopener">MoE task time comparison</a>
-        
+        <a class="title" href="https://simonwillison.net/2026/Aug/15/cors-chat/" target="_blank" rel="noopener">CORS Chat</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/LocalLLaMA · 12 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Artificial analysis shows nvidia lightning about \~2.5x faster than Qwen3.6 35b on a per task basis. However, qwen is much more intelligent. In practice, I've found lightning to answer more quickly when reasoning is less necessary than qwen. Qwen tends to think for a set amount of time regardless of…</p>
+      <div class="meta">Simon Willison · 15 Aug <span class="ch">rss</span></div>
+      <p class="sum">Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and…</p>
     </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1vlzpdb/i_tested_whether_27b_q8_or_35b_q6_is_the_better/" target="_blank" rel="noopener">I tested whether 27B Q8 or 35B Q6 is the better coding model on a 32 GB GPU. The more interesting result: neither was reliable enough to be its own final checker.</a>
-        
+        <a class="title" href="https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/" target="_blank" rel="noopener">Write your first prompt with the GitHub Copilot app</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/LocalLLaMA · 12 Aug <span class="ch">reddit</span></div>
-      <p class="sum">(**EDIT: For specificity, the “Llama 70B Q4” row in the table is Meta Llama 3 70B Instruct Q4\_K\_M. The separate “Llama 3.3 70B Q4” row is Llama 3.3 70B Instruct Q4\_K\_M.)** I started this because of the recurring question around Qwen 27B vs 35B on a single 32 GB card. In particular, some people r…</p>
+      <div class="meta">GitHub Blog · 12 Aug <span class="ch">rss</span></div>
+      <p class="sum">Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence. The post Write your first prompt with the GitHub Copilot app appeared first on The GitHub Blog .</p>
     </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/Q00/ouroboros" target="_blank" rel="noopener">Q00/ouroboros — Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged </a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">Q00 · ★ 5447 · 16 Aug <span class="ch">github</span></div>
+      <p class="sum">Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged evaluation, budgeted evolution loop. MCP server, 13 runtimes: Claude Code, Codex CLI, Gemini CLI, OpenCode, Copilot,…</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="exa" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1vlsaie/2_yoe_in_qa_automation_should_i_move_to_sdet_or/" target="_blank" rel="noopener">2 YOE in QA Automation, should I move to SDET or try for SDE?</a>
-        
+        <a class="title" href="https://shopify.engineering/mobile-e2e-testing" target="_blank" rel="noopener">How we raised mobile end-to-end test stability to 98% (2026) - Shopify</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">r/QualityAssurance · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Hey everyone, I’m currently at around **2 YOE in QA** and I’m a bit confused about which direction I should take from here. Would really appreciate advice from people who have been in the industry for a while. My current experience is in QA(automation and manual). I work with **Java, Selenium, Playw…</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1vlpep6/hiring_qa_automation_sdet_engineer_remote_pakistan/" target="_blank" rel="noopener">[Hiring] QA Automation / SDET Engineer | Remote, Pakistan</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Hi everyone, We're looking for an experienced QA Automation / Software Development Engineer in Test (SDET) based in Pakistan for a long-term remote healthcare software project. Commitment: 4–6 hours/day Compensation: $1,000 USD/month Location: Pakistan — Remote Experience: 5+ years preferred **What …</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1vlggmm/looking_for_qasdet_referrals_4_yoe/" target="_blank" rel="noopener">Looking for QA/SDET Referrals | 4 YOE</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 11 Aug <span class="ch">reddit</span></div>
-      <p class="sum">Hi everyone! I’m looking for QA Automation/SDET opportunities with 4 years of experience in Selenium, Java, REST Assured, TestNG, SQL, Jenkins &amp; CI/CD, along with UI, API and E2E testing. 📍 Open to: Gurgaon | Hyderabad | Bangalore | Pune | Noida Please DM if you have any relevant openings or can pr…</p>
+      <div class="meta">shopify.engineering · 12 Aug <span class="ch">exa</span></div>
+      <p class="sum">How we raised mobile end-to-end test stability to 98% (2026) - Shopify   # How we raised mobile end-to-end test stability to 98%   We rebuilt our mobile end-to-end testing framework with a strict API and computer vision, raising test stability drastically.   Published on Aug 12, 2   A core part of S…</p>
     </article></div>
 </div>
 <script>
