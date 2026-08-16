@@ -29,21 +29,6 @@
     "isNew": false
   },
   {
-    "id": "72e4e10fc59cbf0a",
-    "collectedAt": "2026-08-12T04:17:44.343Z",
-    "channel": "rss",
-    "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-    "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
-    "source": "Simon Willison",
-    "summary": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans Anthropic are really confident in Claude Code's auto mode , to the point that they are making it the default setting for new sessions in most Claude Code plans starting on August 14th. This was one of the topics discussed in our Fireside Chat with Cat Wu and Thariq Shihipar at the AI Engineer World’s Fair last month. I asked",
-    "publishedAt": "2026-08-08T22:36:03.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 17.3,
-    "isNew": false
-  },
-  {
     "id": "50330b9ca8128a78",
     "collectedAt": "2026-08-12T04:17:44.343Z",
     "channel": "rss",
@@ -156,21 +141,6 @@
     "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
     "source": "Hacker News",
     "publishedAt": "2026-08-11T12:23:07.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 10.4,
-    "isNew": false
-  },
-  {
-    "id": "cf0c73d5ad2a2e63",
-    "collectedAt": "2026-08-12T04:17:44.343Z",
-    "channel": "rss",
-    "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-    "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
-    "source": "Simon Willison",
-    "summary": "My comment on Now we have a timeline of the OpenAI accidental attack against Hugging Face &mdash; Hacker News. I think one of the most interesting details here might be tucked away in that first bulletin point: May 7: OpenAI starts a new training run for an experimental, unreleased model. (Do they mean an evaluation run? They say training run in the video, and later mention a “reward signal to jud",
-    "publishedAt": "2026-08-08T14:06:41.000Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "adjacent",
