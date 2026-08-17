@@ -1,35 +1,5 @@
 [
   {
-    "id": "47be70b6a21ceb77",
-    "collectedAt": "2026-08-16T10:58:15.101Z",
-    "channel": "exa",
-    "source": "scmp.com",
-    "title": "Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post",
-    "url": "https://www.scmp.com/tech/big-tech/article/3364082/launch-deepseeks-harness-marks-its-strategic-pivot-towards-autonomous-agentic-ai",
-    "publishedAt": "2026-08-14T00:00:00.000Z",
-    "summary": "Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post   # Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI   ### With the launch of Harness, China’s DeepSeek continues to build the foundational digital scaffolding for autonomous AI agents   Chinese artificial intelligence company DeepSeek is venturing int",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 18,
-    "isNew": true
-  },
-  {
-    "id": "44cb68e3d221fc84",
-    "collectedAt": "2026-08-16T10:58:15.101Z",
-    "channel": "exa",
-    "source": "startdebugging.net",
-    "title": "MCP Server Design for a Large Internal API Surface - Start Debugging",
-    "url": "https://startdebugging.net/2026/08/mcp-server-design-for-a-large-internal-api-surface/",
-    "publishedAt": "2026-08-14T00:00:00.000Z",
-    "summary": "MCP Server Design for a Large Internal API Surface - Start Debugging # MCP Server Design for a Large Internal API Surface   Mapping 200 internal REST endpoints to 200 MCP tools puts 200 KB of JSON schema in front of every request. The 2026-07-28 spec also made the usual escape hatch illegal: tools/list MUST NOT vary per-connection, so per-session dynamic registration is gone. Here are the three le",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 18,
-    "isNew": true
-  },
-  {
     "id": "5f24ac59794f4df2",
     "collectedAt": "2026-08-16T10:58:15.101Z",
     "channel": "exa",
@@ -42,7 +12,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a85028b2c9a0b4a3",
@@ -57,7 +27,37 @@
     "lane": "qa",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "47be70b6a21ceb77",
+    "collectedAt": "2026-08-16T10:58:15.101Z",
+    "channel": "exa",
+    "source": "scmp.com",
+    "title": "Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post",
+    "url": "https://www.scmp.com/tech/big-tech/article/3364082/launch-deepseeks-harness-marks-its-strategic-pivot-towards-autonomous-agentic-ai",
+    "publishedAt": "2026-08-14T00:00:00.000Z",
+    "summary": "Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI | South China Morning Post   # Launch of DeepSeek’s Harness marks its strategic pivot towards autonomous agentic AI   ### With the launch of Harness, China’s DeepSeek continues to build the foundational digital scaffolding for autonomous AI agents   Chinese artificial intelligence company DeepSeek is venturing int",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
+  },
+  {
+    "id": "44cb68e3d221fc84",
+    "collectedAt": "2026-08-16T10:58:15.101Z",
+    "channel": "exa",
+    "source": "startdebugging.net",
+    "title": "MCP Server Design for a Large Internal API Surface - Start Debugging",
+    "url": "https://startdebugging.net/2026/08/mcp-server-design-for-a-large-internal-api-surface/",
+    "publishedAt": "2026-08-14T00:00:00.000Z",
+    "summary": "MCP Server Design for a Large Internal API Surface - Start Debugging # MCP Server Design for a Large Internal API Surface   Mapping 200 internal REST endpoints to 200 MCP tools puts 200 KB of JSON schema in front of every request. The 2026-07-28 spec also made the usual escape hatch illegal: tools/list MUST NOT vary per-connection, so per-session dynamic registration is gone. Here are the three le",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
   },
   {
     "id": "7cb41d23a24e6d91",
@@ -72,22 +72,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 15,
-    "isNew": true
-  },
-  {
-    "id": "4d8529a784f1df99",
-    "collectedAt": "2026-08-16T10:58:15.101Z",
-    "channel": "rss",
-    "title": "llm-gemini 0.33",
-    "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
-    "source": "Simon Willison",
-    "summary": "Release: llm-gemini 0.33 It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . The plugin is also upgraded for compatibility with LLM 0.32, which means you can now see reasoning traces and you can also enab",
-    "publishedAt": "2026-08-13T19:37:34.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7d4dc9161b4025db",
@@ -102,7 +87,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "50330b9ca8128a78",
@@ -132,7 +117,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a67de14a3f13d7bf",
@@ -147,7 +132,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "469a985fc6e083e9",
@@ -163,7 +148,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7d7df05527809e15",
@@ -211,7 +196,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fbc91648d10da434",
@@ -227,7 +212,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6e22fd80accc6b8b",
@@ -259,7 +244,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "046061c2f25e12a7",
@@ -307,7 +292,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "29022dba62ecc59b",
@@ -323,7 +308,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9ab34c2f4468b3ee",
@@ -390,22 +375,6 @@
     "isNew": false
   },
   {
-    "id": "a8a354829593c69c",
-    "collectedAt": "2026-08-16T10:58:15.101Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "url": "https://github.com/pact-foundation/pact-js",
-    "source": "pact-foundation",
-    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "stars": 1799,
-    "publishedAt": "2026-08-13T22:13:54Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "e97f46144fd16555",
     "collectedAt": "2026-08-16T10:58:15.101Z",
     "channel": "rss",
@@ -418,7 +387,22 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "4d8529a784f1df99",
+    "collectedAt": "2026-08-16T10:58:15.101Z",
+    "channel": "rss",
+    "title": "llm-gemini 0.33",
+    "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+    "source": "Simon Willison",
+    "summary": "Release: llm-gemini 0.33 It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . The plugin is also upgraded for compatibility with LLM 0.32, which means you can now see reasoning traces and you can also enab",
+    "publishedAt": "2026-08-13T19:37:34.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "adjacent",
+    "score": 10.4,
+    "isNew": false
   },
   {
     "id": "a284645e018bbd5e",
@@ -433,7 +417,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "94f5a0008aefb0ad",
@@ -449,7 +433,23 @@
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "a8a354829593c69c",
+    "collectedAt": "2026-08-16T10:58:15.101Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "url": "https://github.com/pact-foundation/pact-js",
+    "source": "pact-foundation",
+    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "stars": 1799,
+    "publishedAt": "2026-08-13T22:13:54Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
   },
   {
     "id": "81fb0721e9139288",
@@ -464,6 +464,6 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 6,
-    "isNew": true
+    "isNew": false
   }
 ]
