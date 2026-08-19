@@ -11,7 +11,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "c9ebdf57e8f8137a",
@@ -26,7 +26,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 18,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "de754e0552677308",
@@ -41,22 +41,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 18,
-    "isNew": true
-  },
-  {
-    "id": "cbe409b2504500ef",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "exa",
-    "source": "aicompetence.org",
-    "title": "How To Build Reliable AI Agents With Tools And Evaluations",
-    "url": "https://aicompetence.org/reliable-ai-agents-with-tools-and-evaluations/",
-    "publishedAt": "2026-08-16T00:00:00.000Z",
-    "summary": "How To Build Reliable AI Agents With Tools And Evaluations   # How to Build Reliable AI Agents with Tools and Evaluations   By Victoria Reed / August 16, 2026 A tool-using AI agent is not reliable because it produces convincing […]   A tool-using AI agent is not reliable because it produces convincing answers. It is reliable when the system can determine whether the agent understood the task, chos",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "47be70b6a21ceb77",
@@ -89,34 +74,19 @@
     "isNew": false
   },
   {
-    "id": "7cb41d23a24e6d91",
+    "id": "cbe409b2504500ef",
     "collectedAt": "2026-08-17T09:58:17.539Z",
     "channel": "exa",
-    "source": "tricentis.com",
-    "title": "Why AI test generation isn’t a testing strategy",
-    "url": "https://www.tricentis.com/blog/test-generation-got-free-test-governance-didnt",
-    "publishedAt": "2026-08-12T00:00:00.000Z",
-    "summary": "Why AI test generation isn’t a testing strategy   AI tools like Claude Code and Playwright have made test generation dramatically faster, but faster test generation isn’t a testing strategy. See why enterprise quality still needs the governance, traceability, and technology coverage no general-purpose coding agent provides. Aug. 12, 2026   - AI coding tools like Claude Code and Playwright have mad",
-    "laneHint": "qa",
-    "lane": "qa",
+    "source": "aicompetence.org",
+    "title": "How To Build Reliable AI Agents With Tools And Evaluations",
+    "url": "https://aicompetence.org/reliable-ai-agents-with-tools-and-evaluations/",
+    "publishedAt": "2026-08-16T00:00:00.000Z",
+    "summary": "How To Build Reliable AI Agents With Tools And Evaluations   # How to Build Reliable AI Agents with Tools and Evaluations   By Victoria Reed / August 16, 2026 A tool-using AI agent is not reliable because it produces convincing […]   A tool-using AI agent is not reliable because it produces convincing answers. It is reliable when the system can determine whether the agent understood the task, chos",
+    "laneHint": "ai",
+    "lane": "ai",
     "tier": "core",
-    "score": 15,
+    "score": 12,
     "isNew": false
-  },
-  {
-    "id": "791efc60b0cb2c97",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "reddit",
-    "title": "QA feedback wanted for a complete open-source production readiness checklist",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp9ika/qa_feedback_wanted_for_a_complete_opensource/",
-    "source": "r/QualityAssurance",
-    "summary": "Hey everyone! I’m building an open-source production readiness checklist with extensive testing and quality coverage. I would appreciate feedback on test strategy, integration testing, acceptance testing, regression, test environments, test data, exploratory testing and nonfunctional testing. If anything is missing, unclear or unrealistic, please let me know. Corrections and pull requests are very",
-    "publishedAt": "2026-08-15T17:58:52.000Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 13.5,
-    "isNew": true
   },
   {
     "id": "5f24ac59794f4df2",
@@ -162,7 +132,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "beec6727f3ebe294",
@@ -178,7 +148,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9b24d8c6c6fcca45",
@@ -226,7 +196,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a717c9706d2ce5bc",
@@ -242,7 +212,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "fd467ee97b77dbf7",
@@ -322,7 +292,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "d8837e86c5a41ed9",
@@ -389,15 +359,14 @@
     "isNew": false
   },
   {
-    "id": "f2deacd462e1ba8c",
+    "id": "791efc60b0cb2c97",
     "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "github",
-    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "url": "https://github.com/ahx/openapi_first",
-    "source": "ahx",
-    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "stars": 219,
-    "publishedAt": "2026-08-15T08:59:00Z",
+    "channel": "reddit",
+    "title": "QA feedback wanted for a complete open-source production readiness checklist",
+    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp9ika/qa_feedback_wanted_for_a_complete_opensource/",
+    "source": "r/QualityAssurance",
+    "summary": "Hey everyone! I’m building an open-source production readiness checklist with extensive testing and quality coverage. I would appreciate feedback on test strategy, integration testing, acceptance testing, regression, test environments, test data, exploratory testing and nonfunctional testing. If anything is missing, unclear or unrealistic, please let me know. Corrections and pull requests are very",
+    "publishedAt": "2026-08-15T17:58:52.000Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "core",
@@ -417,7 +386,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "901a2e5ba68568eb",
@@ -432,21 +401,6 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "e97f46144fd16555",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "rss",
-    "title": "CORS Chat",
-    "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-    "source": "Simon Willison",
-    "summary": "Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted in the browser and can be exported as c",
-    "publishedAt": "2026-08-15T14:49:54.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 10.4,
     "isNew": false
   },
   {
@@ -480,6 +434,22 @@
     "isNew": false
   },
   {
+    "id": "f2deacd462e1ba8c",
+    "collectedAt": "2026-08-17T09:58:17.539Z",
+    "channel": "github",
+    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
+    "url": "https://github.com/ahx/openapi_first",
+    "source": "ahx",
+    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
+    "stars": 219,
+    "publishedAt": "2026-08-15T08:59:00Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
+  },
+  {
     "id": "4f10cae13686a6eb",
     "collectedAt": "2026-08-17T09:58:17.539Z",
     "channel": "reddit",
@@ -492,7 +462,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "67ae5a4d8b0aca45",
@@ -507,7 +477,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "ae9453c0c9abca7b",
@@ -522,22 +492,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
-  },
-  {
-    "id": "8328e2381d966f88",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "reddit",
-    "title": "~2 yoe . I would really appreciate if any one can refer me for SDET/ QA role in Bangalore.",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp3201/2_yoe_i_would_really_appreciate_if_any_one_can/",
-    "source": "r/QualityAssurance",
-    "summary": "SKILLS • Languages: Java, Python, JavaScript/TypeScript, SQL •Automation: Selenium, Playwright, TestNG, Cucumber. • Testing: UI Automation, Regression Testing, Functional Testing, Test Case Design, Defect Management, STLC • CI/CD & Tools: Jenkins, GitHub Actions, Git, Jira, Maven. •API Testing: Postman. EXPERIENCE Programmer Analyst – Cognizant, Bangalore (Sep 2025 – Present) •Developed end-to-end",
-    "publishedAt": "2026-08-15T13:35:04.000Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "adjacent",
-    "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "8dd35c08e08aabb1",
@@ -551,21 +506,36 @@
     "lane": "qa",
     "tier": "core",
     "score": 7,
-    "isNew": true
+    "isNew": false
   },
   {
-    "id": "81fb0721e9139288",
+    "id": "e97f46144fd16555",
     "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "exa",
-    "source": "shopify.engineering",
-    "title": "How we raised mobile end-to-end test stability to 98% (2026) - Shopify",
-    "url": "https://shopify.engineering/mobile-e2e-testing",
-    "publishedAt": "2026-08-12T00:00:00.000Z",
-    "summary": "How we raised mobile end-to-end test stability to 98% (2026) - Shopify   # How we raised mobile end-to-end test stability to 98%   We rebuilt our mobile end-to-end testing framework with a strict API and computer vision, raising test stability drastically.   Published on Aug 12, 2   A core part of Shopify’s DNA is that we make sure to foster a QA culture. For our mobile apps, that culture depends",
+    "channel": "rss",
+    "title": "CORS Chat",
+    "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+    "source": "Simon Willison",
+    "summary": "Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted in the browser and can be exported as c",
+    "publishedAt": "2026-08-15T14:49:54.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "adjacent",
+    "score": 6.9,
+    "isNew": false
+  },
+  {
+    "id": "8328e2381d966f88",
+    "collectedAt": "2026-08-17T09:58:17.539Z",
+    "channel": "reddit",
+    "title": "~2 yoe . I would really appreciate if any one can refer me for SDET/ QA role in Bangalore.",
+    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp3201/2_yoe_i_would_really_appreciate_if_any_one_can/",
+    "source": "r/QualityAssurance",
+    "summary": "SKILLS • Languages: Java, Python, JavaScript/TypeScript, SQL •Automation: Selenium, Playwright, TestNG, Cucumber. • Testing: UI Automation, Regression Testing, Functional Testing, Test Case Design, Defect Management, STLC • CI/CD & Tools: Jenkins, GitHub Actions, Git, Jira, Maven. •API Testing: Postman. EXPERIENCE Programmer Analyst – Cognizant, Bangalore (Sep 2025 – Present) •Developed end-to-end",
+    "publishedAt": "2026-08-15T13:35:04.000Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
-    "score": 6,
+    "score": 5.4,
     "isNew": false
   }
 ]
