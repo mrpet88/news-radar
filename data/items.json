@@ -59,36 +59,6 @@
     "isNew": false
   },
   {
-    "id": "5f24ac59794f4df2",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "exa",
-    "source": "dev.to",
-    "title": "I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community",
-    "url": "https://dev.to/hd_gregory/i-ran-4200-trials-testing-llm-agent-reliability-heres-what-broke-4dek",
-    "publishedAt": "2026-08-15T01:11:38.000Z",
-    "summary": "# I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community   I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke. - DEV Community   # I Ran 4,200 Trials Testing LLM Agent Reliability. Here’s What Broke.   We know when an AI agent gets a response from a tool, getting a response back doesn’t necessarily mean that response should be trusted.   It can lose c",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 12,
-    "isNew": false
-  },
-  {
-    "id": "a85028b2c9a0b4a3",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "exa",
-    "source": "dev.to",
-    "title": "From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community",
-    "url": "https://dev.to/qaguardian/from-flaky-scripts-to-stable-coverage-a-practical-reliability-playbook-2ko0",
-    "publishedAt": "2026-08-14T15:31:47.000Z",
-    "summary": "# From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community   From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook - DEV Community   Posted on Aug 14 • Originally published at [qaguardian.com](https://qaguardian.com/blog/from-flaky-to-stable)   # From Flaky Scripts to Stable Coverage: A Practical Reliability Playbook   A flaky test is one of the mos",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 12,
-    "isNew": false
-  },
-  {
     "id": "791efc60b0cb2c97",
     "collectedAt": "2026-08-17T09:58:17.539Z",
     "channel": "reddit",
