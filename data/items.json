@@ -44,36 +44,6 @@
     "isNew": false
   },
   {
-    "id": "cbe409b2504500ef",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "exa",
-    "source": "aicompetence.org",
-    "title": "How To Build Reliable AI Agents With Tools And Evaluations",
-    "url": "https://aicompetence.org/reliable-ai-agents-with-tools-and-evaluations/",
-    "publishedAt": "2026-08-16T00:00:00.000Z",
-    "summary": "How To Build Reliable AI Agents With Tools And Evaluations   # How to Build Reliable AI Agents with Tools and Evaluations   By Victoria Reed / August 16, 2026 A tool-using AI agent is not reliable because it produces convincing […]   A tool-using AI agent is not reliable because it produces convincing answers. It is reliable when the system can determine whether the agent understood the task, chos",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 12,
-    "isNew": false
-  },
-  {
-    "id": "791efc60b0cb2c97",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "reddit",
-    "title": "QA feedback wanted for a complete open-source production readiness checklist",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp9ika/qa_feedback_wanted_for_a_complete_opensource/",
-    "source": "r/QualityAssurance",
-    "summary": "Hey everyone! I’m building an open-source production readiness checklist with extensive testing and quality coverage. I would appreciate feedback on test strategy, integration testing, acceptance testing, regression, test environments, test data, exploratory testing and nonfunctional testing. If anything is missing, unclear or unrealistic, please let me know. Corrections and pull requests are very",
-    "publishedAt": "2026-08-15T17:58:52.000Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "cff85995abbdeff8",
     "collectedAt": "2026-08-17T09:58:17.539Z",
     "channel": "github",
@@ -314,22 +284,6 @@
     "isNew": false
   },
   {
-    "id": "f2deacd462e1ba8c",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "github",
-    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "url": "https://github.com/ahx/openapi_first",
-    "source": "ahx",
-    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "stars": 219,
-    "publishedAt": "2026-08-15T08:59:00Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 9,
-    "isNew": false
-  },
-  {
     "id": "8dd35c08e08aabb1",
     "collectedAt": "2026-08-17T09:58:17.539Z",
     "channel": "exa",
@@ -341,21 +295,6 @@
     "lane": "qa",
     "tier": "core",
     "score": 7,
-    "isNew": false
-  },
-  {
-    "id": "e97f46144fd16555",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "rss",
-    "title": "CORS Chat",
-    "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-    "source": "Simon Willison",
-    "summary": "Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted in the browser and can be exported as c",
-    "publishedAt": "2026-08-15T14:49:54.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 6.9,
     "isNew": false
   },
   {
@@ -397,21 +336,6 @@
     "source": "r/QualityAssurance",
     "summary": "I’ve spent the last four years building an open-source, declarative performance testing tool that requires **zero coding**. The idea was simple: help QAs and performance engineers build and run performance tests without dealing with the complexity of writing scripts. It can do many of the things scripting-based tools can do, but without requiring you to write code. The tool has so many nice ideas",
     "publishedAt": "2026-08-16T15:32:47.000Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "adjacent",
-    "score": 5.4,
-    "isNew": false
-  },
-  {
-    "id": "8328e2381d966f88",
-    "collectedAt": "2026-08-17T09:58:17.539Z",
-    "channel": "reddit",
-    "title": "~2 yoe . I would really appreciate if any one can refer me for SDET/ QA role in Bangalore.",
-    "url": "https://www.reddit.com/r/QualityAssurance/comments/1vp3201/2_yoe_i_would_really_appreciate_if_any_one_can/",
-    "source": "r/QualityAssurance",
-    "summary": "SKILLS • Languages: Java, Python, JavaScript/TypeScript, SQL •Automation: Selenium, Playwright, TestNG, Cucumber. • Testing: UI Automation, Regression Testing, Functional Testing, Test Case Design, Defect Management, STLC • CI/CD & Tools: Jenkins, GitHub Actions, Git, Jira, Maven. •API Testing: Postman. EXPERIENCE Programmer Analyst – Cognizant, Bangalore (Sep 2025 – Present) •Developed end-to-end",
-    "publishedAt": "2026-08-15T13:35:04.000Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
