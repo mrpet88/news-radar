@@ -12,7 +12,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 18,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "17cfeda6a126c9ab",
@@ -42,21 +42,6 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
-    "isNew": false
-  },
-  {
-    "id": "21fceada7345c806",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "exa",
-    "source": "clickhouse.com",
-    "title": "clickgap-autonomous-qa-for-clickhouse",
-    "url": "https://clickhouse.com/blog/clickgap-autonomous-qa-for-clickhouse",
-    "publishedAt": "2026-08-25T12:19:59.000Z",
-    "summary": "ClickHouse merges between 50 and 100 pull requests on a typical working day. Each one lands in a performance-critical C++ database running in production. Any merge can introduce a wrong result, trigger a crash in an untested feature combination, or make a query quietly run 30 percent slower.   [ClickGap](https://github.com/clickgapai) is an autonomous QA agent that reviews every pull request merge",
-    "laneHint": "qa",
-    "lane": "ai",
-    "tier": "core",
-    "score": 15,
     "isNew": false
   },
   {
@@ -102,36 +87,21 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 13.8,
-    "isNew": true
-  },
-  {
-    "id": "656972232ec99822",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "reddit",
-    "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy8a9g/d_looking_for_advice_modelling_a_medicinereminder/",
-    "source": "r/MachineLearning",
-    "summary": "Hi everyone, I’m researching how to design an AI agent for a medicine-reminder system. The agent has to decide, at each relevant time, whether to: * send a reminder, * wait (do nothing for now), or * notify another person (e.g. caregiver), when it does **not** have complete information about the patient (has the dose already been taken? is the person nearby/attentive? are there adherence barriers?",
-    "publishedAt": "2026-08-25T18:34:35.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 13.5,
     "isNew": false
   },
   {
-    "id": "0a91f97e1c2442fe",
+    "id": "21fceada7345c806",
     "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "reddit",
-    "title": "What would a fair benchmark for agent architecture look like? [D]",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy0ki7/what_would_a_fair_benchmark_for_agent/",
-    "source": "r/MachineLearning",
-    "summary": "I am working on an evaluation design and would appreciate criticism before running it. Most coding-agent benchmarks collapse the model and its harness into one score. If a run fails, it is difficult to tell whether the cause was model capability, context assembly, task decomposition, tool design, retry policy, or the acceptance gate. A model can also look worse because the harness truncated its ou",
-    "publishedAt": "2026-08-25T13:55:48.000Z",
-    "laneHint": "ai",
+    "channel": "exa",
+    "source": "clickhouse.com",
+    "title": "clickgap-autonomous-qa-for-clickhouse",
+    "url": "https://clickhouse.com/blog/clickgap-autonomous-qa-for-clickhouse",
+    "publishedAt": "2026-08-25T12:19:59.000Z",
+    "summary": "ClickHouse merges between 50 and 100 pull requests on a typical working day. Each one lands in a performance-critical C++ database running in production. Any merge can introduce a wrong result, trigger a crash in an untested feature combination, or make a query quietly run 30 percent slower.   [ClickGap](https://github.com/clickgapai) is an autonomous QA agent that reviews every pull request merge",
+    "laneHint": "qa",
     "lane": "ai",
     "tier": "core",
-    "score": 13.5,
+    "score": 12,
     "isNew": false
   },
   {
@@ -148,7 +118,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "dacd31bb9cf1e60a",
@@ -164,7 +134,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "e7df3a18ecef1298",
@@ -180,7 +150,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7d7df05527809e15",
@@ -228,7 +198,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "beec6727f3ebe294",
@@ -275,7 +245,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6e22fd80accc6b8b",
@@ -321,7 +291,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7b4fff2b1f4e4470",
@@ -388,17 +358,31 @@
     "isNew": false
   },
   {
-    "id": "fbcfa22bd346aec8",
+    "id": "656972232ec99822",
     "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for",
-    "url": "https://github.com/pact-foundation/pact-python",
-    "source": "pact-foundation",
-    "summary": "Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.",
-    "stars": 682,
-    "publishedAt": "2026-08-25T14:34:00Z",
-    "laneHint": "qa",
-    "lane": "qa",
+    "channel": "reddit",
+    "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy8a9g/d_looking_for_advice_modelling_a_medicinereminder/",
+    "source": "r/MachineLearning",
+    "summary": "Hi everyone, I’m researching how to design an AI agent for a medicine-reminder system. The agent has to decide, at each relevant time, whether to: * send a reminder, * wait (do nothing for now), or * notify another person (e.g. caregiver), when it does **not** have complete information about the patient (has the dose already been taken? is the person nearby/attentive? are there adherence barriers?",
+    "publishedAt": "2026-08-25T18:34:35.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "0a91f97e1c2442fe",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "reddit",
+    "title": "What would a fair benchmark for agent architecture look like? [D]",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy0ki7/what_would_a_fair_benchmark_for_agent/",
+    "source": "r/MachineLearning",
+    "summary": "I am working on an evaluation design and would appreciate criticism before running it. Most coding-agent benchmarks collapse the model and its harness into one score. If a run fails, it is difficult to tell whether the cause was model capability, context assembly, task decomposition, tool design, retry policy, or the acceptance gate. A model can also look worse because the harness truncated its ou",
+    "publishedAt": "2026-08-25T13:55:48.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
     "tier": "core",
     "score": 10.8,
     "isNew": false
@@ -417,7 +401,23 @@
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "fbcfa22bd346aec8",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for",
+    "url": "https://github.com/pact-foundation/pact-python",
+    "source": "pact-foundation",
+    "summary": "Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.",
+    "stars": 682,
+    "publishedAt": "2026-08-25T14:34:00Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
   },
   {
     "id": "9ab34c2f4468b3ee",
@@ -451,21 +451,6 @@
     "isNew": false
   },
   {
-    "id": "8080841bfa8db409",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "reddit",
-    "title": "How we built a SOTA search engine using PostgreSQL, pgvector, and Qwen3 embeddings [P]",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using/",
-    "source": "r/MachineLearning",
-    "summary": "I wrote a technical breakdown of how search works on Papers with Code. The system combines keyword and semantic search, which produced better results than either approach alone. The stack includes: * PostgreSQL with pgvector * Qwen3-Embedding-0.6B for text embeddings * Hugging Face Jobs with an NVIDIA L4 for batch embedding generation * Hugging Face Buckets for storing artifacts * A live embedding",
-    "publishedAt": "2026-08-25T12:42:36.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 8.1,
-    "isNew": false
-  },
-  {
     "id": "b16beb8a2eb5c55b",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "rss",
@@ -481,18 +466,18 @@
     "isNew": false
   },
   {
-    "id": "23c41b7341ed0ed1",
+    "id": "8080841bfa8db409",
     "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "rss",
-    "title": "llm 0.32.1",
-    "url": "https://simonwillison.net/2026/Aug/21/llm/",
-    "source": "Simon Willison",
-    "summary": "Release: llm 0.32.1 Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a transitive openai dependency. This dot-release fixes that for the moment by pinning to openai&lt;3 , and a soon-to-drop 0.33 release will switch from httpx to httpx2 . Tags: httpx , openai ,",
-    "publishedAt": "2026-08-21T17:16:13.000Z",
+    "channel": "reddit",
+    "title": "How we built a SOTA search engine using PostgreSQL, pgvector, and Qwen3 embeddings [P]",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using/",
+    "source": "r/MachineLearning",
+    "summary": "I wrote a technical breakdown of how search works on Papers with Code. The system combines keyword and semantic search, which produced better results than either approach alone. The stack includes: * PostgreSQL with pgvector * Qwen3-Embedding-0.6B for text embeddings * Hugging Face Jobs with an NVIDIA L4 for batch embedding generation * Hugging Face Buckets for storing artifacts * A live embedding",
+    "publishedAt": "2026-08-25T12:42:36.000Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "adjacent",
-    "score": 6.9,
+    "score": 5.4,
     "isNew": false
   }
 ]
