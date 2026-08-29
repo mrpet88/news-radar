@@ -1,20 +1,5 @@
 [
   {
-    "id": "3ee0e334362fbbc0",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "exa",
-    "source": "aws.amazon.com",
-    "title": "Closing the AI agent trust gap with graduated autonomy | AWS Architecture Blog",
-    "url": "https://aws.amazon.com/blogs/architecture/closing-the-ai-agent-trust-gap-with-graduated-autonomy/",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "summary": "# Closing the AI agent trust gap with graduated autonomy   How much to trust an AI agent is now a daily operational question. Agents read customer data, open tickets, process refunds, and delete accounts, yet most teams pick up a binary: full access or read-only. Full access is risky because agents fail unpredictably. Read-only leaves most of the agent’s value unused. The distance between what an",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 18,
-    "isNew": false
-  },
-  {
     "id": "17cfeda6a126c9ab",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "rss",
@@ -42,6 +27,21 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
+    "isNew": false
+  },
+  {
+    "id": "3ee0e334362fbbc0",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "exa",
+    "source": "aws.amazon.com",
+    "title": "Closing the AI agent trust gap with graduated autonomy | AWS Architecture Blog",
+    "url": "https://aws.amazon.com/blogs/architecture/closing-the-ai-agent-trust-gap-with-graduated-autonomy/",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "summary": "# Closing the AI agent trust gap with graduated autonomy   How much to trust an AI agent is now a daily operational question. Agents read customer data, open tickets, process refunds, and delete accounts, yet most teams pick up a binary: full access or read-only. Full access is risky because agents fail unpredictably. Read-only leaves most of the agent’s value unused. The distance between what an",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
     "isNew": false
   },
   {
@@ -326,38 +326,6 @@
     "isNew": false
   },
   {
-    "id": "a8a354829593c69c",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "url": "https://github.com/pact-foundation/pact-js",
-    "source": "pact-foundation",
-    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "stars": 1803,
-    "publishedAt": "2026-08-26T12:36:25Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "url": "https://github.com/pact-foundation/pact-go",
-    "source": "pact-foundation",
-    "summary": "Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "stars": 951,
-    "publishedAt": "2026-08-26T06:29:38Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "656972232ec99822",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "reddit",
@@ -404,6 +372,38 @@
     "isNew": false
   },
   {
+    "id": "a8a354829593c69c",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "url": "https://github.com/pact-foundation/pact-js",
+    "source": "pact-foundation",
+    "summary": "JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "stars": 1803,
+    "publishedAt": "2026-08-26T12:36:25Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
+  },
+  {
+    "id": "12692d3ae45feaf9",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "url": "https://github.com/pact-foundation/pact-go",
+    "source": "pact-foundation",
+    "summary": "Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
+    "stars": 951,
+    "publishedAt": "2026-08-26T06:29:38Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
+  },
+  {
     "id": "fbcfa22bd346aec8",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "github",
@@ -436,21 +436,6 @@
     "isNew": false
   },
   {
-    "id": "721ed035f512e71a",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "reddit",
-    "title": "Millwright — experimenting with an end-to-end machine learning framework in Rust [P]",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1vyq7m9/millwright_experimenting_with_an_endtoend_machine/",
-    "source": "r/MachineLearning",
-    "summary": "I've been working on an open-source project called **Millwright**, an attempt to explore what an end-to-end machine learning workflow could look like in Rust. [https://millwright-rs.dev/](https://millwright-rs.dev/) This started while I was learning and building ML tooling in Rust. I kept finding capable individual libraries, but also gaps between them. Training a model was rarely the problem. Bui",
-    "publishedAt": "2026-08-26T07:34:45.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 8.1,
-    "isNew": false
-  },
-  {
     "id": "b16beb8a2eb5c55b",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "rss",
@@ -463,6 +448,21 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 6.9,
+    "isNew": false
+  },
+  {
+    "id": "721ed035f512e71a",
+    "collectedAt": "2026-08-27T10:45:12.538Z",
+    "channel": "reddit",
+    "title": "Millwright — experimenting with an end-to-end machine learning framework in Rust [P]",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vyq7m9/millwright_experimenting_with_an_endtoend_machine/",
+    "source": "r/MachineLearning",
+    "summary": "I've been working on an open-source project called **Millwright**, an attempt to explore what an end-to-end machine learning workflow could look like in Rust. [https://millwright-rs.dev/](https://millwright-rs.dev/) This started while I was learning and building ML tooling in Rust. I kept finding capable individual libraries, but also gaps between them. Training a model was rarely the problem. Bui",
+    "publishedAt": "2026-08-26T07:34:45.000Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "adjacent",
+    "score": 5.4,
     "isNew": false
   },
   {
