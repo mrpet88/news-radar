@@ -1,20 +1,5 @@
 [
   {
-    "id": "17cfeda6a126c9ab",
-    "collectedAt": "2026-08-27T10:45:12.538Z",
-    "channel": "rss",
-    "title": "llm-anthropic 0.27",
-    "url": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
-    "source": "Simon Willison",
-    "summary": "Release: llm-anthropic 0.27 This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago. Anthropic provide this migration guide for upgrading to 1.0, so I prompted Fable 5 in Claude Code with: Upgrade to anthropic&gt;=1 -",
-    "publishedAt": "2026-08-24T16:27:04.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 17.3,
-    "isNew": false
-  },
-  {
     "id": "3ee0e334362fbbc0",
     "collectedAt": "2026-08-27T10:45:12.538Z",
     "channel": "exa",
