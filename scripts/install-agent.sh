@@ -19,7 +19,7 @@ TARGET="$HOME/Library/LaunchAgents/$LABEL.plist"
 case "$ROOT" in
   "$HOME/Documents"/*|"$HOME/Desktop"/*|"$HOME/Downloads"/*)
     print -r -- "refusing to install: $ROOT is under a TCC-protected folder."
-    print -r -- "macOS blocks LaunchAgents from reading it. Move the project elsewhere (~/Projects works)."
+    print -r -- "macOS blocks LaunchAgents from reading it. Move the project elsewhere (e.g. ~/personal-projects)."
     exit 1;;
 esac
 
