@@ -55,12 +55,12 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
   browser session instead, and needs no credential.
 - **Exa has no date filter.** Recency is enforced in `scoreItem`, not at query time.
 
-## Channel status (verified 2026-08-11)
+## Channel status (verified 2026-09-24)
 
-| channel | state | notes |
-|---|---|---|
-| exa | working | ~36/run |
-| rss | working | 4 QA + 3 AI feeds; `martinfowler.com/feed.atom` refuses connections and is out |
-| reddit | working | needs Chrome; `--window background` stops it stealing focus |
-| github | working | star floor 120, else `--sort updated` returns only fresh personal repos |
-| twitter | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |
+| channel | runs on | state | notes |
+|---|---|---|---|
+| exa | Actions | working | ~36/run; hosted endpoint, no key |
+| rss | Actions | working | 4 QA + 3 AI feeds; `martinfowler.com/feed.atom` refuses connections and is out |
+| github | Actions | working | job token; star floor 120, else `--sort updated` returns only fresh personal repos |
+| reddit | Mac | **failing since ~2026-09-13** | `opencli reddit subreddit` times out every run. Public `/r/<sub>/new/.rss` answers 200 from the Mac without Chrome (`.json` is 403) — untested from Actions |
+| twitter | Mac | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |
