@@ -7,6 +7,10 @@ with a filterable dashboard behind it.
 Two lanes ship by default: **QA / testing leadership** and **AI / agent tooling**.
 Both are configuration, not code — see [Configuring what it tracks](#configuring-what-it-tracks).
 
+Below the radar, the same email carries a **newspaper**: top headlines from Dutch and
+international outlets, and the newest Marktplaats listings in a few categories under a
+price you set. See [The newspaper](#the-newspaper).
+
 ```
 News Radar — 9 new (2 QA / Testing, 7 AI / Agents)
 
@@ -29,7 +33,7 @@ Collection is split by what each channel needs; delivery happens in one place:
   GITHUB ACTIONS (06:37 UTC daily)          YOUR MAC (launchd, 4×/day)
   ────────────────────────────────          ──────────────────────────
   reach-collect.mjs  REACH_SIDE=cloud       reach-collect.mjs  REACH_SIDE=mac
-    → exa, github, rss                        → reddit (needs Chrome)
+    → exa, github, rss, news, marktplaats     → reddit (needs Chrome)
     → data/reach-cloud.json                   → data/reach-mac.json → pushed
   npm start
     → merges both (the Mac's half only while under 36h old)
@@ -169,6 +173,8 @@ crowd the other out of the email entirely.
 | `github` | `gh search repos` | Actions | the job token |
 | `reddit` | named subreddits | Mac | Chrome logged in to Reddit |
 | `twitter` | X search | Mac | Chrome logged in to x.com — **disabled by default** |
+| `news` | publisher RSS feeds (newspaper) | Actions | nothing |
+| `marktplaats` | Marktplaats search API (newspaper) | Actions | nothing |
 
 Every channel is best-effort: it records its own status and never fails the run. A
 channel that errored is reported differently from one that ran and found nothing, and
@@ -184,6 +190,43 @@ accounts worth reading:
 twitterHandles: ["simonw", "swyx"],          // becomes a from: clause
 enabled: ["exa", "github", "rss", "reddit", "twitter"],
 ```
+
+---
+
+## The newspaper
+
+The second half of the email and two dashboard tabs, configured by `newspaper` and
+`marktplaats` in `src/config.ts`. Nothing here is scored against the lanes — a BBC story
+about AI is world news, not a radar pick — so the two halves never leak into each other.
+
+**Headlines.** Four sections (Netherlands, World, Tech & science, Economy & money), five
+headlines each, in the outlets' own order. Within a section the feeds take turns, newest
+first, so a high-volume outlet cannot own a section. Anything older than 36 hours or
+already mailed is skipped.
+
+**Marktplaats.** The newest listings per category, nationwide, capped at five per
+category in the email, each with a thumbnail, price and city. Price ranges and categories
+are per search:
+
+```ts
+{ id: "bikes", label: "Bikes", categoryIds: [445], minEur: 1, maxEur: 250,
+  onlyPaths: ["fietsen-"], skipPaths: ["kinderfiets"] },
+```
+
+`categoryIds` are Marktplaats' top-level categories. `onlyPaths` / `skipPaths` match the
+subcategory in the listing's URL (`/v/fietsen-en-brommers/fietsen-dames-damesfietsen/…`),
+which is what separates a bike from a bike part. Listings with no asking price and
+"gevraagd"/"wij kopen" ads are dropped. Paid "Dagtopper" boosts are *not* a filter —
+almost every listing has one, private sellers included — but a boosted listing that
+resurfaces is the same URL, so it is never sent twice.
+
+Only a listing's title, price, city, thumbnail and link are stored. Seller names and
+descriptions are not: the collection is committed to this repository.
+
+Only what was actually mailed counts as seen. The dashboard lists run longer than the
+email, and a headline or listing that did not make the cut stays eligible for tomorrow.
+
+Vinted is not included: its API refuses requests that do not come from a real browser.
 
 ---
 
@@ -237,7 +280,7 @@ one — which is how a work address ends up on a personal project.
 
 | file | written by | purpose |
 |---|---|---|
-| `data/reach-cloud.json` | Actions | exa, github and rss collection |
+| `data/reach-cloud.json` | Actions | exa, github, rss, news and marktplaats collection |
 | `data/reach-mac.json` | your Mac | reddit collection; merged while under 36h old |
 | `data/seen-history.json` | Actions | what has already been surfaced, 60-day TTL |
 | `data/digest-state.json` | Actions | last digest / heartbeat, for the quiet-period check |

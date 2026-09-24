@@ -53,6 +53,12 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
 - **twitter-cli 0.8.5 is broken against X** (cannot build `x-client-transaction-id`;
   every call including `whoami` returns HTTP 400). The twitter channel uses OpenCLI's
   browser session instead, and needs no credential.
+- **Newspaper items bypass lane scoring.** They carry `section`; `isPaperItem` splits
+  them off in `index.ts` before `scoreItem`. Unlike radar items, only what was mailed
+  is written to seen-history.
+- **Marktplaats: nearly every listing is a paid "Dagtopper"**, private sellers too, and
+  unboosted ones are mostly dealer feeds. Filtering on `priorityProduct` empties the
+  results. Filter on subcategory slug (`vipUrl` segment 3) instead.
 - **Exa has no date filter.** Recency is enforced in `scoreItem`, not at query time.
 
 ## Channel status (verified 2026-09-24)
@@ -63,4 +69,6 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
 | rss | Actions | working | 4 QA + 3 AI feeds; `martinfowler.com/feed.atom` refuses connections and is out |
 | github | Actions | working | job token; star floor 120, else `--sort updated` returns only fresh personal repos |
 | reddit | Mac | **failing since ~2026-09-13** | `opencli reddit subreddit` times out every run. Public `/r/<sub>/new/.rss` answers 200 from the Mac without Chrome (`.json` is 403) — untested from Actions |
+| news | Actions | working | 10 feeds across 4 sections, ~150/run |
+| marktplaats | Actions | working from the Mac; **first Actions run pending** | `/lrp/api/search`, no key; ~130/run after subcategory filters |
 | twitter | Mac | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |

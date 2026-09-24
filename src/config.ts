@@ -1,4 +1,4 @@
-import type { Lane } from "./types.js";
+import type { Lane, NewsSection, MarktplaatsSearch } from "./types.js";
 
 // ── EDIT THIS to change what the radar tracks. No code changes needed. ──
 //
@@ -226,13 +226,13 @@ export const collector = {
   // To turn it on usefully, put handles in a lane's `twitterHandles` and add
   // "twitter" here — searching named accounts is a different proposition from
   // searching the firehose.
-  enabled: ["exa", "github", "rss", "reddit"] as string[],
+  enabled: ["exa", "github", "rss", "reddit", "news", "marktplaats"] as string[],
 
   // Where each enabled channel runs. These need nothing but the network (exa is
   // Exa's hosted MCP endpoint, no key), so Actions collects them every morning and
   // the email no longer depends on the Mac being awake. Every other channel needs
   // this Mac's Chrome session and is collected by run-local.sh.
-  cloudChannels: ["exa", "github", "rss"] as string[],
+  cloudChannels: ["exa", "github", "rss", "news", "marktplaats"] as string[],
   // The Mac's collection is merged into the render while it is younger than this.
   // 36h, not 24h, so a collection made late in the day still makes the next
   // morning's email. Older than that, its channels show as stale and the email
@@ -252,5 +252,95 @@ export const collector = {
   feedItemsPerFeed: 12,
   // Each channel gets its own wall-clock budget. Reddit/Twitter routinely hang
   // when their backend is not connected, and a hung channel must not stall the run.
-  timeoutMs: { exa: 60_000, github: 30_000, reddit: 25_000, twitter: 25_000, rss: 20_000, v2ex: 15_000 },
+  timeoutMs: { exa: 60_000, github: 30_000, reddit: 25_000, twitter: 25_000, rss: 20_000, v2ex: 15_000, news: 20_000, marktplaats: 20_000 },
+};
+
+// ── Newspaper ─────────────────────────────────────────────────────────────────
+// The second half of the morning email: general headlines and Marktplaats finds.
+// Top headlines, not interest-filtered — the editors' order, newest first, never
+// repeating what an earlier email already carried.
+export const newspaper = {
+  perSection: 5,            // headlines per section in the email
+  dashboardPerSection: 12,  // the dashboard tab shows a longer list
+  itemsPerFeed: 15,         // read this many from each feed
+  // A headline older than this is not this morning's news, sent or not.
+  maxAgeHours: 36,
+  sections: [
+    {
+      id: "nl", label: "Netherlands", color: "#ea580c", feeds: [
+        { name: "NOS", url: "https://feeds.nos.nl/nosnieuwsalgemeen" },
+        { name: "NU.nl", url: "https://www.nu.nl/rss/Algemeen" },
+      ],
+    },
+    {
+      id: "world", label: "World", color: "#0891b2", feeds: [
+        { name: "BBC", url: "https://feeds.bbci.co.uk/news/world/rss.xml" },
+        { name: "The Guardian", url: "https://www.theguardian.com/world/rss" },
+      ],
+    },
+    {
+      id: "tech", label: "Tech & science", color: "#7c3aed", feeds: [
+        { name: "Ars Technica", url: "https://feeds.arstechnica.com/arstechnica/index" },
+        { name: "NOS Tech", url: "https://feeds.nos.nl/nosnieuwstech" },
+        { name: "NU.nl Wetenschap", url: "https://www.nu.nl/rss/Wetenschap" },
+      ],
+    },
+    {
+      id: "economy", label: "Economy & money", color: "#ca8a04", feeds: [
+        { name: "NOS Economie", url: "https://feeds.nos.nl/nosnieuwseconomie" },
+        { name: "BBC Business", url: "https://feeds.bbci.co.uk/news/business/rss.xml" },
+        { name: "NU.nl Economie", url: "https://www.nu.nl/rss/Economie" },
+      ],
+    },
+  ] as NewsSection[],
+};
+
+// Browse, not alerts: the newest listings per category under a price, nationwide.
+// Marktplaats' own search API (the one its site uses) — no key, no browser.
+export const marktplaats = {
+  perCategory: 5,           // newest unseen listings per category in the email
+  dashboardPerCategory: 15,
+  // Marktplaats returns at most 100 per request; subcategory filtering can discard
+  // most of them (bikes: ~80% are parts), so read a full page.
+  fetchPerCategory: 100,
+  // Kept per category in the committed payload. Far more than a day can send; the
+  // rest would only grow the repo.
+  keepPerCategory: 30,
+  // Title words that mark a listing as someone buying, not selling.
+  skipTitles: ["gevraagd", "gezocht", "ik zoek", "inkoop", "opkoper", "wij kopen", "ik koop", "te koop gevraagd"],
+  // Nearly every listing carries a paid "Dagtopper" boost, private sellers included,
+  // so that is not a filter. A boosted listing that resurfaces is the same URL, and
+  // seen-history already stops it being sent twice.
+  searches: [
+    {
+      // Vans (bestelauto's) are their own subcategory and would be ~15% of these.
+      id: "cars", label: "Cars", color: "#2563eb", categoryIds: [91],
+      minEur: 1, maxEur: 5_000, skipPaths: ["bestelauto"],
+    },
+    {
+      id: "moto", label: "Motorcycles", color: "#dc2626", categoryIds: [678],
+      minEur: 3_000, maxEur: 8_000, onlyPaths: ["motoren-"],
+    },
+    {
+      // Computers, Audio/TV/Photo, Telecom, Consoles. Games, software, cases, cables
+      // and other accessories dominate the cheap end and are left out.
+      id: "electronics", label: "Electronics", color: "#0d9488", categoryIds: [322, 31, 820, 356],
+      minEur: 1, maxEur: 150,
+      skipPaths: [
+        "games-", "software", "hoesjes", "kabels", "accessoires", "toebehoren", "onderdelen",
+        "opladers", "benodigdheden", "geheugenkaarten", "statieven", "beugels", "discs",
+      ],
+    },
+    {
+      // Actual bicycles only: no parts, accessories, mopeds, or children's bikes.
+      id: "bikes", label: "Bikes", color: "#16a34a", categoryIds: [445],
+      minEur: 1, maxEur: 250, onlyPaths: ["fietsen-"],
+      skipPaths: ["kinderfiets", "fietsen-meisjes", "fietsen-jongens"],
+    },
+    {
+      // Carpet tiles from flooring outlets are a fifth of this category; they go.
+      id: "home", label: "Home & furniture", color: "#9333ea", categoryIds: [504],
+      minEur: 1, maxEur: 100, skipPaths: ["stoffering"],
+    },
+  ] as MarktplaatsSearch[],
 };

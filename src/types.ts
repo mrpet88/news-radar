@@ -5,7 +5,9 @@ export type Channel =
   | "reddit"     // opencli reddit  (needs live Chrome + OpenCLI extension)
   | "twitter"    // twitter-cli     (needs TWITTER_AUTH_TOKEN + TWITTER_CT0)
   | "rss"        // direct feed fetch
-  | "v2ex";      // public API
+  | "v2ex"       // public API
+  | "news"       // newspaper: general headlines from publisher feeds
+  | "marktplaats"; // newspaper: Marktplaats listings via its public search API
 
 export interface Item {
   id: string;            // stable hash: channel + url (or title when url is unstable)
@@ -24,6 +26,13 @@ export interface Item {
   stars?: number;        // github only
   points?: number;       // reddit/v2ex score, when the channel reports one
   isNew?: boolean;       // unseen in seen-history at render time
+  // Newspaper items only. Set on "news" and "marktplaats" items, never on radar
+  // items — its presence is what keeps them out of the QA/AI lane scoring.
+  section?: string;      // newspaper section or Marktplaats search id
+  priceEur?: number;     // marktplaats
+  bid?: boolean;         // marktplaats: "bieden vanaf" rather than a fixed price
+  place?: string;        // marktplaats: seller's city, as shown on the listing
+  image?: string;        // marktplaats: thumbnail URL
 }
 
 // What one channel reported in a single collector run. Persisted alongside the
@@ -77,4 +86,28 @@ export interface Lane {
   twitterHandles?: string[];
   feeds?: { name: string; url: string }[];
   maxPerDigest: number;    // hard cap on rows this lane contributes to the email
+}
+
+// ── Newspaper ─────────────────────────────────────────────────────────────────
+// Unlike lanes, sections are not scored: they carry the editors' own headlines,
+// newest first, and the only filtering is age and "already sent".
+export interface NewsSection {
+  id: string;
+  label: string;
+  color: string;
+  feeds: { name: string; url: string }[];
+}
+
+// One Marktplaats browse. `paths` match the listing's subcategory slug — the part
+// of its URL after /v/<category>/ — which is the only reliable way to tell a bike
+// from a bike part inside "Fietsen en Brommers".
+export interface MarktplaatsSearch {
+  id: string;
+  label: string;
+  color: string;
+  categoryIds: number[];     // Marktplaats l1 category ids
+  minEur?: number;
+  maxEur: number;
+  onlyPaths?: string[];      // keep a listing only if its slug starts with one of these
+  skipPaths?: string[];      // drop a listing if its slug contains any of these
 }

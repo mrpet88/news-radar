@@ -37,9 +37,9 @@ try {
   }
 } catch { /* no .env — twitter will report a precondition skip */ }
 
-let lanes, collector;
+let lanes, collector, newspaper, marktplaats;
 try {
-  ({ lanes, collector } = await import(path.join(ROOT, "dist", "config.js")));
+  ({ lanes, collector, newspaper, marktplaats } = await import(path.join(ROOT, "dist", "config.js")));
 } catch {
   console.error("dist/config.js missing — run `npm run build` first.");
   process.exit(1);
@@ -290,6 +290,94 @@ async function collectRss(lane) {
   return items;
 }
 
+// ── news: the newspaper's general headlines ──────────────────────────────────
+// Same feed parser as rss, but not lane-scored: every headline is kept, tagged
+// with its section, and picked downstream by recency (see src/paper.ts).
+async function collectNews() {
+  const items = [];
+  const failed = [];
+  for (const section of newspaper.sections) {
+    for (const feed of section.feeds) {
+      try {
+        const xml = await getText(feed.url, { timeoutMs: collector.timeoutMs.news });
+        for (const r of parseFeed(xml, feed.name, newspaper.itemsPerFeed)) {
+          const publishedAt = r.publishedAt && !Number.isNaN(Date.parse(r.publishedAt))
+            ? new Date(r.publishedAt).toISOString() : undefined;
+          items.push(mkItem({ channel: "news", section: section.id, ...r, publishedAt }));
+        }
+      } catch (e) {
+        failed.push(`${feed.name}: ${oneLine(e)}`);
+      }
+    }
+  }
+  if (failed.length) console.warn(`  [news] ${failed.length} feed(s) failed → ${failed.join(" | ")}`);
+  // Every feed failing is a channel failure, not an empty morning.
+  if (items.length === 0 && failed.length) throw new Error(failed[0]);
+  return items;
+}
+
+// ── marktplaats: newest listings per category via the site's search API ───────
+// Deliberately stored: title, price, city, thumbnail and link. Not stored: the
+// seller's name or the description — this payload is committed to a public repo,
+// and private sellers' names and free text have no business there.
+const MP_API = "https://www.marktplaats.nl/lrp/api/search";
+
+async function collectMarktplaats() {
+  const items = [];
+  const failed = [];
+  const skipTitle = new RegExp(`\\b(${marktplaats.skipTitles.join("|")})\\b`, "i");
+  for (const search of marktplaats.searches) {
+    const perCat = [];
+    for (const cat of search.categoryIds) {
+      const got = [];
+      perCat.push(got);
+      const qs = new URLSearchParams({
+        l1CategoryId: String(cat),
+        limit: String(marktplaats.fetchPerCategory),
+        offset: "0",
+        sortBy: "SORT_INDEX",          // the site's "newest first"
+        sortOrder: "DECREASING",
+      });
+      qs.append("attributeRanges[]", `PriceCents:${(search.minEur ?? 0) * 100}:${search.maxEur * 100}`);
+      try {
+        const res = JSON.parse(await getText(`${MP_API}?${qs}`, { timeoutMs: collector.timeoutMs.marktplaats }));
+        for (const l of res.listings ?? []) {
+          const cents = l.priceInfo?.priceCents ?? 0;
+          // The price filter is applied server-side, but "bieden" listings with no
+          // asking price come through as 0 and say nothing about value.
+          if (!cents || !l.vipUrl || !l.title) continue;
+          if (skipTitle.test(l.title)) continue;
+          const slug = l.vipUrl.split("/")[3] ?? "";
+          if (search.onlyPaths && !search.onlyPaths.some((p) => slug.startsWith(p))) continue;
+          if (search.skipPaths?.some((p) => slug.includes(p))) continue;
+          const img = l.pictures?.[0]?.mediumUrl ?? l.pictures?.[0]?.smallUrl ?? l.imageUrls?.[0];
+          got.push(mkItem({
+            channel: "marktplaats",
+            section: search.id,
+            title: l.title,
+            url: `https://www.marktplaats.nl${l.vipUrl}`,
+            source: "Marktplaats",
+            priceEur: cents / 100,
+            bid: l.priceInfo?.priceType === "MIN_BID",
+            place: l.location?.cityName || undefined,
+            image: img ? (img.startsWith("//") ? `https:${img}` : img) : undefined,
+          }));
+        }
+      } catch (e) {
+        failed.push(`${search.label} (${cat}): ${oneLine(e)}`);
+      }
+    }
+    // Interleave a multi-category search (electronics spans four) so each source
+    // category gets its turn, then keep the newest few.
+    const merged = [];
+    for (let i = 0; perCat.some((g) => i < g.length); i++) for (const g of perCat) if (g[i]) merged.push(g[i]);
+    items.push(...merged.slice(0, marktplaats.keepPerCategory));
+  }
+  if (failed.length) console.warn(`  [marktplaats] ${failed.length} request(s) failed → ${failed.join(" | ")}`);
+  if (items.length === 0 && failed.length) throw new Error(failed[0]);
+  return items;
+}
+
 // ── driver ────────────────────────────────────────────────────────────────────
 const CHANNELS = [
   ["exa", collectExa],
@@ -297,6 +385,9 @@ const CHANNELS = [
   ["rss", collectRss],
   ["reddit", collectReddit],
   ["twitter", collectTwitter],
+  // Laneless: collected once per run, not once per QA/AI lane.
+  ["news", collectNews, { laneless: true }],
+  ["marktplaats", collectMarktplaats, { laneless: true }],
 ];
 
 async function main() {
@@ -307,7 +398,7 @@ async function main() {
   // The other side's channels are not this run's business — not even as "skipped",
   // or the merged report would list them twice.
   const mine = (c) => collector.cloudChannels.includes(c) === (SIDE === "cloud");
-  for (const [channel, fn] of CHANNELS.filter(([c]) => mine(c))) {
+  for (const [channel, fn, opts] of CHANNELS.filter(([c]) => mine(c))) {
     // REACH_CHANNELS is the ad-hoc override for testing; collector.enabled is the
     // standing configuration. An explicit override wins so a disabled channel can
     // still be exercised by hand.
@@ -322,10 +413,10 @@ async function main() {
     let got = [];
     let error;
     let precondition;
-    for (const lane of lanes) {
+    for (const lane of opts?.laneless ? [null] : lanes) {
       try {
         const laneItems = await fn(lane);
-        got.push(...laneItems.map((i) => ({ ...i, laneHint: lane.id })));
+        got.push(...(lane ? laneItems.map((i) => ({ ...i, laneHint: lane.id })) : laneItems));
       } catch (e) {
         // Record the first failure but keep trying the other lane: a query that
         // trips one channel should not silently drop the other lane's coverage.

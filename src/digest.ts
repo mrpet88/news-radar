@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import type { Item, ReachPayload, Lane } from "./types.js";
 import { delivery } from "./config.js";
 import type { DigestState } from "./store.js";
+import { type Paper, type PaperSection, pickedCount, priceLabel } from "./paper.js";
 
 const esc = (s: string) =>
   (s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
@@ -39,7 +40,7 @@ function row(it: Item, lanes: Lane[]): string {
   </td></tr>`;
 }
 
-const shell = (inner: string) => `<!doctype html><html><body style="margin:0;padding:0;background:#f6f7f9">
+const shell = (inner: string) => `<!doctype html><html><head><meta charset="utf-8"></head><body style="margin:0;padding:0;background:#f6f7f9">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f6f7f9;padding:24px 12px">
 <tr><td align="center">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:22px 24px">
@@ -47,8 +48,49 @@ const shell = (inner: string) => `<!doctype html><html><body style="margin:0;pad
   </table>
 </td></tr></table></body></html>`;
 
+const FONT = "-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+
+const sectionHead = (label: string, color: string, first = false) => `
+  <div style="margin-top:${first ? 10 : 26}px;padding-bottom:6px;border-bottom:2px solid ${color};font:700 13px/1.3 ${FONT};letter-spacing:.06em;text-transform:uppercase;color:${color}">${esc(label)}</div>`;
+
+function newsRows(s: PaperSection): string {
+  return s.picked.map((i) => `
+  <tr><td style="padding:9px 0;border-bottom:1px solid #eef0f3">
+    <a href="${esc(i.url)}" style="font:600 14.5px/1.35 ${FONT};color:#1a1d23;text-decoration:none">${esc(i.title)}</a>
+    <div style="margin-top:2px;font:400 12px/1.4 ${FONT};color:#6b7280">${esc(i.source)}${i.publishedAt ? ` · ${esc(new Date(i.publishedAt).toLocaleTimeString("en-GB", { timeZone: delivery.timezone, hour: "2-digit", minute: "2-digit" }))}` : ""}</div>
+  </td></tr>`).join("");
+}
+
+function listingRows(s: PaperSection): string {
+  return s.picked.map((i) => `
+  <tr><td style="padding:8px 0;border-bottom:1px solid #eef0f3">
+    <table role="presentation" cellpadding="0" cellspacing="0" width="100%"><tr>
+      <td width="76" valign="top" style="padding-right:12px">
+        ${i.image ? `<a href="${esc(i.url)}"><img src="${esc(i.image)}" width="76" height="57" alt="" style="display:block;width:76px;height:57px;object-fit:cover;border-radius:6px;background:#eef0f3"></a>` : `<div style="width:76px;height:57px;border-radius:6px;background:#eef0f3"></div>`}
+      </td>
+      <td valign="top">
+        <a href="${esc(i.url)}" style="font:600 14px/1.35 ${FONT};color:#1a1d23;text-decoration:none">${esc(i.title)}</a>
+        <div style="margin-top:3px;font:400 12.5px/1.4 ${FONT};color:#6b7280"><b style="color:#1a1d23">${esc(priceLabel(i))}</b>${i.place ? ` · ${esc(i.place)}` : ""}</div>
+      </td>
+    </tr></table>
+  </td></tr>`).join("");
+}
+
+function paperHtml(paper: Paper): string {
+  const block = (sections: PaperSection[], rows: (s: PaperSection) => string, title: string) => {
+    const live = sections.filter((s) => s.picked.length);
+    if (!live.length) return "";
+    return `
+    <div style="margin-top:30px;font:700 17px/1.3 ${FONT};color:#1a1d23">${esc(title)}</div>
+    ${live.map((s, n) => `${sectionHead(s.label, s.color, n === 0)}
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows(s)}</table>`).join("")}`;
+  };
+  return block(paper.news, newsRows, "Newspaper") + block(paper.market, listingRows, "Marktplaats");
+}
+
 export function renderDigest(
   items: Item[], lanes: Lane[], reach: ReachPayload, reachAgeHours: number, dashboardUrl?: string,
+  paper?: Paper,
 ): string {
   const perLane = lanes
     .map((l) => ({ l, n: items.filter((i) => i.lane === l.id).length }))
@@ -61,15 +103,18 @@ export function renderDigest(
   const degraded = reach.channels.filter((c) => !c.ok && !c.skipped);
 
   return shell(`
-    <div style="font:700 18px/1.3 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1a1d23">News Radar — ${items.length} new</div>
+    <div style="font:700 18px/1.3 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1a1d23">News Radar — ${items.length ? `${items.length} new` : "your morning paper"}</div>
     <div style="margin-top:4px;font:400 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#6b7280">${esc(perLane)}${perLane ? " · " : ""}${esc(fmtTime(new Date()))}</div>
     <div style="margin-top:8px;padding:6px 10px;border-radius:6px;background:#f0fdf4;border:1px solid #bbf7d0;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#166534">
       Collected via agent-reach ${esc(ago(reachAgeHours))} — ${esc(channels || "no channels reported items")}
     </div>
     ${degraded.length ? `<div style="margin-top:6px;padding:6px 10px;border-radius:6px;background:#fff7ed;border:1px solid #fed7aa;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#9a3412">Degraded: ${esc(degraded.map((c) => c.channel).join(", "))} did not return this run.</div>` : ""}
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:6px">
+    ${items.length ? `
+    <div style="margin-top:22px;font:700 17px/1.3 ${FONT};color:#1a1d23">Radar</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:2px">
       ${items.map((i) => row(i, lanes)).join("")}
-    </table>
+    </table>` : `<div style="margin-top:18px;font:400 13px/1.4 ${FONT};color:#6b7280">Radar: nothing new in QA or AI today.</div>`}
+    ${paper ? paperHtml(paper) : ""}
     ${dashboardUrl ? `<div style="margin-top:18px;font:400 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif"><a href="${esc(dashboardUrl)}" style="color:#2563eb;text-decoration:none">Open the full dashboard →</a></div>` : ""}
   `);
 }
@@ -121,7 +166,10 @@ export async function writeDigest(
   state: DigestState,
   dashboardUrl?: string,
   forced = false,
+  paper?: Paper,
 ): Promise<DigestDecision> {
+  const news = paper ? pickedCount(paper.news) : 0;
+  const listings = paper ? pickedCount(paper.market) : 0;
   await fs.rm(file, { force: true });   // never leave a stale digest behind
 
   const decide = (): DigestDecision => {
@@ -133,15 +181,20 @@ export async function writeDigest(
         subject: "",
         reason: `agent-reach collection is ${ago(reachAgeHours)}, older than the ${delivery.maxReachAgeHours}h gate`,
       };
-    if (picked.length === 0 && !forced)
+    if (picked.length === 0 && news + listings === 0 && !forced)
       return { send: false, subject: "", reason: "nothing new since the last run", kind: "none" };
 
     const perLane = lanes
       .map((l) => ({ l, n: picked.filter((i) => i.lane === l.id).length }))
       .filter((x) => x.n > 0).map((x) => `${x.n} ${x.l.label}`).join(", ");
+    const parts = [
+      picked.length ? `${picked.length} radar${perLane ? ` (${perLane})` : ""}` : "",
+      news ? `${news} headlines` : "",
+      listings ? `${listings} listings` : "",
+    ].filter(Boolean);
     return {
       send: true, kind: "digest",
-      subject: `News Radar — ${picked.length} new${perLane ? ` (${perLane})` : ""}`,
+      subject: `News Radar — ${parts.join(" · ") || "0 new"}`,
       reason: "fresh agent-reach collection with new items",
     };
   };
@@ -149,7 +202,7 @@ export async function writeDigest(
   let decision = decide();
 
   if (decision.send && reach && reachAgeHours !== null) {
-    await fs.writeFile(file, renderDigest(picked, lanes, reach, reachAgeHours, dashboardUrl));
+    await fs.writeFile(file, renderDigest(picked, lanes, reach, reachAgeHours, dashboardUrl, paper));
   } else {
     // Nothing to send — consider the heartbeat instead.
     const lastAt = state.lastDigestAt ? Date.parse(state.lastDigestAt) : NaN;
