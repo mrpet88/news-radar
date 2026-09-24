@@ -98,7 +98,7 @@ publish() {
     return 0
   fi
   commit=$(git commit-tree "$tree" -p "$base" -m "news-radar: collect $(date -u +%FT%TZ)") || return 1
-  git push -q origin "$commit:refs/heads/main" || return 1
+  git push -q origin "${commit}:refs/heads/main" || return 1
   log "done (pushed $commit)"
 }
 
