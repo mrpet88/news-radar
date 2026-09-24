@@ -1,30 +1,30 @@
 {
   "version": 1,
-  "collectedAt": "2026-09-24T17:38:37.045Z",
+  "collectedAt": "2026-09-24T17:43:49.372Z",
   "channels": [
     {
       "channel": "exa",
       "ok": true,
       "count": 36,
-      "ms": 9060
+      "ms": 10126
     },
     {
       "channel": "github",
       "ok": true,
       "count": 25,
-      "ms": 3219
+      "ms": 2708
     },
     {
       "channel": "rss",
       "ok": true,
       "count": 78,
-      "ms": 3761
+      "ms": 5470
     }
   ],
   "items": [
     {
       "id": "4b3622adc778ab44",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "fullscale.io",
       "title": "Software Testing Strategies Are a Leadership Decision, Not a QA Checklist - Full Scale",
@@ -35,7 +35,7 @@
     },
     {
       "id": "0245ccddfa2e90f5",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "testmuai.com",
       "title": "Redefining Quality Leadership in an Agentic World [Testμ 2026]",
@@ -45,7 +45,7 @@
     },
     {
       "id": "76bda146f650b22c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "mabl.com",
       "title": "Your ADLC Is Outrunning Your Quality Gates | mabl",
@@ -56,7 +56,7 @@
     },
     {
       "id": "ae2e013f986b7043",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "testmuai.com",
       "title": "Reinventing the QE Practice at Global Scale in Agentic Era [Testμ 2026]",
@@ -65,19 +65,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "57fe593a0430db31",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "qabash.com",
-      "title": "Building an AI Testing Strategy for Enterprise Applications | QA Bash",
-      "url": "https://qabash.com/blog/ai-testing-strategy-enterprise-applications",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "summary": "AI in Testing· 9 min read· Sep 11, 2026   # Building an AI Testing Strategy for Enterprise Applications   Sep 11, 2026   An AI testing strategy for enterprise applications involves systematically incorporating artificial intelligence and machine learning techniques into the software testing lifecycle. This includes using AI for test case generation, defect prediction, intelligent test orchestratio",
-      "laneHint": "qa"
-    },
-    {
       "id": "13cf160861340c89",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "testrail.com",
       "title": "Test As Context: Your QA Team Already Wrote The Spec AI Needs",
@@ -87,63 +76,19 @@
       "laneHint": "qa"
     },
     {
-      "id": "2704854601c9fe6c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "id": "57fe593a0430db31",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
-      "source": "exante.eu",
-      "title": "AI in testing: from manual checks to a smart workflow | EXANTE",
-      "url": "https://exante.eu/press/blog/3247-ai-in-testing-from-manual-checks-to-a-smart-workflow/",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "summary": "AI in testing: from manual checks to a smart workflow | EXANTE   # AI in testing: from manual checks to a smart workflow   Blog 12:59, September 7, 2026   . I am a   at EXANTE, an international   platform for trading on global   markets. I   the desktop trading terminal, the web terminal   This article covers how I built AI into our testing processes, using it as a working partner alongside a test",
-      "laneHint": "qa"
-    },
-    {
-      "id": "22635960301f1f2a",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "dev.to",
-      "title": "From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community",
-      "url": "https://dev.to/zarart/from-quantity-to-quality-a-risk-based-approach-to-ai-assisted-qa-at-scale-12d9",
-      "publishedAt": "2026-09-22T09:18:00.000Z",
-      "summary": "From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community Artemii Zakharov Posted on Sep 22   # From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale   We write more tests than ever, yet bugs still reach production. This post introduces a risk-based approach to QA. We'll show how AI-driven impact analysis can flag what needs testing, using one",
-      "laneHint": "qa"
-    },
-    {
-      "id": "21024b1b27f50d7c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "launchdarkly.com",
-      "title": "Stories from the Factory Floor: My own private software factory | LaunchDarkly",
-      "url": "https://launchdarkly.com/blog/my-own-private-software-factory-launchdarkly/",
+      "source": "qabash.com",
+      "title": "Building an AI Testing Strategy for Enterprise Applications | QA Bash",
+      "url": "https://qabash.com/blog/ai-testing-strategy-enterprise-applications",
       "publishedAt": "2026-09-11T00:00:00.000Z",
-      "summary": "# Stories from the Factory Floor: My own private software factory   This post is part of an ongoing series on how LaunchDarkly engineers are closing the loop of the AI SDLC—and what we're learning along the way.   At LaunchDarkly, we’ve been thinking a lot about which parts of the SDLC can be safely automated, and which ones still need a human in the loop. My own answer to that question started as",
-      "laneHint": "qa"
-    },
-    {
-      "id": "4a56a76d0e2193b1",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "medium.com",
-      "title": "Shift Left Testing Meets AI Agents | by Ivan Diana | Sep, 2026 | Medium",
-      "url": "https://medium.com/@iwo.diana/shift-left-testing-meets-ai-agents-a3161e68a7a5",
-      "publishedAt": "2026-09-07T07:31:01.000Z",
-      "summary": "# Shift Left Testing Meets AI Agents   ## I paid full price for a signal I already had   Everyone talking about the cost of agentic development counts tokens. I did too. Then, three thousand CI minutes into fifteen active days, my pipeline hard-stopped. It was not the API bill. I had run out of GitHub Actions minutes, and what would not merge was the tool I had built to measure what all of this co",
-      "laneHint": "qa"
-    },
-    {
-      "id": "79d2300f75de4391",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "sigmacomputing.com",
-      "title": "Migrating 1,000+ Tests to Playwright with Agentic Loops | Sigma",
-      "url": "https://www.sigmacomputing.com/blog/playwright-migration-agentic-loops",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "summary": "Migrating 1,000+ Tests to Playwright with Agentic Loops | Sigma   # How agentic loops built on Sigma migrated 1,000+ tests to Playwright in a month   September 17, 2026 8 min read   Engineering has changed. When coding agents can write and modify code faster than any team can review it by hand, the only way to trust that code is with fast, reliable, high-fidelity test feedback.   At Sigma, we buil",
+      "summary": "AI in Testing· 9 min read· Sep 11, 2026   # Building an AI Testing Strategy for Enterprise Applications   Sep 11, 2026   An AI testing strategy for enterprise applications involves systematically incorporating artificial intelligence and machine learning techniques into the software testing lifecycle. This includes using AI for test case generation, defect prediction, intelligent test orchestratio",
       "laneHint": "qa"
     },
     {
       "id": "824513e88423a6f2",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "newrelic.com",
       "title": "Shift-Left – Testing, Approach, & Strategy - New Relic",
@@ -153,8 +98,63 @@
       "laneHint": "qa"
     },
     {
+      "id": "8497996630249818",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "medium.com",
+      "title": "Why We Shift Testing Left: A Software Dev Cycle That Doesn't Scale",
+      "url": "https://medium.com/@signadot/why-we-shift-testing-left-a-software-dev-cycle-that-doesnt-scale-9241e1a14b8d",
+      "publishedAt": "2024-08-12T00:00:00.000Z",
+      "summary": "Why We Shift Testing Left: A Software Dev Cycle That Doesn’t Scale | by Signadot | Medium   # Why We Shift Testing Left: A Software Dev Cycle That Doesn’t Scale   Aug 12, 2024   The motivation for shifting testing left is a software release cycle in deadlock, developers forced to context switch and a glacial development velocity.   Shift left testing is the practice of moving testing earlier in th",
+      "laneHint": "qa"
+    },
+    {
+      "id": "3b7a41b67ce959c8",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "medium.com",
+      "title": "We Let AI Review the Code AI Wrote. Every Test Passed. We Almost Shipped the Bug Anyway. | by Devrim Ozcay | Systems at Scale | Sep, 2026 | Medium",
+      "url": "https://medium.com/@coding_with_tech/we-let-ai-review-the-code-ai-wrote-every-test-passed-we-almost-shipped-the-bug-anyway-6dbdd402b1dc",
+      "publishedAt": "2026-09-16T15:30:25.000Z",
+      "summary": "# We Let AI Review the Code AI Wrote. Every Test Passed. We Almost Shipped the Bug Anyway. | by Devrim Ozcay | Systems at Scale | Sep, 2026 | Medium   # We Let AI Review the Code AI Wrote. Every Test Passed. We Almost Shipped the Bug Anyway.   ## The pull request looked unusually clean. The implementation was generated by an agent, another AI reviewed it, and the entire test suite was green. One e",
+      "laneHint": "qa"
+    },
+    {
       "id": "7308f26346785440",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "claude.com",
+      "title": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic | Claude by Anthropic",
+      "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "publishedAt": "2026-09-14T20:07:31.000Z",
+      "summary": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic | Claude by Anthropic   # Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic   Our CI job volume increased 25x over 6 months. We patched our test selection service three times before finding a sustainable solution.   ## AI is evolving CI   Anthropic engineers on average ship 8",
+      "laneHint": "qa"
+    },
+    {
+      "id": "91e630cf5d584863",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "ninetwothree.co",
+      "title": "I Shipped 17 PRs Without Writing Code",
+      "url": "https://www.ninetwothree.co/blog/shipping-ai-written-code-safely",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "summary": "# I Shipped 17 PRs Without Writing Code   AI-written code can reach production safely when the workflow requires design verification, adversarial plan review, automated checks after each change, browser testing, and a final human decision. Across 17 pull requests, this pipeline caught 32 issues, including an IDOR, before release.   Nine months ago I published 212 Sessions, my last piece on supervi",
+      "laneHint": "qa"
+    },
+    {
+      "id": "6a5ec266ccfc062e",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "momentic.ai",
+      "title": "Shift Left Testing Approach: Principles, Steps and Tools - Momentic",
+      "url": "https://momentic.ai/blog/complete-guide-to-shift-left-software-testing",
+      "publishedAt": "2026-02-05T00:00:00.000Z",
+      "summary": "# Shift-Left Software Testing: What It Is and How to Implement It   Your 101 guide to all shift-left software testing: what it is, why it’s important and how it will speed up your release cadence like nothing else.   If you’re running a software team in 2026, chances are you’ve been asked to square some circles over the past few years. Today’s most pressing: releasing faster than ever while mainta",
+      "laneHint": "qa"
+    },
+    {
+      "id": "7308f26346785440",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "claude.com",
       "title": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic | Claude by Anthropic",
@@ -165,7 +165,7 @@
     },
     {
       "id": "ed84195aaa313b43",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "nhimg.org",
       "title": "Enterprise browser test automation: what it means for CI reliability",
@@ -176,7 +176,7 @@
     },
     {
       "id": "72a66e45a1a26c18",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "pie.inc",
       "title": "Why Your Team Stopped Trusting the Test Suite (and What It's Costing You) | Pie",
@@ -187,7 +187,7 @@
     },
     {
       "id": "76bda146f650b22c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "mabl.com",
       "title": "Your ADLC Is Outrunning Your Quality Gates | mabl",
@@ -198,7 +198,7 @@
     },
     {
       "id": "1e25b4ab1fadece6",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "engineering.fb.com",
       "title": "Probabilistic flakiness: How do you test your tests? - Engineering at Meta",
@@ -209,7 +209,7 @@
     },
     {
       "id": "93fa9818a68dfdb9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "thinhdanggroup.github.io",
       "title": "Test Selection Breaks Before Your Tests Do - ThinhDA",
@@ -220,7 +220,7 @@
     },
     {
       "id": "3c0adc186c541245",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "haystack.deepset.ai",
       "title": "Introducing Haystack 3.0: Agent Hooks, Skills and a Lighter Core | Haystack",
@@ -231,7 +231,7 @@
     },
     {
       "id": "00c4c78b06559fac",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "strandsagents.com",
       "title": "Introducing Strands harness: frontier performance with 28% lower token cost | Strands Agents",
@@ -242,7 +242,7 @@
     },
     {
       "id": "081c50d133fd857e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "azure.microsoft.com",
       "title": "Introducing Microsoft Agent Framework",
@@ -253,7 +253,7 @@
     },
     {
       "id": "d291683b4a870b67",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "openai.com",
       "title": "Introducing the Agents API | OpenAI",
@@ -263,19 +263,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "d44e54b036b1d7a5",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "exa",
-      "source": "infoq.com",
-      "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents - InfoQ",
-      "url": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "summary": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents - InfoQ # Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents Sep 22, 2026 3 min read by - Olimpiu Pop Google has introduced AX (hosted at agentexecutor.io and on GitHub as google/ax), an open-source, Apache 2.0-licensed orchestrator and declarative runtime designed to execute and scale auto",
-      "laneHint": "ai"
-    },
-    {
       "id": "491e786ddfb6ce36",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "openai.com",
       "title": "New tools for building agents",
@@ -285,8 +274,19 @@
       "laneHint": "ai"
     },
     {
+      "id": "d44e54b036b1d7a5",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "exa",
+      "source": "infoq.com",
+      "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents - InfoQ",
+      "url": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "summary": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents - InfoQ # Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents Sep 22, 2026 3 min read by - Olimpiu Pop Google has introduced AX (hosted at agentexecutor.io and on GitHub as google/ax), an open-source, Apache 2.0-licensed orchestrator and declarative runtime designed to execute and scale auto",
+      "laneHint": "ai"
+    },
+    {
       "id": "907b85f3ac31e02b",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "medium.com",
       "title": "MCP in Production: What a Year in an Industrial Plant Taught Me | by Daniel Romero | Sep, 2026 | Medium",
@@ -297,7 +297,7 @@
     },
     {
       "id": "143ba1ea217ad145",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "MCP Deep Dive, Part 15: Running MCP in Production — What Held, What Broke, and What We'd Do Differently - DEV Community",
@@ -308,7 +308,7 @@
     },
     {
       "id": "38d41739da3eb233",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "aws.amazon.com",
       "title": "MCP went stateless: Is your AWS MCP server deployment well-architected? | AWS Architecture Blog",
@@ -319,7 +319,7 @@
     },
     {
       "id": "4c89b5ed9a5ac366",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "How to build and deploy an MCP server to production (2026-07-28 spec) - DEV Community",
@@ -330,7 +330,7 @@
     },
     {
       "id": "2eb2448a8ef093c5",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "dzone.com",
       "title": "Production MCP: JSON-RPC, OAuth 2.1, Transport, and Scaling",
@@ -341,7 +341,7 @@
     },
     {
       "id": "cc8a73a104425bd4",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "tanhdev.com",
       "title": "Building a Production MCP Server with Go: High-Concurrency Architecture",
@@ -352,7 +352,7 @@
     },
     {
       "id": "642c9d4150bda936",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "aws.amazon.com",
       "title": "Evaluating AI agents: Real-world lessons from building ...",
@@ -363,7 +363,7 @@
     },
     {
       "id": "707302090e4e820c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "explore.n1n.ai",
       "title": "Evaluating AI Agent Reliability and Performance Consistency in Autonomous Tasks | Enterprise Unified LLM API Gateway (One Key for All Models) | n1n.ai",
@@ -374,7 +374,7 @@
     },
     {
       "id": "0f53f13dc6c52dd8",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "arxiv.org",
       "title": "FIRE: Failure-Informed Runtime Engineering for Reliable Language-Model Agents",
@@ -385,7 +385,7 @@
     },
     {
       "id": "c2eb2900d53842bd",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "nexus-ai-blog.com",
       "title": "Your Agent Aced the Task. Will It Do It Again? | Nexus AI — Artificial Intelligence",
@@ -396,7 +396,7 @@
     },
     {
       "id": "55dd4531dfa9b1ac",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "algolia.com",
       "title": "AI agent evaluation: frameworks, metrics & testing strategies",
@@ -407,7 +407,7 @@
     },
     {
       "id": "b954e969dee6765e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "exa",
       "source": "agentmelt.com",
       "title": "AI Agent Reliability (2026): Why Agents Fail — and How to Build Ones You Can Trust | Agentmelt",
@@ -418,7 +418,7 @@
     },
     {
       "id": "3ba2a23caefcf5c6",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
       "url": "https://github.com/maester365/maester",
@@ -430,7 +430,7 @@
     },
     {
       "id": "b7f39f15ac58a954",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
       "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
@@ -442,7 +442,7 @@
     },
     {
       "id": "e9bcd0f74a9836eb",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "BoykaFramework/boyka-framework —  🎉 Ultimate test automation framework for automating any application on any platform",
       "url": "https://github.com/BoykaFramework/boyka-framework",
@@ -454,7 +454,7 @@
     },
     {
       "id": "1c3c6d118c920a98",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "atata-framework/atata — C#/.NET test automation framework for web",
       "url": "https://github.com/atata-framework/atata",
@@ -466,7 +466,7 @@
     },
     {
       "id": "86c79c8e98b40157",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "reqnroll/Reqnroll — Open-source Cucumber-style BDD test automation framework for .NET.",
       "url": "https://github.com/reqnroll/Reqnroll",
@@ -478,7 +478,7 @@
     },
     {
       "id": "12692d3ae45feaf9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
       "url": "https://github.com/pact-foundation/pact-go",
@@ -490,7 +490,7 @@
     },
     {
       "id": "1834986c7c56818d",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
       "url": "https://github.com/pact-foundation/pact-jvm",
@@ -502,7 +502,7 @@
     },
     {
       "id": "2c1971c980fefe85",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "pact-foundation/pact-php — PHP version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
       "url": "https://github.com/pact-foundation/pact-php",
@@ -514,7 +514,7 @@
     },
     {
       "id": "9ab34c2f4468b3ee",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
       "url": "https://github.com/pact-foundation/pact-js-core",
@@ -526,7 +526,7 @@
     },
     {
       "id": "a8a354829593c69c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
       "url": "https://github.com/pact-foundation/pact-js",
@@ -538,7 +538,7 @@
     },
     {
       "id": "9b24d8c6c6fcca45",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
       "url": "https://github.com/omnigent-ai/omnigent",
@@ -550,7 +550,7 @@
     },
     {
       "id": "7d7df05527809e15",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
       "url": "https://github.com/HKUDS/nanobot",
@@ -562,7 +562,7 @@
     },
     {
       "id": "0fa4dc311880c0f3",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "aeonfun/aeon — Official Aeon - the open-source autonomous AI agent framework. Runs unattended on your GitHub Actions, self-healing skills, drives Claude Code, Codex, Grok & more. Not affiliated with O",
       "url": "https://github.com/aeonfun/aeon",
@@ -574,7 +574,7 @@
     },
     {
       "id": "53a7c39238b81f8a",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "yomorun/yomo — 🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
       "url": "https://github.com/yomorun/yomo",
@@ -586,7 +586,7 @@
     },
     {
       "id": "6e22fd80accc6b8b",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. ",
       "url": "https://github.com/openonion/connectonion",
@@ -597,68 +597,68 @@
       "laneHint": "ai"
     },
     {
-      "id": "b55a78b125524c5e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "id": "d62e17a18e5724ff",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
-      "title": "MCPJam/inspector — Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-      "url": "https://github.com/MCPJam/inspector",
-      "source": "MCPJam",
-      "summary": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-      "stars": 2220,
-      "publishedAt": "2026-09-24T17:36:47Z",
+      "title": "Gentleman-Programming/engram — Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "source": "Gentleman-Programming",
+      "summary": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "stars": 6803,
+      "publishedAt": "2026-09-24T17:43:15Z",
       "laneHint": "ai"
     },
     {
-      "id": "4948f4449c060f83",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "id": "63d09053a5d98345",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
-      "title": "devantler-tech/ksail — All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. On",
-      "url": "https://github.com/devantler-tech/ksail",
-      "source": "devantler-tech",
-      "summary": "All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. Only requires Docker or a Cloud Provider.",
-      "stars": 165,
-      "publishedAt": "2026-09-24T17:36:54Z",
+      "title": "callstack/agent-device — Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+      "url": "https://github.com/callstack/agent-device",
+      "source": "callstack",
+      "summary": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+      "stars": 4758,
+      "publishedAt": "2026-09-24T17:42:45Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "7d07ac803b4b133f",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "github",
+      "title": "Aletheore/Aletheore — Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
+      "url": "https://github.com/Aletheore/Aletheore",
+      "source": "Aletheore",
+      "summary": "Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
+      "stars": 177,
+      "publishedAt": "2026-09-24T17:42:37Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "dacd31bb9cf1e60a",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "github",
+      "title": "activepieces/activepieces — AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "url": "https://github.com/activepieces/activepieces",
+      "source": "activepieces",
+      "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "stars": 24715,
+      "publishedAt": "2026-09-24T17:41:41Z",
       "laneHint": "ai"
     },
     {
       "id": "1d16394d1de30a27",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "getsentry/sentry-mcp — An MCP server for interacting with Sentry via LLMs.",
       "url": "https://github.com/getsentry/sentry-mcp",
       "source": "getsentry",
       "summary": "An MCP server for interacting with Sentry via LLMs.",
       "stars": 859,
-      "publishedAt": "2026-09-24T17:34:02Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "a1a7d8576325a0cc",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "github",
-      "title": "punkpeye/fastmcp — A TypeScript framework for building MCP servers.",
-      "url": "https://github.com/punkpeye/fastmcp",
-      "source": "punkpeye",
-      "summary": "A TypeScript framework for building MCP servers.",
-      "stars": 3269,
-      "publishedAt": "2026-09-24T17:27:28Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "920a878adb00a619",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "github",
-      "title": "hashgraph-online/hol-guard — Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-      "url": "https://github.com/hashgraph-online/hol-guard",
-      "source": "hashgraph-online",
-      "summary": "Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-      "stars": 666,
-      "publishedAt": "2026-09-24T17:26:38Z",
+      "publishedAt": "2026-09-24T17:41:03Z",
       "laneHint": "ai"
     },
     {
       "id": "8f423521e502b7eb",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "alopatenko/LLMEvaluation — A comprehensive guide to LLM evaluation methods designed to assist in identifying the most suitable evaluation techniques for various use cases, promote the adoption of best",
       "url": "https://github.com/alopatenko/LLMEvaluation",
@@ -670,7 +670,7 @@
     },
     {
       "id": "046061c2f25e12a7",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
       "url": "https://github.com/langwatch/langwatch",
@@ -682,7 +682,7 @@
     },
     {
       "id": "209e5df372815a58",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "confident-ai/deepeval — The LLM Evaluation Framework",
       "url": "https://github.com/confident-ai/deepeval",
@@ -693,7 +693,7 @@
     },
     {
       "id": "d8837e86c5a41ed9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
       "url": "https://github.com/open-compass/opencompass",
@@ -705,7 +705,7 @@
     },
     {
       "id": "fea546fd1c85ee01",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "github",
       "title": "Xuchen-Li/llm-arxiv-daily — Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.",
       "url": "https://github.com/Xuchen-Li/llm-arxiv-daily",
@@ -717,7 +717,7 @@
     },
     {
       "id": "e00ca30bc04e7064",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Prefactoring: Clear the Way for Your New Feature",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8884432057120197221",
@@ -728,7 +728,7 @@
     },
     {
       "id": "8e2f9c77fc00bc9e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Choosing Values for Robust Tests",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5437075393467068071",
@@ -739,7 +739,7 @@
     },
     {
       "id": "b72d38a9b4620f11",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Code Review Responses: Add Context When It Counts",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2884239116763954560",
@@ -750,7 +750,7 @@
     },
     {
       "id": "0e1575ad398d5c3c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Construct with Collaborators, Call with Work",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3181133154081323895",
@@ -761,7 +761,7 @@
     },
     {
       "id": "7172c133cbf14e77",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "One Map Key, One Lookup",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/449797108832062882",
@@ -772,7 +772,7 @@
     },
     {
       "id": "640fe85adb274f61",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "The Way of TDD",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2209662025920551181",
@@ -783,7 +783,7 @@
     },
     {
       "id": "bb3649dcefdecbab",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Set Safe Defaults for Flags",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/7470985732802821212",
@@ -794,7 +794,7 @@
     },
     {
       "id": "e9ca4e287aeff87b",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Simplify Your Code: Functional Core, Imperative Shell",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8012847255464638866",
@@ -805,7 +805,7 @@
     },
     {
       "id": "bc4b3c887a24017c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Sort Lines in Source Code",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3190209407406038686",
@@ -816,7 +816,7 @@
     },
     {
       "id": "e11ef2e9a4272cf2",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Arrange Your Code to Communicate Data Flow",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5121163949762592729",
@@ -827,7 +827,7 @@
     },
     {
       "id": "12a7f49f5c3290a2",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2772563543852506376",
@@ -838,7 +838,7 @@
     },
     {
       "id": "a6d27ce5739f0ac1",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "SMURF: Beyond the Test Pyramid",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/4057571564322162588",
@@ -849,7 +849,7 @@
     },
     {
       "id": "d149355e8b46dad9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – March 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-14-2025/",
@@ -860,7 +860,7 @@
     },
     {
       "id": "7f15f5c2bdcc97e8",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – March 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-7-2025/",
@@ -871,7 +871,7 @@
     },
     {
       "id": "2d3020633aa4a5ea",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – February 21, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-21-2025/",
@@ -882,7 +882,7 @@
     },
     {
       "id": "861763aec3cbbe18",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – February 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-14-2025/",
@@ -893,7 +893,7 @@
     },
     {
       "id": "1ba8ca3549fb082a",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – February 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-7-2025/",
@@ -904,7 +904,7 @@
     },
     {
       "id": "a84264437c0458c7",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – January 24, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-24-2025/",
@@ -915,7 +915,7 @@
     },
     {
       "id": "ebf91f5754317d81",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – January 17, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-17-2025/",
@@ -926,7 +926,7 @@
     },
     {
       "id": "d4dd978b454c6948",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – January 10, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-10-2025/",
@@ -937,7 +937,7 @@
     },
     {
       "id": "059e2df34bdf9800",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – November 22, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-22-2024/",
@@ -948,7 +948,7 @@
     },
     {
       "id": "d1afbd8af105d8a4",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – November 15, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-november-15-2025/",
@@ -959,7 +959,7 @@
     },
     {
       "id": "f1c246e25374f9b5",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – November 8, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-8-2024/",
@@ -970,7 +970,7 @@
     },
     {
       "id": "7bf07835591bb09f",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Five for Friday – November 1, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-1-2024/",
@@ -981,7 +981,7 @@
     },
     {
       "id": "1c2cdfe93c2ff4f9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "The Real Bottleneck in AI-Native Quality Is Trust!",
       "url": "https://danashby.co.uk/2026/07/29/the-real-bottleneck-in-ai-native-quality-is-trust/",
@@ -992,7 +992,7 @@
     },
     {
       "id": "6056a6e8783b4725",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Quality Isn’t an Activity… It’s a System!",
       "url": "https://danashby.co.uk/2026/06/29/quality-isnt-an-activity-its-a-system/",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": "539677aac036af52",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "I Let BearQ Loose on My Own App Through Two Lenses: Tester and Engineering Leader",
       "url": "https://danashby.co.uk/2026/05/07/i-let-bearq-loose-on-my-own-app-through-two-lenses-tester-and-engineering-leader/",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "9bdf24543de2d5fc",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Autonomous Testing has Landed: Welcome BearQ, by SmartBear",
       "url": "https://danashby.co.uk/2026/03/31/autonomous-testing-has-landed-welcome-bearq-by-smartbear/",
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "74dfd2254e54606c",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 2)",
       "url": "https://danashby.co.uk/2026/03/15/the-autonomous-testing-tipping-point-part-2/",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "5ec456d4c8929d56",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 1)",
       "url": "https://danashby.co.uk/2026/03/05/the-autonomous-testing-tipping-point-part-1/",
@@ -1047,7 +1047,7 @@
     },
     {
       "id": "3790d0c385c48608",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Communities… They’re Great! But Let’s Break The Silos.",
       "url": "https://danashby.co.uk/2022/12/03/communities-theyre-great-but-lets-break-the-silos/",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "bbe3e345047ac2ff",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "8 Perspectives of Quality: A Model",
       "url": "https://danashby.co.uk/2022/07/22/8-perspectives-of-quality-a-model/",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": "cfc0e7aa5453140a",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "What’s the quality of your product?",
       "url": "https://danashby.co.uk/2022/07/21/whats-the-quality-of-your-product/",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": "b7ed6cbed4cc47d3",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Adapting Crosby’s 4 absolutes of quality into a software context",
       "url": "https://danashby.co.uk/2019/09/30/adapting-crosbys-4-absolutes-of-quality-into-a-software-context/",
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "a830284bc7cd14af",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Responsible Quality Engineering",
       "url": "https://www.satisfice.com/blog/archives/488069",
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "3c729240ec7a34c8",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "The Perfect Job For Me",
       "url": "https://www.satisfice.com/blog/archives/488204",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": "7727e21cf9e7d9a0",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "This Fact About KPIs May Surprise You",
       "url": "https://www.satisfice.com/blog/archives/488189",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": "2b9c4755bd66f0e9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Some Class Recordings Are Available",
       "url": "https://www.satisfice.com/blog/archives/488173",
@@ -1135,7 +1135,7 @@
     },
     {
       "id": "f6b9bf6adfa2236e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Public Service Announcement: Don’t Say You Use AI for Writing",
       "url": "https://www.satisfice.com/blog/archives/488148",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": "77115efe0d052f4d",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Humans In The Way",
       "url": "https://www.satisfice.com/blog/archives/488130",
@@ -1157,7 +1157,7 @@
     },
     {
       "id": "d312e460f1f42c40",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Responsibility is the Human Moat",
       "url": "https://www.satisfice.com/blog/archives/488082",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": "937538447e40ae25",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "So, You “10x’d” Your Work…",
       "url": "https://www.satisfice.com/blog/archives/488009",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": "ad61354fefa73216",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Everyone is NOT Responsible for Quality",
       "url": "https://www.satisfice.com/blog/archives/487632",
@@ -1190,7 +1190,7 @@
     },
     {
       "id": "41ae506929aebbde",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "“Slop Coding” and Responsible Testers",
       "url": "https://www.satisfice.com/blog/archives/487969",
@@ -1201,7 +1201,7 @@
     },
     {
       "id": "330f0ddb094a9397",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Gemini 3.8 TTS Playground",
       "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
@@ -1212,7 +1212,7 @@
     },
     {
       "id": "68062a4d86785da7",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Shadow roots, explained with live examples",
       "url": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": "5bbddbbe05efb614",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
       "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": "8b09b12e6a7f6358",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
       "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
@@ -1245,7 +1245,7 @@
     },
     {
       "id": "256c0b3da27ae4bd",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "llm 0.36",
       "url": "https://simonwillison.net/2026/Sep/22/llm/",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": "146c43eef4b8c297",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Quoting @therealcornpop",
       "url": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
@@ -1267,7 +1267,7 @@
     },
     {
       "id": "932a13dc8c465cc4",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "llm-anthropic 0.29",
       "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": "2bb3b104f3752ab9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "llm-typesafe 0.1a0",
       "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": "419f761beba44c61",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
       "url": "https://simonwillison.net/2026/Sep/21/jev/",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": "2588083a56aa3326",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Cloudflare Python Workers are now generally available",
       "url": "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/",
@@ -1311,7 +1311,7 @@
     },
     {
       "id": "5316cd11f5244599",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Quoting voxium",
       "url": "https://simonwillison.net/2026/Sep/20/voxium/",
@@ -1322,7 +1322,7 @@
     },
     {
       "id": "e7563672a4e2e314",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "MCP was always a bad idea?",
       "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
@@ -1333,7 +1333,7 @@
     },
     {
       "id": "8ef8bd660c53274f",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "F-Droid 2.0",
       "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
@@ -1342,8 +1342,18 @@
       "laneHint": "ai"
     },
     {
+      "id": "4a8d1c45564d34a2",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "rss",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "source": "Hacker News",
+      "publishedAt": "2026-09-24T17:21:36.000Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "f15ac1b1353e69c0",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Two-tier encryption in the UK",
       "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
@@ -1352,28 +1362,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "4a8d1c45564d34a2",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "rss",
-      "title": "Show HN: Whiteboard (YC W26) – an open-source IDE for thoughtful software design",
-      "url": "https://github.com/devdotfast/whiteboard",
-      "source": "Hacker News",
-      "publishedAt": "2026-09-24T17:21:36.000Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "a4e7dc114dc685e7",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
-      "channel": "rss",
-      "title": "Nokia Design Archive (2025)",
-      "url": "https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c",
-      "source": "Hacker News",
-      "publishedAt": "2026-09-24T09:49:33.000Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "716cf9d8ad88cdac",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Agents.md speaks Unix, and you should too",
       "url": "https://www.fmind.dev/articles/agents-md-speaks-unix/",
@@ -1382,8 +1372,18 @@
       "laneHint": "ai"
     },
     {
+      "id": "a4e7dc114dc685e7",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
+      "channel": "rss",
+      "title": "Nokia Design Archive (2025)",
+      "url": "https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c",
+      "source": "Hacker News",
+      "publishedAt": "2026-09-24T09:49:33.000Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "3b447cfa33405161",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "WaveDigger: Dig into wireless signals to discover their physical locations",
       "url": "https://github.com/christianrowlands/wavedigger",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": "6cbcb2a2016ea9ac",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "GitHub has not removed malicious imitation software after 3 weeks",
       "url": "https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/",
@@ -1403,7 +1403,7 @@
     },
     {
       "id": "29d9903453de75d0",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "B5-BJ2 – Ice Cream Barges – Concrete Ship Constructors (2023)",
       "url": "https://thecretefleet.com/blog/f/b5-bj2---ice-cream-barges---concrete-ship-constructors",
@@ -1413,7 +1413,7 @@
     },
     {
       "id": "9772a68d06a99c63",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Linux support is coming to Snapdragon X2 series",
       "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
@@ -1423,7 +1423,7 @@
     },
     {
       "id": "762c0f93d892371b",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Experiencing writing at our recent Chinese calligraphy workshop",
       "url": "https://viewsproject.wordpress.com/2026/09/06/chinese-calligraphy-workshop/",
@@ -1432,18 +1432,18 @@
       "laneHint": "ai"
     },
     {
-      "id": "fc154a2d494b1a74",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "id": "fc582c04fdb93ee0",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
-      "title": "Federal judge orders Texas to air condition all prisons by the end of 2029",
-      "url": "https://www.texastribune.org/2026/09/22/texas-prison-air-conditioning-lawsuit-ruling/",
+      "title": "The science of Monkey Island: can grog dissolve a metal mug that fast?",
+      "url": "https://jgeekstudies.org/2026/09/23/the-science-of-monkey-island-can-grog-actually-dissolve-a-metal-mug-that-fast/",
       "source": "Hacker News",
-      "publishedAt": "2026-09-24T16:15:34.000Z",
+      "publishedAt": "2026-09-23T15:55:57.000Z",
       "laneHint": "ai"
     },
     {
       "id": "5e33a3b30cd43351",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Ideas on modernizing the open-source desktop",
       "url": "https://lwn.net/SubscriberLink/1095425/2d9f411252325784/",
@@ -1453,7 +1453,7 @@
     },
     {
       "id": "7099647e0e6857d9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Rendering huge pull requests in the GitHub Copilot app",
       "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
@@ -1464,7 +1464,7 @@
     },
     {
       "id": "0733db22d4139477",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
       "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
@@ -1475,7 +1475,7 @@
     },
     {
       "id": "9d46838852968c83",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
       "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
@@ -1486,7 +1486,7 @@
     },
     {
       "id": "5963c36109e5520e",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
@@ -1497,7 +1497,7 @@
     },
     {
       "id": "d72a8d49e96609a9",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
       "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": "5082a80d170d6429",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
@@ -1519,7 +1519,7 @@
     },
     {
       "id": "3afb0684701c0639",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "GitHub availability report: August 2026",
       "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
@@ -1530,7 +1530,7 @@
     },
     {
       "id": "bb819c299d13cde0",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
       "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
@@ -1541,7 +1541,7 @@
     },
     {
       "id": "bd716271bb098b3a",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "GitHub Copilot app for Beginners: Run several agents at once",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
@@ -1552,7 +1552,7 @@
     },
     {
       "id": "8db7ddc146a6e438",
-      "collectedAt": "2026-09-24T17:38:37.045Z",
+      "collectedAt": "2026-09-24T17:43:49.372Z",
       "channel": "rss",
       "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
       "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",

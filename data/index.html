@@ -46,14 +46,14 @@
   .empty{margin-top:24px;color:var(--mut);font-size:14px}
 </style></head><body><div class="wrap">
   <h1>News Radar</h1>
-  <div class="sub">32 tracked · 5 new · generated 24 Sept 2026, 19:38 CEST</div>
+  <div class="sub">38 tracked · 8 new · generated 24 Sept 2026, 19:44 CEST</div>
   <div class="banner fresh">
     agent-reach collected 0 min ago
   </div>
-  <ul class="health"><li class="ok"><b>exa</b> <span>36 items · 9.1s</span></li><li class="ok"><b>github</b> <span>25 items · 3.2s</span></li><li class="ok"><b>rss</b> <span>78 items · 3.8s</span></li><li class="bad"><b>reddit</b> <span>timed out after the channel budget (Command failed: opencli reddit subreddit QualityAssurance --sort new --limit 8 --window background -f json)</span></li></ul>
+  <ul class="health"><li class="ok"><b>exa</b> <span>36 items · 10.1s</span></li><li class="ok"><b>github</b> <span>25 items · 2.7s</span></li><li class="ok"><b>rss</b> <span>78 items · 5.5s</span></li><li class="ok"><b>reddit</b> <span>32 items · 69.8s</span></li></ul>
   <div class="filters">
     <button class="chip" data-filter="new" data-value="1">New only</button>
-    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>8</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>24</span></button><button class="chip alt" data-filter="channel" data-value="exa">exa <span>5</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>17</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>10</span></button>
+    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>10</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>28</span></button><button class="chip alt" data-filter="channel" data-value="exa">exa <span>4</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>17</span></button><button class="chip alt" data-filter="channel" data-value="reddit">reddit <span>7</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>10</span></button>
   </div>
   <div id="list">
     <article class="card" data-lane="qa" data-channel="rss" data-new="0">
@@ -119,6 +119,24 @@
       <div class="meta">GitHub Blog · 18 Sept <span class="ch">rss</span></div>
       <p class="sum">We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .</p>
     </article>
+    <article class="card new" data-lane="ai" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wp62b0/training_a_local_llm_using_cpt_and_rag_with_evals/" target="_blank" rel="noopener">Training a local LLM using CPT and RAG (with evals)</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/LocalLLaMA · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">I have gone through a series of experiments related to an interesting project where I try to teach a local llm a new domain through continued pretraining (CPT). The different experiments are spread across the four phases below: 1. Phase1 talks about how to teach an llm a new domain through CPT and p…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1woyqym/ai_evals_coursescertificates/" target="_blank" rel="noopener">AI evals courses/certificates</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/QualityAssurance · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">Hi! I am forming a team of people that would be specializing in testing LLMs and AI Agents for my clients. Assuming that we need to build those competencies/knowledge base in the team, what courses/programs would you suggest, that you know it is worth paying for? Any certificates at the moment that …</p>
+    </article>
     <article class="card" data-lane="qa" data-channel="exa" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#16a34a">QA / Testing</span>
@@ -127,15 +145,6 @@
       </div>
       <div class="meta">mabl.com · 23 Sept <span class="ch">exa</span></div>
       <p class="sum">Your ADLC Is Outrunning Your Quality Gates | mabl   # Your ADLC Is Outrunning Your Quality Gates   Dan Belcher   September 23, 2026   It feels like magic. When I talk to engineering leaders, I spot a tension underneath. Creation sped up exponentially. Verification is still built for a slower world. …</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="exa" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://dev.to/zarart/from-quantity-to-quality-a-risk-based-approach-to-ai-assisted-qa-at-scale-12d9" target="_blank" rel="noopener">From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community</a>
-        
-      </div>
-      <div class="meta">dev.to · 22 Sept <span class="ch">exa</span></div>
-      <p class="sum">From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community Artemii Zakharov Posted on Sep 22   # From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale   We write more tests than ever, yet bugs still reach production. This post introduces a risk-ba…</p>
     </article>
     <article class="card" data-lane="ai" data-channel="exa" data-new="0">
       <div class="top">
@@ -164,50 +173,59 @@
       <div class="meta">Simon Willison · 20 Sept <span class="ch">rss</span></div>
       <p class="sum">It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I h…</p>
     </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+    <article class="card new" data-lane="ai" data-channel="reddit" data-new="1">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/devantler-tech/ksail" target="_blank" rel="noopener">devantler-tech/ksail — All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. On</a>
+        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wp75t0/would_this_be_super_fast_for_qwen_27b_next_32gb/" target="_blank" rel="noopener">Would this be super fast for Qwen 27b &amp; next? 32GB isn't much overhead for Q8 + 256k context</a>
         <span class="badge">NEW</span>
       </div>
-      <div class="meta">devantler-tech · ★ 165 · 24 Sept <span class="ch">github</span></div>
-      <p class="sum">All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. Only requires Docker or a Cloud Provider.</p>
+      <div class="meta">r/LocalLLaMA · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">I have a 128gb m5 max now. It runs Qwen 3.8 27b well but as context grows the PP and output is so slow. Qwen Next is faster but still too slow to do lots of agentic work (coding) with. I am not a video gamer and I feel really bad if I contribute to hurting them if I buy this computer just for LLMs, …</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/MCPJam/inspector" target="_blank" rel="noopener">MCPJam/inspector — Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.</a>
+        <a class="title" href="https://github.com/Gentleman-Programming/engram" target="_blank" rel="noopener">Gentleman-Programming/engram — Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.</a>
         
       </div>
-      <div class="meta">MCPJam · ★ 2220 · 24 Sept <span class="ch">github</span></div>
-      <p class="sum">Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.</p>
+      <div class="meta">Gentleman-Programming · ★ 6803 · 24 Sept <span class="ch">github</span></div>
+      <p class="sum">Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/callstack/agent-device" target="_blank" rel="noopener">callstack/agent-device — Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.</a>
+        
+      </div>
+      <div class="meta">callstack · ★ 4758 · 24 Sept <span class="ch">github</span></div>
+      <p class="sum">Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.</p>
     </article>
     <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/Aletheore/Aletheore" target="_blank" rel="noopener">Aletheore/Aletheore — Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">Aletheore · ★ 177 · 24 Sept <span class="ch">github</span></div>
+      <p class="sum">Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/activepieces/activepieces" target="_blank" rel="noopener">activepieces/activepieces — AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents</a>
+        
+      </div>
+      <div class="meta">activepieces · ★ 24715 · 24 Sept <span class="ch">github</span></div>
+      <p class="sum">AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
         <a class="title" href="https://github.com/getsentry/sentry-mcp" target="_blank" rel="noopener">getsentry/sentry-mcp — An MCP server for interacting with Sentry via LLMs.</a>
-        <span class="badge">NEW</span>
+        
       </div>
       <div class="meta">getsentry · ★ 859 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">An MCP server for interacting with Sentry via LLMs.</p>
-    </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/punkpeye/fastmcp" target="_blank" rel="noopener">punkpeye/fastmcp — A TypeScript framework for building MCP servers.</a>
-        <span class="badge">NEW</span>
-      </div>
-      <div class="meta">punkpeye · ★ 3269 · 24 Sept <span class="ch">github</span></div>
-      <p class="sum">A TypeScript framework for building MCP servers.</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/hashgraph-online/hol-guard" target="_blank" rel="noopener">hashgraph-online/hol-guard — Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.</a>
-        
-      </div>
-      <div class="meta">hashgraph-online · ★ 666 · 24 Sept <span class="ch">github</span></div>
-      <p class="sum">Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -236,14 +254,23 @@
       <div class="meta">langwatch · ★ 4871 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">The platform for LLM evaluations and AI agent testing</p>
     </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
         <a class="title" href="https://github.com/aeonfun/aeon" target="_blank" rel="noopener">aeonfun/aeon — Official Aeon - the open-source autonomous AI agent framework. Runs unattended on your GitHub Actions, self-healing skills, drives Claude Code, Codex, Grok &amp; more. Not affiliated with O</a>
-        <span class="badge">NEW</span>
+        
       </div>
       <div class="meta">aeonfun · ★ 755 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">Official Aeon - the open-source autonomous AI agent framework. Runs unattended on your GitHub Actions, self-healing skills, drives Claude Code, Codex, Grok &amp; more. Not affiliated with OpenAI.</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1wp4eil/how_would_you_test_frontend_image_performance/" target="_blank" rel="noopener">How would you test frontend image performance while JMeter is load testing Supabase?</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/QualityAssurance · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">I'm currently load testing an ecommerce platform where users can rent and lend products. The stack is: * Supabase backend/database/storage * JMeter for load testing * Stripe and Afterpay for payments * Lovable So far I've been using JMeter to test the APIs and Supabase under increasing concurrent-us…</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -263,14 +290,23 @@
       <div class="meta">open-compass · ★ 7472 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledge, reasoning, coding, science, language, long-context, and safety.</p>
     </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
         <a class="title" href="https://github.com/yomorun/yomo" target="_blank" rel="noopener">yomorun/yomo — 🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.</a>
-        <span class="badge">NEW</span>
+        
       </div>
       <div class="meta">yomorun · ★ 1927 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1woyyzp/api_testing_with_playwright/" target="_blank" rel="noopener">API testing with Playwright?</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/QualityAssurance · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">Hi, I am currently implementing UI testing framework for a small marketplace page. Standard approach: Playwright+TS. I work a bit with APIs in there, intercepting and validating a response, or mocking API response to see certain edge cases. But now we are tasked to implement a separate full API test…</p>
     </article>
     <article class="card" data-lane="qa" data-channel="github" data-new="0">
       <div class="top">
@@ -289,6 +325,15 @@
       </div>
       <div class="meta">pact-foundation · ★ 955 · 24 Sept <span class="ch">github</span></div>
       <p class="sum">Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</p>
+    </article>
+    <article class="card new" data-lane="qa" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://www.reddit.com/r/softwaretesting/comments/1wo6w3n/til_average_response_time_can_hide_some_pretty/" target="_blank" rel="noopener">TIL: Average response time can hide some pretty nasty load-testing problems</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/softwaretesting · 23 Sept <span class="ch">reddit</span></div>
+      <p class="sum">I recently learned something the hard way and figured it might be interesting to some folks here. We ran a load test last month where our mean response time stayed around 220ms, so naturally management was prepared to greenlight the release. It looked pretty good on the surface. However, we eventual…</p>
     </article>
     <article class="card" data-lane="qa" data-channel="github" data-new="0">
       <div class="top">
@@ -343,6 +388,15 @@
       </div>
       <div class="meta">testmuai.com <span class="ch">exa</span></div>
       <p class="sum"># Reinventing the QE Practice at Global Scale in Agentic Era [Testμ 2026]   Four delivery leaders from Wipro, Capgemini, Nagarro and Persistent on guardian agents, the new QE pyramid, and where humans still sit in the loop.   Published on: September 6, 2026   For two decades, quality engineering at …</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="reddit" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wp7zyb/qwen38flashnext_on_12gb_vram_65_tokens_per_second/" target="_blank" rel="noopener">Qwen3.8-Flash-Next on 12GB VRAM - 65 tokens per second</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">r/LocalLLaMA · 24 Sept <span class="ch">reddit</span></div>
+      <p class="sum">A while ago I posted 15 tok/s output and 100-120 tok/s prompt processing with the IQ3\_XXS quant on a 12GB RTX 5070 using llama.cpp. Since then I built my own inference engine for this one model and this kind of PC. The same IQ3\_XXS now runs at **\~65 tok/s output** and **\~430 tok/s prompt process…</p>
     </article></div>
 </div>
 <script>
