@@ -228,6 +228,17 @@ export const collector = {
   // searching the firehose.
   enabled: ["exa", "github", "rss", "reddit"] as string[],
 
+  // Where each enabled channel runs. These need nothing but the network (exa is
+  // Exa's hosted MCP endpoint, no key), so Actions collects them every morning and
+  // the email no longer depends on the Mac being awake. Every other channel needs
+  // this Mac's Chrome session and is collected by run-local.sh.
+  cloudChannels: ["exa", "github", "rss"] as string[],
+  // The Mac's collection is merged into the render while it is younger than this.
+  // 36h, not 24h, so a collection made late in the day still makes the next
+  // morning's email. Older than that, its channels show as stale and the email
+  // goes out without them — it never waits on the Mac.
+  macMaxAgeHours: 36,
+
   exaResultsPerQuery: 6,
   githubResultsPerQuery: 5,
   // Quality floor for repo search. Without it, `--sort updated` returns whatever

@@ -1,8 +1,9 @@
-# News Radar — delivery half of the pipeline.
+# News Radar — collects the network-only channels, renders and delivers.
 #
-# It deliberately does NOT collect. Collection needs this Mac's Chrome session and
-# mcporter config, so a runner cannot do it — Actions only renders and delivers what
-# scripts/run-local.sh last pushed. That is what keeps the email agent-reach-backed.
+# exa, github and rss are collected here every morning, so the email does not
+# depend on the Mac. Channels that need the Mac's Chrome session (reddit) are
+# collected by scripts/run-local.sh and pushed as data/reach-mac.json; the render
+# merges it in while it is fresh and reports it as stale otherwise.
 #
 # Delivery needs three repo secrets, all set:
 #   MAIL_USERNAME  — the Gmail address
@@ -24,17 +25,12 @@ on:
         description: "Render a digest even if nothing is new (tests the mail path)"
         type: boolean
         default: false
-  # The main trigger: the Mac pushed a new collection, so render and mail it now.
-  # Actions' own commits never touch this file (and GITHUB_TOKEN pushes do not
-  # trigger workflows anyway), so this cannot loop.
-  push:
-    branches: [main]
-    paths: [data/reach-raw.json]
-  # Daily fallback: keeps the dashboard's staleness current and drives the heartbeat
-  # when no collection arrives. GitHub runs it hours late (06:30 has been landing
-  # around 12:00 UTC), which is why it is not the delivery trigger.
+  # One run a day, one email a day. No push trigger: the Mac's push would otherwise
+  # mean a second run and a second email. Its reddit items join the next morning's.
+  # GitHub starts scheduled runs late (06:30 has landed around 12:00 UTC); :37 is
+  # off the top-of-hour rush, and anything after the Mac's 06:45-local slot works.
   schedule:
-    - cron: "30 6 * * *"
+    - cron: "37 6 * * *"
 
 permissions:
   contents: write
@@ -69,6 +65,23 @@ jobs:
       # ${#MAIL_PASSWORD} against the alphanumeric-only count (should both be 16):
       #   printf '%s' "$MAIL_PASSWORD" | LC_ALL=C tr -cd 'a-zA-Z0-9' | wc -c
 
+      # Exa's hosted MCP endpoint needs no key; mcporter is the same client the Mac
+      # uses, pinned so a release cannot change the output format under the parser.
+      - name: Set up exa client
+        run: |
+          npm install -g mcporter@0.13.0
+          mkdir -p ~/.mcporter
+          echo '{"mcpServers":{"exa":{"baseUrl":"https://mcp.exa.ai/mcp"}}}' > ~/.mcporter/mcporter.json
+
+      # Best-effort like every collector: a failure leaves the previous
+      # reach-cloud.json in place to age, and the freshness gate and the BROKEN
+      # heartbeat take it from there. It must not stop the render or the email.
+      - name: Collect (exa, github, rss)
+        env:
+          REACH_SIDE: cloud
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/reach-collect.mjs || echo "::warning::cloud collection produced nothing (exit $?)"
+
       - name: Render digest and dashboard
         id: render
         env:
@@ -95,13 +108,13 @@ jobs:
           convert_markdown: false
 
       # seen-history must persist or every run re-mails the same items. The Mac
-      # writes reach-raw.json and this job writes the render state, so rebase
-      # rather than assume this runner is the only writer.
+      # writes reach-mac.json and this job writes everything else, so the rebase
+      # never has two sides of one file to reconcile.
       - name: Commit render state
         run: |
           git config user.name "news-radar-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/seen-history.json data/digest-state.json data/items.json data/index.html
+          git add data/reach-cloud.json data/seen-history.json data/digest-state.json data/items.json data/index.html
           git diff --cached --quiet && echo "no changes" && exit 0
           git commit -m "news-radar: render $(date -u +%FT%TZ)"
           git pull --rebase --autostash origin ${{ github.ref_name }}

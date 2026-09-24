@@ -38,7 +38,8 @@ export interface ChannelReport {
   skipped?: string;      // set when deliberately not attempted (precondition unmet)
 }
 
-// The collector's output file: data/reach-raw.json
+// The collector's output, one file per side: data/reach-cloud.json (Actions) and
+// data/reach-mac.json (the Mac). The render merges them — see loadReach.
 export interface ReachPayload {
   version: 1;
   collectedAt: string;         // ISO — the freshness gate reads this

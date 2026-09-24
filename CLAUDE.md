@@ -8,10 +8,13 @@ configuration and the design decisions. This file holds only what is specific to
 TypeScript → `dist/`, Node 22+, **no runtime dependencies** (native `fetch` only).
 The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd runs it without a
 build step; it imports the compiled config from `dist/` so there is one source of truth.
+It runs on both sides: `REACH_SIDE=cloud` in Actions (exa, github, rss), default `mac`
+on the Mac (reddit). `collector.cloudChannels` is the split.
 
 ```bash
 npm install && npm run build
-node scripts/reach-collect.mjs      # collect → data/reach-raw.json
+node scripts/reach-collect.mjs      # Mac channels → data/reach-mac.json
+REACH_SIDE=cloud node scripts/reach-collect.mjs   # → data/reach-cloud.json
 npm start                           # render → digest.html + data/index.html
 npm run all                         # both
 ```
@@ -29,8 +32,10 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
   addresses, no third-party usernames. The plist is a template and the collector omits
   both the machine name and post authors for exactly this reason. This repo is
   publishable; keep it that way.
-- **One writer per data file.** `reach-raw.json` belongs to the Mac; the render outputs
-  and state files belong to Actions. Both sides writing the same file made every push a
+- **One writer per data file.** `reach-mac.json` belongs to the Mac; `reach-cloud.json`,
+  the render outputs and the state files belong to Actions. The Mac publishes with git
+  plumbing onto `origin/main` and never merges, and it does not render locally: the
+  local render plus `pull --autostash` is what wedged the checkout for five weeks. Both sides writing the same file made every push a
   conflict in generated content.
 - Commits use the repo-local git identity, which is the GitHub noreply address. Do not
   add `-c user.email=...` overrides — that publishes whatever is hardcoded.

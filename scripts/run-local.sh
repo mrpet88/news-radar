@@ -1,6 +1,10 @@
 #!/bin/zsh
 # Local collection run — invoked by launchd four times a day.
 #
+# Collects only the channels that need this Mac's Chrome session (reddit today);
+# exa, github and rss are collected by Actions, so the morning email goes out
+# whether or not this Mac was awake. See collector.cloudChannels.
+#
 # Fires often, works at most once. The three guards below mean the job takes the
 # first slot where the Mac is actually awake with Chrome open, and does nothing
 # the other three times. launchd already runs a missed StartCalendarInterval at
@@ -32,7 +36,7 @@ FRESH=0
 if node -e '
   const fs = require("fs");
   try {
-    const p = JSON.parse(fs.readFileSync("data/reach-raw.json", "utf8"));
+    const p = JSON.parse(fs.readFileSync("data/reach-mac.json", "utf8"));
     const h = (Date.now() - Date.parse(p.collectedAt)) / 3.6e6;
     process.exit(h < 20 ? 0 : 1);
   } catch { process.exit(1); }
@@ -66,8 +70,8 @@ fi
 # No local render. Rendering writes items.json, index.html and the two state files,
 # which Actions owns; leaving them modified here is what wedged this checkout in a
 # half-finished autostash merge from 2026-08-18 on, after which every commit failed
-# and no collection reached GitHub for five weeks. Actions renders within minutes of
-# the push below (the workflow triggers on reach-raw.json), so nothing is lost.
+# and no collection reached GitHub for five weeks. Actions merges this collection
+# into its next morning run.
 
 # ── Publish ───────────────────────────────────────────────────────────────────
 # Opt-in: running this script by hand does not touch git. The LaunchAgent sets
@@ -78,7 +82,7 @@ if [[ "${NEWS_RADAR_PUSH:-0}" != "1" ]]; then
 fi
 
 # Publish with plumbing, not commit/pull/push. The commit is built directly on top
-# of origin/main with only reach-raw.json replaced, in a throwaway index, and pushed
+# of origin/main with only reach-mac.json replaced, in a throwaway index, and pushed
 # by hash. The working tree, the local branch and the real index are never touched,
 # so there is no merge, no rebase and no state that can be left half-done — whatever
 # this checkout looks like (dirty, behind, even mid-conflict), the publish works.
@@ -87,10 +91,10 @@ publish() {
   local base blob tree commit idx
   git fetch -q origin main || { log "fetch failed"; return 1; }
   base=$(git rev-parse FETCH_HEAD) || return 1
-  blob=$(git hash-object -w data/reach-raw.json) || return 1
+  blob=$(git hash-object -w data/reach-mac.json) || return 1
   idx="$(mktemp -d)/index"
   GIT_INDEX_FILE="$idx" git read-tree "$base" || return 1
-  GIT_INDEX_FILE="$idx" git update-index --add --cacheinfo "100644,$blob,data/reach-raw.json" || return 1
+  GIT_INDEX_FILE="$idx" git update-index --add --cacheinfo "100644,$blob,data/reach-mac.json" || return 1
   tree=$(GIT_INDEX_FILE="$idx" git write-tree) || return 1
   rm -rf "${idx:h}"
   if [[ "$tree" == "$(git rev-parse "$base^{tree}")" ]]; then

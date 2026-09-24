@@ -23,37 +23,41 @@ MIT licensed.
 
 ## How it works
 
-Collection and delivery run in different places, on purpose:
+Collection is split by what each channel needs; delivery happens in one place:
 
 ```
-  YOUR MAC (launchd, 4×/day)              GITHUB ACTIONS (06:30 UTC daily)
-  ───────────────────────────             ────────────────────────────────
-  scripts/reach-collect.mjs               npm start
-    → queries each channel                  → reads data/reach-raw.json
-    → data/reach-raw.json                   → scores, dedupes, diffs vs seen-history
-    → commits + pushes                      → writes digest.html + data/index.html
-                                            → emails (if the gate passes)
+  GITHUB ACTIONS (06:37 UTC daily)          YOUR MAC (launchd, 4×/day)
+  ────────────────────────────────          ──────────────────────────
+  reach-collect.mjs  REACH_SIDE=cloud       reach-collect.mjs  REACH_SIDE=mac
+    → exa, github, rss                        → reddit (needs Chrome)
+    → data/reach-cloud.json                   → data/reach-mac.json → pushed
+  npm start
+    → merges both (the Mac's half only while under 36h old)
+    → scores, dedupes, diffs vs seen-history
+    → writes digest.html + data/index.html, emails if the gate passes
 ```
 
-**Collection only happens on your machine.** Every channel needs something a CI runner
-does not have: local `mcporter` configuration for semantic search, a `gh` token, or a
-logged-in Chrome session for Reddit. Actions never collects — it renders and delivers
-whatever your Mac last pushed. That is what makes the email provably backed by a real
-collection rather than by nothing.
+**The email does not depend on your Mac.** Channels that need only the network are
+collected by Actions every morning. Channels that need a logged-in Chrome session are
+collected on your Mac and merged in while they are fresh. If the Mac was asleep, the
+email still goes out and those channels show as stale. Which channel runs where is
+`collector.cloudChannels` in `src/config.ts`.
 
-The consequence is the **freshness gate**: an email is only ever sent when the collection
-behind it is under 24 hours old. If your Mac was asleep, no email goes out — but the
-dashboard still updates and shows exactly how stale the data is.
+The **freshness gate** still applies: an email is only sent when the merged collection
+behind it is under 24 hours old. In practice that closes only if the Actions collection
+itself fails — and after two days of that the heartbeat says **BROKEN**, not "quiet".
 
 ---
 
 ## Requirements
 
 - macOS (the scheduler is a LaunchAgent) and Node 22+
-- [`agent-reach`](https://github.com/Panniantong/Agent-Reach) with a working `mcporter`
-  setup for the `exa` channel
-- `gh` (GitHub CLI), authenticated — used both for the `github` channel and for pushing
+- [`agent-reach`](https://github.com/Panniantong/Agent-Reach) on the Mac, for OpenCLI
+- `gh` (GitHub CLI), authenticated — for pushing the Mac's collection
 - Chrome, logged in to Reddit, for the `reddit` channel
+
+Actions needs nothing extra for exa, github and rss: the workflow installs `mcporter`
+pointed at Exa's hosted endpoint (no key) and uses the job's own token for `gh`.
 - A Gmail account with 2FA, for delivery
 
 Run `agent-reach doctor --json` to see which channels your machine can currently serve.
@@ -158,13 +162,13 @@ crowd the other out of the email entirely.
 
 ## Channels
 
-| channel | source | needs |
-|---|---|---|
-| `exa` | semantic web search | `mcporter` configured locally |
-| `rss` | curated publisher feeds | nothing |
-| `reddit` | named subreddits | Chrome logged in to Reddit |
-| `github` | `gh search repos` | `gh` authenticated |
-| `twitter` | X search | Chrome logged in to x.com — **disabled by default** |
+| channel | source | runs on | needs |
+|---|---|---|---|
+| `exa` | semantic web search | Actions | nothing (hosted MCP endpoint) |
+| `rss` | curated publisher feeds | Actions | nothing |
+| `github` | `gh search repos` | Actions | the job token |
+| `reddit` | named subreddits | Mac | Chrome logged in to Reddit |
+| `twitter` | X search | Mac | Chrome logged in to x.com — **disabled by default** |
 
 Every channel is best-effort: it records its own status and never fails the run. A
 channel that errored is reported differently from one that ran and found nothing, and
@@ -233,7 +237,8 @@ one — which is how a work address ends up on a personal project.
 
 | file | written by | purpose |
 |---|---|---|
-| `data/reach-raw.json` | your Mac | the raw collection; the freshness gate reads its timestamp |
+| `data/reach-cloud.json` | Actions | exa, github and rss collection |
+| `data/reach-mac.json` | your Mac | reddit collection; merged while under 36h old |
 | `data/seen-history.json` | Actions | what has already been surfaced, 60-day TTL |
 | `data/digest-state.json` | Actions | last digest / heartbeat, for the quiet-period check |
 | `data/items.json`, `data/index.html` | Actions | the rendered dashboard |
@@ -249,7 +254,9 @@ push a conflict with no meaningful side to prefer.
 |---|---|
 | `can't open input file` in `data/launchd.log` | project is under a TCC-protected folder; move it |
 | `535 BadCredentials` from SMTP | app password stored with Google's non-breaking spaces |
-| no email, dashboard still updating | freshness gate — the collection is over 24h old |
+| no email, dashboard still updating | freshness gate — check the Collect step of the Actions run |
+| "BROKEN" heartbeat email | no fresh collection for 48h+ — Actions collect step and `data/launchd.log` |
+| reddit "left out" on the dashboard | the Mac's collection is over 36h old (asleep, Chrome closed, or OpenCLI failing) |
 | a channel reports "skipped" | precondition unmet (Chrome closed, credential absent) |
 | digest keeps re-sending the same items | `seen-history.json` is not being committed back |
 
@@ -257,5 +264,7 @@ Useful environment variables:
 
 - `NEWS_RADAR_DIGEST_FORCE=true` — render a digest even when nothing is new
 - `NEWS_RADAR_MAX_AGE_HOURS` — override the 24h freshness gate
-- `REACH_CHANNELS=exa,github` — restrict the collector to named channels, including
-  disabled ones
+- `REACH_SIDE=cloud` — collect the Actions channels instead of the Mac ones
+  (writes `data/reach-cloud.json`); the default is `mac`
+- `REACH_CHANNELS=exa,github` — restrict the collector to named channels of that side,
+  including disabled ones

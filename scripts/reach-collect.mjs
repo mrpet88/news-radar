@@ -1,10 +1,13 @@
 #!/usr/bin/env node
-// agent-reach collector — runs on the Mac only.
+// agent-reach collector — runs on both sides, each collecting its own channels.
 //
-// Every channel here needs something a CI runner does not have: mcporter's local
-// config (exa), a gh token, a live Chrome session with the OpenCLI extension
-// (reddit), or exported cookies (twitter). That is why collection is local-only
-// and Actions merely renders what this script pushed.
+//   REACH_SIDE=cloud  (Actions) exa, github, rss   → data/reach-cloud.json
+//   REACH_SIDE=mac    (default) everything else    → data/reach-mac.json
+//
+// The split is collector.cloudChannels. Cloud channels need only the network; the
+// rest need this Mac's live Chrome session with the OpenCLI extension, which a
+// runner cannot have. Each side writes only its own file, and the render merges
+// them, so the email goes out every morning whether or not the Mac was awake.
 //
 // Plain ESM on purpose: launchd runs it directly. It imports the compiled config
 // from dist/ so there is exactly one source of truth for what gets tracked.
@@ -17,7 +20,8 @@ import { fileURLToPath } from "node:url";
 
 const execFileAsync = promisify(execFile);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const OUT = path.join(ROOT, "data", "reach-raw.json");
+const SIDE = process.env.REACH_SIDE === "cloud" ? "cloud" : "mac";
+const OUT = path.join(ROOT, "data", `reach-${SIDE}.json`);
 
 // Optional .env, loaded here as well as in run-local.sh so a credential-backed
 // channel behaves the same however the collector is started. No channel currently
@@ -300,7 +304,10 @@ async function main() {
   const items = [];
   const reports = [];
 
-  for (const [channel, fn] of CHANNELS) {
+  // The other side's channels are not this run's business — not even as "skipped",
+  // or the merged report would list them twice.
+  const mine = (c) => collector.cloudChannels.includes(c) === (SIDE === "cloud");
+  for (const [channel, fn] of CHANNELS.filter(([c]) => mine(c))) {
     // REACH_CHANNELS is the ad-hoc override for testing; collector.enabled is the
     // standing configuration. An explicit override wins so a disabled channel can
     // still be exercised by hand.
@@ -352,7 +359,7 @@ async function main() {
   // it here would refresh the freshness stamp with no content behind it, and the
   // digest gate would then green-light an email built from nothing.
   if (items.length === 0) {
-    console.error("no items collected from any channel — leaving previous reach-raw.json untouched");
+    console.error(`no items collected from any channel — leaving previous ${path.basename(OUT)} untouched`);
     process.exit(2);
   }
 
