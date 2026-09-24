@@ -70,5 +70,5 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
 | github | Actions | working | job token; star floor 120, else `--sort updated` returns only fresh personal repos |
 | reddit | Mac | **failing since ~2026-09-13** | `opencli reddit subreddit` times out every run. Public `/r/<sub>/new/.rss` answers 200 from the Mac without Chrome (`.json` is 403) — untested from Actions |
 | news | Actions | working | 10 feeds across 4 sections, ~150/run |
-| marktplaats | Actions | working from the Mac; **first Actions run pending** | `/lrp/api/search`, no key; ~130/run after subcategory filters |
+| marktplaats | Actions | working | `/lrp/api/search`, no key; ~130/run after subcategory filters |
 | twitter | Mac | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |

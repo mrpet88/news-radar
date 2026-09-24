@@ -76,7 +76,7 @@ jobs:
       # Best-effort like every collector: a failure leaves the previous
       # reach-cloud.json in place to age, and the freshness gate and the BROKEN
       # heartbeat take it from there. It must not stop the render or the email.
-      - name: Collect (exa, github, rss)
+      - name: Collect (exa, github, rss, news, marktplaats)
         env:
           REACH_SIDE: cloud
           GH_TOKEN: ${{ github.token }}
