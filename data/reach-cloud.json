@@ -1,42 +1,42 @@
 {
   "version": 1,
-  "collectedAt": "2026-09-24T18:11:50.899Z",
+  "collectedAt": "2026-09-24T18:38:50.183Z",
   "channels": [
     {
       "channel": "exa",
       "ok": true,
       "count": 36,
-      "ms": 9032
+      "ms": 17296
     },
     {
       "channel": "github",
       "ok": true,
       "count": 25,
-      "ms": 2523
+      "ms": 2692
     },
     {
       "channel": "rss",
       "ok": true,
-      "count": 68,
-      "ms": 42195
+      "count": 78,
+      "ms": 7452
     },
     {
       "channel": "news",
       "ok": true,
       "count": 150,
-      "ms": 2125
+      "ms": 2464
     },
     {
       "channel": "marktplaats",
       "ok": true,
       "count": 132,
-      "ms": 4500
+      "ms": 6634
     }
   ],
   "items": [
     {
       "id": "4b3622adc778ab44",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "fullscale.io",
       "title": "Software Testing Strategies Are a Leadership Decision, Not a QA Checklist - Full Scale",
@@ -47,7 +47,7 @@
     },
     {
       "id": "0245ccddfa2e90f5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "testmuai.com",
       "title": "Redefining Quality Leadership in an Agentic World [Testμ 2026]",
@@ -57,7 +57,7 @@
     },
     {
       "id": "76bda146f650b22c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "mabl.com",
       "title": "Your ADLC Is Outrunning Your Quality Gates | mabl",
@@ -68,7 +68,7 @@
     },
     {
       "id": "ae2e013f986b7043",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "testmuai.com",
       "title": "Reinventing the QE Practice at Global Scale in Agentic Era [Testμ 2026]",
@@ -77,19 +77,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "57fe593a0430db31",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "exa",
-      "source": "qabash.com",
-      "title": "Building an AI Testing Strategy for Enterprise Applications | QA Bash",
-      "url": "https://qabash.com/blog/ai-testing-strategy-enterprise-applications",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "summary": "AI in Testing· 9 min read· Sep 11, 2026   # Building an AI Testing Strategy for Enterprise Applications   Sep 11, 2026   An AI testing strategy for enterprise applications involves systematically incorporating artificial intelligence and machine learning techniques into the software testing lifecycle. This includes using AI for test case generation, defect prediction, intelligent test orchestratio",
-      "laneHint": "qa"
-    },
-    {
       "id": "13cf160861340c89",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "testrail.com",
       "title": "Test As Context: Your QA Team Already Wrote The Spec AI Needs",
@@ -99,8 +88,19 @@
       "laneHint": "qa"
     },
     {
+      "id": "57fe593a0430db31",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "exa",
+      "source": "qabash.com",
+      "title": "Building an AI Testing Strategy for Enterprise Applications | QA Bash",
+      "url": "https://qabash.com/blog/ai-testing-strategy-enterprise-applications",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "summary": "AI in Testing· 9 min read· Sep 11, 2026   # Building an AI Testing Strategy for Enterprise Applications   Sep 11, 2026   An AI testing strategy for enterprise applications involves systematically incorporating artificial intelligence and machine learning techniques into the software testing lifecycle. This includes using AI for test case generation, defect prediction, intelligent test orchestratio",
+      "laneHint": "qa"
+    },
+    {
       "id": "2704854601c9fe6c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "exante.eu",
       "title": "AI in testing: from manual checks to a smart workflow | EXANTE",
@@ -110,19 +110,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "4a56a76d0e2193b1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "exa",
-      "source": "medium.com",
-      "title": "Shift Left Testing Meets AI Agents | by Ivan Diana | Sep, 2026 | Medium",
-      "url": "https://medium.com/@iwo.diana/shift-left-testing-meets-ai-agents-a3161e68a7a5",
-      "publishedAt": "2026-09-07T07:31:01.000Z",
-      "summary": "# Shift Left Testing Meets AI Agents   ## I paid full price for a signal I already had   Everyone talking about the cost of agentic development counts tokens. I did too. Then, three thousand CI minutes into fifteen active days, my pipeline hard-stopped. It was not the API bill. I had run out of GitHub Actions minutes, and what would not merge was the tool I had built to measure what all of this co",
-      "laneHint": "qa"
-    },
-    {
       "id": "22635960301f1f2a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community",
@@ -132,8 +121,19 @@
       "laneHint": "qa"
     },
     {
+      "id": "4a56a76d0e2193b1",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "exa",
+      "source": "medium.com",
+      "title": "Shift Left Testing Meets AI Agents | by Ivan Diana | Sep, 2026 | Medium",
+      "url": "https://medium.com/@iwo.diana/shift-left-testing-meets-ai-agents-a3161e68a7a5",
+      "publishedAt": "2026-09-07T07:31:01.000Z",
+      "summary": "# Shift Left Testing Meets AI Agents   ## I paid full price for a signal I already had   Everyone talking about the cost of agentic development counts tokens. I did too. Then, three thousand CI minutes into fifteen active days, my pipeline hard-stopped. It was not the API bill. I had run out of GitHub Actions minutes, and what would not merge was the tool I had built to measure what all of this co",
+      "laneHint": "qa"
+    },
+    {
       "id": "21024b1b27f50d7c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "launchdarkly.com",
       "title": "Stories from the Factory Floor: My own private software factory | LaunchDarkly",
@@ -144,7 +144,7 @@
     },
     {
       "id": "79d2300f75de4391",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "sigmacomputing.com",
       "title": "Migrating 1,000+ Tests to Playwright with Agentic Loops | Sigma",
@@ -154,19 +154,19 @@
       "laneHint": "qa"
     },
     {
-      "id": "0e13ca024f7e4397",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "4396f89f3d3402c5",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
-      "source": "testbooster.ai",
-      "title": "Shift-Left Testing in 2026: The No-Code AI Way | TestBooster.ai Blog",
-      "url": "https://www.testbooster.ai/en/blog/shift-left-testing-in-2026-the-no-code-ai-way",
-      "publishedAt": "2026-07-30T00:00:00.000Z",
-      "summary": "# Shift-Left Testing in 2026: The No-Code AI Way   TestBooster July 30, 2026 5 min read   Every QA leader knows the math, even if they never say it out loud: a bug caught while a feature is still an idea costs almost nothing to fix, while the same bug caught in production can cost 30 to 100 times more. IBM and NIST famously pegged it at roughly $1 in the requirements phase, $10 in coding, $100 in",
+      "source": "vuink.com",
+      "title": "Accelerating Large-Scale Test Migration with LLMs | Vuink.com",
+      "url": "https://vuink.com/post/nveoao-d-dgrpu/infrastructure/accelerating-large-scale-test-migration-with-llms",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "summary": "# Accelerating Large-Scale Test Migration with LLMs   Airbnb recently completed our first large-scale, LLM-driven code migration, updating nearly 3.5K React component test files from Enzyme to use React Testing Library (RTL) instead. We’d originally estimated this would take 1.5 years of engineering time to do by hand, but — using a combination of frontier models and robust automation — we finishe",
       "laneHint": "qa"
     },
     {
       "id": "7308f26346785440",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "claude.com",
       "title": "Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic | Claude by Anthropic",
@@ -177,7 +177,7 @@
     },
     {
       "id": "ed84195aaa313b43",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "nhimg.org",
       "title": "Enterprise browser test automation: what it means for CI reliability",
@@ -188,7 +188,7 @@
     },
     {
       "id": "72a66e45a1a26c18",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "pie.inc",
       "title": "Why Your Team Stopped Trusting the Test Suite (and What It's Costing You) | Pie",
@@ -198,19 +198,8 @@
       "laneHint": "qa"
     },
     {
-      "id": "1e25b4ab1fadece6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "exa",
-      "source": "engineering.fb.com",
-      "title": "Probabilistic flakiness: How do you test your tests? - Engineering at Meta",
-      "url": "https://engineering.fb.com/2020/12/10/developer-tools/probabilistic-flakiness/",
-      "publishedAt": "2020-12-10T00:00:00.000Z",
-      "summary": "Probabilistic flakiness: How do you test your tests? - Engineering at Meta POSTED ON DECEMBER 10, 2020 TO DevInfra By Mateusz Machalica, Wojtek Chmiel, Stanislaw Swierc, Ruslan Sakevych   Facebook’s codebase changes each day as engineers develop new features and optimizations for our apps. If not validated, each of these changes could potentially regress the functionality or reliability of our pro",
-      "laneHint": "qa"
-    },
-    {
       "id": "76bda146f650b22c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "mabl.com",
       "title": "Your ADLC Is Outrunning Your Quality Gates | mabl",
@@ -220,30 +209,30 @@
       "laneHint": "qa"
     },
     {
-      "id": "fec646aa184cc56c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "1e25b4ab1fadece6",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
-      "source": "cloudbees.com",
-      "title": "The Flaky Test Confession: “We All Know We're Ignoring Test Failures”",
-      "url": "https://www.cloudbees.com/blog/the-flaky-test-confession-ignoring-test-failures",
-      "publishedAt": "2026-04-06T00:00:00.000Z",
-      "summary": "# The Flaky Test Confession: “We All Know We’re Ignoring Test Failures” 15 minutes to read Published on April 6, 2026 ## Table of contents ## Share Somewhere in your CI pipeline right now, there's a test that's been failing intermittently for months. You know the one. It fails; someone hits rerun. It passes; the PR merges. Nobody files a bug. Nobody fixes it. Everyone just moves on.   Eventually,",
+      "source": "engineering.fb.com",
+      "title": "Probabilistic flakiness: How do you test your tests? - Engineering at Meta",
+      "url": "https://engineering.fb.com/2020/12/10/developer-tools/probabilistic-flakiness/",
+      "publishedAt": "2020-12-10T00:00:00.000Z",
+      "summary": "Probabilistic flakiness: How do you test your tests? - Engineering at Meta POSTED ON DECEMBER 10, 2020 TO DevInfra By Mateusz Machalica, Wojtek Chmiel, Stanislaw Swierc, Ruslan Sakevych   Facebook’s codebase changes each day as engineers develop new features and optimizations for our apps. If not validated, each of these changes could potentially regress the functionality or reliability of our pro",
       "laneHint": "qa"
     },
     {
-      "id": "00c4c78b06559fac",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "93fa9818a68dfdb9",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
-      "source": "strandsagents.com",
-      "title": "Introducing Strands harness: frontier performance with 28% lower token cost | Strands Agents",
-      "url": "https://strandsagents.com/blog/introducing-strands-harness/",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "summary": "Introducing Strands harness: frontier performance with 28% lower token cost | Strands Agents   # Introducing Strands harness: frontier performance with 28% lower token cost   Strands harness is a fully assembled, customizable, state-of-the-art agent you run locally or deploy anywhere.   Today we’re releasing Strands harness: a fully assembled state-of-the-art agent harness you can easily run local",
-      "laneHint": "ai"
+      "source": "thinhdanggroup.github.io",
+      "title": "Test Selection Breaks Before Your Tests Do - ThinhDA",
+      "url": "https://thinhdanggroup.github.io/test-selection-under-agent-load/",
+      "publishedAt": "2026-09-15T00:00:00.000Z",
+      "summary": "# Test Selection Breaks Before Your Tests Do   In March, a small internal service at Anthropic hit its memory ceiling “by mid-afternoon on most weekdays.” Not the test runners. Not the queue. The thing that decides which tests a pull request runs. And it paged — it had been paging since the previous October, when “the service was already showing signs of strain, and we got paged two days straight.",
+      "laneHint": "qa"
     },
     {
       "id": "3c0adc186c541245",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "haystack.deepset.ai",
       "title": "Introducing Haystack 3.0: Agent Hooks, Skills and a Lighter Core | Haystack",
@@ -253,8 +242,19 @@
       "laneHint": "ai"
     },
     {
+      "id": "00c4c78b06559fac",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "exa",
+      "source": "strandsagents.com",
+      "title": "Introducing Strands harness: frontier performance with 28% lower token cost | Strands Agents",
+      "url": "https://strandsagents.com/blog/introducing-strands-harness/",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "summary": "Introducing Strands harness: frontier performance with 28% lower token cost | Strands Agents   # Introducing Strands harness: frontier performance with 28% lower token cost   Strands harness is a fully assembled, customizable, state-of-the-art agent you run locally or deploy anywhere.   Today we’re releasing Strands harness: a fully assembled state-of-the-art agent harness you can easily run local",
+      "laneHint": "ai"
+    },
+    {
       "id": "d44e54b036b1d7a5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "infoq.com",
       "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents - InfoQ",
@@ -265,7 +265,7 @@
     },
     {
       "id": "d291683b4a870b67",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "openai.com",
       "title": "Introducing the Agents API | OpenAI",
@@ -276,7 +276,7 @@
     },
     {
       "id": "491e786ddfb6ce36",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "openai.com",
       "title": "New tools for building agents",
@@ -286,19 +286,19 @@
       "laneHint": "ai"
     },
     {
-      "id": "1aa98f26356683ea",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "6e94cee82ee8b4cb",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
-      "source": "unreallabs.ai",
-      "title": "Unreal Agent — Unreal Labs",
-      "url": "https://unreallabs.ai/blog/unreal-agent/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "summary": "Unreal Agent — Unreal Labs   # Unreal Agent   22 September 2026   We’re sharing Unreal Agent — an agent harness that delivers up to 40% cost savings compared to Codex on production workloads and coding/science benchmarks, without any negative performance impact.   While deploying agents in the wild, we wanted them to respond to users quickly and be cost-effective to run. We’ve noticed that agents",
+      "source": "techcommunity.microsoft.com",
+      "title": "The Future of Agentic AI: Inside Microsoft Agent Framework ...",
+      "url": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/the-future-of-agentic-ai-inside-microsoft-agent-framework-1-0/4510698",
+      "publishedAt": "2026-04-28T00:00:00.000Z",
+      "summary": "# The Future of Agent   Microsoft Agent Framework 1.0   ## The era of experimental AI \"chatbots\" is officially evolving into the era of production-ready \"Agentic Workflows.\" With the release of Microsoft Agent Framework 1.0, developers now have a unified, enterprise-grade SDK for both .NET and Python that bridges the gap between research-level orchestration and real-world stability. Whether you ar",
       "laneHint": "ai"
     },
     {
       "id": "907b85f3ac31e02b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "medium.com",
       "title": "MCP in Production: What a Year in an Industrial Plant Taught Me | by Daniel Romero | Sep, 2026 | Medium",
@@ -309,7 +309,7 @@
     },
     {
       "id": "143ba1ea217ad145",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "MCP Deep Dive, Part 15: Running MCP in Production — What Held, What Broke, and What We'd Do Differently - DEV Community",
@@ -320,7 +320,7 @@
     },
     {
       "id": "38d41739da3eb233",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "aws.amazon.com",
       "title": "MCP went stateless: Is your AWS MCP server deployment well-architected? | AWS Architecture Blog",
@@ -331,7 +331,7 @@
     },
     {
       "id": "4c89b5ed9a5ac366",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "dev.to",
       "title": "How to build and deploy an MCP server to production (2026-07-28 spec) - DEV Community",
@@ -341,19 +341,8 @@
       "laneHint": "ai"
     },
     {
-      "id": "cc8a73a104425bd4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "exa",
-      "source": "tanhdev.com",
-      "title": "Building a Production MCP Server with Go: High-Concurrency Architecture",
-      "url": "https://tanhdev.com/series/mcp-engineering-in-production/part-2-build/",
-      "publishedAt": "2026-06-05T00:00:00.000Z",
-      "summary": "Building a Production MCP Server with Go: High-Concurrency Architecture   # Building a Production MCP Server with Go: High-Concurrency Architecture   Production guide for building high-concurrency Model Context Protocol servers in Go: struct-tag reflection schemas, worker pools, pgx connection pooling, and graceful shutdown.   June 5, 2026 · 12 min · Lê Tuấn Anh   > Answer-first: Building producti",
-      "laneHint": "ai"
-    },
-    {
       "id": "2eb2448a8ef093c5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "dzone.com",
       "title": "Production MCP: JSON-RPC, OAuth 2.1, Transport, and Scaling",
@@ -363,8 +352,19 @@
       "laneHint": "ai"
     },
     {
+      "id": "cc8a73a104425bd4",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "exa",
+      "source": "tanhdev.com",
+      "title": "Building a Production MCP Server with Go: High-Concurrency Architecture",
+      "url": "https://tanhdev.com/series/mcp-engineering-in-production/part-2-build/",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "Building a Production MCP Server with Go: High-Concurrency Architecture   # Building a Production MCP Server with Go: High-Concurrency Architecture   Production guide for building high-concurrency Model Context Protocol servers in Go: struct-tag reflection schemas, worker pools, pgx connection pooling, and graceful shutdown.   June 5, 2026 · 12 min · Lê Tuấn Anh   > Answer-first: Building producti",
+      "laneHint": "ai"
+    },
+    {
       "id": "642c9d4150bda936",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "aws.amazon.com",
       "title": "Evaluating AI agents: Real-world lessons from building ...",
@@ -375,7 +375,7 @@
     },
     {
       "id": "707302090e4e820c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "explore.n1n.ai",
       "title": "Evaluating AI Agent Reliability and Performance Consistency in Autonomous Tasks | Enterprise Unified LLM API Gateway (One Key for All Models) | n1n.ai",
@@ -386,7 +386,7 @@
     },
     {
       "id": "0f53f13dc6c52dd8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "arxiv.org",
       "title": "FIRE: Failure-Informed Runtime Engineering for Reliable Language-Model Agents",
@@ -397,7 +397,7 @@
     },
     {
       "id": "c2eb2900d53842bd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "nexus-ai-blog.com",
       "title": "Your Agent Aced the Task. Will It Do It Again? | Nexus AI — Artificial Intelligence",
@@ -408,7 +408,7 @@
     },
     {
       "id": "55dd4531dfa9b1ac",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "algolia.com",
       "title": "AI agent evaluation: frameworks, metrics & testing strategies",
@@ -419,7 +419,7 @@
     },
     {
       "id": "b954e969dee6765e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "exa",
       "source": "agentmelt.com",
       "title": "AI Agent Reliability (2026): Why Agents Fail — and How to Build Ones You Can Trust | Agentmelt",
@@ -430,7 +430,7 @@
     },
     {
       "id": "3ba2a23caefcf5c6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
       "url": "https://github.com/maester365/maester",
@@ -442,7 +442,7 @@
     },
     {
       "id": "b7f39f15ac58a954",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
       "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
@@ -454,7 +454,7 @@
     },
     {
       "id": "e9bcd0f74a9836eb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "BoykaFramework/boyka-framework —  🎉 Ultimate test automation framework for automating any application on any platform",
       "url": "https://github.com/BoykaFramework/boyka-framework",
@@ -466,7 +466,7 @@
     },
     {
       "id": "1c3c6d118c920a98",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "atata-framework/atata — C#/.NET test automation framework for web",
       "url": "https://github.com/atata-framework/atata",
@@ -478,7 +478,7 @@
     },
     {
       "id": "86c79c8e98b40157",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "reqnroll/Reqnroll — Open-source Cucumber-style BDD test automation framework for .NET.",
       "url": "https://github.com/reqnroll/Reqnroll",
@@ -490,7 +490,7 @@
     },
     {
       "id": "12692d3ae45feaf9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
       "url": "https://github.com/pact-foundation/pact-go",
@@ -502,7 +502,7 @@
     },
     {
       "id": "1834986c7c56818d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
       "url": "https://github.com/pact-foundation/pact-jvm",
@@ -514,7 +514,7 @@
     },
     {
       "id": "2c1971c980fefe85",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-php — PHP version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
       "url": "https://github.com/pact-foundation/pact-php",
@@ -526,7 +526,7 @@
     },
     {
       "id": "9ab34c2f4468b3ee",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
       "url": "https://github.com/pact-foundation/pact-js-core",
@@ -538,7 +538,7 @@
     },
     {
       "id": "a8a354829593c69c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
       "url": "https://github.com/pact-foundation/pact-js",
@@ -549,32 +549,32 @@
       "laneHint": "qa"
     },
     {
-      "id": "7d7df05527809e15",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "github",
-      "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "url": "https://github.com/HKUDS/nanobot",
-      "source": "HKUDS",
-      "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "stars": 48546,
-      "publishedAt": "2026-09-24T18:11:33Z",
-      "laneHint": "ai"
-    },
-    {
       "id": "9b24d8c6c6fcca45",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
       "url": "https://github.com/omnigent-ai/omnigent",
       "source": "omnigent-ai",
       "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-      "stars": 10204,
-      "publishedAt": "2026-09-24T17:14:05Z",
+      "stars": 10207,
+      "publishedAt": "2026-09-24T18:35:23Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "7d7df05527809e15",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "github",
+      "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "url": "https://github.com/HKUDS/nanobot",
+      "source": "HKUDS",
+      "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "stars": 48547,
+      "publishedAt": "2026-09-24T18:37:44Z",
       "laneHint": "ai"
     },
     {
       "id": "0fa4dc311880c0f3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "aeonfun/aeon — Official Aeon - the open-source autonomous AI agent framework. Runs unattended on your GitHub Actions, self-healing skills, drives Claude Code, Codex, Grok & more. Not affiliated with O",
       "url": "https://github.com/aeonfun/aeon",
@@ -586,7 +586,7 @@
     },
     {
       "id": "53a7c39238b81f8a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "yomorun/yomo — 🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
       "url": "https://github.com/yomorun/yomo",
@@ -598,7 +598,7 @@
     },
     {
       "id": "6e22fd80accc6b8b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. ",
       "url": "https://github.com/openonion/connectonion",
@@ -609,68 +609,68 @@
       "laneHint": "ai"
     },
     {
+      "id": "4e137428ef61fe23",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "github",
+      "title": "openaccountants/openaccountants — Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor",
+      "url": "https://github.com/openaccountants/openaccountants",
+      "source": "openaccountants",
+      "summary": "Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor.",
+      "stars": 406,
+      "publishedAt": "2026-09-24T18:38:51Z",
+      "laneHint": "ai"
+    },
+    {
       "id": "9f332d136a48de40",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "homeassistant-ai/ha-mcp — The Unofficial and Awesome Home Assistant MCP Server",
       "url": "https://github.com/homeassistant-ai/ha-mcp",
       "source": "homeassistant-ai",
       "summary": "The Unofficial and Awesome Home Assistant MCP Server",
-      "stars": 4832,
-      "publishedAt": "2026-09-24T18:11:58Z",
+      "stars": 4833,
+      "publishedAt": "2026-09-24T18:38:01Z",
       "laneHint": "ai"
     },
     {
-      "id": "8bccf00467b4411b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "4948f4449c060f83",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
-      "title": "UiPath/coder_eval — Playwright for coding agents. Test that your skills, MCP servers, and CLIs actually work when an agent uses them — sandboxed YAML suites, A/B experiments, CI gates.",
-      "url": "https://github.com/UiPath/coder_eval",
-      "source": "UiPath",
-      "summary": "Playwright for coding agents. Test that your skills, MCP servers, and CLIs actually work when an agent uses them — sandboxed YAML suites, A/B experiments, CI gates.",
-      "stars": 141,
-      "publishedAt": "2026-09-24T18:11:27Z",
+      "title": "devantler-tech/ksail — All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. On",
+      "url": "https://github.com/devantler-tech/ksail",
+      "source": "devantler-tech",
+      "summary": "All-in-one Kubernetes SDK: create, manage, and operate clusters across distributions (Kind, K3d, Talos, VCluster) with built-in GitOps, secrets, AI assistant, and MCP server. Only requires Docker or a Cloud Provider.",
+      "stars": 165,
+      "publishedAt": "2026-09-24T18:37:22Z",
       "laneHint": "ai"
     },
     {
-      "id": "1b133dc3b3383bf6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "1d16394d1de30a27",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
-      "title": "orneryd/NornicDB — Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can ",
-      "url": "https://github.com/orneryd/NornicDB",
-      "source": "orneryd",
-      "summary": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features like schemas, managed embeddings, reranking+llm, GPU accel, Auto-TLP, Policy-based Memory Decay, and MCP server.",
-      "stars": 884,
-      "publishedAt": "2026-09-24T18:09:52Z",
+      "title": "getsentry/sentry-mcp — An MCP server for interacting with Sentry via LLMs.",
+      "url": "https://github.com/getsentry/sentry-mcp",
+      "source": "getsentry",
+      "summary": "An MCP server for interacting with Sentry via LLMs.",
+      "stars": 859,
+      "publishedAt": "2026-09-24T18:35:39Z",
       "laneHint": "ai"
     },
     {
-      "id": "40cbc10b1be61d96",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "d255b3c9e292b62e",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
-      "title": "nikolai-vysotskyi/trace-mcp — Framework-aware code intelligence MCP server — 88 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
-      "url": "https://github.com/nikolai-vysotskyi/trace-mcp",
-      "source": "nikolai-vysotskyi",
-      "summary": "Framework-aware code intelligence MCP server — 88 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
-      "stars": 182,
-      "publishedAt": "2026-09-24T18:08:33Z",
-      "laneHint": "ai"
-    },
-    {
-      "id": "a8d16f57c4f578ad",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "github",
-      "title": "apappascs/mcp-servers-hub — Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-s",
-      "url": "https://github.com/apappascs/mcp-servers-hub",
-      "source": "apappascs",
-      "summary": "Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-source and proprietary MCP servers, complete with features, documentation links, and contributors.",
-      "stars": 332,
-      "publishedAt": "2026-09-24T18:05:42Z",
+      "title": "harsha-iiiv/openapi-mcp-generator — A tool that converts OpenAPI specifications to MCP server",
+      "url": "https://github.com/harsha-iiiv/openapi-mcp-generator",
+      "source": "harsha-iiiv",
+      "summary": "A tool that converts OpenAPI specifications to MCP server",
+      "stars": 636,
+      "publishedAt": "2026-09-24T18:34:57Z",
       "laneHint": "ai"
     },
     {
       "id": "046061c2f25e12a7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
       "url": "https://github.com/langwatch/langwatch",
@@ -682,7 +682,7 @@
     },
     {
       "id": "8f423521e502b7eb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "alopatenko/LLMEvaluation — A comprehensive guide to LLM evaluation methods designed to assist in identifying the most suitable evaluation techniques for various use cases, promote the adoption of best",
       "url": "https://github.com/alopatenko/LLMEvaluation",
@@ -694,7 +694,7 @@
     },
     {
       "id": "209e5df372815a58",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "confident-ai/deepeval — The LLM Evaluation Framework",
       "url": "https://github.com/confident-ai/deepeval",
@@ -705,7 +705,7 @@
     },
     {
       "id": "d8837e86c5a41ed9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
       "url": "https://github.com/open-compass/opencompass",
@@ -717,7 +717,7 @@
     },
     {
       "id": "fea546fd1c85ee01",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "github",
       "title": "Xuchen-Li/llm-arxiv-daily — Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.",
       "url": "https://github.com/Xuchen-Li/llm-arxiv-daily",
@@ -729,7 +729,7 @@
     },
     {
       "id": "e00ca30bc04e7064",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Prefactoring: Clear the Way for Your New Feature",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8884432057120197221",
@@ -740,7 +740,7 @@
     },
     {
       "id": "8e2f9c77fc00bc9e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Choosing Values for Robust Tests",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5437075393467068071",
@@ -751,7 +751,7 @@
     },
     {
       "id": "b72d38a9b4620f11",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Code Review Responses: Add Context When It Counts",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2884239116763954560",
@@ -762,7 +762,7 @@
     },
     {
       "id": "0e1575ad398d5c3c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Construct with Collaborators, Call with Work",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3181133154081323895",
@@ -773,7 +773,7 @@
     },
     {
       "id": "7172c133cbf14e77",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "One Map Key, One Lookup",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/449797108832062882",
@@ -784,7 +784,7 @@
     },
     {
       "id": "640fe85adb274f61",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "The Way of TDD",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2209662025920551181",
@@ -795,7 +795,7 @@
     },
     {
       "id": "bb3649dcefdecbab",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Set Safe Defaults for Flags",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/7470985732802821212",
@@ -806,7 +806,7 @@
     },
     {
       "id": "e9ca4e287aeff87b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Simplify Your Code: Functional Core, Imperative Shell",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/8012847255464638866",
@@ -817,7 +817,7 @@
     },
     {
       "id": "bc4b3c887a24017c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Sort Lines in Source Code",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/3190209407406038686",
@@ -828,7 +828,7 @@
     },
     {
       "id": "e11ef2e9a4272cf2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Arrange Your Code to Communicate Data Flow",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/5121163949762592729",
@@ -839,7 +839,7 @@
     },
     {
       "id": "12a7f49f5c3290a2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Tech on the Toilet: Driving Software Excellence, One Bathroom Break at a Time",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/2772563543852506376",
@@ -850,7 +850,7 @@
     },
     {
       "id": "a6d27ce5739f0ac1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "SMURF: Beyond the Test Pyramid",
       "url": "http://www.blogger.com/feeds/15045980/posts/default/4057571564322162588",
@@ -861,7 +861,7 @@
     },
     {
       "id": "d149355e8b46dad9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – March 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-14-2025/",
@@ -872,7 +872,7 @@
     },
     {
       "id": "7f15f5c2bdcc97e8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – March 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-march-7-2025/",
@@ -883,7 +883,7 @@
     },
     {
       "id": "2d3020633aa4a5ea",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 21, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-21-2025/",
@@ -894,7 +894,7 @@
     },
     {
       "id": "861763aec3cbbe18",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 14, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-14-2025/",
@@ -905,7 +905,7 @@
     },
     {
       "id": "1ba8ca3549fb082a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – February 7, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-february-7-2025/",
@@ -916,7 +916,7 @@
     },
     {
       "id": "a84264437c0458c7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 24, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-24-2025/",
@@ -927,7 +927,7 @@
     },
     {
       "id": "ebf91f5754317d81",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 17, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-17-2025/",
@@ -938,7 +938,7 @@
     },
     {
       "id": "d4dd978b454c6948",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – January 10, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-january-10-2025/",
@@ -949,7 +949,7 @@
     },
     {
       "id": "059e2df34bdf9800",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 22, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-22-2024/",
@@ -960,7 +960,7 @@
     },
     {
       "id": "d1afbd8af105d8a4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 15, 2025",
       "url": "https://angryweasel.com/blog/five-for-friday-november-15-2025/",
@@ -971,7 +971,7 @@
     },
     {
       "id": "f1c246e25374f9b5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 8, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-8-2024/",
@@ -982,7 +982,7 @@
     },
     {
       "id": "7bf07835591bb09f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Five for Friday – November 1, 2024",
       "url": "https://angryweasel.com/blog/five-for-friday-november-1-2024/",
@@ -993,7 +993,7 @@
     },
     {
       "id": "1c2cdfe93c2ff4f9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "The Real Bottleneck in AI-Native Quality Is Trust!",
       "url": "https://danashby.co.uk/2026/07/29/the-real-bottleneck-in-ai-native-quality-is-trust/",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "6056a6e8783b4725",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Quality Isn’t an Activity… It’s a System!",
       "url": "https://danashby.co.uk/2026/06/29/quality-isnt-an-activity-its-a-system/",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": "539677aac036af52",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "I Let BearQ Loose on My Own App Through Two Lenses: Tester and Engineering Leader",
       "url": "https://danashby.co.uk/2026/05/07/i-let-bearq-loose-on-my-own-app-through-two-lenses-tester-and-engineering-leader/",
@@ -1026,7 +1026,7 @@
     },
     {
       "id": "9bdf24543de2d5fc",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Autonomous Testing has Landed: Welcome BearQ, by SmartBear",
       "url": "https://danashby.co.uk/2026/03/31/autonomous-testing-has-landed-welcome-bearq-by-smartbear/",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "74dfd2254e54606c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 2)",
       "url": "https://danashby.co.uk/2026/03/15/the-autonomous-testing-tipping-point-part-2/",
@@ -1048,7 +1048,7 @@
     },
     {
       "id": "5ec456d4c8929d56",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "The Autonomous Testing Tipping Point (Part 1)",
       "url": "https://danashby.co.uk/2026/03/05/the-autonomous-testing-tipping-point-part-1/",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": "3790d0c385c48608",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Communities… They’re Great! But Let’s Break The Silos.",
       "url": "https://danashby.co.uk/2022/12/03/communities-theyre-great-but-lets-break-the-silos/",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": "bbe3e345047ac2ff",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "8 Perspectives of Quality: A Model",
       "url": "https://danashby.co.uk/2022/07/22/8-perspectives-of-quality-a-model/",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "cfc0e7aa5453140a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "What’s the quality of your product?",
       "url": "https://danashby.co.uk/2022/07/21/whats-the-quality-of-your-product/",
@@ -1092,7 +1092,7 @@
     },
     {
       "id": "b7ed6cbed4cc47d3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Adapting Crosby’s 4 absolutes of quality into a software context",
       "url": "https://danashby.co.uk/2019/09/30/adapting-crosbys-4-absolutes-of-quality-into-a-software-context/",
@@ -1102,8 +1102,118 @@
       "laneHint": "qa"
     },
     {
+      "id": "a830284bc7cd14af",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Responsible Quality Engineering",
+      "url": "https://www.satisfice.com/blog/archives/488069",
+      "source": "James Bach",
+      "summary": "Let’s talk about responsible quality engineering (RQE). Quality engineering is not testing, although it may require testing. Also, most “quality engineers” don’t do quality engineering. The people who do quality engineering are developers. Testers support that process by analyzing the quality of the product and providing feedback to developers as part of the quality engineering […]",
+      "publishedAt": "2026-09-23T05:39:31.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "3c729240ec7a34c8",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "The Perfect Job For Me",
+      "url": "https://www.satisfice.com/blog/archives/488204",
+      "source": "James Bach",
+      "summary": "Consider a large company that wants to make the best use of AI, while maintaining control over it, so that it can run itself profitably, compete effectively, and avoid disastrous legal or technical mistakes. Regardless of whether AI keeps getting better or plateaus, or whether the AI bubble pops sooner or later, every single large […]",
+      "publishedAt": "2026-09-23T03:36:07.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "7727e21cf9e7d9a0",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "This Fact About KPIs May Surprise You",
+      "url": "https://www.satisfice.com/blog/archives/488189",
+      "source": "James Bach",
+      "summary": "Nobody who creates actual products or does actual useful work cares about KPIs. I’ve never heard of a KPI helping someone at the coal face do anything that matters. If you measured eyerolls per mention of KPIs, it would be equal to about half of the number of ears that heard that mention. Do you […]",
+      "publishedAt": "2026-08-24T02:34:04.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "2b9c4755bd66f0e9",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Some Class Recordings Are Available",
+      "url": "https://www.satisfice.com/blog/archives/488173",
+      "source": "James Bach",
+      "summary": "For the foreseeable future, I will not be scheduling public classes on my own behalf. I am still available for private classes, and I will even do public classes as long as long I’m not the one organizing and marketing it. But if you REALLY want to take one of my classes, you could purchase […]",
+      "publishedAt": "2026-07-24T12:34:19.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "f6b9bf6adfa2236e",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Public Service Announcement: Don’t Say You Use AI for Writing",
+      "url": "https://www.satisfice.com/blog/archives/488148",
+      "source": "James Bach",
+      "summary": "…also don’t tell lies. But I’m getting ahead of myself already. I keep running into people online who openly say that they use AI to do their writing for them. Now, technically, they may say they use AI to “help” their writing. It doesn’t matter. The distinction is immediately lost on everyone who sees that […]",
+      "publishedAt": "2026-06-21T04:34:19.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "77115efe0d052f4d",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Humans In The Way",
+      "url": "https://www.satisfice.com/blog/archives/488130",
+      "source": "James Bach",
+      "summary": "Whenever my brother is between gigs we get to collaborate on cool things. Recently we’ve been experimenting with livestreams. Is this podcasting? Maybe I should google that (not using Google, of course, but using a search engine). We’re doing live testing demonstrations, critical thinking sessions, Question Hospitals, and a series that examines AI use critically. […]",
+      "publishedAt": "2026-05-28T05:27:15.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "d312e460f1f42c40",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Responsibility is the Human Moat",
+      "url": "https://www.satisfice.com/blog/archives/488082",
+      "source": "James Bach",
+      "summary": "[As of 5/20/26, this post is updated substantially to reflect version 2.0 of the Principles of Responsible work.] AI cannot behave responsibly. Only natural persons can. I have previously written about this: Thinking Critically About AI Is There Something in Your “I”? In a vital sense, humans have a “moat” about them, with respect to […]",
+      "publishedAt": "2026-04-24T22:34:14.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "937538447e40ae25",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "So, You “10x’d” Your Work…",
+      "url": "https://www.satisfice.com/blog/archives/488009",
+      "source": "James Bach",
+      "summary": "There are lots of ways to “10x” things. Drive 300 miles per hour down a busy city street. Eat 15,000 calories in one meal. Own ten dogs. Have ten children. Make hundreds of friends. All these things have fairly obvious consequences and side effects. Even having lots more friends would force you to embrace a […]",
+      "publishedAt": "2026-02-08T18:41:20.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "ad61354fefa73216",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "Everyone is NOT Responsible for Quality",
+      "url": "https://www.satisfice.com/blog/archives/487632",
+      "source": "James Bach",
+      "summary": "In opposition to my idea that software testing should be a role, and not just a task, I am sometimes told that True Agile does not permit this. Why? Because, in Agile, “quality is everyone’s responsibility.” This statement is sometimes issued as if it were a moral truism that is beyond argument. Or sometimes as […]",
+      "publishedAt": "2026-02-01T17:20:27.000Z",
+      "laneHint": "qa"
+    },
+    {
+      "id": "41ae506929aebbde",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "“Slop Coding” and Responsible Testers",
+      "url": "https://www.satisfice.com/blog/archives/487969",
+      "source": "James Bach",
+      "summary": "When I first heard the term “vibe coding”– a day that shall live in euphemy– I immediately disliked its cutesiness. I’ve found that in my own work I am doing “vibe coding” to create test tools that I need for various projects. But I have a problem: how do I tell other people what I’ve […]",
+      "publishedAt": "2025-10-31T01:46:55.000Z",
+      "laneHint": "qa"
+    },
+    {
       "id": "330f0ddb094a9397",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Gemini 3.8 TTS Playground",
       "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
@@ -1114,7 +1224,7 @@
     },
     {
       "id": "68062a4d86785da7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Shadow roots, explained with live examples",
       "url": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
@@ -1125,7 +1235,7 @@
     },
     {
       "id": "5bbddbbe05efb614",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
       "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
@@ -1136,7 +1246,7 @@
     },
     {
       "id": "8b09b12e6a7f6358",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
       "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
@@ -1147,7 +1257,7 @@
     },
     {
       "id": "256c0b3da27ae4bd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "llm 0.36",
       "url": "https://simonwillison.net/2026/Sep/22/llm/",
@@ -1158,7 +1268,7 @@
     },
     {
       "id": "146c43eef4b8c297",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Quoting @therealcornpop",
       "url": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
@@ -1169,7 +1279,7 @@
     },
     {
       "id": "932a13dc8c465cc4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "llm-anthropic 0.29",
       "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
@@ -1180,7 +1290,7 @@
     },
     {
       "id": "2bb3b104f3752ab9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "llm-typesafe 0.1a0",
       "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
@@ -1191,7 +1301,7 @@
     },
     {
       "id": "419f761beba44c61",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
       "url": "https://simonwillison.net/2026/Sep/21/jev/",
@@ -1202,7 +1312,7 @@
     },
     {
       "id": "2588083a56aa3326",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Cloudflare Python Workers are now generally available",
       "url": "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/",
@@ -1213,7 +1323,7 @@
     },
     {
       "id": "5316cd11f5244599",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Quoting voxium",
       "url": "https://simonwillison.net/2026/Sep/20/voxium/",
@@ -1224,7 +1334,7 @@
     },
     {
       "id": "e7563672a4e2e314",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "MCP was always a bad idea?",
       "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
@@ -1235,7 +1345,7 @@
     },
     {
       "id": "8ef8bd660c53274f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "F-Droid 2.0",
       "url": "https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html",
@@ -1245,7 +1355,7 @@
     },
     {
       "id": "4a8d1c45564d34a2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
       "url": "https://github.com/devdotfast/whiteboard",
@@ -1254,18 +1364,18 @@
       "laneHint": "ai"
     },
     {
-      "id": "f15ac1b1353e69c0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "779a8ed8d60bb296",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "Two-tier encryption in the UK",
-      "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
+      "title": "Rails World 2026 Opening Keynote [video]",
+      "url": "https://www.youtube.com/watch?v=vDjW_dRyKXY",
       "source": "Hacker News",
-      "publishedAt": "2026-09-24T10:39:19.000Z",
+      "publishedAt": "2026-09-23T15:33:33.000Z",
       "laneHint": "ai"
     },
     {
       "id": "dd0b06fd6d56a3e6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Fearless SIMD v1.0",
       "url": "https://linebender.org/blog/fearless-simd-1-0/",
@@ -1274,88 +1384,99 @@
       "laneHint": "ai"
     },
     {
-      "id": "3b447cfa33405161",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "5d728c03b9b2e222",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "WaveDigger: Dig into wireless signals to discover their physical locations",
-      "url": "https://github.com/christianrowlands/wavedigger",
+      "title": "Creatine uptake enhances antitumor immunity",
+      "url": "https://www.cell.com/iscience/fulltext/S2589-0042(26)00811-4",
       "source": "Hacker News",
-      "publishedAt": "2026-09-23T12:57:07.000Z",
+      "publishedAt": "2026-09-24T18:24:52.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "af2de7ed10a0a3d3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "99bd0ceed56e201f",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "Toyota is taking the Corolla electric",
-      "url": "https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/",
+      "title": "Show HN: Make cursed fonts like Times New Bastard",
+      "url": "https://bastardica.mitpit.com",
       "source": "Hacker News",
-      "publishedAt": "2026-09-23T22:37:28.000Z",
+      "publishedAt": "2026-09-23T22:53:28.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "a4e7dc114dc685e7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "d5a91e8258b9a7d5",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "Nokia Design Archive (2025)",
-      "url": "https://repo.aalto.fi/index.php?name=SO_b66a9391-dcf8-4399-8e87-611f84c3fc4c",
+      "title": "Why is the liver so weirdly regenerative?",
+      "url": "https://dynomight.substack.com/p/liver",
       "source": "Hacker News",
-      "publishedAt": "2026-09-24T09:49:33.000Z",
+      "publishedAt": "2026-09-24T16:23:00.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "a1e4186855b10c3e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "615d9ad3ffaacea3",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "The forgotten battle of East Lansing",
-      "url": "https://eastlansinginfo.news/the-forgotten-battle-of-east-lansing/",
+      "title": "Stable (YC W20) Is Hiring Product Engineers",
+      "url": "https://www.usestable.com/careers/product-engineer",
       "source": "Hacker News",
-      "publishedAt": "2026-09-21T20:07:08.000Z",
+      "publishedAt": "2026-09-24T18:29:18.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "16a76078158f7e17",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "f15ac1b1353e69c0",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "Google’s Project Suncatcher to put ML infrastructure in space",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+      "title": "Two-tier encryption in the UK",
+      "url": "https://macanorak.com/two-tier-encryption-in-the-uk/",
       "source": "Hacker News",
-      "publishedAt": "2026-09-24T13:53:29.000Z",
+      "publishedAt": "2026-09-24T10:39:19.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "6cbcb2a2016ea9ac",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "1287025930c399a8",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "GitHub has not removed malicious imitation software after 3 weeks",
-      "url": "https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/",
+      "title": "Forging 1024-bit RSA signatures in nearly SNFS time [pdf]",
+      "url": "https://eprint.iacr.org/2026/2131.pdf",
       "source": "Hacker News",
-      "publishedAt": "2026-09-24T15:50:26.000Z",
+      "publishedAt": "2026-09-24T14:26:32.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "29d9903453de75d0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "4241137d09417fcd",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "B5-BJ2 – Ice Cream Barges – Concrete Ship Constructors (2023)",
-      "url": "https://thecretefleet.com/blog/f/b5-bj2---ice-cream-barges---concrete-ship-constructors",
+      "title": "Security auditing in the age of (good enough) AI",
+      "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
       "source": "Hacker News",
-      "publishedAt": "2026-09-21T22:31:35.000Z",
+      "publishedAt": "2026-09-21T21:53:01.000Z",
       "laneHint": "ai"
     },
     {
-      "id": "4d19fbb7d916bb98",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "df6049957edca434",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
-      "title": "Motor Characterization for Small Running Robots (2016)",
-      "url": "https://robot-daycare.com/posts/2016-01-06-motor-characterization-for-small-running-robots/",
+      "title": "Book review: Is parallel programming hard, and, if so, what can you do about it?",
+      "url": "https://ahelwer.ca/post/2026-09-21-concurrency-textbook/",
       "source": "Hacker News",
-      "publishedAt": "2026-09-21T23:27:31.000Z",
+      "publishedAt": "2026-09-21T14:30:00.000Z",
+      "laneHint": "ai"
+    },
+    {
+      "id": "a29df38cc8bbac4a",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "rss",
+      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "source": "GitHub Blog",
+      "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog .",
+      "publishedAt": "2026-09-24T18:26:12.000Z",
       "laneHint": "ai"
     },
     {
       "id": "7099647e0e6857d9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Rendering huge pull requests in the GitHub Copilot app",
       "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
@@ -1366,7 +1487,7 @@
     },
     {
       "id": "0733db22d4139477",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
       "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
@@ -1377,7 +1498,7 @@
     },
     {
       "id": "9d46838852968c83",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
       "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
@@ -1388,7 +1509,7 @@
     },
     {
       "id": "5963c36109e5520e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
@@ -1399,7 +1520,7 @@
     },
     {
       "id": "d72a8d49e96609a9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
       "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
@@ -1410,7 +1531,7 @@
     },
     {
       "id": "5082a80d170d6429",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
@@ -1421,7 +1542,7 @@
     },
     {
       "id": "3afb0684701c0639",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "GitHub availability report: August 2026",
       "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
@@ -1432,7 +1553,7 @@
     },
     {
       "id": "bb819c299d13cde0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
       "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
@@ -1443,7 +1564,7 @@
     },
     {
       "id": "bd716271bb098b3a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "rss",
       "title": "GitHub Copilot app for Beginners: Run several agents at once",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
@@ -1453,19 +1574,19 @@
       "laneHint": "ai"
     },
     {
-      "id": "8db7ddc146a6e438",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "rss",
-      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
-      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
-      "source": "GitHub Blog",
-      "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog .",
-      "publishedAt": "2026-09-02T21:00:00.000Z",
-      "laneHint": "ai"
+      "id": "f332d4f79159e2c5",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "news",
+      "section": "nl",
+      "title": "Orkaanseizoen Atlantische Oceaan op hoogtepunt, maar waar blijven ze?",
+      "url": "https://nos.nl/l/2632358",
+      "source": "NOS",
+      "summary": "Augustus en september; normaal gesproken zijn het maanden waarin het flink kan spoken op de Atlantische Oceaan. Orkaan Katrina trok in 2005 een spoor van vernieling door New Orleans. En in 1992 deed orkaan Andrew dat in deze periode in Florida. Een paar jaar geleden was ons eigen koninkrijk nog aan de beurt, toen orkaan Irma tot veel schade en doden leidde op de Bovenwindse eilanden. Zeker Sint-Ma",
+      "publishedAt": "2026-09-24T18:38:09.000Z"
     },
     {
       "id": "ef0483f6dcff11d2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Slap of logisch? Wisselende reacties op terugkeer van Nederland op Songfestival",
@@ -1476,7 +1597,7 @@
     },
     {
       "id": "84cdb840bce2a920",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Vleierij over en weer bij bezoek van Xi aan Trump in Witte Huis",
@@ -1487,7 +1608,7 @@
     },
     {
       "id": "eda3eb89b9ab81bc",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Spaanse politie stuit op martelkamer en redt twee mannen",
@@ -1498,7 +1619,7 @@
     },
     {
       "id": "baa6cef7a8fcb94e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Duitsland onderzoekt oud-kampbewaarder (105) voor moorden in WO II",
@@ -1509,7 +1630,7 @@
     },
     {
       "id": "703a9dcf61775164",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Tweede Kamer wil breder en duidelijker verbod op camerabril",
@@ -1520,7 +1641,7 @@
     },
     {
       "id": "66f0827c3d5447ed",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Podcast De Dag: Trump en Xi, vriend en vijand",
@@ -1531,7 +1652,7 @@
     },
     {
       "id": "e8ccebdfd09886f6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Verkiezing vervanger voor afzwaaiende VN-chef Guterres verloopt stroef",
@@ -1542,7 +1663,7 @@
     },
     {
       "id": "739e57359a97866e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Radboud Universiteit weert extreemrechtse studentenvereniging na rapport NCTV en AIVD",
@@ -1553,7 +1674,7 @@
     },
     {
       "id": "7995ffbc27fe1a3b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Populaire 'squishy dumplings' niet gevaarlijk, zegt toezichthouder",
@@ -1564,7 +1685,7 @@
     },
     {
       "id": "6d2ed29ebf2b56c0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Van 'vaag zoet' tot 'raam dicht': Bietenradar voorspelt bietengeur",
@@ -1575,7 +1696,7 @@
     },
     {
       "id": "e41f70052d80db06",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Brand bij Starlink-installatie in Polen, vicepremier wijst naar Rusland",
@@ -1586,7 +1707,7 @@
     },
     {
       "id": "a8b3af19de7ad9c7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Witte Huis laat weer journalisten toe na weigering, geen live beeld van Xi-Trump",
@@ -1597,7 +1718,7 @@
     },
     {
       "id": "2aaf3fe1324faaf6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Ook voor nieuwe oorlogsslachtoffers plek, Nationaal Ereveld Loenen uitgebreid",
@@ -1608,7 +1729,7 @@
     },
     {
       "id": "82b7b1c5e3279f7d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Vijfde persoon met westnijlvirus overleden, aantal besmettingen opgelopen",
@@ -1618,19 +1739,30 @@
       "publishedAt": "2026-09-24T11:41:05.000Z"
     },
     {
-      "id": "cd3af57ad3bc9aac",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "4ddf9ff0f2f8663d",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
-      "title": "Meer geld om mensen met beginnende schulden te helpen",
-      "url": "https://nos.nl/l/2632300",
-      "source": "NOS",
-      "summary": "Minister Vijlbrief van Sociale Zaken stelt jaarlijks 20 miljoen euro beschikbaar om mensen te kunnen helpen die in de schulden dreigen te komen. Met dat geld verwacht hij dat gemeenten twee keer zoveel mensen kunnen bereiken als ze nu doen. Gemeenten zijn sinds 2021 verplicht om mensen te benaderen die achterlopen bij het betalen van hun huur, energierekening, het water en de zorgverzekering. Het",
-      "publishedAt": "2026-09-24T11:34:16.000Z"
+      "title": "VN-zaal stroomt leeg bij start speech Netanyahu: 'Jullie zijn morele lafaards'",
+      "url": "https://www.nu.nl/buitenland/6410906/vn-zaal-stroomt-leeg-bij-start-speech-netanyahu-jullie-zijn-morele-lafaards.html",
+      "source": "NU.nl",
+      "summary": "Bij de start van de speech van de Israëlische premier Benjamin Netanyahu voor de Verenigde Naties zijn donderdagavond tientallen diplomaten de zaal uitgelopen. Ze deden dat bij de start van de speech, tot afgrijzen van Netanyahu: 'Jullie zijn morele lafaards'.",
+      "publishedAt": "2026-09-24T18:38:19.000Z"
+    },
+    {
+      "id": "fcd1cccee36fac25",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "news",
+      "section": "nl",
+      "title": "Bijna zestien jaar cel geëist in hoger beroep zaak 'abortusmoord'",
+      "url": "https://www.nu.nl/binnenland/6410903/bijna-zestien-jaar-cel-geeist-in-hoger-beroep-zaak-abortusmoord.html",
+      "source": "NU.nl",
+      "summary": "Het OM heeft donderdag in hoger beroep een celstraf van vijftien jaar en negen maanden en tbs met dwangverpleging geëist tegen Dennis van E. Hij werd eerder veroordeeld voor de moord op zijn ongeboren kind en de fatale mishandeling van de moeder.",
+      "publishedAt": "2026-09-24T18:13:19.000Z"
     },
     {
       "id": "0a58da682fe0b3a1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Vrouw (87) die na 71 jaar uit huis werd gezet in Madrid voorlopig in ziekenhuis",
@@ -1641,7 +1773,7 @@
     },
     {
       "id": "1626707abeec89b3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Debuterende Xavi vernieuwt niet in opstelling Oranje voor duel met Duitsland",
@@ -1652,7 +1784,7 @@
     },
     {
       "id": "c2f1b18bd891577c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Gouden Griffel 2026 voor overleden schrijver Sjoerd Kuyper",
@@ -1663,7 +1795,7 @@
     },
     {
       "id": "e371d9f6dff16192",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Geweerde journalisten mogen uren na weigering toch weer Witte Huis in",
@@ -1674,7 +1806,7 @@
     },
     {
       "id": "e8adf0d03d3e117a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Denemarken waarschuwt voor ontwrichtende speldenprikken van Rusland",
@@ -1685,7 +1817,7 @@
     },
     {
       "id": "bd946bbcf17e3c12",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Hoofddoeken mogen op de werkvloer niet zomaar worden verboden",
@@ -1696,7 +1828,7 @@
     },
     {
       "id": "cee94a9da242219d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Explainer | Xi Jinping op bezoek bij Trump: zo zwaar wordt hij beveiligd in VS",
@@ -1706,7 +1838,7 @@
     },
     {
       "id": "77412bb45d046e6b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Marechaussee mag vanaf 1 oktober weer verder van grens controleren",
@@ -1717,7 +1849,7 @@
     },
     {
       "id": "370285c0fcc96899",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Macklemore kondigt Free Palestine-tour aan na ophef rond tour met Ed Sheeran",
@@ -1727,19 +1859,19 @@
       "publishedAt": "2026-09-24T15:55:47.000Z"
     },
     {
-      "id": "800b07d1d0735f39",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "f2854c7fe1582f31",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
-      "title": "Live Nations League | Xavi kiest voor Quinten Timber tegen Duitsland",
-      "url": "https://www.nu.nl/voetbal/6410886/live-nations-league-xavi-kiest-voor-quinten-timber-tegen-duitsland.html",
+      "title": "Live Nations League | Spandoek voor Xavi bij debuut als bondscoach van Oranje",
+      "url": "https://www.nu.nl/voetbal/6410886/live-nations-league-spandoek-voor-xavi-bij-debuut-als-bondscoach-van-oranje.html",
       "source": "NU.nl",
       "summary": "Goedenavond en welkom in dit liveblog. Onze namen zijn Suus ten Kate en Mitch Marinus en wij houden je hier op de hoogte van de Nations League-wedstrijd van Oranje tegen Duitsland. Veel plezier!",
       "publishedAt": "2026-09-24T15:40:06.000Z"
     },
     {
       "id": "2bf817aa0ace3d31",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Partijen in Kamer werpen vraag op: wie gaat dán het geluid van ON! vertolken?",
@@ -1750,7 +1882,7 @@
     },
     {
       "id": "4320e3fb4d2ecaea",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Eerste Kamerlid van FVD was bij extreemrechts protest op Malieveld",
@@ -1761,7 +1893,7 @@
     },
     {
       "id": "25630298bc09541d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "nl",
       "title": "Duurdere benzine duwt reiziger niet snel op de fiets: 'Kwestie van gewoonte'",
@@ -1771,30 +1903,8 @@
       "publishedAt": "2026-09-24T14:30:22.000Z"
     },
     {
-      "id": "9525e44841239187",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "news",
-      "section": "nl",
-      "title": "De ronde Droste-chocolaatjes komen terug in de Nederlandse schappen",
-      "url": "https://www.nu.nl/economie/6410869/de-ronde-droste-chocolaatjes-komen-terug-in-de-nederlandse-schappen.html",
-      "source": "NU.nl",
-      "summary": "De ronde chocoladepastilles van Droste liggen vanaf volgend jaar weer in de Nederlandse winkels. Dat is donderdag beloofd door de Poolse snoepproducent Wawel, die het 160 jaar oude Nederlandse chocolademerk in november vorig jaar heeft overgenomen.",
-      "publishedAt": "2026-09-24T14:16:41.000Z"
-    },
-    {
-      "id": "2a0ce7e5bc0fd42a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "news",
-      "section": "nl",
-      "title": "Verstappen tevreden na eerste dag in Bakoe: 'Updates werken zoals verwacht'",
-      "url": "https://www.nu.nl/formule-1/6410877/verstappen-tevreden-na-eerste-dag-in-bakoe-updates-werken-zoals-verwacht.html",
-      "source": "NU.nl",
-      "summary": "Max Verstappen beleefde donderdag een \"best goede\" eerste dag richting de Grand Prix van Azerbeidzjan. De Red Bull-coureur kwam met behoorlijk wat updates naar het stratencircuit, en zag dat die goed uitpakten.",
-      "publishedAt": "2026-09-24T14:15:07.000Z"
-    },
-    {
       "id": "5f621144caa5f424",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "White House restores access to media outlets banned by Trump after judge's order",
@@ -1805,7 +1915,7 @@
     },
     {
       "id": "fe56661e40888a40",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
@@ -1815,19 +1925,19 @@
       "publishedAt": "2026-09-24T15:42:07.000Z"
     },
     {
-      "id": "314000c97e3527b6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "id": "79544c1125bd8e4c",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
-      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
-      "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss",
+      "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+      "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss",
       "source": "BBC",
-      "summary": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech.",
-      "publishedAt": "2026-09-24T14:08:38.000Z"
+      "summary": "Australia, which has strict social media restrictions and has proposed controls on algorithms and smart glasses, announced the breach at the UN.",
+      "publishedAt": "2026-09-24T18:06:40.000Z"
     },
     {
       "id": "b0512843f66cbf85",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
@@ -1838,7 +1948,7 @@
     },
     {
       "id": "aae0bca9ad8ee990",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
@@ -1849,7 +1959,7 @@
     },
     {
       "id": "f2eceb4239ce19bc",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "105-year-old investigated for crimes at Nazi PoW camp in Germany",
@@ -1860,7 +1970,7 @@
     },
     {
       "id": "045700b61c8f2c0d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Greek PM urges UK PM to return Elgin Marbles permanently",
@@ -1870,8 +1980,19 @@
       "publishedAt": "2026-09-24T16:36:33.000Z"
     },
     {
+      "id": "8aba0fd2c19ac895",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "news",
+      "section": "world",
+      "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
+      "url": "https://www.bbc.co.uk/news/articles/cqzjzlve8jg7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "summary": "Proceeds from the tour, which begins in Dublin next month, will go to organisations supporting Palestinians, he says.",
+      "publishedAt": "2026-09-24T17:55:44.000Z"
+    },
+    {
       "id": "7ce820722008db64",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
@@ -1882,7 +2003,7 @@
     },
     {
       "id": "42a5ca45151ef503",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Trump's Board of Peace unveils $2.45bn Gaza recovery plan",
@@ -1893,7 +2014,7 @@
     },
     {
       "id": "3acfd8ff3c10e9d9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Iran's president tells Trump it will never 'bend the knee'",
@@ -1904,7 +2025,7 @@
     },
     {
       "id": "2661494b791f79d7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Dramatic eviction of woman aged 87 highlights Spain's housing shortage",
@@ -1915,7 +2036,7 @@
     },
     {
       "id": "5917bb1551a2a9ca",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Why India's Election Commission is in the eye of a storm - again",
@@ -1926,7 +2047,7 @@
     },
     {
       "id": "e1fa63f48c11988d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "UK survivor of Canadian poison seller says he exploited her despair",
@@ -1937,7 +2058,7 @@
     },
     {
       "id": "672bab45ff3a62ba",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Dolly Parton's manager accuses her nephew of 'threats and intimidation'",
@@ -1947,19 +2068,8 @@
       "publishedAt": "2026-09-23T12:22:53.000Z"
     },
     {
-      "id": "700e429f239ecde6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "news",
-      "section": "world",
-      "title": "Harvey Weinstein sentenced to 15 years in prison for sexual assault",
-      "url": "https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "summary": "Assault survivor Miriam Haley said the \"devastating effect on my life and sense of security that may never go away\".",
-      "publishedAt": "2026-09-23T18:51:12.000Z"
-    },
-    {
       "id": "d68e574832726db3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
@@ -1970,7 +2080,7 @@
     },
     {
       "id": "29a628337d026d81",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Indian billionaire’s payments firm plots biggest London flotation in years",
@@ -1981,7 +2091,7 @@
     },
     {
       "id": "2530180cfdb2321d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Top South African police officer charged with raping woman, 18, and grooming 16-year-old girl",
@@ -1992,7 +2102,7 @@
     },
     {
       "id": "acf92517037ac18e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Healthcare in Africa ‘under growing strain’ after US withdrawal from aid programs, report warns",
@@ -2003,7 +2113,7 @@
     },
     {
       "id": "86ce5f3790093ad7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Banished to alien lands: Trump’s secret deportation deals",
@@ -2014,7 +2124,7 @@
     },
     {
       "id": "2a100dd1518af426",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Democratic lawmakers accuse Trump administration of interference in Brazilian elections",
@@ -2025,7 +2135,7 @@
     },
     {
       "id": "7d6ddfd25d60197a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Milei threatens at UN that Argentina will take ‘matters into our own hands’ on Falklands",
@@ -2036,7 +2146,7 @@
     },
     {
       "id": "8943a06fa93d414a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Delcy Rodríguez poses with Trump in New York as Maduro languishes in jail nearby",
@@ -2047,7 +2157,7 @@
     },
     {
       "id": "766b11554a9e4995",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Jamaica hails King’s decision to refer slavery reparations petition to privy council as ‘really big deal’",
@@ -2058,7 +2168,7 @@
     },
     {
       "id": "381134fdfb4286c3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Hurricane Polo, rapidly intensifying from strong El Niño patterns, rages off coast of Mexico",
@@ -2069,7 +2179,7 @@
     },
     {
       "id": "3ccd3e36ede98501",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "At Trump meeting, Xi Jinping lays out terms to avoid US-China military conflict",
@@ -2080,7 +2190,7 @@
     },
     {
       "id": "8f8607ab5473900a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Rick Wakeman performs piano concert to 150 rescued moon bears in Vietnam",
@@ -2091,7 +2201,7 @@
     },
     {
       "id": "45b9197854320ea1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Alarm bells sound in Brussels as EU sales of Chinese hybrid cars rocket",
@@ -2102,7 +2212,7 @@
     },
     {
       "id": "57e6d181e314deb6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Trump greets Xi Jinping on arrival in rare move as US-China trade truce extended",
@@ -2113,7 +2223,7 @@
     },
     {
       "id": "1608d61102a04ed5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "world",
       "title": "Six-year-old Chinese girl ‘sets new women’s Rubik’s Cube world record’",
@@ -2124,7 +2234,7 @@
     },
     {
       "id": "63acf845e3a97a6c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "NASA chief concerned China may deny access to parts of South Pole",
@@ -2135,7 +2245,7 @@
     },
     {
       "id": "107fd2ff64d001b8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Meta puts its AI assistant on a keychain",
@@ -2146,7 +2256,7 @@
     },
     {
       "id": "8f10c18e3c2aca7a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "There's a new way to break RSA that's faster than anything we've seen before",
@@ -2157,7 +2267,7 @@
     },
     {
       "id": "6edc73275f1bba9e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Review: Apple's hyper-pricey M5 Ultra Mac Studio made me into a vibe coder",
@@ -2168,7 +2278,7 @@
     },
     {
       "id": "4b92b4c03478d2c0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "RFK Jr.'s CDC isn’t letting states order COVID-19 shots for kids, blocking access",
@@ -2179,7 +2289,7 @@
     },
     {
       "id": "3b28b8595663f112",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "FBI rushes to investigate if ShinyHunters hack of thousands of employees is real",
@@ -2190,7 +2300,7 @@
     },
     {
       "id": "4a244301cb7ccdc3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Disney+ and Hulu raise prices by up to 13 percent after doubling profits",
@@ -2201,7 +2311,7 @@
     },
     {
       "id": "8bba47160b559bb1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Here's the Torcal, the first fully electric Bentley",
@@ -2212,7 +2322,7 @@
     },
     {
       "id": "a525e21c34b92d0f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
@@ -2223,7 +2333,7 @@
     },
     {
       "id": "ba0bb5abe63bb735",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "XPRIZE Wildfire winners spotted fires within 10 min—but couldn’t stop them",
@@ -2234,7 +2344,7 @@
     },
     {
       "id": "9f11883e6deb55b6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Discord age verification rolls out today with changes spurred by user backlash",
@@ -2245,7 +2355,7 @@
     },
     {
       "id": "0931bcb81e7de784",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "YouTube promises custom feeds and a lot more AI later this year",
@@ -2256,7 +2366,7 @@
     },
     {
       "id": "b2cf5f8ca63433f3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Contrary to some reports, you don't have two brains",
@@ -2267,7 +2377,7 @@
     },
     {
       "id": "4efe8b634da3067b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Netflix releases trailer for Brad Bird's Ray Gunn",
@@ -2278,7 +2388,7 @@
     },
     {
       "id": "d041a921b495f28d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Owners mourn spoiled food after firmware update bricks Samsung smart fridges",
@@ -2289,7 +2399,7 @@
     },
     {
       "id": "86ac97ac8efc49df",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "China en VS beide op zoek naar de heilige graal van AI-heerschappij",
@@ -2300,7 +2410,7 @@
     },
     {
       "id": "fb41da3386fe416b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Nieuw agentschap looft 40 miljoen uit voor ontwikkeling energiezuinige chips",
@@ -2311,7 +2421,7 @@
     },
     {
       "id": "5ee8ea5b96f677b5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Europa wil kinderen pas vanaf 13 jaar op sociale media, met veel controle door ouders",
@@ -2322,7 +2432,7 @@
     },
     {
       "id": "0ac598d242c6c38b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Kritiek op AI-bedrijven die oproepen tot vertraging vanwege gevaar: 'Doe het dan'",
@@ -2333,7 +2443,7 @@
     },
     {
       "id": "1c73f5a107482a35",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Kwart Kamervragen met behulp van AI geschreven, aantal neemt toe",
@@ -2344,7 +2454,7 @@
     },
     {
       "id": "e4a0ee63a2ffa0c4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "AI-topmannen waarschuwen: AI dreigt ons de baas te worden",
@@ -2355,7 +2465,7 @@
     },
     {
       "id": "7ab850df52d78ad0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "VS beschuldigt Chinese AI-bedrijven van massaal kopiëren van technologie",
@@ -2366,7 +2476,7 @@
     },
     {
       "id": "424baceb8e641e0e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Nieuw tijdperk van superintelligente AI aangebroken, zegt OpenAI",
@@ -2377,7 +2487,7 @@
     },
     {
       "id": "bb3a778f02905542",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Witte Huis maakt videospel van uitzetten migranten",
@@ -2388,7 +2498,7 @@
     },
     {
       "id": "6a6af9a364927ce3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Datalek bij reisapp Polarsteps: iedereen kon meekijken, ook met afgeschermde reizen",
@@ -2399,7 +2509,7 @@
     },
     {
       "id": "8635150daa420f81",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Politie en OM zien nieuwe generatie jonge, westerse cybercriminelen opkomen",
@@ -2410,7 +2520,7 @@
     },
     {
       "id": "6cd6ef911ba5bda9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Na Google zwicht ook Apple: op kaarten heet Lake Ontario nu Lake America",
@@ -2421,7 +2531,7 @@
     },
     {
       "id": "77d34dc9e96225d8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Muziekbedrijven Sony en Warner klagen AI-bedrijf Anthropic aan om auteursrecht",
@@ -2432,7 +2542,7 @@
     },
     {
       "id": "41b12fc074fa382f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "'OMG, we kunnen chatten!': onderzoek toont hoe AI aan het hacken sloeg",
@@ -2443,7 +2553,7 @@
     },
     {
       "id": "74589ba03144f347",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Voor het eerst uitgebreide blik op GTA VI, maar hacker was Rockstar voor",
@@ -2454,7 +2564,7 @@
     },
     {
       "id": "a9761861651f781a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "EU en Canada lanceren plan om oceaanonderzoek te redden na bezuiniging VS",
@@ -2465,7 +2575,7 @@
     },
     {
       "id": "07db7f53396b3570",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Vestingmuur uit Romeinse tijd ontdekt in het centrum van Parijs",
@@ -2476,7 +2586,7 @@
     },
     {
       "id": "ad414f4dd7466f09",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Duitser vindt drie keer het jaarsalaris van Romeinse soldaat aan munten",
@@ -2487,7 +2597,7 @@
     },
     {
       "id": "2eeece834af0e98f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Bulgaren vinden mogelijk oudste bierbrouwsel van Europa",
@@ -2498,7 +2608,7 @@
     },
     {
       "id": "a30737443219b335",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Vrouw regeerde mogelijk 5.000 jaar geleden als 'koning' over het oude Egypte",
@@ -2509,7 +2619,7 @@
     },
     {
       "id": "c2746ad306aafa2e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Wapenresten in wrakken uit Eerste en Tweede Wereldoorlog vervuilen Noordzee",
@@ -2520,7 +2630,7 @@
     },
     {
       "id": "e6bc512cbf78e37d",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Winnaars Nobelprijs krijgen dit jaar bijna 90.000 euro meer prijzengeld",
@@ -2531,7 +2641,7 @@
     },
     {
       "id": "330d1976b3c5c6a4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Boliviaanse tijgerkat is eerste nieuw ontdekte kattensoort in honderd jaar",
@@ -2542,7 +2652,7 @@
     },
     {
       "id": "6dcda7e0f8363c34",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "NASA ontdekt nieuwe krater op de maan die groter is dan het Colosseum",
@@ -2553,7 +2663,7 @@
     },
     {
       "id": "e32a6ff3443422fd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "NU+ | Mercurius verschrompelt als een rozijn, maar wordt niet lichter",
@@ -2564,7 +2674,7 @@
     },
     {
       "id": "f3c67d6106336c9b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Spaanse onderzoekers vinden bewijs dat 'iconische' diplodocus in Europa leefde",
@@ -2575,7 +2685,7 @@
     },
     {
       "id": "eaa99f51156bea84",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Mercurius krimpt sneller dan gedacht: 'Als druif die verschrompelt tot rozijn'",
@@ -2586,7 +2696,7 @@
     },
     {
       "id": "01a979ae56fc4319",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Leraar in VS vindt eerste aaneengesloten voetsporen van volwassen T. rex",
@@ -2597,7 +2707,7 @@
     },
     {
       "id": "503542098c5f1a2e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Eeuwenoude tand van oerolifant gevonden in beekje in Californië",
@@ -2608,7 +2718,7 @@
     },
     {
       "id": "94f3e06dc5564afb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "tech",
       "title": "Drinken van te hete koffie of thee kan kans op slokdarmkanker verdrievoudigen",
@@ -2619,7 +2729,7 @@
     },
     {
       "id": "5a09c6518bf6a45a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "'Miljoenenstrop transportbranche door problemen met Suurhoffbrug'",
@@ -2630,7 +2740,7 @@
     },
     {
       "id": "07d82d8545920fa1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Pensioenfonds ABP gaat miljard investeren in Europese snelgroeiende bedrijven",
@@ -2641,7 +2751,7 @@
     },
     {
       "id": "5b82a43299cd9f0f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Italië, Nederland of allebei? Onderzoek naar samenwerking Einstein Telescope",
@@ -2652,7 +2762,7 @@
     },
     {
       "id": "3d3473751153f6ee",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Staat koopt aandelen Borssele om kerncentrale langer open te kunnen houden",
@@ -2663,7 +2773,7 @@
     },
     {
       "id": "416d502aa16ab872",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Veel interesse in fietsenproducent van Batavus en Sparta, doorstart geen gelopen race",
@@ -2674,7 +2784,7 @@
     },
     {
       "id": "e8fdb1b71aeba146",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Kabinet wil kortere WW, maar extra banen levert dat bijna niet op",
@@ -2685,7 +2795,7 @@
     },
     {
       "id": "619d0bb46737b0fa",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Economie draait verrassend goed: huishoudens meer te besteden, bedrijven hogere winsten",
@@ -2696,7 +2806,7 @@
     },
     {
       "id": "b252e6c5fbb1851b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Advies: maak werk bij asielzoekers en statushouders vanaf begin hoofddoel",
@@ -2707,7 +2817,7 @@
     },
     {
       "id": "27ff1ef9f2f4c44c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Canadees ingenieursbureau staakt overnamepoging Arcadis",
@@ -2718,7 +2828,7 @@
     },
     {
       "id": "5bd477963c8a65ce",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "EU wil meer marineschepen naar Rode Zee, maar 'aanpak energiecrisis ontbreekt'",
@@ -2729,7 +2839,7 @@
     },
     {
       "id": "33c4b09543307ba8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "'Subsidie voor elektrische occasion vooral interessant voor middeninkomens'",
@@ -2740,7 +2850,7 @@
     },
     {
       "id": "560d6bc477b935f1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Rekenkamer: ministers vaag over plannen en besteding miljarden",
@@ -2751,7 +2861,7 @@
     },
     {
       "id": "02622d600e7469c6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Miljoenenboete voor Zwitserse bank voor het helpen van Nederlandse 'zwartspaarders'",
@@ -2762,7 +2872,7 @@
     },
     {
       "id": "0b8bce05bfa9a548",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "We kopen meer online maar geven minder uit per aankoop",
@@ -2773,7 +2883,7 @@
     },
     {
       "id": "b20145075b6ec726",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Groningse AI-supercomputer moet Nederland minder afhankelijk maken van buitenland",
@@ -2784,7 +2894,7 @@
     },
     {
       "id": "483ba073710e2fec",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Reported assaults on Britain's rail services rise by more than a third",
@@ -2795,7 +2905,7 @@
     },
     {
       "id": "c689f3973e44d846",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "£170 a bag? Protein users squeezed as prices soar",
@@ -2806,7 +2916,7 @@
     },
     {
       "id": "dc782d5c22c09e1c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "They were labelled 'pervert glasses'. Will a camera-free version transform their image?",
@@ -2817,7 +2927,7 @@
     },
     {
       "id": "fe56661e40888a40",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
@@ -2828,7 +2938,7 @@
     },
     {
       "id": "c8b3760d73ed73ba",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "How the oil capital of the US welcomed a solar power boom",
@@ -2839,7 +2949,7 @@
     },
     {
       "id": "26bae7a883df2000",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
@@ -2850,7 +2960,7 @@
     },
     {
       "id": "c80a1a5e02f5f5ce",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Lidl banned from selling copycat Birkenstock sandals, Dutch court rules",
@@ -2861,7 +2971,7 @@
     },
     {
       "id": "8572f7d0e8c6f957",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Rolls-Royce signs 'multi-million' engine deal",
@@ -2872,7 +2982,7 @@
     },
     {
       "id": "138beca4d5c703ed",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "US rejects pleas from OpenAI, Anthropic for global AI standards",
@@ -2883,7 +2993,7 @@
     },
     {
       "id": "d2abb7ce40641612",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Trump reveals millions of dollars' worth of share deals in big tech and AI",
@@ -2894,7 +3004,7 @@
     },
     {
       "id": "599b545a7f9d0083",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Barrecore and Boom Cycle owner suddenly shuts studios",
@@ -2905,7 +3015,7 @@
     },
     {
       "id": "fa7bd19a17d5ea36",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Off sick? You need to phone your boss, back-to-work adviser says",
@@ -2916,7 +3026,7 @@
     },
     {
       "id": "bc41da79386d798e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "UK warned over ballooning debt costs and slower growth ahead of Budget",
@@ -2927,7 +3037,7 @@
     },
     {
       "id": "cd1380a35ba9f6bf",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Tories would prevent long-term jobless spending benefits on alcohol and cigarettes",
@@ -2938,7 +3048,7 @@
     },
     {
       "id": "029368eeebd637ea",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Bentley unveils its first fully electric car",
@@ -2949,7 +3059,7 @@
     },
     {
       "id": "6f275e61040fdcf2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Flexibel gebruik en even geen stroom hebben moet 'het nieuwe normaal' worden",
@@ -2960,7 +3070,7 @@
     },
     {
       "id": "5b9c097fb0fd5278",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "DigiD-app voortaan ook beschikbaar voor mensen zonder smartphone",
@@ -2970,8 +3080,19 @@
       "publishedAt": "2026-09-24T14:33:19.000Z"
     },
     {
+      "id": "25630298bc09541d",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "news",
+      "section": "economy",
+      "title": "Duurdere benzine duwt reiziger niet snel op de fiets: 'Kwestie van gewoonte'",
+      "url": "https://www.nu.nl/algemeen/6410856/duurdere-benzine-duwt-reiziger-niet-snel-op-de-fiets-kwestie-van-gewoonte.html",
+      "source": "NU.nl Economie",
+      "summary": "Door de flink gestegen brandstofprijzen zijn consumenten minder vaak aan de pomp te vinden. De elektrische auto is meer in trek. Maar de auto laten staan en meer reizen met de fiets of trein lijkt er niet in te zitten.",
+      "publishedAt": "2026-09-24T14:30:22.000Z"
+    },
+    {
       "id": "9525e44841239187",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "De ronde Droste-chocolaatjes komen terug in de Nederlandse schappen",
@@ -2982,7 +3103,7 @@
     },
     {
       "id": "a8f13f891caf8980",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Verbazing in Tweede Kamer: lagere belasting op gas blijkt niet te kunnen",
@@ -2993,7 +3114,7 @@
     },
     {
       "id": "20f66712432c65cf",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Gucci laat voor het eerst sneakers niet in Italië, maar in China maken",
@@ -3004,7 +3125,7 @@
     },
     {
       "id": "29b9a44716cfb8e8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Bedrijven mogen niet meer zomaar claimen dat product 'groen' of 'duurzaam' is",
@@ -3015,7 +3136,7 @@
     },
     {
       "id": "cd4129b070aa41f6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Squishy dumplings zijn niet gevaarlijk voor kinderen",
@@ -3026,7 +3147,7 @@
     },
     {
       "id": "fad443bd5f2a7093",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Mensen met kleine schuld moeten vaker worden bereikt om erger te voorkomen",
@@ -3037,7 +3158,7 @@
     },
     {
       "id": "1261d099aee45aa7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Recordaantal vacatures in de zorg: 'Sectoren staan te springen om personeel'",
@@ -3048,7 +3169,7 @@
     },
     {
       "id": "f088b730332e7b71",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Dieselprijs in Europa stijgt naar record van 2,23 euro per liter",
@@ -3059,7 +3180,7 @@
     },
     {
       "id": "ad9e946cb514607b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Vanaf vrijdag eenrichtingsverkeer op de IJssel vanwege lage waterstand",
@@ -3070,7 +3191,7 @@
     },
     {
       "id": "ce289fd5abd44d62",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Kabinet ziet niks in algeheel verbod op camerabrillen die stiekem kunnen filmen",
@@ -3081,7 +3202,7 @@
     },
     {
       "id": "88192ee3a2929b7e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "Rechter verbiedt Lidl verkoop van imitaties van Birkenstock-sandalen",
@@ -3092,7 +3213,7 @@
     },
     {
       "id": "de2f8349b934cadf",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "news",
       "section": "economy",
       "title": "ABP investeert komende drie jaar 1 miljard euro in Europese techbedrijven",
@@ -3102,19 +3223,8 @@
       "publishedAt": "2026-09-24T08:16:19.000Z"
     },
     {
-      "id": "a822715f83afd260",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "news",
-      "section": "economy",
-      "title": "Chinese automerken geven verkoop elektrische auto's in EU flinke boost",
-      "url": "https://www.nu.nl/economie/6410802/chinese-automerken-geven-verkoop-elektrische-autos-in-eu-flinke-boost.html",
-      "source": "NU.nl Economie",
-      "summary": "De verkoop van nieuwe volledig elektrische auto's in de Europese Unie is in de eerste acht maanden van dit jaar met 45 procent gestegen. Vooral Chinese merken als BYD, Chery, Geely en Leapmotor zorgden voor de groei.",
-      "publishedAt": "2026-09-24T06:32:48.000Z"
-    },
-    {
       "id": "9ec1369f7d095e59",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "‼️‼️ Renault Clio 1.5 DCI 66KW Estate 2015 Grijs",
@@ -3127,7 +3237,7 @@
     },
     {
       "id": "5253d48c46184e22",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Toyota Yaris 1.3 | APK t/m 01-08-2027 | 149.450 km | 2 Sleut",
@@ -3139,8 +3249,21 @@
       "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/e8a5a16e-bab5-4b64-abec-829d6c1a0d9c?rule=ecg_mp_eps$_82.jpg"
     },
     {
+      "id": "6c3d5138e582f6f5",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "marktplaats",
+      "section": "cars",
+      "title": "Toyota Yaris 1.0 Vvt-i 5-DRS 2014 Rood",
+      "url": "https://www.marktplaats.nl/v/auto-s/toyota/m2446383608-toyota-yaris-1-0-vvt-i-5-drs-2014-rood",
+      "source": "Marktplaats",
+      "priceEur": 4500,
+      "bid": true,
+      "place": "IJsselstein",
+      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/80442972-de7b-4b03-8f95-303b83fba06e?rule=ecg_mp_eps$_82.jpg"
+    },
+    {
       "id": "b4545c3ce0832f82",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Ford Fiësta 1.4 5-DR | NW. APK! | DISTR. GDN! | IJSKOUDE AC!",
@@ -3152,21 +3275,8 @@
       "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/89bf4211-41fa-4f08-aed6-8922aeed93fe?rule=ecg_mp_eps$_82.jpg"
     },
     {
-      "id": "096695acb0f17308",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "marktplaats",
-      "section": "cars",
-      "title": "Nissan Pixo 1.0 50KW 5D 2009 Beige",
-      "url": "https://www.marktplaats.nl/v/auto-s/nissan/m2443424001-nissan-pixo-1-0-50kw-5d-2009-beige",
-      "source": "Marktplaats",
-      "priceEur": 1850,
-      "bid": false,
-      "place": "Schoonrewoerd",
-      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5c117386-e70c-4d6a-9d3d-f110479025ae?rule=ecg_mp_eps$_82.jpg"
-    },
-    {
       "id": "2cd8c09d4a6fdfab",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Renault Twingo 1.2 16V Collection/Weinig km's/Nieuwe APK en",
@@ -3179,7 +3289,7 @@
     },
     {
       "id": "64419420c6cc7206",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 107 Carplay! Airco! Elektrisch pakket! Nieuwe APK!",
@@ -3192,7 +3302,7 @@
     },
     {
       "id": "d874966ef0f71154",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "BMW 1 serie 120i 150PK 2.0L stoelverwarming navi",
@@ -3205,7 +3315,7 @@
     },
     {
       "id": "455a3d7023bbe988",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 3008 1.6 e-HDI Active AUTOMAAT! PANODAK! NAVI! BLUET",
@@ -3218,7 +3328,7 @@
     },
     {
       "id": "aaa314ea8b9bbda8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 107 Panoramadak! Carplay! Airco! Nieuwe APK! Lm Velg",
@@ -3231,7 +3341,7 @@
     },
     {
       "id": "8e8b5ed4bacdb3ef",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 107 1.0 -Full option-Dealer onderhouden-APK-nieuwe b",
@@ -3244,7 +3354,7 @@
     },
     {
       "id": "a08f1f0a7b1a1296",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Mini Cooper Countryman 1.6 Leer Navigatie John Cooper Velgen",
@@ -3257,7 +3367,7 @@
     },
     {
       "id": "9912edac81c56fed",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Fiat 500 1.2 C 2009 Wit|NAP|GLAZENDAK|AIRCO|CARPLAY|APK’27",
@@ -3270,20 +3380,20 @@
     },
     {
       "id": "7023f2e903e7451c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot RCZ 1.6 THP 2010 met lichte voorschade",
       "url": "https://www.marktplaats.nl/v/auto-s/peugeot/m2446349255-peugeot-rcz-1-6-thp-2010-met-lichte-voorschade",
       "source": "Marktplaats",
-      "priceEur": 2350,
-      "bid": false,
+      "priceEur": 1950,
+      "bid": true,
       "place": "Kelpen-Oler",
       "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/9f64da86-b2e4-48a4-80bf-a1d8268103ce?rule=ecg_mp_eps$_82.jpg"
     },
     {
       "id": "8622f5e662b6d310",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 107 1.0 Active 2e Eigenaar,Airco,5 Deurs,N.A.P,Zeer",
@@ -3296,7 +3406,7 @@
     },
     {
       "id": "fd591b2693363c71",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Ford Fiesta 1.0 Style NaviAirco5 DeursN.A.PZe",
@@ -3309,7 +3419,7 @@
     },
     {
       "id": "576a840ab2354cd1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Toyota Yaris 1.3 VVTi Sol|2e Eigenaar|Airco|Elektr.ramen|Goe",
@@ -3322,7 +3432,7 @@
     },
     {
       "id": "c5a3c72875ac8a2a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Ford Focus Wagon 1.0 EcoBoost Titanium|1e Eigenaar|D-riem v.",
@@ -3335,7 +3445,7 @@
     },
     {
       "id": "008a00dab4a80b2e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Opel Zafira 2.2 Temptation|2e Eigenaar|Automaat|7. Pers|Navi",
@@ -3348,7 +3458,7 @@
     },
     {
       "id": "e36a3705ef6b4c29",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Hyundai I10 1.0i i-Motion Comfort Plus|1e Eigenaar|Climatron",
@@ -3361,7 +3471,7 @@
     },
     {
       "id": "6455ea25c8475f41",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Nissan Pixo 1.0|Airco|Elektr.ramen|Nieuwe APK|5-Deurs|",
@@ -3374,7 +3484,7 @@
     },
     {
       "id": "7455822d482983a7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Hyundai I10 1.0 i-Drive|2e Eigenaar|Elektr.ramen|Nieuwe APK|",
@@ -3387,7 +3497,7 @@
     },
     {
       "id": "e41699bcaacb72f1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Toyota Auris 1.4-16V Sol|1e Eigenaar|Climatronic|Trekhaak|El",
@@ -3400,7 +3510,7 @@
     },
     {
       "id": "5ccece4a9bb4de69",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Skoda Citigo 1.0 Greentech Active Pro|Airco|Elektr.ramen|5-D",
@@ -3413,7 +3523,7 @@
     },
     {
       "id": "cde86322bf04db1e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Fiat 500 1.2 Naked|1e Eigenaar|Climatronic|Elektr.ramen|LM-V",
@@ -3426,7 +3536,7 @@
     },
     {
       "id": "9820293f0f952fb7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Suzuki Swift 1.2 5-D 2011 Grijs",
@@ -3439,7 +3549,7 @@
     },
     {
       "id": "147cfc19303f4af3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 107 1.0 12V 3DR 2007 Blauw",
@@ -3452,7 +3562,7 @@
     },
     {
       "id": "ee8e11cf27403e80",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Renault Clio Estate 1.2 TCE Collection (AIRCO, ELEK RAMEN, C",
@@ -3465,7 +3575,7 @@
     },
     {
       "id": "9470d4b86cf27d39",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Peugeot 207 SW 1.6 VTi 123.000 KM APK 09-2027 - Lage kmstand",
@@ -3478,7 +3588,7 @@
     },
     {
       "id": "f0ca1f54e26fa1c5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Renault Clio 1.2 Special Line airco 1e eigenaar org NL",
@@ -3491,7 +3601,7 @@
     },
     {
       "id": "39b548ba28e6052b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "cars",
       "title": "Mercedes-Benz C-klasse Estate 220 CDI Business Class",
@@ -3504,7 +3614,7 @@
     },
     {
       "id": "b9094c24a930dab2",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "HONDA CB650R Neo Sports Cafe DIKSTE van NL BOMVOL Opties !!",
@@ -3517,7 +3627,7 @@
     },
     {
       "id": "116bf55bfa0f2da3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Bmw R 1200 rt uit 2012 vol opties, weinig km, prijs verlaagd",
@@ -3530,7 +3640,7 @@
     },
     {
       "id": "75022847c084eab9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Honda XR650R (2000) – eerste eigenaar 12.000 km",
@@ -3543,7 +3653,7 @@
     },
     {
       "id": "57692a89653b2f9a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Kymco Xciting 400i ABS polini koppeling en topkoffer.",
@@ -3556,7 +3666,7 @@
     },
     {
       "id": "c8241fc9c0f1bb1a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "YAMAHA TRACER 700 ABS 1e Eigenaar TomTom Rider 500 TOPPER",
@@ -3569,7 +3679,7 @@
     },
     {
       "id": "3e69f717ee9fb6d9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "HONDA NC750X ABS Storm Uitlaat 1e Eigenaar VOL Opties DIK !!",
@@ -3582,7 +3692,7 @@
     },
     {
       "id": "8cbefe5344e297ae",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "YAMAHA MT07 Tracer Techblack ABS Akrapovic Racing Line DIK !",
@@ -3595,7 +3705,7 @@
     },
     {
       "id": "85d60baa04c27370",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "HONDA NC750X ABS 1e Eigenaar ZEER NETTE STAAT 9.840km !!",
@@ -3608,7 +3718,7 @@
     },
     {
       "id": "3a614929afad89d9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Piaggio MP3 500 Sport 2021 Mat Zwart voetrem autorijbewijs",
@@ -3621,7 +3731,7 @@
     },
     {
       "id": "96bc4848a4dadaa1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "BMW R 1200 GS Adventure - verkoop ivm emigratie",
@@ -3634,7 +3744,7 @@
     },
     {
       "id": "19ddb9f7db01907e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Honda Rebel 500 Special Edition | 2024 | 6425km | Nieuwstaat",
@@ -3647,7 +3757,7 @@
     },
     {
       "id": "40fd6892852a6158",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Kawasaki z650 2020",
@@ -3660,7 +3770,7 @@
     },
     {
       "id": "c7e50a20b30bbc60",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Unieke Honda VT600 Bobber Custom Army Green - NL Bobbers",
@@ -3673,7 +3783,7 @@
     },
     {
       "id": "ec6db63a883ea5cb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Kawasaki Ninja 650 | 2018 | Blauw | A2 (35 kW) | Full Option",
@@ -3686,7 +3796,7 @@
     },
     {
       "id": "0d7cf8365e4f1c6e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "KTM Duke 690 R - Naked Bike met Akrapovic uitlaat",
@@ -3699,7 +3809,7 @@
     },
     {
       "id": "cd397b05cd6b5a3f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Unieke Honda Varadero SD02 | Slechts 6.800 km! | Nieuwstaat!",
@@ -3712,7 +3822,7 @@
     },
     {
       "id": "3eddd4bf9b997568",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "BOBBER* Honda Shadow vt600",
@@ -3725,7 +3835,7 @@
     },
     {
       "id": "f6e620c8b8bba9eb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Benelli Leoncino 800 Trail | 2024 | Slechts 3.258 km",
@@ -3738,7 +3848,7 @@
     },
     {
       "id": "9ad679f6def0ac76",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Moto Morini Seiemmezzo STR 2026–4.200 km–Als nieuw–5500€",
@@ -3751,7 +3861,7 @@
     },
     {
       "id": "535bc1ce33fb4358",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Royal Enfield Classic 650 (750km!!!!)",
@@ -3764,7 +3874,7 @@
     },
     {
       "id": "720ca51fc3f84ad1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "BMW G310R uit 2018 is op zoek naar een nieuwe rijder.",
@@ -3777,7 +3887,7 @@
     },
     {
       "id": "217358261cc02f0f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "BMW R1200GS Adventure",
@@ -3790,7 +3900,7 @@
     },
     {
       "id": "8bf0924cb875d3ae",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "DIKSTE Aprilia Tuono V4 APRC Hyper Naked carbon RSV4 MT09",
@@ -3803,7 +3913,7 @@
     },
     {
       "id": "34ec9a89747720b4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "KAWASAKI Z800 E 35KW A2 BOMVOL! AKRAPOVIC Z 800 Z800E",
@@ -3816,7 +3926,7 @@
     },
     {
       "id": "3ece2e5b160bff08",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Triumph Daytona 1200 uit 1993 met 32.134 km 1ste eigenaar",
@@ -3829,7 +3939,7 @@
     },
     {
       "id": "ea0698b219d6b574",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "YAMAHA TRACER 7 ABS BOMVOL! TOPSTAAT (MT07 TRACER 700 GT)",
@@ -3842,7 +3952,7 @@
     },
     {
       "id": "79529e99245077c8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "HONDA NC 750 X NC750X TOPSTAAT (GEEN 700 DCT)",
@@ -3855,7 +3965,7 @@
     },
     {
       "id": "c8198377f73d79e7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "HONDA CB 650 R TOPSTAAT!  (CB650R CBR 1000 750 hornet cafe)",
@@ -3868,7 +3978,7 @@
     },
     {
       "id": "512d7e662bc75d42",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "BMW F900R F 900 R BLACK STORM METALLIC (900 XR GS 1000 35KW)",
@@ -3881,7 +3991,7 @@
     },
     {
       "id": "5ff6460995adfccf",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "moto",
       "title": "Honda Scooter 750 X-ADV AKRA CARBON",
@@ -3894,7 +4004,7 @@
     },
     {
       "id": "7e385c7b67400468",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "HK Gaming Keycap Set | Nieuw | Mechanisch Toetsenbord",
@@ -3907,7 +4017,7 @@
     },
     {
       "id": "1c251445b36fc1ca",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "MINOLTA XE-5 mooie conditie",
@@ -3920,7 +4030,7 @@
     },
     {
       "id": "09873918070caf5a",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "airpods pro 3/4 |geseald|",
@@ -3933,7 +4043,7 @@
     },
     {
       "id": "e26921e4806b3fbb",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nintendo Switch Lite Blauw met hoes en oplader",
@@ -3946,7 +4056,7 @@
     },
     {
       "id": "0548fd8110f98275",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Apple 🍏 iPads vanaf € 49,- Top kwaliteit! Air / 2018 /2025",
@@ -3959,7 +4069,7 @@
     },
     {
       "id": "dac9bcf54bd33c7f",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "TEAC TN-100 platenspeler",
@@ -3972,7 +4082,7 @@
     },
     {
       "id": "1fc97208c522e386",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "AT-200Pro LDG antenne tuner",
@@ -3985,7 +4095,7 @@
     },
     {
       "id": "084dab3a32875c26",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Mario Kart Live | Home Circuit Nintendo | rare LUIGI edition",
@@ -3998,7 +4108,7 @@
     },
     {
       "id": "5412d9d4a0b07b8b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "EPSON |  wifi | XP 6105 | all-in-one | scannen printer |",
@@ -4011,7 +4121,7 @@
     },
     {
       "id": "e74dc5bf24fbd2c6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Sony DVP-SR760H CD/DVD-speler - Zo goed als nieuw",
@@ -4024,7 +4134,7 @@
     },
     {
       "id": "f67d33df8ed12cdc",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nieuwe Apple AirPods 4 met Active Noice Cancellation",
@@ -4037,7 +4147,7 @@
     },
     {
       "id": "e2fb309705fb1956",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nintendo Switch Joy-Con Controllers - Roze/Groen",
@@ -4050,7 +4160,7 @@
     },
     {
       "id": "b653959b87abd3bf",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "1 X TP Link Deco M5 (AC1300) WiFi versterker",
@@ -4063,7 +4173,7 @@
     },
     {
       "id": "1d555a1f6a92d9e7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "All-in-One Noodradio met Zonnepaneel/zaklamp/Powerbank",
@@ -4076,7 +4186,7 @@
     },
     {
       "id": "75a9f4c71ceca306",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Reparatie van Hamradio apparatuur",
@@ -4089,7 +4199,7 @@
     },
     {
       "id": "3dfe9f90ea225439",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nintendo Switch Joy-Con-controllers (blauw en geel)",
@@ -4102,7 +4212,7 @@
     },
     {
       "id": "c751832330fdb1e1",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Complete Thuiswerkplek inclusief dockingstation usb-c",
@@ -4115,7 +4225,7 @@
     },
     {
       "id": "5a5e2a2ce6c5ffa0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nieuw in seal: Reolink Altas PT Ultra 4K camera + zonnepanel",
@@ -4128,7 +4238,7 @@
     },
     {
       "id": "b814bc715b2c7248",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "☎️ AKTIE Yealink W73P Dect W73H + Base W70B W73 W70 ☎️",
@@ -4141,7 +4251,7 @@
     },
     {
       "id": "f21556bcd65846ae",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nintendo Switch Joy-Con-paar - Paars en Oranje",
@@ -4154,7 +4264,7 @@
     },
     {
       "id": "534424d17e33f1dd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Problemen met het installeren van je  Mac?",
@@ -4167,7 +4277,7 @@
     },
     {
       "id": "73d9ac0806eb0b68",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "6L6GCM-STR REDBASE TAD PREMIUM Selected",
@@ -4180,7 +4290,7 @@
     },
     {
       "id": "7dcb5bd02dd5f875",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Airpods pro (3e generatie)  🔥actie!🔥",
@@ -4193,7 +4303,7 @@
     },
     {
       "id": "fece841737ecf125",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Scania 3 spaak stuur",
@@ -4206,7 +4316,7 @@
     },
     {
       "id": "2cfac0c7582923a9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": " Superdrive (Compleet met USB-C adapter)",
@@ -4219,7 +4329,7 @@
     },
     {
       "id": "860b92f52c2ae060",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Harman Kardon Go + Play mini  inclusief nieuwe accu!",
@@ -4232,7 +4342,7 @@
     },
     {
       "id": "e8520ec3a3216f78",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "☎️ Yealink W73H Dect Accu Clip Charger W73 SIP IP ☎️",
@@ -4245,7 +4355,7 @@
     },
     {
       "id": "2fce1998d4030848",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Nintendo Switch 2017 + 3 games: Pokémon & Mario Kart",
@@ -4258,7 +4368,7 @@
     },
     {
       "id": "1075517b8984adf0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "Sagemcom Delta WiFi 7 modem/router. NIEUW IN DOOS !!",
@@ -4271,7 +4381,7 @@
     },
     {
       "id": "0f908df147b0c075",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "electronics",
       "title": "YAMAHA Type: HTR5540RDS",
@@ -4284,7 +4394,7 @@
     },
     {
       "id": "2108f5e95346ccd7",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "20” kinderfiets",
@@ -4297,7 +4407,7 @@
     },
     {
       "id": "dfcba01e68f79278",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Gazelle",
@@ -4310,7 +4420,7 @@
     },
     {
       "id": "aaf1b8b8131582e5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Vouwfiets citybike NIEUW 15kg 20inch vouwbare fiets",
@@ -4323,7 +4433,7 @@
     },
     {
       "id": "a70275f2de5c04b4",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Windgoo opvouwbare elektrische fiets",
@@ -4336,7 +4446,7 @@
     },
     {
       "id": "d4481fe5593cfe97",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "BULLS Mountainbike 26 inch fiets MTB (Maat 42 / S)",
@@ -4349,7 +4459,7 @@
     },
     {
       "id": "09164c34320e7d33",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "BATAVUS VOUWFIETS.",
@@ -4362,7 +4472,7 @@
     },
     {
       "id": "4ab8193c39b26ca8",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Gazelle Orange Xtra H53 T7 Damesfiets",
@@ -4375,7 +4485,7 @@
     },
     {
       "id": "dc5d2013dbee05a9",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Gazelle Miss Grace 7 versnellingen",
@@ -4388,7 +4498,7 @@
     },
     {
       "id": "c1cd33a5c2134e29",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "van klein tot groot nieuw en tweedehands fietsen 100 euro",
@@ -4401,7 +4511,7 @@
     },
     {
       "id": "14ec68ede78238e0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Coritna dames fiets 7 versnellingen 57cm",
@@ -4414,7 +4524,7 @@
     },
     {
       "id": "19238f035f04faa6",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "Te koop Dames en Herenfietsen",
@@ -4427,7 +4537,7 @@
     },
     {
       "id": "a93caa8da5c0cda0",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "bikes",
       "title": "SPARTA DAMESFIETS 28 INCH // ALL BIKES €80",
@@ -4440,7 +4550,7 @@
     },
     {
       "id": "686e2360cb88365c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Grote Yucca kamerplant in rieten pot",
@@ -4453,7 +4563,7 @@
     },
     {
       "id": "221b446b43fd5317",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Eettafel met 6 stoelen",
@@ -4466,7 +4576,7 @@
     },
     {
       "id": "856bc1e4b159ef93",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Bank 2,5-zits zwart flueel",
@@ -4479,7 +4589,7 @@
     },
     {
       "id": "cbfe9b640a4fda49",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Mooi groen servies - diverse borden, kommen en mokken",
@@ -4491,8 +4601,34 @@
       "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b4a4ca0e-8911-423d-8f62-f7e232361bf3?rule=ecg_mp_eps$_82.jpg"
     },
     {
+      "id": "bec53402953b7c44",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "marktplaats",
+      "section": "home",
+      "title": "Leuke mok met foto of tekst",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2446381219-leuke-mok-met-foto-of-tekst",
+      "source": "Marktplaats",
+      "priceEur": 6,
+      "bid": false,
+      "place": "Veenendaal",
+      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/bdd6cf09-f57b-44eb-a22e-198f95ca6680?rule=ecg_mp_eps$_82.jpg"
+    },
+    {
+      "id": "4224f195351a3e89",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
+      "channel": "marktplaats",
+      "section": "home",
+      "title": "Tv meubel - industrieel design - 100x40x50 cm",
+      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/tafels-sidetables/m2433644399-tv-meubel-industrieel-design-100x40x50-cm",
+      "source": "Marktplaats",
+      "priceEur": 35,
+      "bid": true,
+      "place": "Eindhoven",
+      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/bc170e30-a4af-4ca7-96b5-db79832e991b?rule=ecg_mp_eps$_82.jpg"
+    },
+    {
       "id": "7367eee68a71aea5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Wedgwood lamp",
@@ -4505,7 +4641,7 @@
     },
     {
       "id": "4ce50a08d9dab88c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Antiek mahoniehouten bed. Binnenmaat 190/90",
@@ -4518,7 +4654,7 @@
     },
     {
       "id": "a17d92cb33347dcd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Vaas Handtas „Imbali“ H.24.5cm",
@@ -4531,7 +4667,7 @@
     },
     {
       "id": "88fd55ef72fe7b1e",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Kaarsenhouder \"Frankie\" H.21cm  2stuks",
@@ -4544,7 +4680,7 @@
     },
     {
       "id": "22e398043d1a31ae",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Massief teakhouten salontafel 120x120 met lade | €99",
@@ -4557,7 +4693,7 @@
     },
     {
       "id": "c289cad7504e3178",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "råskog trolley van ikea",
@@ -4570,7 +4706,7 @@
     },
     {
       "id": "916f09d376eb64e5",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Vintage etalagepop torso vrouwelijk, bruin",
@@ -4583,7 +4719,7 @@
     },
     {
       "id": "47b33d938222fa02",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Set van 2 Flamant glazen stolpen - onbeschadigd",
@@ -4596,7 +4732,7 @@
     },
     {
       "id": "2a380e92045cb06c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "6 pers. /22 delig  Eschenbach servies",
@@ -4609,7 +4745,7 @@
     },
     {
       "id": "38cf33dbb43d68db",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Steelcase Metalen Verrijdbaar Ladeblok met Zitkussen-100st",
@@ -4622,7 +4758,7 @@
     },
     {
       "id": "42e7d316f811d203",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Salontafel met lades - Wit met houten blad",
@@ -4635,7 +4771,7 @@
     },
     {
       "id": "925b16494cc4439b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "SALONTAFEL",
@@ -4648,7 +4784,7 @@
     },
     {
       "id": "804eb09173cf4c52",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "kaarsen",
@@ -4661,7 +4797,7 @@
     },
     {
       "id": "5fd5eab2a496ba8b",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Nieuwe beige ribfluwelen zitzak fauteuil met poef",
@@ -4674,7 +4810,7 @@
     },
     {
       "id": "5470b69dcf574c44",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Demeyere Proline 7 Koekenpan RVS",
@@ -4687,7 +4823,7 @@
     },
     {
       "id": "2e37373bb636ed02",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Vierkante tafels (26 stuks beschikbaar)",
@@ -4700,7 +4836,7 @@
     },
     {
       "id": "4c2c864039b3f131",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Auping dressboy Design Frans de la Haye",
@@ -4713,7 +4849,7 @@
     },
     {
       "id": "c50b60a079088f78",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "IKEA Landskrona voetenbank in donkerbruin leer",
@@ -4726,7 +4862,7 @@
     },
     {
       "id": "4397a3347ec516cd",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Zwarte salontafel",
@@ -4739,7 +4875,7 @@
     },
     {
       "id": "02bdfde0c21a6f44",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "HACO verlichtings system - 4 stuks",
@@ -4752,7 +4888,7 @@
     },
     {
       "id": "4819a062066a5912",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Zeer mooie fauteuil okergeel, zo goed als nieuw!",
@@ -4765,7 +4901,7 @@
     },
     {
       "id": "ec1f9a9137d5a214",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Ikea ladekast wit",
@@ -4778,7 +4914,7 @@
     },
     {
       "id": "ea9bc6988f7f8401",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Lijsten",
@@ -4791,7 +4927,7 @@
     },
     {
       "id": "fb2f48919c7b289c",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
+      "collectedAt": "2026-09-24T18:38:50.183Z",
       "channel": "marktplaats",
       "section": "home",
       "title": "Nieuwe Keukenkast-Keukentrolley-Hout/Metaal - 90x40x92 cm",
@@ -4801,32 +4937,6 @@
       "bid": false,
       "place": "Barneveld",
       "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/05fa75a4-3ec9-4820-9af8-b39286808130?rule=ecg_mp_eps$_82.jpg"
-    },
-    {
-      "id": "07f2551014a54199",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "marktplaats",
-      "section": "home",
-      "title": "Ladeblok Bureau - 3 Lades-Bruın - 40x40x57.5 cm-3 Kleuren",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/kasten-ladekasten/m2446186944-ladeblok-bureau-3-lades-bruin-40x40x57-5-cm-3-kleuren",
-      "source": "Marktplaats",
-      "priceEur": 24.99,
-      "bid": false,
-      "place": "Barneveld",
-      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/2d97909e-90a3-4114-ace6-c4af3a324c18?rule=ecg_mp_eps$_82.jpg"
-    },
-    {
-      "id": "c9288a3a69fb65c3",
-      "collectedAt": "2026-09-24T18:11:50.899Z",
-      "channel": "marktplaats",
-      "section": "home",
-      "title": "Ikea Ektorp tweepersoonsbank - Grijs, goede staat",
-      "url": "https://www.marktplaats.nl/v/huis-en-inrichting/banken-bankstellen/m2446183048-ikea-ektorp-tweepersoonsbank-grijs-goede-staat",
-      "source": "Marktplaats",
-      "priceEur": 90,
-      "bid": false,
-      "place": "Amersfoort",
-      "image": "https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d7ec8b71-ed4a-4bbb-b632-ac1299fd49e9?rule=ecg_mp_eps$_82.jpg"
     }
   ]
 }
