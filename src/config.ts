@@ -268,8 +268,8 @@ export const newspaper = {
   sections: [
     {
       id: "nl", label: "Netherlands", color: "#ea580c", feeds: [
-        { name: "NOS", url: "https://feeds.nos.nl/nosnieuwsalgemeen" },
-        { name: "NU.nl", url: "https://www.nu.nl/rss/Algemeen" },
+        { name: "NOS", url: "https://feeds.nos.nl/nosnieuwsalgemeen", lang: "nl" },
+        { name: "NU.nl", url: "https://www.nu.nl/rss/Algemeen", lang: "nl" },
       ],
     },
     {
@@ -281,18 +281,32 @@ export const newspaper = {
     {
       id: "tech", label: "Tech & science", color: "#7c3aed", feeds: [
         { name: "Ars Technica", url: "https://feeds.arstechnica.com/arstechnica/index" },
-        { name: "NOS Tech", url: "https://feeds.nos.nl/nosnieuwstech" },
-        { name: "NU.nl Wetenschap", url: "https://www.nu.nl/rss/Wetenschap" },
+        { name: "NOS Tech", url: "https://feeds.nos.nl/nosnieuwstech", lang: "nl" },
+        { name: "NU.nl Wetenschap", url: "https://www.nu.nl/rss/Wetenschap", lang: "nl" },
       ],
     },
     {
       id: "economy", label: "Economy & money", color: "#ca8a04", feeds: [
-        { name: "NOS Economie", url: "https://feeds.nos.nl/nosnieuwseconomie" },
+        { name: "NOS Economie", url: "https://feeds.nos.nl/nosnieuwseconomie", lang: "nl" },
         { name: "BBC Business", url: "https://feeds.bbci.co.uk/news/business/rss.xml" },
-        { name: "NU.nl Economie", url: "https://www.nu.nl/rss/Economie" },
+        { name: "NU.nl Economie", url: "https://www.nu.nl/rss/Economie", lang: "nl" },
       ],
     },
   ] as NewsSection[],
+};
+
+// Dutch headlines (feeds marked lang: "nl") are translated to English with DeepL,
+// shown with the Dutch original underneath. The key is the DEEPL_API_KEY repo
+// secret; without it, or once the credit is spent, titles simply stay Dutch.
+//
+// The Developer plan is a ONE-TIME credit of 1M characters, not a monthly
+// allowance. So only headlines that go into the email are sent to DeepL, each
+// exactly once (cached in data/translations.json) — ~13 a day, ~330k characters a
+// year, about three years of credit. The dashboard reuses cached translations
+// but never triggers new ones.
+export const translate = {
+  target: "EN-GB",
+  cacheDays: 60,
 };
 
 // Browse, not alerts: the newest listings per category under a price, nationwide.

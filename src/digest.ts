@@ -56,7 +56,8 @@ const sectionHead = (label: string, color: string, first = false) => `
 function newsRows(s: PaperSection): string {
   return s.picked.map((i) => `
   <tr><td style="padding:9px 0;border-bottom:1px solid #eef0f3">
-    <a href="${esc(i.url)}" style="font:600 14.5px/1.35 ${FONT};color:#1a1d23;text-decoration:none">${esc(i.title)}</a>
+    <a href="${esc(i.url)}" style="font:600 14.5px/1.35 ${FONT};color:#1a1d23;text-decoration:none">${esc(i.titleEn ?? i.title)}</a>
+    ${i.titleEn ? `<div style="margin-top:2px;font:italic 400 12.5px/1.4 ${FONT};color:#9ca3af">${esc(i.title)}</div>` : ""}
     <div style="margin-top:2px;font:400 12px/1.4 ${FONT};color:#6b7280">${esc(i.source)}${i.publishedAt ? ` · ${esc(new Date(i.publishedAt).toLocaleTimeString("en-GB", { timeZone: delivery.timezone, hour: "2-digit", minute: "2-digit" }))}` : ""}</div>
   </td></tr>`).join("");
 }

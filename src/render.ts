@@ -1,5 +1,6 @@
 import type { Item, Lane, ReachPayload } from "./types.js";
 import { type Paper, type PaperSection, priceLabel } from "./paper.js";
+import type { TranslateStatus } from "./translate.js";
 import { delivery } from "./config.js";
 
 const esc = (s: string) =>
@@ -19,7 +20,8 @@ function newsPanel(sections: PaperSection[]): string {
     <h2 class="sec" style="--c:${esc(s.color)}">${esc(s.label)}</h2>
     ${s.shown.length ? s.shown.map((i) => `
     <article class="card row${i.isNew ? " new" : ""}">
-      <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      <a class="title" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titleEn ?? i.title)}</a>
+      ${i.titleEn ? `<div class="orig">${esc(i.title)}</div>` : ""}
       <div class="meta">${esc(i.source)}${i.publishedAt ? ` · ${esc(hhmm(i.publishedAt))}` : ""}${i.isNew ? ' <span class="badge">NEW</span>' : ""}</div>
     </article>`).join("") : '<p class="empty">No headlines from this section\'s feeds in the last day.</p>'}`).join("");
   return body || '<p class="empty">No newspaper sections configured.</p>';
@@ -39,6 +41,7 @@ function marketPanel(sections: PaperSection[]): string {
 export function renderHtml(
   items: Item[], lanes: Lane[], reach: ReachPayload | null, reachAgeHours: number | null,
   paper: Paper = { news: [], market: [] },
+  translation?: TranslateStatus,
 ): string {
   const generated = new Date().toLocaleString("en-GB", {
     timeZone: delivery.timezone,
@@ -67,6 +70,9 @@ export function renderHtml(
       return `<li class="${cls}"><b>${esc(c.channel)}</b> <span>${esc(detail)}</span></li>`;
     }).join("")
     : `<li class="bad"><b>no collection</b> <span>run scripts/reach-collect.mjs</span></li>`;
+  const translateChip = translation
+    ? `<li class="${translation.state === "ok" ? "ok" : translation.state === "off" ? "skip" : "bad"}"><b>translate</b> <span>${esc(translation.detail)}</span></li>`
+    : "";
 
   const cards = items.map((i) => {
     const lane = lanes.find((l) => l.id === i.lane);
@@ -143,6 +149,7 @@ export function renderHtml(
   .sec{margin:26px 0 4px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--c);
     border-bottom:2px solid var(--c);padding-bottom:5px}
   .card.row{padding:10px 14px;margin-top:6px}
+  .orig{margin-top:2px;font-size:12.5px;font-style:italic;color:var(--mut)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:10px;margin-top:10px}
   .listing{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;
     overflow:hidden;color:var(--fg);text-decoration:none}
@@ -163,7 +170,7 @@ export function renderHtml(
       ? `agent-reach collected ${esc(ago(reachAgeHours))}${stale ? ` — older than the ${delivery.maxReachAgeHours}h email gate, so no digest goes out until it refreshes` : ""}`
       : "no agent-reach collection yet — run <code>node scripts/reach-collect.mjs</code>"}
   </div>
-  <ul class="health">${channelBar}</ul>
+  <ul class="health">${channelBar}${translateChip}</ul>
   <nav class="tabs" role="tablist">
     <button class="tab" role="tab" data-tab="radar">Radar <span>${newCount} new</span></button>
     <button class="tab" role="tab" data-tab="paper">Newspaper <span>${paper.news.reduce((n, x) => n + x.shown.length, 0)}</span></button>

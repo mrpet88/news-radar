@@ -8,7 +8,8 @@ configuration and the design decisions. This file holds only what is specific to
 TypeScript → `dist/`, Node 22+, **no runtime dependencies** (native `fetch` only).
 The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd runs it without a
 build step; it imports the compiled config from `dist/` so there is one source of truth.
-It runs on both sides: `REACH_SIDE=cloud` in Actions (exa, github, rss), default `mac`
+It runs on both sides: `REACH_SIDE=cloud` in Actions (exa, github, rss, news,
+marktplaats), default `mac`
 on the Mac (reddit). `collector.cloudChannels` is the split.
 
 ```bash
@@ -59,6 +60,10 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
 - **Marktplaats: nearly every listing is a paid "Dagtopper"**, private sellers too, and
   unboosted ones are mostly dealer feeds. Filtering on `priorityProduct` empties the
   results. Filter on subcategory slug (`vipUrl` segment 3) instead.
+- **DeepL credit is one-time, not monthly** (Developer plan: 1M characters total, hard
+  limit — HTTP 456 when spent, no billing). `src/translate.ts` therefore translates only
+  headlines picked for the email, only when the gate is open, and caches by item id.
+  Don't widen it to the dashboard or Marktplaats without redoing the arithmetic.
 - **Exa has no date filter.** Recency is enforced in `scoreItem`, not at query time.
 
 ## Channel status (verified 2026-09-24)

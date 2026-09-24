@@ -6,6 +6,7 @@ import { scoreItem, dedupe, withinAge, markNew, pickPerLane } from "./filter.js"
 import { renderHtml } from "./render.js";
 import { writeDigest } from "./digest.js";
 import { buildPaper, isPaperItem, allPicked, pickedCount } from "./paper.js";
+import { applyTranslations } from "./translate.js";
 import {
   DASHBOARD, DIGEST, ensureDataDir, loadReach, loadSeen, saveSeen,
   loadState, saveState, saveItems, reachAgeHours,
@@ -46,10 +47,15 @@ async function main() {
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0) ||
       Date.parse(b.publishedAt ?? b.collectedAt) - Date.parse(a.publishedAt ?? a.collectedAt));
 
+  // Translate only when an email can go out: credit is finite, and a gated run's
+  // picks would be translated for nobody.
+  const gateOpen = ageH !== null && (ageH <= delivery.maxReachAgeHours || forced);
+  const translation = await applyTranslations(paper, gateOpen);
+
   // The dashboard always updates, even when the email is gated — it costs nothing
   // and is where the staleness is visible for free.
   await saveItems(marked);
-  await fs.writeFile(DASHBOARD, renderHtml(marked, lanes, reach, ageH, paper));
+  await fs.writeFile(DASHBOARD, renderHtml(marked, lanes, reach, ageH, paper, translation));
 
   const newItems = marked.filter((i) => i.isNew);
   const picked = pickPerLane(newItems.length ? newItems : forced ? marked : [], lanes, delivery.maxRows);
@@ -86,6 +92,7 @@ async function main() {
   console.log(`after age+dedupe: ${marked.length}`);
   console.log(`NEW this run:     ${newItems.length}`);
   console.log(`newspaper:        ${pickedCount(paper.news)} headlines (${paper.news.map((x) => `${x.label} ${x.picked.length}`).join(" · ")})`);
+  console.log(`translate:        ${translation.state} — ${translation.detail}`);
   console.log(`marktplaats:      ${pickedCount(paper.market)} listings (${paper.market.map((x) => `${x.label} ${x.picked.length}`).join(" · ")})`);
   console.log(`digest:           ${decision.kind} — ${decision.reason}`);
   if (decision.send) console.log(`subject:          ${decision.subject}`);

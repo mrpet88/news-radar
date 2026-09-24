@@ -33,6 +33,7 @@ export interface Item {
   bid?: boolean;         // marktplaats: "bieden vanaf" rather than a fixed price
   place?: string;        // marktplaats: seller's city, as shown on the listing
   image?: string;        // marktplaats: thumbnail URL
+  titleEn?: string;      // news: English translation of a Dutch headline (render-time)
 }
 
 // What one channel reported in a single collector run. Persisted alongside the
@@ -95,7 +96,8 @@ export interface NewsSection {
   id: string;
   label: string;
   color: string;
-  feeds: { name: string; url: string }[];
+  // lang "nl" marks a feed whose headlines are translated to English in the email.
+  feeds: { name: string; url: string; lang?: "nl" }[];
 }
 
 // One Marktplaats browse. `paths` match the listing's subcategory slug — the part

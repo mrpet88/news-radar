@@ -204,6 +204,15 @@ headlines each, in the outlets' own order. Within a section the feeds take turns
 first, so a high-volume outlet cannot own a section. Anything older than 36 hours or
 already mailed is skipped.
 
+**Translation.** Dutch headlines (feeds marked `lang: "nl"`) are translated to English
+with DeepL, with the Dutch original in small type underneath. DeepL's free "Developer"
+plan is a *one-time* credit of 1M characters, not a monthly allowance, so only headlines
+that go into the email are translated, each exactly once (cached in
+`data/translations.json`). That is roughly 330k characters a year — about three years of
+credit. The dashboard reuses cached translations and never spends any. Without the
+`DEEPL_API_KEY` secret, or once the credit is gone, titles stay Dutch and the dashboard's
+`translate` chip says why.
+
 **Marktplaats.** The newest listings per category, nationwide, capped at five per
 category in the email, each with a thumbnail, price and city. Price ranges and categories
 are per search:
@@ -285,6 +294,7 @@ one — which is how a work address ends up on a personal project.
 | `data/seen-history.json` | Actions | what has already been surfaced, 60-day TTL |
 | `data/digest-state.json` | Actions | last digest / heartbeat, for the quiet-period check |
 | `data/items.json`, `data/index.html` | Actions | the rendered dashboard |
+| `data/translations.json` | Actions | DeepL translations of mailed Dutch headlines, 60-day TTL |
 
 Each file has exactly one writer. Both sides writing the same generated files made every
 push a conflict with no meaningful side to prefer.
