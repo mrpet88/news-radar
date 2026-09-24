@@ -1,22 +1,7 @@
 [
   {
-    "id": "a830284bc7cd14af",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
-    "channel": "rss",
-    "title": "Responsible Quality Engineering",
-    "url": "https://www.satisfice.com/blog/archives/488069",
-    "source": "James Bach",
-    "summary": "Let’s talk about responsible quality engineering (RQE). Quality engineering is not testing, although it may require testing. Also, most “quality engineers” don’t do quality engineering. The people who do quality engineering are developers. Testers support that process by analyzing the quality of the product and providing feedback to developers as part of the quality engineering […]",
-    "publishedAt": "2026-09-23T05:39:31.000Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 20.7,
-    "isNew": false
-  },
-  {
     "id": "5bbddbbe05efb614",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
     "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
@@ -31,7 +16,7 @@
   },
   {
     "id": "8b09b12e6a7f6358",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
     "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
@@ -46,7 +31,7 @@
   },
   {
     "id": "932a13dc8c465cc4",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "llm-anthropic 0.29",
     "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
@@ -61,7 +46,7 @@
   },
   {
     "id": "330f0ddb094a9397",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "Gemini 3.8 TTS Playground",
     "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
@@ -76,7 +61,7 @@
   },
   {
     "id": "e7563672a4e2e314",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "MCP was always a bad idea?",
     "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
@@ -91,7 +76,7 @@
   },
   {
     "id": "9d46838852968c83",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
     "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
@@ -117,7 +102,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 16.2,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9b30e6a3edbb8843",
@@ -132,11 +117,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 16.2,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "76bda146f650b22c",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "exa",
     "source": "mabl.com",
     "title": "Your ADLC Is Outrunning Your Quality Gates | mabl",
@@ -150,8 +135,38 @@
     "isNew": false
   },
   {
+    "id": "22635960301f1f2a",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "exa",
+    "source": "dev.to",
+    "title": "From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community",
+    "url": "https://dev.to/zarart/from-quantity-to-quality-a-risk-based-approach-to-ai-assisted-qa-at-scale-12d9",
+    "publishedAt": "2026-09-22T09:18:00.000Z",
+    "summary": "From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale - DEV Community Artemii Zakharov Posted on Sep 22   # From Quantity to Quality: A Risk-Based Approach to AI-Assisted QA at Scale   We write more tests than ever, yet bugs still reach production. This post introduces a risk-based approach to QA. We'll show how AI-driven impact analysis can flag what needs testing, using one",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
+  },
+  {
+    "id": "1aa98f26356683ea",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "exa",
+    "source": "unreallabs.ai",
+    "title": "Unreal Agent — Unreal Labs",
+    "url": "https://unreallabs.ai/blog/unreal-agent/",
+    "publishedAt": "2026-09-22T00:00:00.000Z",
+    "summary": "Unreal Agent — Unreal Labs   # Unreal Agent   22 September 2026   We’re sharing Unreal Agent — an agent harness that delivers up to 40% cost savings compared to Codex on production workloads and coding/science benchmarks, without any negative performance impact.   While deploying agents in the wild, we wanted them to respond to users quickly and be cost-effective to run. We’ve noticed that agents",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
+    "isNew": true
+  },
+  {
     "id": "2eb2448a8ef093c5",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "exa",
     "source": "dzone.com",
     "title": "Production MCP: JSON-RPC, OAuth 2.1, Transport, and Scaling",
@@ -166,7 +181,7 @@
   },
   {
     "id": "7099647e0e6857d9",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "Rendering huge pull requests in the GitHub Copilot app",
     "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
@@ -181,7 +196,7 @@
   },
   {
     "id": "5316cd11f5244599",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "Quoting voxium",
     "url": "https://simonwillison.net/2026/Sep/20/voxium/",
@@ -207,50 +222,18 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
-  },
-  {
-    "id": "d62e17a18e5724ff",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
-    "channel": "github",
-    "title": "Gentleman-Programming/engram — Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
-    "url": "https://github.com/Gentleman-Programming/engram",
-    "source": "Gentleman-Programming",
-    "summary": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
-    "stars": 6803,
-    "publishedAt": "2026-09-24T17:43:15Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
     "isNew": false
   },
   {
-    "id": "63d09053a5d98345",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "id": "9f332d136a48de40",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
-    "title": "callstack/agent-device — Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
-    "url": "https://github.com/callstack/agent-device",
-    "source": "callstack",
-    "summary": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
-    "stars": 4758,
-    "publishedAt": "2026-09-24T17:42:45Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "7d07ac803b4b133f",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
-    "channel": "github",
-    "title": "Aletheore/Aletheore — Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
-    "url": "https://github.com/Aletheore/Aletheore",
-    "source": "Aletheore",
-    "summary": "Evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
-    "stars": 177,
-    "publishedAt": "2026-09-24T17:42:37Z",
+    "title": "homeassistant-ai/ha-mcp — The Unofficial and Awesome Home Assistant MCP Server",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "source": "homeassistant-ai",
+    "summary": "The Unofficial and Awesome Home Assistant MCP Server",
+    "stars": 4832,
+    "publishedAt": "2026-09-24T18:11:58Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -258,15 +241,15 @@
     "isNew": true
   },
   {
-    "id": "dacd31bb9cf1e60a",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "id": "7d7df05527809e15",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
-    "title": "activepieces/activepieces — AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-    "url": "https://github.com/activepieces/activepieces",
-    "source": "activepieces",
-    "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-    "stars": 24715,
-    "publishedAt": "2026-09-24T17:41:41Z",
+    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "url": "https://github.com/HKUDS/nanobot",
+    "source": "HKUDS",
+    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "stars": 48546,
+    "publishedAt": "2026-09-24T18:11:33Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -274,24 +257,72 @@
     "isNew": false
   },
   {
-    "id": "1d16394d1de30a27",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "id": "8bccf00467b4411b",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
-    "title": "getsentry/sentry-mcp — An MCP server for interacting with Sentry via LLMs.",
-    "url": "https://github.com/getsentry/sentry-mcp",
-    "source": "getsentry",
-    "summary": "An MCP server for interacting with Sentry via LLMs.",
-    "stars": 859,
-    "publishedAt": "2026-09-24T17:41:03Z",
+    "title": "UiPath/coder_eval — Playwright for coding agents. Test that your skills, MCP servers, and CLIs actually work when an agent uses them — sandboxed YAML suites, A/B experiments, CI gates.",
+    "url": "https://github.com/UiPath/coder_eval",
+    "source": "UiPath",
+    "summary": "Playwright for coding agents. Test that your skills, MCP servers, and CLIs actually work when an agent uses them — sandboxed YAML suites, A/B experiments, CI gates.",
+    "stars": 141,
+    "publishedAt": "2026-09-24T18:11:27Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
+  },
+  {
+    "id": "40cbc10b1be61d96",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "github",
+    "title": "nikolai-vysotskyi/trace-mcp — Framework-aware code intelligence MCP server — 88 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
+    "url": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "source": "nikolai-vysotskyi",
+    "summary": "Framework-aware code intelligence MCP server — 88 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
+    "stars": 182,
+    "publishedAt": "2026-09-24T18:08:33Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
+  },
+  {
+    "id": "046061c2f25e12a7",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "github",
+    "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
+    "url": "https://github.com/langwatch/langwatch",
+    "source": "langwatch",
+    "summary": "The platform for LLM evaluations and AI agent testing",
+    "stars": 4872,
+    "publishedAt": "2026-09-24T18:07:21Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
     "isNew": false
+  },
+  {
+    "id": "a8d16f57c4f578ad",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "github",
+    "title": "apappascs/mcp-servers-hub — Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-s",
+    "url": "https://github.com/apappascs/mcp-servers-hub",
+    "source": "apappascs",
+    "summary": "Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-source and proprietary MCP servers, complete with features, documentation links, and contributors.",
+    "stars": 332,
+    "publishedAt": "2026-09-24T18:05:42Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
   },
   {
     "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
     "url": "https://github.com/omnigent-ai/omnigent",
@@ -306,40 +337,8 @@
     "isNew": false
   },
   {
-    "id": "7d7df05527809e15",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
-    "channel": "github",
-    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "url": "https://github.com/HKUDS/nanobot",
-    "source": "HKUDS",
-    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "stars": 48547,
-    "publishedAt": "2026-09-24T17:08:28Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "046061c2f25e12a7",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
-    "channel": "github",
-    "title": "langwatch/langwatch — The platform for LLM evaluations and AI agent testing",
-    "url": "https://github.com/langwatch/langwatch",
-    "source": "langwatch",
-    "summary": "The platform for LLM evaluations and AI agent testing",
-    "stars": 4871,
-    "publishedAt": "2026-09-24T16:05:49Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "0fa4dc311880c0f3",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "aeonfun/aeon — Official Aeon - the open-source autonomous AI agent framework. Runs unattended on your GitHub Actions, self-healing skills, drives Claude Code, Codex, Grok & more. Not affiliated with O",
     "url": "https://github.com/aeonfun/aeon",
@@ -366,11 +365,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6e22fd80accc6b8b",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "openonion/connectonion — The Best AI Agent Framework for Agent Collaboration. ",
     "url": "https://github.com/openonion/connectonion",
@@ -386,7 +385,7 @@
   },
   {
     "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
     "url": "https://github.com/open-compass/opencompass",
@@ -402,7 +401,7 @@
   },
   {
     "id": "53a7c39238b81f8a",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "yomorun/yomo — 🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
     "url": "https://github.com/yomorun/yomo",
@@ -429,11 +428,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1834986c7c56818d",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "pact-foundation/pact-jvm — JVM version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
     "url": "https://github.com/pact-foundation/pact-jvm",
@@ -449,7 +448,7 @@
   },
   {
     "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-go",
@@ -476,11 +475,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a8a354829593c69c",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-js",
@@ -496,7 +495,7 @@
   },
   {
     "id": "2c1971c980fefe85",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "pact-foundation/pact-php — PHP version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the s",
     "url": "https://github.com/pact-foundation/pact-php",
@@ -512,7 +511,7 @@
   },
   {
     "id": "9ab34c2f4468b3ee",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "github",
     "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
     "url": "https://github.com/pact-foundation/pact-js-core",
@@ -528,7 +527,7 @@
   },
   {
     "id": "256c0b3da27ae4bd",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "rss",
     "title": "llm 0.36",
     "url": "https://simonwillison.net/2026/Sep/22/llm/",
@@ -543,7 +542,7 @@
   },
   {
     "id": "0245ccddfa2e90f5",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "exa",
     "source": "testmuai.com",
     "title": "Redefining Quality Leadership in an Agentic World [Testμ 2026]",
@@ -557,7 +556,7 @@
   },
   {
     "id": "ae2e013f986b7043",
-    "collectedAt": "2026-09-24T17:43:49.372Z",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
     "channel": "exa",
     "source": "testmuai.com",
     "title": "Reinventing the QE Practice at Global Scale in Agentic Era [Testμ 2026]",
@@ -568,6 +567,22 @@
     "tier": "core",
     "score": 10,
     "isNew": false
+  },
+  {
+    "id": "1b133dc3b3383bf6",
+    "collectedAt": "2026-09-24T18:11:50.899Z",
+    "channel": "github",
+    "title": "orneryd/NornicDB — Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can ",
+    "url": "https://github.com/orneryd/NornicDB",
+    "source": "orneryd",
+    "summary": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features like schemas, managed embeddings, reranking+llm, GPU accel, Auto-TLP, Policy-based Memory Decay, and MCP server.",
+    "stars": 884,
+    "publishedAt": "2026-09-24T18:09:52Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 9,
+    "isNew": true
   },
   {
     "id": "5a54cadf0d95c848",
@@ -582,6 +597,6 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   }
 ]
