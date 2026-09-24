@@ -74,6 +74,11 @@ export function renderDigest(
   `);
 }
 
+// Two days without a collection is past anything a sleeping Mac explains — the
+// four daily slots catch up at the first wake. Beyond that, say "broken", not "quiet".
+const STALLED_AFTER_HOURS = 48;
+const stalled = (h: number | null) => h === null || h > STALLED_AFTER_HOURS;
+
 // Sent when nothing has gone out for delivery.heartbeatAfterDays. Its whole job is
 // to make "quiet" distinguishable from "broken" without adding inbox noise.
 export function renderHeartbeat(reach: ReachPayload | null, reachAgeHours: number | null, quietDays: number): string {
@@ -87,7 +92,9 @@ export function renderHeartbeat(reach: ReachPayload | null, reachAgeHours: numbe
       No digest has gone out for ${quietDays} days. ${esc(last)}
     </div>
     ${bad.length ? `<div style="margin-top:8px;font:400 12px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#9a3412">Failing channels — ${esc(bad.join(" | "))}</div>` : ""}
-    <div style="margin-top:10px;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#6b7280">This is the 3-day heartbeat, not a digest. If the Mac has been asleep this is expected.</div>
+    ${stalled(reachAgeHours)
+      ? `<div style="margin-top:10px;font:600 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#b91c1c">The last collection to reach GitHub was ${reachAgeHours === null ? "never" : ago(reachAgeHours)}. That is not a quiet news week — the Mac side is failing to collect or publish. Check data/launchd.log on the Mac.</div>`
+      : `<div style="margin-top:10px;font:400 12px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#6b7280">This is the 3-day heartbeat, not a digest. Collection is arriving; there was just nothing new worth sending.</div>`}
   `);
 }
 
@@ -158,7 +165,9 @@ export async function writeDigest(
       await fs.writeFile(file, renderHeartbeat(reach, reachAgeHours, n));
       decision = {
         send: true, kind: "heartbeat",
-        subject: `News Radar — quiet for ${n} days`,
+        subject: stalled(reachAgeHours)
+          ? `News Radar — BROKEN: last collection ${reachAgeHours === null ? "never" : ago(reachAgeHours)}`
+          : `News Radar — quiet for ${n} days`,
         reason: `${decision.reason}; heartbeat due`,
       };
     }

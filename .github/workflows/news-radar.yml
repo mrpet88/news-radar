@@ -24,9 +24,15 @@ on:
         description: "Render a digest even if nothing is new (tests the mail path)"
         type: boolean
         default: false
-  # 06:30 UTC ≈ 08:30 CEST — comfortably after the 06:45 local collection has run
-  # and pushed. If the Mac was asleep, the 24h freshness gate blocks the email and
-  # only the dashboard updates.
+  # The main trigger: the Mac pushed a new collection, so render and mail it now.
+  # Actions' own commits never touch this file (and GITHUB_TOKEN pushes do not
+  # trigger workflows anyway), so this cannot loop.
+  push:
+    branches: [main]
+    paths: [data/reach-raw.json]
+  # Daily fallback: keeps the dashboard's staleness current and drives the heartbeat
+  # when no collection arrives. GitHub runs it hours late (06:30 has been landing
+  # around 12:00 UTC), which is why it is not the delivery trigger.
   schedule:
     - cron: "30 6 * * *"
 
