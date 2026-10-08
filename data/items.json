@@ -1,7 +1,7 @@
 [
   {
     "id": "008a5d443660bd78",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Claude Haiku 5.5",
     "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -12,11 +12,26 @@
     "lane": "ai",
     "tier": "core",
     "score": 20.7,
+    "isNew": false
+  },
+  {
+    "id": "b43cf7343af9318e",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
+    "channel": "exa",
+    "source": "qasource.com",
+    "title": "AI Is Breaking QA: Rethinking Quality Engineering in 2026",
+    "url": "https://www.qasource.com/blog/quality-engineering-ai-era",
+    "publishedAt": "2026-10-07T00:00:00.000Z",
+    "summary": "AI Is Breaking QA: Rethinking Quality Engineering in 2026 # Quality Engineering in the AI Era: From Gatekeeper to Strategic Guardrail Timothy Joseph October 7, 2026 Summarize With Navigate through quality engineering in AI era by transforming QA into a strategic guardrail system that ensures reliable software despite accelerating AI-driven development velocity. This blog explores how AI-driven dev",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 18,
     "isNew": true
   },
   {
     "id": "b871a4041527c254",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "exa",
     "source": "tej.as",
     "title": "AI Evals: How to Build an LLM Judge That Agrees With You",
@@ -31,7 +46,7 @@
   },
   {
     "id": "45a6f01d578b2216",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
     "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
@@ -46,7 +61,7 @@
   },
   {
     "id": "e9e5affad837eb69",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Mistral Large 4",
     "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
@@ -60,8 +75,23 @@
     "isNew": false
   },
   {
+    "id": "4cad26bf5ad4f398",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
+    "channel": "exa",
+    "source": "pnakhat.com",
+    "title": "Agents Write the Code and the Tests. So Who Owns Quality Now? | Pankaj Nakhat",
+    "url": "https://pnakhat.com/writing/agentic-org-quality.html",
+    "publishedAt": "2026-10-06T19:00:16.000Z",
+    "summary": "Agents Write the Code and the Tests. So Who Owns Quality Now? | Pankaj Nakhat Oct 06, 2026· 22 min read· Leadership· # Agents Write the Code and the Tests. So Who Owns Quality Now? How an AI-first engineering org should own quality: where humans sit in the agentic SDLC, what QA becomes, how to reskill, and which XP basics matter more.   That question is the subject of this post. I've spent 22 year",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
+  },
+  {
     "id": "56d0cbe31373ad73",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "exa",
     "source": "jreypo.io",
     "title": "Eval Harnesses for Systems Engineers · Juanma's Blog",
@@ -72,11 +102,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "6254eaacd6bd5c58",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "exa",
     "source": "kenodo.com",
     "title": "The MCP server that lets your customers' AI assistants actually use your platform | Kenodo",
@@ -90,8 +120,23 @@
     "isNew": false
   },
   {
+    "id": "415941d818e954a0",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
+    "channel": "exa",
+    "source": "aspiresys.com",
+    "title": "The QA Leader's Guide to the Agentic STLC",
+    "url": "https://www.aspiresys.com/blog/software-testing-services/test-automation/the-qa-leaders-guide-to-the-agentic-stlc/",
+    "publishedAt": "2026-10-01T09:08:37.000Z",
+    "summary": "The QA Leader's Guide to the Agentic STLC # The QA Leader’s Guide to the Agentic STLC October 1, 2026 by Vasanth Manickam Test Automation   For QA leaders, this shift raises an important question: How do you ensure software quality when development is becoming increasingly autonomous? The answer isn’t simply adding more automation or generating more test scripts. It requires rethinking how testing",
+    "laneHint": "qa",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
+  },
+  {
     "id": "e3d737007a92b2cc",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Terence Tao Responds to the OpenAI Math Drop",
     "url": "https://mathstodon.xyz/@tao/117395269325940185",
@@ -101,11 +146,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 13.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "8386bdd1e81bc3b7",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "llm-openai-decisions 0.1a0",
     "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
@@ -120,7 +165,7 @@
   },
   {
     "id": "f2c2c360b7c2055b",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "llm-mistral 0.16",
     "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
@@ -135,7 +180,7 @@
   },
   {
     "id": "269c692ec2c66ca4",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Introducing Mistral Large 4: Le chonk",
     "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
@@ -150,7 +195,7 @@
   },
   {
     "id": "7e577f38f0d5f879",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Software Engineers Are Becoming More Like Lawyers",
     "url": "https://www.satisfice.com/blog/archives/488216",
@@ -179,8 +224,23 @@
     "isNew": false
   },
   {
+    "id": "34796a0d34bd373d",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
+    "channel": "exa",
+    "source": "imwasim.com",
+    "title": "Software Testing Strategies: Practical Guide | Wasim Arshad",
+    "url": "https://imwasim.com/blog/software-testing-strategies/",
+    "publishedAt": "2026-10-05T01:59:11.000Z",
+    "summary": "Software Testing Strategies: Practical Guide | Wasim Arshad # Software Testing Strategies: Building Confidence Without Slowing Delivery A practical guide to risk-based software testing, unit, integration, contract, end-to-end, security, performance, and production verification. By Muhammad Wasim Arshad October 5, 2026 4 min read A useful testing strategy turns release decisions into evidence the w",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 12,
+    "isNew": false
+  },
+  {
     "id": "9092dbc4bdf49086",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "exa",
     "source": "read.aindeev.com",
     "title": "I stopped reviewing my agents' code. Here's what I do instead.",
@@ -195,7 +255,7 @@
   },
   {
     "id": "5b881c08fe0ec933",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "exa",
     "source": "swareco.com",
     "title": "| SWARECO",
@@ -209,15 +269,14 @@
     "isNew": false
   },
   {
-    "id": "7d7df05527809e15",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "id": "816bd1225b7f93fc",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
-    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "url": "https://github.com/HKUDS/nanobot",
-    "source": "HKUDS",
-    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "stars": 48850,
-    "publishedAt": "2026-10-08T06:32:43Z",
+    "title": "punkpeye/awesome-mcp-servers — A collection of MCP servers.",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "source": "punkpeye",
+    "stars": 95916,
+    "publishedAt": "2026-10-08T06:33:45Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -226,23 +285,39 @@
   },
   {
     "id": "abae81953bac20b4",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "punkpeye/awesome-remote-mcp-servers — A collection of remote MCP servers.",
     "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
     "source": "punkpeye",
     "summary": "A collection of remote MCP servers.",
     "stars": 901,
-    "publishedAt": "2026-10-08T06:31:50Z",
+    "publishedAt": "2026-10-08T06:33:11Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "7d7df05527809e15",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
+    "channel": "github",
+    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "url": "https://github.com/HKUDS/nanobot",
+    "source": "HKUDS",
+    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "stars": 48851,
+    "publishedAt": "2026-10-08T06:33:00Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
   },
   {
     "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
     "url": "https://github.com/omnigent-ai/omnigent",
@@ -257,23 +332,8 @@
     "isNew": false
   },
   {
-    "id": "816bd1225b7f93fc",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
-    "channel": "github",
-    "title": "punkpeye/awesome-mcp-servers — A collection of MCP servers.",
-    "url": "https://github.com/punkpeye/awesome-mcp-servers",
-    "source": "punkpeye",
-    "stars": 95915,
-    "publishedAt": "2026-10-08T06:29:50Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
     "id": "3241c309fb76251f",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "cbcoutinho/nextcloud-mcp-server — Nextcloud MCP Server",
     "url": "https://github.com/cbcoutinho/nextcloud-mcp-server",
@@ -288,7 +348,7 @@
   },
   {
     "id": "8d3060b0fa9b4694",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "Higangssh/homebutler — 🏠 Tells you what changed on your server — only what's worth telling. Single Go binary, no database, nothing running on the machines it watches. MCP server built in.",
     "url": "https://github.com/Higangssh/homebutler",
@@ -300,11 +360,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "62d91df84df3942a",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
     "url": "https://github.com/datacontract/datacontract-cli",
@@ -316,11 +376,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "401c10409d3b8cbe",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "framerslab/agentos — TypeScript AI agent framework: cognitive memory, runtime tool forging, multi-agent orchestration, 11 LLM providers.",
     "url": "https://github.com/framerslab/agentos",
@@ -336,7 +396,7 @@
   },
   {
     "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
     "url": "https://github.com/open-compass/opencompass",
@@ -352,7 +412,7 @@
   },
   {
     "id": "ea6b4878f0953657",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "gioblu/NPC-Forge — The open-source neuro-symbolic AI agent framework.",
     "url": "https://github.com/gioblu/NPC-Forge",
@@ -364,11 +424,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "0fa4dc311880c0f3",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "aeonfun/aeon — The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever",
     "url": "https://github.com/aeonfun/aeon",
@@ -384,7 +444,7 @@
   },
   {
     "id": "9ab34c2f4468b3ee",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
     "url": "https://github.com/pact-foundation/pact-js-core",
@@ -400,7 +460,7 @@
   },
   {
     "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-go",
@@ -416,7 +476,7 @@
   },
   {
     "id": "baab19dff2c9b9be",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
     "url": "https://github.com/speakeasy-api/speakeasy",
@@ -432,7 +492,7 @@
   },
   {
     "id": "f2deacd462e1ba8c",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
     "url": "https://github.com/ahx/openapi_first",
@@ -448,7 +508,7 @@
   },
   {
     "id": "b5a2dd0a24139b4a",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio",
     "url": "https://github.com/tugkanboz/awesome-ai-testing",
@@ -464,7 +524,7 @@
   },
   {
     "id": "568de9fdd0cc72fc",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "Quoting Victoria Kim",
     "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
@@ -479,7 +539,7 @@
   },
   {
     "id": "87cecf1cbfec1584",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "rss",
     "title": "EmbeddingGemma 2",
     "url": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
@@ -494,7 +554,7 @@
   },
   {
     "id": "1f2917ddeac64693",
-    "collectedAt": "2026-10-08T06:32:45.907Z",
+    "collectedAt": "2026-10-08T06:34:19.112Z",
     "channel": "github",
     "title": "samugit83/redamon — Open-source, self-hosted AI penetration testing framework: maps your attack surface into a graph, autonomously exploits it from a Kali sandbox with human approval gates, and opens ",
     "url": "https://github.com/samugit83/redamon",
@@ -506,7 +566,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "ec2cbe2baba7627e",
