@@ -190,6 +190,11 @@ export const delivery = {
   // If no digest has gone out for this many days, send a one-line heartbeat so a
   // broken pipeline is distinguishable from a genuinely quiet stretch.
   heartbeatAfterDays: 3,
+  // Automatic runs — the cron and the Mac's wake-up trigger — send at most one
+  // digest per calendar day in `timezone`, whichever lands first. The Mac's trigger
+  // is what gets the email out in the morning; GitHub starts the cron hours late, so
+  // the cron is the fallback for days the Mac stays shut. Manual runs are exempt.
+  oneAutoDigestPerDay: true,
   // Hard ceiling on email rows across all lanes, after per-lane caps apply.
   maxRows: 12,
   // Items older than this never enter the digest, even if newly seen.

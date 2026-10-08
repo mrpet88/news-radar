@@ -4,7 +4,7 @@ import type { Item } from "./types.js";
 import { lanes, delivery } from "./config.js";
 import { scoreItem, dedupe, withinAge, markNew, pickPerLane } from "./filter.js";
 import { renderHtml } from "./render.js";
-import { writeDigest } from "./digest.js";
+import { writeDigest, sentTodayAlready } from "./digest.js";
 import { buildPaper, isPaperItem, allPicked, pickedCount } from "./paper.js";
 import { applyTranslations } from "./translate.js";
 import {
@@ -49,7 +49,9 @@ async function main() {
 
   // Translate only when an email can go out: credit is finite, and a gated run's
   // picks would be translated for nobody.
-  const gateOpen = ageH !== null && (ageH <= delivery.maxReachAgeHours || forced);
+  const state = await loadState();
+  const gateOpen = ageH !== null && (ageH <= delivery.maxReachAgeHours || forced) &&
+    !sentTodayAlready(state, forced);
   const translation = await applyTranslations(paper, gateOpen);
 
   // The dashboard always updates, even when the email is gated — it costs nothing
@@ -60,7 +62,6 @@ async function main() {
   const newItems = marked.filter((i) => i.isNew);
   const picked = pickPerLane(newItems.length ? newItems : forced ? marked : [], lanes, delivery.maxRows);
 
-  const state = await loadState();
   const decision = await writeDigest(DIGEST, picked, lanes, reach, ageH, state, dashboardUrl(), forced, paper);
 
   // Only a real digest advances seen-history. If the gate blocked the email, these

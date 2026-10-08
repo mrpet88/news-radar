@@ -25,10 +25,18 @@ on:
         description: "Render a digest even if nothing is new (tests the mail path)"
         type: boolean
         default: false
-  # One run a day, one email a day. No push trigger: the Mac's push would otherwise
-  # mean a second run and a second email. Its reddit items join the next morning's.
-  # GitHub starts scheduled runs late (06:30 has landed around 12:00 UTC); :37 is
-  # off the top-of-hour rush, and anything after the Mac's 06:45-local slot works.
+      # The Mac passes "mac". Automatic runs (mac, schedule) send at most one digest
+      # a day between them; a manual run always may.
+      trigger:
+        description: "Who started this run — leave as manual"
+        type: string
+        default: manual
+  # One email a day. The Mac starts this workflow at its first wake of the day
+  # (scripts/run-local.sh), which is what makes the email a morning one: GitHub starts
+  # scheduled runs hours late (06:37 UTC has landed as late as 15:14 UTC), while a
+  # dispatch starts in seconds. The cron is the fallback for days the Mac stays shut;
+  # when the Mac got there first, it only refreshes the dashboard.
+  # No push trigger: the Mac's push would otherwise mean a second run.
   schedule:
     - cron: "37 6 * * *"
 
@@ -86,6 +94,8 @@ jobs:
         id: render
         env:
           NEWS_RADAR_DIGEST_FORCE: ${{ inputs.force_digest }}
+          # mac | manual from a dispatch; inputs are empty on a schedule run.
+          NEWS_RADAR_TRIGGER: ${{ inputs.trigger || github.event_name }}
           NEWS_RADAR_DASHBOARD_URL: ${{ vars.NEWS_RADAR_DASHBOARD_URL }}
           # Dutch headline translation; absent or spent, titles stay Dutch.
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}

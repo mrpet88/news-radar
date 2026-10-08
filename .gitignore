@@ -4,6 +4,8 @@ dist/
 digest.html
 # launchd's stdout/stderr for the scheduled collector.
 data/launchd.log
+# Date the Mac last started the delivery workflow (once a day).
+data/.dispatched-on
 # Twitter/X cookies for the twitter channel. Never commit these.
 .env
 .DS_Store

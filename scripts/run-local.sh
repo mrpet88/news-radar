@@ -28,6 +28,32 @@ fi
 
 log() { print -r -- "$(date '+%Y-%m-%d %H:%M:%S') $*"; }
 
+# ── Morning trigger ───────────────────────────────────────────────────────────
+# GitHub starts the scheduled delivery run hours late, but a workflow_dispatch starts
+# in seconds. So the first slot of the day that finds the Mac awake — usually the
+# 06:45 slot, replayed by launchd at wake — starts it. The workflow sends at most one
+# automatic digest a day, so the late cron run that follows only refreshes the
+# dashboard. It runs on every exit path, after the publish: the cloud channels need
+# neither Chrome nor a fresh Mac collection. A failed dispatch leaves no mark, so
+# the next slot retries it.
+DISPATCH_MARK=data/.dispatched-on
+dispatch_once_a_day() {
+  [[ "${NEWS_RADAR_PUSH:-0}" == "1" ]] || return 0
+  local today attempt
+  today=$(date +%F)
+  [[ "$(cat "$DISPATCH_MARK" 2>/dev/null)" == "$today" ]] && return 0
+  for attempt in 1 2 3; do
+    if gh workflow run news-radar --ref main -f trigger=mac >/dev/null 2>&1; then
+      print -r -- "$today" > "$DISPATCH_MARK"
+      log "triggered today's delivery run"
+      return 0
+    fi
+    sleep 20
+  done
+  log "could not trigger the delivery run — the scheduled one will send instead"
+}
+trap dispatch_once_a_day EXIT
+
 # ── Guard 1: idempotency ──────────────────────────────────────────────────────
 # A successful collection in the last 20h means today is already covered — but if
 # that collection never made it to GitHub, retry the publish rather than waiting a

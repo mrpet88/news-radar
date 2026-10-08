@@ -30,7 +30,7 @@ MIT licensed.
 Collection is split by what each channel needs; delivery happens in one place:
 
 ```
-  GITHUB ACTIONS (06:37 UTC daily)          YOUR MAC (launchd, 4×/day)
+  GITHUB ACTIONS (once a day, see below)    YOUR MAC (launchd, 4×/day)
   ────────────────────────────────          ──────────────────────────
   reach-collect.mjs  REACH_SIDE=cloud       reach-collect.mjs  REACH_SIDE=mac
     → exa, github, rss, news, marktplaats     → reddit (needs Chrome)
@@ -46,6 +46,13 @@ collected by Actions every morning. Channels that need a logged-in Chrome sessio
 collected on your Mac and merged in while they are fresh. If the Mac was asleep, the
 email still goes out and those channels show as stale. Which channel runs where is
 `collector.cloudChannels` in `src/config.ts`.
+
+**When it arrives.** The Mac starts the Actions run at its first wake of the day, so
+the email lands a few minutes after you open it. GitHub starts scheduled runs hours
+late, so the 06:37 UTC cron is only the fallback for days the Mac stays shut; on those
+days the email comes in the afternoon. Automatic runs send at most one digest per
+calendar day between them, so the fallback stays quiet when the Mac got there first.
+A run started by hand from the Actions tab always may send.
 
 The **freshness gate** still applies: an email is only sent when the merged collection
 behind it is under 24 hours old. In practice that closes only if the Actions collection
@@ -94,7 +101,9 @@ awake. Each run checks three things first and exits quietly otherwise:
 2. no successful collection in the last 20h
 3. the build succeeds
 
-launchd also re-runs a missed slot at next wake, so no polling loop is needed.
+launchd also re-runs a missed slot at next wake, so no polling loop is needed. The
+first slot that finds the Mac awake also starts the delivery workflow (`gh workflow
+run`), whether or not Chrome is open; `data/.dispatched-on` keeps that to once a day.
 
 > **The project must live outside `~/Documents`, `~/Desktop` and `~/Downloads`.** macOS
 > TCC blocks LaunchAgents from reading those, and the job dies with an opaque

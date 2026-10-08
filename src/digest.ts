@@ -152,6 +152,18 @@ export interface DigestDecision {
 }
 
 /**
+ * Whether today's automatic digest has already gone out. The cron and the Mac's
+ * wake-up trigger race for the day's email: whichever runs first sends, the other
+ * only refreshes the dashboard. A run started by hand is exempt, as is a forced one.
+ */
+export function sentTodayAlready(state: DigestState, forced: boolean): boolean {
+  const trigger = process.env.NEWS_RADAR_TRIGGER || "manual";
+  if (forced || trigger === "manual" || !delivery.oneAutoDigestPerDay || !state.lastDigestAt) return false;
+  const day = (d: Date) => d.toLocaleDateString("en-CA", { timeZone: delivery.timezone });
+  return day(new Date(state.lastDigestAt)) === day(new Date());
+}
+
+/**
  * Decide whether an email may go out, and write digest.html when it may.
  *
  * The gate is deliberately strict about provenance: an email is only ever written
@@ -181,6 +193,12 @@ export async function writeDigest(
         send: false, kind: "none",
         subject: "",
         reason: `agent-reach collection is ${ago(reachAgeHours)}, older than the ${delivery.maxReachAgeHours}h gate`,
+      };
+    if (sentTodayAlready(state, forced))
+      return {
+        send: false, kind: "none",
+        subject: "",
+        reason: `today's digest already went out ${ago((Date.now() - Date.parse(state.lastDigestAt!)) / 3.6e6)}`,
       };
     if (picked.length === 0 && news + listings === 0 && !forced)
       return { send: false, subject: "", reason: "nothing new since the last run", kind: "none" };
