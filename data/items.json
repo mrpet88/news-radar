@@ -1,7 +1,7 @@
 [
   {
     "id": "008a5d443660bd78",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "Claude Haiku 5.5",
     "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
@@ -16,7 +16,7 @@
   },
   {
     "id": "01a00d375af62e79",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "flutter.dev",
     "title": "Announcing Genkit Dart 1.0: Build production-ready agentic apps with Dart and Flutter | The Flutter Blog",
@@ -27,11 +27,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 18,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "b43cf7343af9318e",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "qasource.com",
     "title": "AI Is Breaking QA: Rethinking Quality Engineering in 2026",
@@ -42,11 +42,11 @@
     "lane": "qa",
     "tier": "core",
     "score": 18,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "90c2701110883f8f",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "suhailroushan.com",
     "title": "MCP for Enterprise Data: A Practical Guide for Full-Stack Developers | Suhail Roushan",
@@ -57,11 +57,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 18,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "45a6f01d578b2216",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
     "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
@@ -76,7 +76,7 @@
   },
   {
     "id": "3c3f802f5fc2eff0",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "worldprogramming.org",
     "title": "The Consistency Quadrant: A Visual Guide to LLM Reliability — WPS",
@@ -87,11 +87,26 @@
     "lane": "ai",
     "tier": "core",
     "score": 15,
+    "isNew": false
+  },
+  {
+    "id": "cb173845fb45d5cc",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "exa",
+    "source": "shuvogt.com",
+    "title": "The Role of MCP in Modern AI Automation Stacks: A Developer's Overview",
+    "url": "https://shuvogt.com/blog/mcp-in-ai-automation-stacks-developer-overview",
+    "publishedAt": "2026-10-05T03:00:15.000Z",
+    "summary": "The Role of MCP in Modern AI Automation Stacks: A Developer's Overview   # The Role of MCP in Modern AI Automation Stacks: A Developer's Overview   MCP in AI automation is the first thing in a while that changed how I structure these systems. Not because the protocol is magic, but because it forces you to answer a question most teams skip: what exactly is the AI allowed to touch, and through which",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
     "isNew": true
   },
   {
     "id": "6254eaacd6bd5c58",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "kenodo.com",
     "title": "The MCP server that lets your customers' AI assistants actually use your platform | Kenodo",
@@ -105,44 +120,14 @@
     "isNew": false
   },
   {
-    "id": "34ef129245c91e55",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "exa",
-    "source": "dev.to",
-    "title": "How to Ship a Real Autonomous Agent: MCP Architecture Patterns That Actually Work in Production - DEV Community",
-    "url": "https://dev.to/tamizuddin/how-to-ship-a-real-autonomous-agent-mcp-architecture-patterns-that-actually-work-in-production-3fd1",
-    "publishedAt": "2026-10-03T12:04:53.000Z",
-    "summary": "# How to Ship a Real Autonomous Agent: MCP Architecture Patterns That Actually Work in Production - DEV Community Author: Tamiz Uddin Published: 2026-10-03T12:04:53Z Source: dev.to Language: en   How to Ship a Real Autonomous Agent: MCP Architecture Patterns That Actually Work in Production - DEV Community Tamiz Uddin Posted on Oct 3 • Originally published at tamiz.pro # How to Ship a Real Autonom",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 15,
-    "isNew": true
-  },
-  {
     "id": "8386bdd1e81bc3b7",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "llm-openai-decisions 0.1a0",
     "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
     "source": "Simon Willison",
     "summary": "Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week's DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I had GPT-6 Astra read the new OpenAI API documentation and build an llm-openai-decisions plugin inspired by llm-typesafe . Unlike Jev, the new gpt-6-luna decision model supports image input in additio",
     "publishedAt": "2026-10-06T23:04:13.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 13.8,
-    "isNew": false
-  },
-  {
-    "id": "f2c2c360b7c2055b",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "rss",
-    "title": "llm-mistral 0.16",
-    "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
-    "source": "Simon Willison",
-    "summary": "Release: llm-mistral 0.16 Adds support for reasoning models, such as the newly released Mistral Large 4 . Tags: llm , mistral , llm-reasoning",
-    "publishedAt": "2026-10-06T21:32:34.000Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "adjacent",
@@ -162,11 +147,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "4cad26bf5ad4f398",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "pnakhat.com",
     "title": "Agents Write the Code and the Tests. So Who Owns Quality Now? | Pankaj Nakhat",
@@ -181,7 +166,7 @@
   },
   {
     "id": "56d0cbe31373ad73",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "jreypo.io",
     "title": "Eval Harnesses for Systems Engineers · Juanma's Blog",
@@ -196,7 +181,7 @@
   },
   {
     "id": "34796a0d34bd373d",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "imwasim.com",
     "title": "Software Testing Strategies: Practical Guide | Wasim Arshad",
@@ -211,7 +196,7 @@
   },
   {
     "id": "9092dbc4bdf49086",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "read.aindeev.com",
     "title": "I stopped reviewing my agents' code. Here's what I do instead.",
@@ -226,13 +211,13 @@
   },
   {
     "id": "816bd1225b7f93fc",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "punkpeye/awesome-mcp-servers — A collection of MCP servers.",
     "url": "https://github.com/punkpeye/awesome-mcp-servers",
     "source": "punkpeye",
-    "stars": 95958,
-    "publishedAt": "2026-10-09T13:41:50Z",
+    "stars": 95973,
+    "publishedAt": "2026-10-09T15:45:48Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -240,15 +225,47 @@
     "isNew": false
   },
   {
-    "id": "c308379be97e9a51",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "id": "920a878adb00a619",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
-    "title": "DasDigitaleMomentum/searxNcrawl — MCP server and CLI tools for web search and crawling, built on SearXNG and Crawl4AI",
-    "url": "https://github.com/DasDigitaleMomentum/searxNcrawl",
-    "source": "DasDigitaleMomentum",
-    "summary": "MCP server and CLI tools for web search and crawling, built on SearXNG and Crawl4AI",
-    "stars": 167,
-    "publishedAt": "2026-10-09T13:40:55Z",
+    "title": "hashgraph-online/hol-guard — Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
+    "url": "https://github.com/hashgraph-online/hol-guard",
+    "source": "hashgraph-online",
+    "summary": "Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
+    "stars": 831,
+    "publishedAt": "2026-10-09T15:45:43Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "abae81953bac20b4",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "github",
+    "title": "punkpeye/awesome-remote-mcp-servers — A collection of remote MCP servers.",
+    "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
+    "source": "punkpeye",
+    "summary": "A collection of remote MCP servers.",
+    "stars": 979,
+    "publishedAt": "2026-10-09T15:45:20Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "e26963c6240c0fc2",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "github",
+    "title": "crbnos/carbon — Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema, with a REST API and MCP server. Self-host o",
+    "url": "https://github.com/crbnos/carbon",
+    "source": "crbnos",
+    "summary": "Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema, with a REST API and MCP server. Self-host or use Carbon Cloud.",
+    "stars": 2706,
+    "publishedAt": "2026-10-09T15:43:14Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -256,63 +273,31 @@
     "isNew": true
   },
   {
-    "id": "920a878adb00a619",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "id": "ef9d9b86dc912fe1",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
-    "title": "hashgraph-online/hol-guard — Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-    "url": "https://github.com/hashgraph-online/hol-guard",
-    "source": "hashgraph-online",
-    "summary": "Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-    "stars": 830,
-    "publishedAt": "2026-10-09T13:39:04Z",
+    "title": "Tapetide-hq/nse-bse-indian-stock-market-data-mcp — NSE BSE Indian Stock Market Data MCP server — search, screen & analyze all 8,200+ NSE/BSE stocks with 55 tools: live quotes, financials, technicals, ",
+    "url": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+    "source": "Tapetide-hq",
+    "summary": "NSE BSE Indian Stock Market Data MCP server — search, screen & analyze all 8,200+ NSE/BSE stocks with 55 tools: live quotes, financials, technicals, 326-ratio screener, FII/DII flows, option chains & IV, parsed filings, IPOs & portfolio tracking. Remote (OAuth) or npx. Works with Claude, ChatGPT, Cursor & any MCP client",
+    "stars": 134,
+    "publishedAt": "2026-10-09T15:40:27Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": false
+    "isNew": true
   },
   {
-    "id": "dacd31bb9cf1e60a",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "id": "401c10409d3b8cbe",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
-    "title": "activepieces/activepieces — AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-    "url": "https://github.com/activepieces/activepieces",
-    "source": "activepieces",
-    "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-    "stars": 24963,
-    "publishedAt": "2026-10-09T13:38:55Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "b55a78b125524c5e",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "github",
-    "title": "MCPJam/inspector — Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-    "url": "https://github.com/MCPJam/inspector",
-    "source": "MCPJam",
-    "summary": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-    "stars": 2248,
-    "publishedAt": "2026-10-09T13:38:24Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "7d7df05527809e15",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "github",
-    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "url": "https://github.com/HKUDS/nanobot",
-    "source": "HKUDS",
-    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "stars": 48899,
-    "publishedAt": "2026-10-09T13:33:05Z",
+    "title": "framerslab/agentos — TypeScript AI agent framework: cognitive memory, runtime tool forging, multi-agent orchestration, 11 LLM providers.",
+    "url": "https://github.com/framerslab/agentos",
+    "source": "framerslab",
+    "summary": "TypeScript AI agent framework: cognitive memory, runtime tool forging, multi-agent orchestration, 11 LLM providers.",
+    "stars": 678,
+    "publishedAt": "2026-10-09T15:30:21Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -321,14 +306,14 @@
   },
   {
     "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
     "url": "https://github.com/omnigent-ai/omnigent",
     "source": "omnigent-ai",
     "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-    "stars": 10701,
-    "publishedAt": "2026-10-09T13:30:15Z",
+    "stars": 10702,
+    "publishedAt": "2026-10-09T15:22:36Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -336,24 +321,72 @@
     "isNew": false
   },
   {
-    "id": "6873e61ccce7f707",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "id": "7d7df05527809e15",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
-    "title": "GenAI-Security-Project/agent-control-standard — The open standard for runtime agent control — declarative hooks, policy enforcement, and observability across AI agent frameworks.",
-    "url": "https://github.com/GenAI-Security-Project/agent-control-standard",
-    "source": "GenAI-Security-Project",
-    "summary": "The open standard for runtime agent control — declarative hooks, policy enforcement, and observability across AI agent frameworks.",
-    "stars": 181,
-    "publishedAt": "2026-10-09T13:01:40Z",
+    "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "url": "https://github.com/HKUDS/nanobot",
+    "source": "HKUDS",
+    "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+    "stars": 48904,
+    "publishedAt": "2026-10-09T15:20:20Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "d8837e86c5a41ed9",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "github",
+    "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
+    "url": "https://github.com/open-compass/opencompass",
+    "source": "open-compass",
+    "summary": "OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledge, reasoning, coding, science, language, long-context, and safety.",
+    "stars": 7503,
+    "publishedAt": "2026-10-09T14:54:11Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "e73df6cd71a1f69d",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "github",
+    "title": "cynative/cynative — Open-source AI agent framework for cloud security across AWS, Azure, GCP and Kubernetes: AI-powered cloud detection and response, and cloud security posture management findings tri",
+    "url": "https://github.com/cynative/cynative",
+    "source": "cynative",
+    "summary": "Open-source AI agent framework for cloud security across AWS, Azure, GCP and Kubernetes: AI-powered cloud detection and response, and cloud security posture management findings triage.",
+    "stars": 220,
+    "publishedAt": "2026-10-09T14:51:16Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "83798523419137ae",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
+    "channel": "github",
+    "title": "Pal-AI-Lab/Cortico — Event-stream AI Agent framework for building your persona bot 🍊",
+    "url": "https://github.com/Pal-AI-Lab/Cortico",
+    "source": "Pal-AI-Lab",
+    "summary": "Event-stream AI Agent framework for building your persona bot 🍊",
+    "stars": 194,
+    "publishedAt": "2026-10-09T13:54:20Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
   },
   {
     "id": "b5a2dd0a24139b4a",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio",
     "url": "https://github.com/tugkanboz/awesome-ai-testing",
@@ -368,40 +401,8 @@
     "isNew": false
   },
   {
-    "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "github",
-    "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
-    "url": "https://github.com/open-compass/opencompass",
-    "source": "open-compass",
-    "summary": "OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledge, reasoning, coding, science, language, long-context, and safety.",
-    "stars": 7502,
-    "publishedAt": "2026-10-09T12:04:49Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "29022dba62ecc59b",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "github",
-    "title": "tornikebolokadze1-cyber/awesome-ai-pulse-georgia — A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
-    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
-    "source": "tornikebolokadze1-cyber",
-    "summary": "A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
-    "stars": 143,
-    "publishedAt": "2026-10-09T11:44:36Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "62d91df84df3942a",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
     "url": "https://github.com/datacontract/datacontract-cli",
@@ -416,24 +417,8 @@
     "isNew": false
   },
   {
-    "id": "7ad4a211f53df928",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "github",
-    "title": "Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b",
-    "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
-    "source": "Kohaku-Lab",
-    "summary": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.",
-    "stars": 519,
-    "publishedAt": "2026-10-09T10:31:26Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "a8a354829593c69c",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-js",
@@ -449,7 +434,7 @@
   },
   {
     "id": "9ab34c2f4468b3ee",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.",
     "url": "https://github.com/pact-foundation/pact-js-core",
@@ -476,7 +461,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "2dc75be55052ec09",
@@ -491,7 +476,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "054d9c5491feeabd",
@@ -506,11 +491,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-go",
@@ -526,7 +511,7 @@
   },
   {
     "id": "baab19dff2c9b9be",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "github",
     "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
     "url": "https://github.com/speakeasy-api/speakeasy",
@@ -542,7 +527,7 @@
   },
   {
     "id": "fe3cc42ad1a621d9",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "ttok 1.0",
     "url": "https://simonwillison.net/2026/Oct/9/ttok/",
@@ -553,11 +538,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "81262b1b9224c377",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "ttok 0.4",
     "url": "https://simonwillison.net/2026/Oct/8/ttok/",
@@ -568,11 +553,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "568de9fdd0cc72fc",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "rss",
     "title": "Quoting Victoria Kim",
     "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
@@ -586,22 +571,8 @@
     "isNew": false
   },
   {
-    "id": "8610b5c382a45493",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
-    "channel": "exa",
-    "source": "getautonoma.com",
-    "title": "Shift-Left Testing for Small Engineering Teams in 2026",
-    "url": "https://getautonoma.com/blog/shift-left-testing-for-small-engineering-teams",
-    "summary": "# Shift-Left Testing for Small Engineering Teams in 2026 > Shift-left testing is the practice of catching bugs earlier in the development cycle, before they reach production. For small engineering teams at Seed-to-Series-A startups, it means building verification into the PR stage rather than relying on a QA team that doesn't exist yet. The earlier a bug is caught, the cheaper it is to fix, and th",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10,
-    "isNew": false
-  },
-  {
     "id": "b920bc64bb494c98",
-    "collectedAt": "2026-10-09T13:42:46.060Z",
+    "collectedAt": "2026-10-09T15:46:21.741Z",
     "channel": "exa",
     "source": "devstacktips.com",
     "title": "Failure Analysis: How Parallel Worker State Pollution Compromised 1,200 Integration Runs",
@@ -612,7 +583,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 9,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "78cabff65e291369",
@@ -627,7 +598,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "157185be99e99584",
@@ -642,6 +613,6 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   }
 ]
