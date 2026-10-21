@@ -65,22 +65,40 @@
   .listing .lp b{color:var(--fg)}
 </style></head><body><div class="wrap">
   <h1>News Radar</h1>
-  <div class="sub">34 tracked · 5 new · generated 20 Oct 2026, 14:06 CEST</div>
+  <div class="sub">28 tracked · 5 new · generated 21 Oct 2026, 06:46 CEST</div>
   <div class="banner fresh">
     agent-reach collected 0 min ago
   </div>
-  <ul class="health"><li class="ok"><b>exa</b> <span>24 items · 14.9s</span></li><li class="ok"><b>github</b> <span>25 items · 3.3s</span></li><li class="ok"><b>rss</b> <span>78 items · 3.9s</span></li><li class="ok"><b>news</b> <span>150 items · 2.7s</span></li><li class="ok"><b>marktplaats</b> <span>134 items · 4.6s</span></li><li class="ok"><b>reddit</b> <span>32 items · 78.9s</span></li><li class="ok"><b>translate</b> <span>skipped — no email this run</span></li></ul>
+  <ul class="health"><li class="ok"><b>exa</b> <span>36 items · 16.0s</span></li><li class="ok"><b>github</b> <span>25 items · 2.8s</span></li><li class="ok"><b>rss</b> <span>78 items · 4.6s</span></li><li class="ok"><b>news</b> <span>150 items · 2.0s</span></li><li class="ok"><b>marktplaats</b> <span>137 items · 4.0s</span></li><li class="skip"><b>reddit</b> <span>Mac collection is 42h old — left out (Mac asleep or Chrome closed)</span></li><li class="ok"><b>translate</b> <span>10 translated · credit 19,242 / 1,000,000 used</span></li></ul>
   <nav class="tabs" role="tablist">
     <button class="tab" role="tab" data-tab="radar">Radar <span>5 new</span></button>
     <button class="tab" role="tab" data-tab="paper">Newspaper <span>48</span></button>
-    <button class="tab" role="tab" data-tab="market">Marktplaats <span>74</span></button>
+    <button class="tab" role="tab" data-tab="market">Marktplaats <span>75</span></button>
   </nav>
   <section class="panel" id="radar">
   <div class="filters">
     <button class="chip" data-filter="new" data-value="1">New only</button>
-    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>10</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>24</span></button><button class="chip alt" data-filter="channel" data-value="exa">exa <span>5</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>17</span></button><button class="chip alt" data-filter="channel" data-value="reddit">reddit <span>6</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>6</span></button>
+    <button class="chip" data-filter="lane" data-value="qa" style="--c:#16a34a">QA / Testing <span>4</span></button><button class="chip" data-filter="lane" data-value="ai" style="--c:#7c3aed">AI / Agents <span>24</span></button><button class="chip alt" data-filter="channel" data-value="exa">exa <span>4</span></button><button class="chip alt" data-filter="channel" data-value="github">github <span>17</span></button><button class="chip alt" data-filter="channel" data-value="rss">rss <span>7</span></button>
   </div>
   <div id="list">
+    <article class="card new" data-lane="ai" data-channel="exa" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://www.atlassian.com/blog/development/using-agentic-pipelines-to-turn-test-coverage-into-daily-habit" target="_blank" rel="noopener">How we used Agentic Pipelines to turn test coverage into a daily habit - Inside Atlassian</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">atlassian.com · 20 Oct <span class="ch">exa</span></div>
+      <p class="sum">How we used Agentic Pipelines to turn test coverage into a daily habit - Inside Atlassian # How we used Agentic Pipelines to turn test coverage into a daily habit October 20, 2026 Published In Development Engineers write tests for the logic that worries them and let the small details slide. One of o…</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://simonwillison.net/2026/Oct/20/battledrones/" target="_blank" rel="noopener">Battle Drones - a vibe coded RTS with audio-based multiplayer</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">Simon Willison · 20 Oct <span class="ch">rss</span></div>
+      <p class="sum">My latest vibe coded game experiment is a Command &amp;amp; Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to &quot;Make it a LOT more f…</p>
+    </article>
     <article class="card" data-lane="ai" data-channel="rss" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
@@ -89,24 +107,6 @@
       </div>
       <div class="meta">Simon Willison · 15 Oct <span class="ch">rss</span></div>
       <p class="sum">Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO The phrase &quot;told investors&quot; appears four times in this FT article, which reports on Anthropic's day of hosting investors on Wednesday. Lots of details in here from &quot; people with knowledge of the matter &quot;. Key things I …</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="rss" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/" target="_blank" rel="noopener">Redesigning source control at Anthropic</a>
-        
-      </div>
-      <div class="meta">Simon Willison · 13 Oct <span class="ch">rss</span></div>
-      <p class="sum">Redesigning source control at Anthropic Interesting piece from Anthropic describing why and how they built their own custom alternative to Git, based on the dramatic increase in rate of changes to their code after the past six months. In May 2026, Anthropic averaged around 2,500 code changes merged …</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="exa" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://inaodeng.com/en/blog/ai-testing/when-quality-engineering-creates-chaos/" target="_blank" rel="noopener">When Quality Engineering Creates Chaos: Why QE Transformation Requires System Change | Nao's Blog</a>
-        
-      </div>
-      <div class="meta">inaodeng.com · 16 Oct <span class="ch">exa</span></div>
-      <p class="sum">When Quality Engineering Creates Chaos: Why QE Transformation Requires System Change | Nao's Blog # When Quality Engineering Creates Chaos: Why QE Transformation Requires System Change A practical reading of Barry Ehigiator’s workshop: the seven traps of QE transformation, the CREATE framework, lead…</p>
     </article>
     <article class="card" data-lane="ai" data-channel="exa" data-new="0">
       <div class="top">
@@ -117,14 +117,14 @@
       <div class="meta">builder.io · 14 Oct <span class="ch">exa</span></div>
       <p class="sum">Introducing Agent-Native Beta: The Framework for Agentic Apps # Introducing Agent-Native Beta: The Framework for Agentic Apps Steve Sewell &amp; Vishwas Gopinath· October 14, 2026 The next step for agents is moving beyond just text. Today, we're launching Agent-Native in beta: an open-source TypeScript …</p>
     </article>
-    <article class="card" data-lane="qa" data-channel="exa" data-new="0">
+    <article class="card new" data-lane="ai" data-channel="rss" data-new="1">
       <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://qabash.com/blog/quality-at-scale" target="_blank" rel="noopener">Quality at Scale: A Playbook for Engineering Teams | QA Bash</a>
-        
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/" target="_blank" rel="noopener">How 3 Java Champions are using GitHub Copilot for increased productivity</a>
+        <span class="badge">NEW</span>
       </div>
-      <div class="meta">qabash.com · 13 Oct <span class="ch">exa</span></div>
-      <p class="sum">Leadership· 4 min read· Oct 13, 2026 # Quality at Scale: How to Build Quality Across Growing Engineering Teams qabash.com Oct 13, 2026 Quick answer Building quality at scale means quality stays high as teams, services and releases grow. It rests on five building blocks: a culture where every enginee…</p>
+      <div class="meta">GitHub Blog · 20 Oct <span class="ch">rss</span></div>
+      <p class="sum">Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .</p>
     </article>
     <article class="card" data-lane="ai" data-channel="rss" data-new="0">
       <div class="top">
@@ -171,32 +171,14 @@
       <div class="meta">developers.googleblog.com · 15 Oct <span class="ch">exa</span></div>
       <p class="sum"># Evaluating AI agents: moving past the vibe check OCT. 15, 2026   the playbook behind our AI Agent Clinic episode How to Actually Evaluate (Any) AI Agent: Beyond the Vibe Check, where we build an eval pipeline for a LangGraph agent in 60 minutes. ---</p>
     </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/Automaat/lightroom-mcp" target="_blank" rel="noopener">Automaat/lightroom-mcp — MCP server for Adobe Lightroom Classic</a>
-        <span class="badge">NEW</span>
+        <a class="title" href="https://github.com/skyhook-io/radar" target="_blank" rel="noopener">skyhook-io/radar — The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live servic</a>
+        
       </div>
-      <div class="meta">Automaat · ★ 148 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">MCP server for Adobe Lightroom Classic</p>
-    </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/apify/apify-mcp-server" target="_blank" rel="noopener">apify/apify-mcp-server — The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrap</a>
-        <span class="badge">NEW</span>
-      </div>
-      <div class="meta">apify · ★ 12162 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.</p>
-    </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/t8y2/dbx" target="_blank" rel="noopener">t8y2/dbx — 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, deskt</a>
-        <span class="badge">NEW</span>
-      </div>
-      <div class="meta">t8y2 · ★ 27353 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和…</p>
+      <div class="meta">skyhook-io · ★ 3879 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, and cluster audits - all in one Go binary.</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -204,8 +186,53 @@
         <a class="title" href="https://github.com/omnigent-ai/omnigent" target="_blank" rel="noopener">omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie</a>
         
       </div>
-      <div class="meta">omnigent-ai · ★ 10922 · 20 Oct <span class="ch">github</span></div>
+      <div class="meta">omnigent-ai · ★ 10941 · 21 Oct <span class="ch">github</span></div>
       <p class="sum">Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/jkawamoto/mcp-youtube-transcript" target="_blank" rel="noopener">jkawamoto/mcp-youtube-transcript — MCP server retrieving transcripts of YouTube videos</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">jkawamoto · ★ 491 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">MCP server retrieving transcripts of YouTube videos</p>
+    </article>
+    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/blacktop/ida-mcp-rs" target="_blank" rel="noopener">blacktop/ida-mcp-rs — Headless IDA Pro MCP Server</a>
+        <span class="badge">NEW</span>
+      </div>
+      <div class="meta">blacktop · ★ 874 · 21 Oct <span class="ch">github</span></div>
+      
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/stickerdaniel/linkedin-mcp-server" target="_blank" rel="noopener">stickerdaniel/linkedin-mcp-server — Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, and messages.</a>
+        
+      </div>
+      <div class="meta">stickerdaniel · ★ 3961 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, and messages.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/yomorun/yomo" target="_blank" rel="noopener">yomorun/yomo — 🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.</a>
+        
+      </div>
+      <div class="meta">yomorun · ★ 1929 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/framerslab/agentos" target="_blank" rel="noopener">framerslab/agentos — TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs</a>
+        
+      </div>
+      <div class="meta">framerslab · ★ 682 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -213,8 +240,53 @@
         <a class="title" href="https://github.com/HKUDS/nanobot" target="_blank" rel="noopener">HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps</a>
         
       </div>
-      <div class="meta">HKUDS · ★ 49209 · 20 Oct <span class="ch">github</span></div>
+      <div class="meta">HKUDS · ★ 49228 · 21 Oct <span class="ch">github</span></div>
       <p class="sum">Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/Pal-AI-Lab/Cortico" target="_blank" rel="noopener">Pal-AI-Lab/Cortico — Event-stream AI Agent framework for building your persona bot 🍊</a>
+        
+      </div>
+      <div class="meta">Pal-AI-Lab · ★ 237 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">Event-stream AI Agent framework for building your persona bot 🍊</p>
+    </article>
+    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://github.com/pact-foundation/pact-python" target="_blank" rel="noopener">pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for</a>
+        
+      </div>
+      <div class="meta">pact-foundation · ★ 686 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.</p>
+    </article>
+    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://github.com/datacontract/datacontract-cli" target="_blank" rel="noopener">datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka &amp; 15 more. Built on the Open Data Contract Standard (ODCS). MIT.</a>
+        
+      </div>
+      <div class="meta">datacontract · ★ 1097 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka &amp; 15 more. Built on the Open Data Contract Standard (ODCS). MIT.</p>
+    </article>
+    <article class="card" data-lane="qa" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#16a34a">QA / Testing</span>
+        <a class="title" href="https://github.com/pact-foundation/pact-js" target="_blank" rel="noopener">pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</a>
+        
+      </div>
+      <div class="meta">pact-foundation · ★ 1825 · 20 Oct <span class="ch">github</span></div>
+      <p class="sum">JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</p>
+    </article>
+    <article class="card" data-lane="ai" data-channel="github" data-new="0">
+      <div class="top">
+        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
+        <a class="title" href="https://github.com/tugkanboz/awesome-ai-testing" target="_blank" rel="noopener">tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio</a>
+        
+      </div>
+      <div class="meta">tugkanboz · ★ 152 · 20 Oct <span class="ch">github</span></div>
+      <p class="sum">A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluation, and more.</p>
     </article>
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
@@ -237,24 +309,6 @@
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/Kohaku-Lab/KohakuTerrarium" target="_blank" rel="noopener">Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b</a>
-        
-      </div>
-      <div class="meta">Kohaku-Lab · ★ 527 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.</p>
-    </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia" target="_blank" rel="noopener">tornikebolokadze1-cyber/awesome-ai-pulse-georgia — A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia</a>
-        <span class="badge">NEW</span>
-      </div>
-      <div class="meta">tornikebolokadze1-cyber · ★ 153 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
         <a class="title" href="https://github.com/speakeasy-api/speakeasy" target="_blank" rel="noopener">speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. </a>
         
       </div>
@@ -264,119 +318,11 @@
     <article class="card" data-lane="ai" data-channel="github" data-new="0">
       <div class="top">
         <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/framerslab/agentos" target="_blank" rel="noopener">framerslab/agentos — TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs</a>
+        <a class="title" href="https://github.com/xberg-io/xberg" target="_blank" rel="noopener">xberg-io/xberg — Polyglot document intelligence with a Rust core: extract text, metadata, images, tables, and structured data from 106 formats across 140 file extensions, plus code intelligence for 37</a>
         
       </div>
-      <div class="meta">framerslab · ★ 681 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://github.com/pact-foundation/pact-go" target="_blank" rel="noopener">pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</a>
-        
-      </div>
-      <div class="meta">pact-foundation · ★ 958 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://github.com/pact-foundation/pact-js-core" target="_blank" rel="noopener">pact-foundation/pact-js-core — Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.</a>
-        
-      </div>
-      <div class="meta">pact-foundation · ★ 153 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">Core binaries for pact-js, a Contract Testing Framework. NOTE: If you are looking to do Pact contract testing in node, you almost certainly want pact-js, not pact-node.</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://github.com/pact-foundation/pact-python" target="_blank" rel="noopener">pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for</a>
-        
-      </div>
-      <div class="meta">pact-foundation · ★ 686 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/tugkanboz/awesome-ai-testing" target="_blank" rel="noopener">tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio</a>
-        
-      </div>
-      <div class="meta">tugkanboz · ★ 151 · 19 Oct <span class="ch">github</span></div>
-      <p class="sum">A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluation, and more.</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x9tbg2/llama_servers_default_port_changed_from_8080_to/" target="_blank" rel="noopener">llama server's default port changed from 8080 to 9931</a>
-        
-      </div>
-      <div class="meta">r/LocalLLaMA · 19 Oct <span class="ch">reddit</span></div>
-      <p class="sum">Ref: [release](https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0), [PR](https://github.com/ggml-org/llama.cpp/pull/30159) Starting from `v0.7.0`, the default port for llama server is now `9931` (ggml) inside the container. Those who did not explicitly set the port, expect breaking change upo…</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1x90q5m/how_are_you_testing_signup_and_verification/" target="_blank" rel="noopener">How are you testing signup and verification emails end to end?</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 18 Oct <span class="ch">reddit</span></div>
-      <p class="sum">We're tightening up our E2E suite, and the email step is always flaky. How do other teams handle it? Options I know of 1. Local mail catcher in staging (Mailpit, MailHog). Fast and free, but it only proves your app sent the email, not that it survived a real provider. 2. Real inbox with plus‑address…</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="github" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/sv-grid/sv-grid" target="_blank" rel="noopener">sv-grid/sv-grid — Native Svelte 5 data grid. Headless-first engine + drop-in render component. Row + column virtualization (1M rows), Excel-style filters, inline editing, grouping, pivot, server-side </a>
-        
-      </div>
-      <div class="meta">sv-grid · ★ 184 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">Native Svelte 5 data grid. Headless-first engine + drop-in render component. Row + column virtualization (1M rows), Excel-style filters, inline editing, grouping, pivot, server-side data. MIT core (@svgrid/grid), MCP server for Claude / Cursor. https://svgrid.com</p>
-    </article>
-    <article class="card new" data-lane="ai" data-channel="github" data-new="1">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://github.com/webiny/webiny-js" target="_blank" rel="noopener">webiny/webiny-js — Open-source, self-hosted CMS platform on AWS serverless (Lambda, DynamoDB, S3). TypeScript framework with multi-tenancy, lifecycle hooks, GraphQL API, and AI-assisted development vi</a>
-        <span class="badge">NEW</span>
-      </div>
-      <div class="meta">webiny · ★ 8048 · 20 Oct <span class="ch">github</span></div>
-      <p class="sum">Open-source, self-hosted CMS platform on AWS serverless (Lambda, DynamoDB, S3). TypeScript framework with multi-tenancy, lifecycle hooks, GraphQL API, and AI-assisted development via MCP server. Built for developers at large organizations.</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1x9qvdv/for_hire_qa_engineer_1015hourly/" target="_blank" rel="noopener">[For hire] QA Engineer $10-15/hourly</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 19 Oct <span class="ch">reddit</span></div>
-      <p class="sum">Hello, network! 👋 I'm on the lookout for my next role as a QA Engineer, and I'd be so grateful for any leads, referrals, or introductions you can offer. A quick snapshot of what I bring: ✅ 7+ years of experience in Software QA, spanning web, mobile, and API testing ✅ Automation with Playwright, Cyp…</p>
-    </article>
-    <article class="card" data-lane="ai" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#7c3aed">AI / Agents</span>
-        <a class="title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x9p6cp/ltx_25_running_locally_on_a_48gb_m5_pro_macbook/" target="_blank" rel="noopener">LTX 2.5 running locally on a 48GB M5 Pro MacBook Pro in TensorSharp’s Video Studio</a>
-        
-      </div>
-      <div class="meta">r/LocalLLaMA · 19 Oct <span class="ch">reddit</span></div>
-      <p class="sum">I maintain [TensorSharp](https://github.com/zhongkaifu/TensorSharp), an open-source local inference engine and agent runtime. I’ve added **Video Studio** to bring local video generation, an editable timeline, and an optional local LLM assistant into the same project. The attached demo runs in **Tens…</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1x9mziy/qa_workflow/" target="_blank" rel="noopener">qa workflow</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 19 Oct <span class="ch">reddit</span></div>
-      <p class="sum">can anyone please explain a proper workflow of a qa testing from start to end??</p>
-    </article>
-    <article class="card" data-lane="qa" data-channel="reddit" data-new="0">
-      <div class="top">
-        <span class="lane" style="--c:#16a34a">QA / Testing</span>
-        <a class="title" href="https://www.reddit.com/r/QualityAssurance/comments/1x8zvdk/qa_engineers_what_the_hell_is_missing_from_ai/" target="_blank" rel="noopener">qa engineers, what the hell is missing from ai testing tools?</a>
-        
-      </div>
-      <div class="meta">r/QualityAssurance · 18 Oct <span class="ch">reddit</span></div>
-      <p class="sum">genuine question. it's 2026, we have ai agents writing entire applications, but why the hell is testing them still such a pain in the ass? every demo looks fucking magical until you throw a genuinely complex application at it. i don't want another tool that spits out playwright scripts and calls its…</p>
+      <div class="meta">xberg-io · ★ 9436 · 21 Oct <span class="ch">github</span></div>
+      <p class="sum">Polyglot document intelligence with a Rust core: extract text, metadata, images, tables, and structured data from 106 formats across 140 file extensions, plus code intelligence for 371 languages. Fifteen bindings, with CLI, REST API, and MCP server.</p>
     </article>
     <article class="card" data-lane="ai" data-channel="rss" data-new="0">
       <div class="top">
@@ -392,230 +338,230 @@
     <h2 class="sec" style="--c:#ea580c">Netherlands</h2>
     
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635948" target="_blank" rel="noopener">Kerken in actie om statushouders te huisvesten</a>
-      
-      <div class="meta">NOS · Tue 13:49 <span class="badge">NEW</span></div>
+      <a class="title" href="https://www.nu.nl/economie/6413814/steeds-meer-mensen-werken-door-na-hun-pensioen.html" target="_blank" rel="noopener">More and more people are continuing to work after retirement</a>
+      <div class="orig">Steeds meer mensen werken door na hun pensioen</div>
+      <div class="meta">NU.nl · Wed 06:30 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/buitenland/6413775/man-aangeklaagd-voor-inrijden-op-australische-politica-die-daarbij-been-verloor.html" target="_blank" rel="noopener">Man aangeklaagd voor inrijden op Australische politica die daarbij been verloor</a>
-      
-      <div class="meta">NU.nl · Tue 13:34 <span class="badge">NEW</span></div>
+      <a class="title" href="https://nos.nl/l/2636031" target="_blank" rel="noopener">'Much of what is said in the House of Representatives also comes from AI'</a>
+      <div class="orig">'Ook veel van wat er in de Tweede Kamer wordt gezegd, komt van AI'</div>
+      <div class="meta">NOS · Wed 06:00 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635947" target="_blank" rel="noopener">Pro-raadslid moet uitspraken over pretparkeigenaar Wim Beelen rectificeren</a>
-      
-      <div class="meta">NOS · Tue 13:48 <span class="badge">NEW</span></div>
+      <a class="title" href="https://www.nu.nl/sport-overig/6413853/teamgeest-zorgt-voor-historische-wk-prestatie-turners-spelen-ook-fifa-samen.html" target="_blank" rel="noopener">Team spirit behind gymnasts’ historic World Championships performance: ‘They play together in FIFA too’</a>
+      <div class="orig">Teamgeest zorgt voor historische WK-prestatie turners: 'Spelen ook FIFA samen'</div>
+      <div class="meta">NU.nl · Wed 05:58 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/midden-oostenconflict/6413776/britse-straaljagers-gaan-saoedische-steden-beschermen-tegen-houthi-aanvallen.html" target="_blank" rel="noopener">Britse straaljagers gaan Saoedische steden beschermen tegen Houthi-aanvallen</a>
-      
-      <div class="meta">NU.nl · Tue 13:29 <span class="badge">NEW</span></div>
+      <a class="title" href="https://nos.nl/l/2636030" target="_blank" rel="noopener">Guatemalan man sentenced to 30 years in prison in the US for his role in a dramatic human trafficking case</a>
+      <div class="orig">Guatemalteek krijgt in VS 30 jaar cel voor rol in dramatische mensensmokkelzaak</div>
+      <div class="meta">NOS · Wed 05:12 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635944" target="_blank" rel="noopener">Man opgepakt voor brand in stadhuis Limoges, is bekende van Franse politie</a>
-      
-      <div class="meta">NOS · Tue 13:37 <span class="badge">NEW</span></div>
+      <a class="title" href="https://www.nu.nl/opmerkelijk/6413852/canadees-veroordeeld-voor-stelen-van-flamingo-uit-verblijf-in-las-vegas.html" target="_blank" rel="noopener">Canadian man convicted of stealing a flamingo from an enclosure in Las Vegas</a>
+      <div class="orig">Canadees veroordeeld voor stelen van flamingo uit verblijf in Las Vegas</div>
+      <div class="meta">NU.nl · Wed 05:57 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/buitenland/6413770/italiaanse-regering-stuurt-troepen-naar-milaan-na-rellen-en-plunderingen.html" target="_blank" rel="noopener">Italiaanse regering stuurt troepen naar Milaan na rellen en plunderingen</a>
+      <a class="title" href="https://nos.nl/l/2636029" target="_blank" rel="noopener">Pakistaan opgepakt voor grootschalige oplichting Amerikaanse postdienst</a>
       
-      <div class="meta">NU.nl · Tue 13:26 <span class="badge">NEW</span></div>
+      <div class="meta">NOS · Wed 03:06 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635931" target="_blank" rel="noopener">Gasvoorraad voor 64 procent gevuld, minimale doel gehaald</a>
+      <a class="title" href="https://www.nu.nl/spanningen-oekraine/6413815/met-midterms-op-komst-mikt-trump-weer-op-zijn-favoriete-pispaal-oekraine.html" target="_blank" rel="noopener">Met midterms op komst mikt Trump weer op zijn favoriete pispaal: Oekraïne</a>
       
-      <div class="meta">NOS · Tue 11:33 <span class="badge">NEW</span></div>
+      <div class="meta">NU.nl · Wed 05:05 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/asielcrisis/6413773/landelijke-kerken-roepen-plaatselijke-kerken-op-statushouders-op-te-vangen.html" target="_blank" rel="noopener">Landelijke kerken roepen plaatselijke kerken op statushouders op te vangen</a>
+      <a class="title" href="https://nos.nl/l/2636028" target="_blank" rel="noopener">WSJ: Musk achter Starlink-beperkingen voor Oekraïne</a>
       
-      <div class="meta">NU.nl · Tue 13:23 <span class="badge">NEW</span></div>
+      <div class="meta">NOS · Wed 01:32 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635930" target="_blank" rel="noopener">Fietser valt in rioolput op straat in Eindhoven</a>
+      <a class="title" href="https://www.nu.nl/buitenland/6413851/pools-parlement-versoepelt-strenge-abortuswetten-president-kan-dwarsbomen.html" target="_blank" rel="noopener">Pools parlement versoepelt strenge abortuswetten, president kan dwarsbomen</a>
       
-      <div class="meta">NOS · Tue 11:06 <span class="badge">NEW</span></div>
+      <div class="meta">NU.nl · Wed 00:06 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/misdaad/6413761/vijf-jaar-cel-geeist-tegen-man-die-kinderen-seksueel-liet-misbruiken-via-livestream.html" target="_blank" rel="noopener">Vijf jaar cel geëist tegen man die kinderen seksueel liet misbruiken via livestream</a>
+      <a class="title" href="https://nos.nl/l/2636027" target="_blank" rel="noopener">'Verdachte in zaak-Hajar opgepakt na mishandeling pleegvader'</a>
       
-      <div class="meta">NU.nl · Tue 12:01 <span class="badge">NEW</span></div>
+      <div class="meta">NOS · Wed 00:18 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635929" target="_blank" rel="noopener">Treinkaartjes NS opnieuw stuk duurder, stijging van gemiddeld 4,7 procent</a>
+      <a class="title" href="https://www.nu.nl/voetbal/6413840/psv-knokt-zich-naar-belangrijke-zege-bij-fc-porto-in-champions-league.html" target="_blank" rel="noopener">PSV knokt zich naar belangrijke zege bij FC Porto in Champions League</a>
       
-      <div class="meta">NOS · Tue 11:02 <span class="badge">NEW</span></div>
+      <div class="meta">NU.nl · Tue 22:52 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/331451/video/japan-stuurt-raket-naar-maan-van-mars-om-grondmonsters-te-halen.html" target="_blank" rel="noopener">Video | Japan stuurt raket naar maan van Mars om grondmonsters te halen</a>
+      <a class="title" href="https://nos.nl/l/2636020" target="_blank" rel="noopener">Hackers maakten ruim 400.000 AfD-mails buit, ook van partijleider Weidel</a>
       
-      <div class="meta">NU.nl · Tue 11:34 <span class="badge">NEW</span></div>
+      <div class="meta">NOS · Tue 23:25 <span class="badge">NEW</span></div>
     </article>
     <h2 class="sec" style="--c:#0891b2">World</h2>
     
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works now'</a>
+      
+      <div class="meta">BBC · Wed 05:59 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest" target="_blank" rel="noopener">Nigeria confirms Ebola case as outbreak spreads into western Africa</a>
+      
+      <div class="meta">The Guardian · Wed 02:14 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">France is divided over who to blame for weekend riots and what to learn from them</a>
+      
+      <div class="meta">BBC · Wed 03:22 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.theguardian.com/world/2026/oct/20/rfk-jr-vaccine-researchers-offices-raided-guinea-bissau" target="_blank" rel="noopener">RFK Jr’s ‘deities of vaccine research’ raided by police in Guinea-Bissau</a>
+      
+      <div class="meta">The Guardian · Tue 21:18 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Elon Musk says Tesla-SpaceX merger being considered</a>
+      
+      <div class="meta">BBC · Wed 01:24 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.theguardian.com/world/2026/oct/20/canada-alberta-rejects-independence-succession-referendum" target="_blank" rel="noopener">Alberta voters overwhelmingly reject plan to leave Canada in referendum</a>
+      
+      <div class="meta">The Guardian · Tue 18:24 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cr62ylj832vxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Alberta's decisive decision to stay in Canada gives Carney backing to take on Trump</a>
+      
+      <div class="meta">BBC · Wed 00:22 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.theguardian.com/us-news/2026/oct/20/man-convicted-peachy-the-flamingo-las-vegas-hotel" target="_blank" rel="noopener">‘Bad decisions’: Man convicted for taking Peachy the flamingo from Las Vegas hotel</a>
+      
+      <div class="meta">The Guardian · Tue 18:11 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Suspect arrested after historic town hall set alight - French media</a>
+      
+      <div class="meta">BBC · Tue 23:05 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.theguardian.com/world/2026/oct/20/flavio-bolsonaro-corrupto-viral-meme-brazil-election-runoff" target="_blank" rel="noopener">Flavio Bolsonaro’s ‘corrupto’ stunt sparks viral meme before Brazil election runoff</a>
+      
+      <div class="meta">The Guardian · Tue 17:41 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Trump and Zelensky appear at loggerheads despite Oslo optimism</a>
+      
+      <div class="meta">BBC · Tue 22:00 <span class="badge">NEW</span></div>
+    </article>
     <article class="card row new">
       <a class="title" href="https://www.theguardian.com/environment/2026/oct/20/unconditional-basic-income-amazon-rainforest-peru-study" target="_blank" rel="noopener">Giving £2 a day to people in the Amazon helps protect rainforest, pilot project finds</a>
       
       <div class="meta">The Guardian · Tue 14:00 <span class="badge">NEW</span></div>
     </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Suspect arrested after historic town hall set alight - French media</a>
-      
-      <div class="meta">BBC · Tue 13:47 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.theguardian.com/world/2026/oct/20/canada-alberta-rejects-independence-succession-referendum" target="_blank" rel="noopener">Alberta voters reject plan for referendum to leave Canada</a>
-      
-      <div class="meta">The Guardian · Tue 11:02 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/ck9qzn193lrlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Zelensky prepares for Oslo talks with US envoys as Rubio denies withholding intelligence</a>
-      
-      <div class="meta">BBC · Tue 13:30 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row">
-      <a class="title" href="https://www.theguardian.com/us-news/2026/oct/19/us-migrants-deportation-ukraine-sudan" target="_blank" rel="noopener">US grants deportation reprieve to migrants from Ukraine and Sudan</a>
-      
-      <div class="meta">The Guardian · Tue 00:34</div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/c678pnn9mpgno?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Man charged with attack on Australian MP as suspect's father says she is family friend</a>
-      
-      <div class="meta">BBC · Tue 13:25 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row">
-      <a class="title" href="https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children" target="_blank" rel="noopener">Kenyan starvation cult leader guilty of murder of 190 children and one adult</a>
-      
-      <div class="meta">The Guardian · Mon 18:08</div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cvrly550780po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Residents warned not to drink tap water after hundreds fall sick near South Africa capital</a>
-      
-      <div class="meta">BBC · Tue 13:09 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan" target="_blank" rel="noopener">Drone attack near market kills 80 in Sudan</a>
-      
-      <div class="meta">The Guardian · Mon 16:45 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Why Israeli Gen Z voters are drawn to the far right</a>
-      
-      <div class="meta">BBC · Tue 10:53 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine" target="_blank" rel="noopener">Ebola cases in Kenya highlight US failures amid Trump cuts to key services</a>
-      
-      <div class="meta">The Guardian · Mon 16:11 <span class="badge">NEW</span></div>
-    </article>
-    <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cq398rjewd1jo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Tourist found guilty after stealing Las Vegas flamingo from enclosure</a>
-      
-      <div class="meta">BBC · Tue 05:10 <span class="badge">NEW</span></div>
-    </article>
     <h2 class="sec" style="--c:#7c3aed">Tech &amp; science</h2>
     
     <article class="card row new">
-      <a class="title" href="https://arstechnica.com/cars/2026/10/visiting-slates-first-showroom-as-its-25000-electric-truck-nears-production/" target="_blank" rel="noopener">Visiting Slate’s first showroom as its $25,000 electric truck nears production</a>
+      <a class="title" href="https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/" target="_blank" rel="noopener">PHP warns it plans to release 2 emergency patches imminently</a>
       
-      <div class="meta">Ars Technica · Tue 13:00 <span class="badge">NEW</span></div>
+      <div class="meta">Ars Technica · Wed 04:12 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/wetenschap/6413758/egyptische-boer-ontdekt-kolossaal-standbeeldhoofd-van-farao-ramses-ii.html" target="_blank" rel="noopener">Egyptische boer ontdekt kolossaal standbeeldhoofd van farao Ramses II</a>
-      
+      <a class="title" href="https://www.nu.nl/wetenschap/6413758/egyptische-boer-ontdekt-kolossaal-standbeeldhoofd-van-farao-ramses-ii.html" target="_blank" rel="noopener">Egyptian farmer discovers colossal statue head of Pharaoh Ramses II</a>
+      <div class="orig">Egyptische boer ontdekt kolossaal standbeeldhoofd van farao Ramses II</div>
       <div class="meta">NU.nl Wetenschap · Tue 11:03 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/" target="_blank" rel="noopener">Japan launches mission to bring home a piece of the Martian moon Phobos</a>
+      <a class="title" href="https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/" target="_blank" rel="noopener">Merging SpaceX and Tesla would be a &quot;good idea,&quot; Musk says</a>
       
-      <div class="meta">Ars Technica · Tue 07:59 <span class="badge">NEW</span></div>
+      <div class="meta">Ars Technica · Wed 00:04 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/tech/6413752/russische-satelliet-nadert-andere-satelliet-zonder-toestemming-tot-op-500-meter.html" target="_blank" rel="noopener">Russische satelliet nadert andere satelliet zonder toestemming tot op 500 meter</a>
-      
+      <a class="title" href="https://www.nu.nl/tech/6413752/russische-satelliet-nadert-andere-satelliet-zonder-toestemming-tot-op-500-meter.html" target="_blank" rel="noopener">Russian satellite approaches another satellite without authorisation, coming within 500 metres</a>
+      <div class="orig">Russische satelliet nadert andere satelliet zonder toestemming tot op 500 meter</div>
       <div class="meta">NU.nl Wetenschap · Tue 10:24 <span class="badge">NEW</span></div>
     </article>
-    <article class="card row">
-      <a class="title" href="https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/" target="_blank" rel="noopener">Pennsylvania issues alert on congenital measles—something US hasn't seen for decades</a>
+    <article class="card row new">
+      <a class="title" href="https://arstechnica.com/health/2026/10/cops-raid-office-of-rfk-jr-allies-planning-unethical-vaccine-trial-on-babies/" target="_blank" rel="noopener">Cops raid office of RFK Jr. allies planning “unethical” vaccine trial on babies</a>
       
-      <div class="meta">Ars Technica · Tue 00:44</div>
+      <div class="meta">Ars Technica · Tue 23:44 <span class="badge">NEW</span></div>
     </article>
     <article class="card row">
       <a class="title" href="https://www.nu.nl/wetenschap/6413712/botten-van-uitgestorven-soort-jak-aangetroffen-in-bekende-siberische-grot.html" target="_blank" rel="noopener">Bones of an extinct species of yak found in a well-known Siberian cave</a>
       <div class="orig">Botten van uitgestorven soort jak aangetroffen in bekende Siberische grot</div>
       <div class="meta">NU.nl Wetenschap · Mon 22:10</div>
     </article>
-    <article class="card row">
-      <a class="title" href="https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/" target="_blank" rel="noopener">Russian spacecraft maneuvers in &quot;extreme proximity&quot; to satellite used by Ukraine</a>
+    <article class="card row new">
+      <a class="title" href="https://arstechnica.com/gaming/2026/10/report-microsofts-project-helix-planned-for-2028-at-1200-to-1800-price/" target="_blank" rel="noopener">Microsoft reportedly projects $1,200 to $1,800 price for 2028 Project Helix</a>
       
-      <div class="meta">Ars Technica · Mon 22:54</div>
-    </article>
-    <article class="card row">
-      <a class="title" href="https://www.nu.nl/wetenschap/6413627/amelia-earhart-raadsel-blijft-onopgelost-object-is-niet-haar-vliegtuigwrak.html" target="_blank" rel="noopener">The Amelia Earhart mystery remains unsolved: the object is not her plane wreckage</a>
-      <div class="orig">Amelia Earhart-raadsel blijft onopgelost: object is niet haar vliegtuigwrak</div>
-      <div class="meta">NU.nl Wetenschap · Mon 11:11</div>
-    </article>
-    <article class="card row">
-      <a class="title" href="https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/" target="_blank" rel="noopener">Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says</a>
-      
-      <div class="meta">Ars Technica · Mon 22:21</div>
+      <div class="meta">Ars Technica · Tue 23:14 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/dieren/6413607/griezelige-spaghettiwormen-met-zuignappen-ontdekt-op-bodem-indische-oceaan.html" target="_blank" rel="noopener">Griezelige 'spaghettiwormen' met zuignappen ontdekt op bodem Indische Oceaan</a>
+      <a class="title" href="https://arstechnica.com/gadgets/2026/10/justwatch-which-tackles-streaming-fragmentation-launches-own-streaming-service/" target="_blank" rel="noopener">JustWatch, which tackles streaming fragmentation, launches own streaming service</a>
       
-      <div class="meta">NU.nl Wetenschap · Mon 11:09 <span class="badge">NEW</span></div>
+      <div class="meta">Ars Technica · Tue 22:20 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://arstechnica.com/science/2026/10/batteries-have-a-small-carbon-footprint-we-can-make-it-smaller/" target="_blank" rel="noopener">Batteries help reduce emissions, but how do we reduce their emissions?</a>
+      <a class="title" href="https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/" target="_blank" rel="noopener">Meta drops the word &quot;train&quot; from its commercial TOS after AI backlash</a>
       
-      <div class="meta">Ars Technica · Mon 22:03 <span class="badge">NEW</span></div>
+      <div class="meta">Ars Technica · Tue 22:07 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/wetenschap/6413610/2200-jaar-oude-vingerafdrukken-laten-zien-wie-terracottaleger-heeft-gebouwd.html" target="_blank" rel="noopener">2.200 jaar oude vingerafdrukken laten zien wie Terracottaleger heeft gebouwd</a>
+      <a class="title" href="https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/" target="_blank" rel="noopener">Gemini's Personal Intelligence is coming to cars</a>
       
-      <div class="meta">NU.nl Wetenschap · Mon 10:15 <span class="badge">NEW</span></div>
+      <div class="meta">Ars Technica · Tue 22:00 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://arstechnica.com/gadgets/2026/10/openbsd-8-0-lands-with-intel-arc-graphics-support/" target="_blank" rel="noopener">OpenBSD 8.0 arrives with security record still intact</a>
+      
+      <div class="meta">Ars Technica · Tue 21:57 <span class="badge">NEW</span></div>
+    </article>
+    <article class="card row new">
+      <a class="title" href="https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/" target="_blank" rel="noopener">The Internet goes on high alert after discovery of 8 compromised TLS certs</a>
+      
+      <div class="meta">Ars Technica · Tue 21:47 <span class="badge">NEW</span></div>
     </article>
     <h2 class="sec" style="--c:#ca8a04">Economy &amp; money</h2>
     
     <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Paddy Power cuts 1,400 jobs and blames betting tax rises</a>
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">UK government expected to approve Jackdaw gas field</a>
       
-      <div class="meta">BBC Business · Tue 13:59 <span class="badge">NEW</span></div>
+      <div class="meta">BBC Business · Wed 06:41 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/economie/6413774/online-bank-revolut-getroffen-door-grote-storing.html" target="_blank" rel="noopener">Online bank Revolut getroffen door grote storing</a>
-      
-      <div class="meta">NU.nl Economie · Tue 13:26 <span class="badge">NEW</span></div>
+      <a class="title" href="https://www.nu.nl/economie/6413814/steeds-meer-mensen-werken-door-na-hun-pensioen.html" target="_blank" rel="noopener">More and more people are continuing to work after retirement</a>
+      <div class="orig">Steeds meer mensen werken door na hun pensioen</div>
+      <div class="meta">NU.nl Economie · Wed 06:30 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://nos.nl/l/2635931" target="_blank" rel="noopener">Gasvoorraad voor 64 procent gevuld, minimale doel gehaald</a>
-      
+      <a class="title" href="https://nos.nl/l/2635931" target="_blank" rel="noopener">Gas storage at 64 per cent capacity; minimum target achieved</a>
+      <div class="orig">Gasvoorraad voor 64 procent gevuld, minimale doel gehaald</div>
       <div class="meta">NOS Economie · Tue 11:33 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/c6eq327pzr53o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Jobless rate falls but small firms cut back hiring</a>
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cr93z1e87e0do?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Why does Elon Musk want to merge Tesla and SpaceX?</a>
       
-      <div class="meta">BBC Business · Tue 13:26 <span class="badge">NEW</span></div>
+      <div class="meta">BBC Business · Wed 06:13 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/economie/6413757/ns-maakt-treinkaartjes-opnieuw-duurder-prijzen-stijgen-bijna-5-procent.html" target="_blank" rel="noopener">NS maakt treinkaartjes opnieuw duurder: prijzen stijgen bijna 5 procent</a>
-      
-      <div class="meta">NU.nl Economie · Tue 10:54 <span class="badge">NEW</span></div>
+      <a class="title" href="https://www.nu.nl/economie/6413844/problemen-bij-online-bank-revolut-verholpen-na-grote-storing.html" target="_blank" rel="noopener">Problems at online bank Revolut resolved following major disruption</a>
+      <div class="orig">Problemen bij online bank Revolut verholpen na grote storing</div>
+      <div class="meta">NU.nl Economie · Tue 22:13 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
       <a class="title" href="https://nos.nl/l/2635917" target="_blank" rel="noopener">Formule 1 en darts mogen definitief van Viaplay naar Videoland</a>
       
       <div class="meta">NOS Economie · Tue 10:01 <span class="badge">NEW</span></div>
     </article>
-    <article class="card row">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">'I'm fed up of swiping': The singles choosing dating events over apps</a>
+    <article class="card row new">
+      <a class="title" href="https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Elon Musk says Tesla-SpaceX merger being considered</a>
       
-      <div class="meta">BBC Business · Tue 12:28</div>
+      <div class="meta">BBC Business · Wed 01:24 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/economie/6413745/postnl-vraagt-overheid-om-80-miljoen-euro-extra-voor-postbezorging.html" target="_blank" rel="noopener">PostNL vraagt overheid om 80 miljoen euro extra voor postbezorging</a>
+      <a class="title" href="https://www.nu.nl/economie/6413825/supermarktketen-carrefour-verlaagt-winstverwachting-vanwege-rellen-in-frankrijk.html" target="_blank" rel="noopener">Supermarktketen Carrefour verlaagt winstverwachting vanwege rellen in Frankrijk</a>
       
-      <div class="meta">NU.nl Economie · Tue 09:57 <span class="badge">NEW</span></div>
+      <div class="meta">NU.nl Economie · Tue 18:55 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
       <a class="title" href="https://nos.nl/l/2635911" target="_blank" rel="noopener">PostNL vraagt opnieuw om extra geld voor postbezorging</a>
@@ -623,14 +569,14 @@
       <div class="meta">NOS Economie · Tue 08:36 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.bbc.co.uk/news/articles/c50me4w4x1vyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Chancellor rejects calls to raise Capital Gains Tax in Budget</a>
+      <a class="title" href="https://www.bbc.co.uk/news/articles/c370pzdkw77jo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">The tech helping crack decades-old cold cases</a>
       
-      <div class="meta">BBC Business · Tue 12:06 <span class="badge">NEW</span></div>
+      <div class="meta">BBC Business · Wed 01:13 <span class="badge">NEW</span></div>
     </article>
     <article class="card row new">
-      <a class="title" href="https://www.nu.nl/economie/6413742/videoland-mag-viaplay-overnemen-na-goedkeuring-acm.html" target="_blank" rel="noopener">Videoland mag Viaplay overnemen na goedkeuring ACM</a>
+      <a class="title" href="https://www.nu.nl/economie/6413809/haven-van-antwerpen-kijkt-naar-india-om-groei-te-herstellen.html" target="_blank" rel="noopener">Haven van Antwerpen kijkt naar India om groei te herstellen</a>
       
-      <div class="meta">NU.nl Economie · Tue 09:23 <span class="badge">NEW</span></div>
+      <div class="meta">NU.nl Economie · Tue 17:11 <span class="badge">NEW</span></div>
     </article>
     <article class="card row">
       <a class="title" href="https://nos.nl/l/2635882" target="_blank" rel="noopener">Poland as Europe’s growth champion: why the takeover of local supermarket chain Zabka speaks volumes</a>
@@ -640,83 +586,113 @@
   <section class="panel" id="market" hidden>
     <h2 class="sec" style="--c:#2563eb">Cars</h2>
     <div class="grid">
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/audi/m2450723090-audi-a3-sportback-1-2-tfsi-ambition-pro-line-business-automa" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7a7f26e3-631a-4474-a322-eb8b25db4e0b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Audi A3 Sportback 1.2 TFSI Ambition Pro Line Business Automa</div>
-        <div class="lp"><b>€4.750</b> · Oosterhout <span class="badge">NEW</span></div>
+      <a class="listing" href="https://www.marktplaats.nl/v/auto-s/volkswagen/m2449702150-volkswagen-polo-1-2-tsi-highline-airco-cruise-5-deurs-nap" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/630d5516-2699-47e5-87cc-242d1149dcca?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Volkswagen Polo 1.2 TSI Highline|AIRCO|CRUISE|5-DEURS|NAP</div>
+        <div class="lp"><b>€3.495</b> · Driebergen-Rijsenburg</div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2448907514-fiat-panda-1-1-young-nap-apk-03-2027-inruilkoopje" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c497181e-af1c-4ff0-852e-8bac7586f2d0?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Fiat Panda 1.1 Young Nap/APK 03-2027/INRUILKOOPJE!</div>
-        <div class="lp"><b>€1.395</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/mitsubishi/m2294138982-mitsubishi-colt-1-3-mivec-cz3-2007-grijs" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/97/979dcc30-374e-4600-9b67-7aeb2ed3dab3?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Mitsubishi Colt 1.3 Mivec CZ3 2007 Grijs</div>
+        <div class="lp"><b>bid from €1.499</b> · Rotterdam <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/volkswagen/m2447735149-volkswagen-fox-1-2-trendline-nap-airco-nette-auto" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c3a6c39b-e1c4-4baa-9a31-8ac4049f94a3?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Volkswagen Fox 1.2 Trendline Nap/Airco/NETTE AUTO!</div>
-        <div class="lp"><b>€1.495</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/opel/m2456065835-opel-meriva-1-6-16v-temptation-1e-eigenaar-nap-dealer-onderh" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/4d94f119-2286-4ede-ad4d-12077d0d1f0e?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Opel Meriva 1.6-16V Temptation 1E Eigenaar Nap Dealer Onderh</div>
+        <div class="lp"><b>€4.250</b> · Eindhoven <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/opel/m2452983946-opel-astra-1-8-enjoy-nap-airco-automaat-inruilkoopje" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/58ecdbc3-64e6-4394-8b1e-f97bed7d7527?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Opel Astra 1.8 Enjoy Nap/Airco/AUTOMAAT/INRUILKOOPJE!</div>
-        <div class="lp"><b>€1.495</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/nissan/m2456065824-nissan-note-1-6-first-note-automaat-airco-apk" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/542ecac9-2a20-4c83-bbe0-ffa4538e0d1e?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Nissan Note 1.6 First Note AUTOMAAT Airco APK</div>
+        <div class="lp"><b>bid from €3.250</b> · Oss <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/ford/m2447735298-ford-fiesta-1-3-core-nap-5drs-apk-09-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c0894d7e-1bab-4c94-90af-babb5048673a?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Ford Fiesta 1.3 Core Nap/5Drs/APK 09-2027!</div>
-        <div class="lp"><b>€1.395</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2456064617-fiat-500-1-2-pop-airco-carplay-nette-staat-apk" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/794ce70f-ceb7-4c53-bbed-45d20b4c167b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Fiat 500 1.2 Pop Airco CarPlay Nette Staat APK</div>
+        <div class="lp"><b>bid from €4.650</b> · Oss <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/toyota/m2449263204-toyota-aygo-1-0-12v-nap-airco-5drs-apk-10-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/e6f3b780-f787-4815-837a-1e83ae9760bd?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Toyota Aygo 1.0-12V + Nap/Airco/5Drs/APK 10-2027!</div>
-        <div class="lp"><b>€2.495</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/opel/m2456063778-opel-corsa-1-2-16v-2006" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/02149a24-2f26-4b5a-a711-932292c35ac5?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Opel Corsa 1.2 16V 2006</div>
+        <div class="lp"><b>bid from €1.500</b> · Zwaag <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/seat/m2450225583-seat-ibiza-1-2-tsi-fr-nap-airco-led-xenon-apk-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f766ac51-29a6-4c0f-8320-8c173d563247?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Seat Ibiza 1.2 TSI FR Nap/Airco/LED/Xenon/APK 2027!</div>
-        <div class="lp"><b>€3.595</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2445608693-fiat-500l-0-9-twinair-turbo-eco-105-pk-trekking-2014-zwart" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d327cb2e-83d2-482f-b673-2c03283835df?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Fiat 500L 0.9 Twinair Turbo Eco 105 pk Trekking 2014 zwart</div>
+        <div class="lp"><b>bid from €3.850</b> · Rotterdam <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/mercedes-benz/m2447714450-mercedes-benz-a-klasse-160-blueefficiency-edition-125-avantg" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5dae301e-e14c-4a8f-95e9-74724721aede?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Mercedes-Benz A-klasse 160 BlueEFFICIENCY Edition 125 Avantg</div>
-        <div class="lp"><b>€3.695</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/peugeot/m2448150028-peugeot-107-1-0-5-deurs-airco-zeer-netjes-e-ramen" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/321caee7-289b-483d-842c-34ad2102440b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Peugeot 107 1.0 | 5-Deurs | Airco | ZEER NETJES | E-ramen</div>
+        <div class="lp"><b>bid from €2.295</b> · Enschede <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2452983870-fiat-panda-1-2-edizione-cool-nap-airco-apk-10-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/80727361-4e09-4bab-9efb-5d2b8ec8df86?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Fiat Panda 1.2 Edizione Cool Nap/Airco/APK 10-2027!</div>
-        <div class="lp"><b>€2.195</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/kia/m2451657096-kia-picanto-1-0-cvvt-businessline-nap-elektr-ramen-ai" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/33f23743-f8d8-484a-bd63-7cd80804f637?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Kia Picanto 1.0 CVVT BusinessLine | NAP | ELEKTR. RAMEN | AI</div>
+        <div class="lp"><b>€4.945</b> · Raalte <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/toyota/m2453125456-toyota-aygo-1-0-vvt-i-comfort-nap-airco-5drs-apk-11-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/05082a4f-b494-4ea1-9602-c5e8e2a7fb8f?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Toyota Aygo 1.0 VVT-i Comfort Nap/Airco/5Drs/APK 11-2027!</div>
-        <div class="lp"><b>€3.995</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/peugeot/m2453709807-peugeot-308-sw-1-2-puretech-style-nap-distrubtieriem-v-v" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7c3b0519-b64b-4308-8baa-273cf595f075?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Peugeot 308 SW 1.2 PureTech Style | NAP | Distrubtieriem v.v</div>
+        <div class="lp"><b>€3.645</b> · Raalte <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/toyota/m2453123349-toyota-yaris-1-0-vvti-cool-nap-airco-apk-10-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c6b930a2-94a6-4fa8-9f97-139e5d4a57ff?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Toyota Yaris 1.0 VVTi Cool Nap/Airco/APK 10-2027!</div>
-        <div class="lp"><b>€3.495</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/hyundai/m2448880803-hyundai-i10-1-1-i-drive-cool-nap-lage-km-zuinig-elek" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/546d9119-923e-4559-bb6a-4c0b48ecfdc5?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Hyundai I10 1.1 i-Drive Cool | NAP | Lage KM | Zuinig | Elek</div>
+        <div class="lp"><b>€4.345</b> · Raalte <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/renault/m2450350915-renault-megane-estate-1-6-authentique-nap-airco-navi-apk-07" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/abb2250d-06cc-4dd0-9bbf-de3889bad82a?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Renault Mégane Estate 1.6 Authentique Nap/Airco/Navi/APK 07</div>
-        <div class="lp"><b>€2.995</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/mini/m2451946680-mini-clubman-1-6-apk-stoelverw-leder-panodak-carplay" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/fa47bbc2-2b1e-4df1-be8a-d94a4bbe980c?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Mini Clubman 1.6 APK | Stoelverw | Leder | Panodak | CarPlay</div>
+        <div class="lp"><b>bid from €2.735</b> · Leeuwarden <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2450350397-fiat-punto-evo-0-9-twinair-lounge-nap-airco-apk-10-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c28b00e0-801f-486b-bc40-b079e2013bb8?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Fiat Punto Evo 0.9 TwinAir Lounge Nap/Airco/APK 10-2027!</div>
-        <div class="lp"><b>€3.995</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/mini/m2452982241-mini-mini-1-6-cooper-pepper-automaat-airco" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/86bf40e6-975a-4bd2-8ae1-1bbbe578146a?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Mini Mini 1.6 Cooper Pepper Automaat|Airco</div>
+        <div class="lp"><b>€3.995</b> · Almere <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/volkswagen/m2450225312-volkswagen-polo-1-2-easyline-nap-airco-apk-14-07-2027" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/70cab11d-3a11-4059-a425-01fe19b64360?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Volkswagen Polo 1.2 Easyline Nap/Airco/APK 14-07-2027!</div>
-        <div class="lp"><b>€3.995</b> · Best <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/ford/m2449683063-ford-ka-1-2-titanium-x-parkeer-sensoren-airco" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/9cf5fbe6-7301-43b8-9866-fc0fe296da20?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Ford Ka 1.2 Titanium X|Parkeer sensoren|Airco</div>
+        <div class="lp"><b>€2.749</b> · Almere <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/fiat/m2455831253-fiat-500-l-0-9-twinair-easy-eco-navi-parkeersensoren-airco-n" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/eec9f8cc-40ac-4bce-a95d-f37abc15a31c?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Fiat 500 L 0.9 TwinAir Easy Eco Navi Parkeersensoren Airco N</div>
-        <div class="lp"><b>€3.995</b> · Beesd <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/auto-s/suzuki/m2449571160-suzuki-swift-1-3-shogun-airco-geleverd-met-nieuwe-apk" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/06ae34e4-ac73-466c-855e-a475f4260d36?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Suzuki Swift 1.3 Shogun Airco|Geleverd met nieuwe APK</div>
+        <div class="lp"><b>€2.295</b> · Almere <span class="badge">NEW</span></div>
       </a></div>
     <h2 class="sec" style="--c:#dc2626">Motorcycles</h2>
     <div class="grid">
+      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-ktm/m2456065028-ktm-sxf450-2023" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/caaac564-544d-4da8-86a2-48c60a5b1731?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">ktm sxf450 2023</div>
+        <div class="lp"><b>bid from €6.000</b> · Appelscha <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-harley-davidson/m2455975120-harley-davidson-sportster-forty-eight-special-bj-2014" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/581b0134-6863-44be-89f4-957a243b7c80?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">HARLEY-DAVIDSON SPORTSTER FORTY EIGHT SPECIAL (bj 2014)</div>
+        <div class="lp"><b>bid from €6.997</b> · Bosschenhoofd <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-piaggio/m2455926431-piaggio-beverly-350cc-custom" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/77469d48-5e58-4851-9c5c-bd41b7d89952?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Piaggio Beverly 350cc custom</div>
+        <div class="lp"><b>€5.500</b> · 's-Gravenzande <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing" href="https://www.marktplaats.nl/v/motoren/motoren-yamaha/m2451456450-yamaha-scooter-xmax-300-abs" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/8b28a229-94a3-4230-a633-38c16a974303?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Yamaha Scooter XMAX 300 ABS</div>
+        <div class="lp"><b>bid from €3.750</b> · Loenen aan de Vecht</div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-ktm/m2455895720-ktm-790-adventure-zeer-netjes-compleet-18000-km" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/aa4fa6ee-8953-4334-bd21-a791dd1c31e3?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">KTM 790 Adventure Zeer netjes compleet 18000 km</div>
+        <div class="lp"><b>€7.490</b> · Oudelande <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-suzuki/m2455864376-suzuki-burgman-an400-met-carplay-en-handvatverwarming" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/219fedb8-c0ed-4edc-ad62-682d3355abde?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Suzuki Burgman AN400 met Carplay en handvatverwarming</div>
+        <div class="lp"><b>bid from €4.250</b> · Horssen <span class="badge">NEW</span></div>
+      </a>
       <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-suzuki/m2445697863-zeer-mooie-suzuki-gsx-r-750-bj-2013-l3-gsxr-yoshimura" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f3a3ac7d-1def-4eca-9097-e87e215d9145?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
         <div class="lt">Zeer Mooie Suzuki Gsx-r 750 bj 2013 L3 GSXR Yoshimura</div>
@@ -761,48 +737,38 @@
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/20d3fcf9-89e0-4ad6-8635-6004cf140be9?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
         <div class="lt">Yamaha All-Road XT 660 R A2 35KW</div>
         <div class="lp"><b>bid from €4.250</b> · Loenen aan de Vecht <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-honda/m2455630014-honda-all-road-xrv-750-africa-twin-rd04-super-staat" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/889c5e63-6d28-4428-b739-0676e3848e53?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Honda All-Road XRV 750 Africa Twin RD04 *Super staat!</div>
-        <div class="lp"><b>bid from €5.250</b> · Loenen aan de Vecht <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-honda/m2444594528-honda-all-road-xrv-750-africa-twin-rd07-reisklaar" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/9dfe99cc-004a-441e-96bb-c6da3018874b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Honda All-Road XRV 750 Africa Twin RD07 *Reisklaar!</div>
-        <div class="lp"><b>bid from €4.250</b> · Loenen aan de Vecht <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/motoren/motoren-kawasaki/m2449524374-kawasaki-all-road-versys-650-abs-facelift" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0c106e5a-d244-4917-bb64-7ff7208484e7?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Kawasaki All-Road Versys 650 ABS *Facelift!</div>
-        <div class="lp"><b>bid from €4.850</b> · Loenen aan de Vecht <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/motoren/motoren-piaggio/m2455677579-piaggio-mp3-500-hpe-2021-org-nl-akrapovic-nardo-grey-6-mnd-g" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/3c183260-33e2-4cff-a72f-0caf7734689b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Piaggio MP3 500 HPE 2021 ORG NL AKRAPOVIC Nardo Grey 6 mnd g</div>
-        <div class="lp"><b>€6.499</b> · Nieuwegein</div>
-      </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/motoren/motoren-overige-merken/m2451202498-beta-430-rr-4t-enduro-2022-1-650-km-44-uur-ktm-exc" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d8da9aa7-4c6a-4f39-855b-65f74496cce2?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Beta 430 RR 4T Enduro 2022 | 1.650 km | 44 uur | KTM EXC</div>
-        <div class="lp"><b>bid from €6.450</b> · Rijswijk</div>
-      </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/motoren/motoren-ktm/m2455610557-ktm-adventure-890-2021" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d8d8bec1-2845-495b-9eef-eec49cbe668c?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">KTM Adventure 890 2021</div>
-        <div class="lp"><b>bid from €6.200</b> · Olmen</div>
       </a></div>
     <h2 class="sec" style="--c:#0d9488">Electronics</h2>
     <div class="grid">
+      <a class="listing new" href="https://www.marktplaats.nl/v/computers-en-software/accesspoints/m2456035929-unifi-ap-ac-pro" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/1ed3406c-5925-43d8-82cc-b8bc5029b5b6?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Unifi ap ac pro</div>
+        <div class="lp"><b>bid from €25</b> · Elshout <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/audio-tv-en-foto/fotografie-fototassen/m2436443959-tamrac-cyberpack-8-fotorugzak" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/08c1661d-83a6-4dc9-a415-e25f2367cb7c?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Tamrac CyberPack 8 fotorugzak</div>
+        <div class="lp"><b>bid from €115</b> · Bontebok <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2452791470-originele-airpods-pro-alleen-doos" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5a26dbfb-3e0d-4c7e-ae2e-63a4c7330071?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Originele Airpods Pro - ALLEEN DOOS</div>
+        <div class="lp"><b>bid from €10</b> · Amsterdam <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-nintendo-switch/m2456033391-nintendo-switch" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/fe15c158-7c27-4809-a136-3e849687e98b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Nintendo Switch</div>
+        <div class="lp"><b>bid from €100</b> · Broek in Waterland <span class="badge">NEW</span></div>
+      </a>
       <a class="listing" href="https://www.marktplaats.nl/v/computers-en-software/routers-en-modems/m2455390135-ubiquiti-unifi-uxg-lite-gateway-nieuwstaat-compleet" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/dc554806-d14c-41cc-a654-7b25b239918d?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
         <div class="lt">Ubiquiti UniFi UXG Lite Gateway - Nieuwstaat, Compleet</div>
         <div class="lp"><b>bid from €75</b> · Amersfoort</div>
       </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/audio-tv-en-foto/radio-s/m2443122159-partij-noodradio-noodpakket-noodpakketten-noodproducten" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/72cd9e7f-4084-4030-b43d-d168958902be?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Partij Noodradio Noodpakket Noodpakketten Noodproducten</div>
-        <div class="lp"><b>€14,5</b> · Blaricum</div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/audio-tv-en-foto/fotografie-fototassen/m2456030640-camera-tas-crumpler" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/458bfa4f-f1ac-4355-bb81-29e013514bc4?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Camera tas crumpler</div>
+        <div class="lp"><b>bid from €20</b> · Tilburg <span class="badge">NEW</span></div>
       </a>
       <a class="listing" href="https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2317198295-airpods-2" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0d/0d0efae9-59f8-4c4e-b6b9-09d02821b3a1?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
@@ -819,10 +785,10 @@
         <div class="lt">Thrustmaster T98 racestuur voor PlayStation</div>
         <div class="lp"><b>bid from €45</b> · Ridderkerk</div>
       </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/audio-tv-en-foto/videobewaking/m2427524537-draadloos-hd-cctv-kit-4-beveiligingscamerasysteem" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/60bd4495-2a70-42ba-b216-e04bcd80111d?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Draadloos HD CCTV Kit -  4 Beveiligingscamerasysteem</div>
-        <div class="lp"><b>bid from €146</b> · Boxtel</div>
+      <a class="listing" href="https://www.marktplaats.nl/v/audio-tv-en-foto/tuners/m2445801589-mooie-yamaha-type-htr5540rds-plus-2-bose-boxen" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/a852754e-eb75-4148-ab03-d063e1746f43?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Mooie YAMAHA Type: HTR5540RDS PLUS 2 BOSE BOXEN!!</div>
+        <div class="lp"><b>€75</b> · Zeist</div>
       </a>
       <a class="listing" href="https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2332936927-airpods-pro-2" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/e7/e79a46e8-2e1b-491d-8d80-10100d510627?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
@@ -834,47 +800,37 @@
         <div class="lt">Nintendo Switch V2! compleet met accessoires!!</div>
         <div class="lp"><b>€139,99</b> · Bodegraven</div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/computers-en-software/monitoren/m2454352449-aoc-24g2u-bk-32-inch-full-hd-gaming-monitor" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/bdffe1ec-034e-4114-a4ec-6f0dbed68146?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">AOC 24G2U/BK 32 inch Full HD Gaming Monitor</div>
-        <div class="lp"><b>bid from €69</b> · Ede <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/computers-en-software/muizen/m2433829211-dell-pro-premium-muis-ms900" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c3f9ac7f-cd90-4406-865e-bafb465b5972?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Dell pro premium muis - MS900</div>
+        <div class="lp"><b>€65</b> · Leiden <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/audio-tv-en-foto/fotocamera-s-analoog/m2455566166-canon-av-1-spiegelreflexcamera-met-lenzen-en-flitser" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/38b311ca-45f7-4582-bec1-ce03d5555153?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Canon AV-1 Spiegelreflexcamera met lenzen en flitser</div>
-        <div class="lp"><b>bid from €120</b> · Nispen <span class="badge">NEW</span></div>
+      <a class="listing" href="https://www.marktplaats.nl/v/audio-tv-en-foto/afstandsbedieningen/m2430085566-goedekoopste-op-marktplaats-samsung-afstandsbediening-tv" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/3123f1c4-fcd3-4778-a56e-7896bbd68861?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Goedekoopste op Marktplaats! Samsung afstandsbediening TV</div>
+        <div class="lp"><b>€11,5</b> · Rotterdam</div>
       </a>
       <a class="listing new" href="https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2350864425-airpods-pro3-nieuwste-versie" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/e2/e2da699b-e4d9-4186-a63d-f13ce8b2c693?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
         <div class="lt">Airpods pro3 nieuwste versie!</div>
-        <div class="lp"><b>€40</b> · Amsterdam <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/spelcomputers-en-games/spelcomputers-nintendo-switch/m2454967071-nintendo-switch-2019-upgrade-zo-goed-als-nieuw" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/32097d06-79c4-4a60-8136-a056bd04a2b9?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Nintendo Switch (2019 Upgrade) - Zo goed als nieuw</div>
-        <div class="lp"><b>€150</b> · Alphen aan den Rijn <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/computers-en-software/apple-ipads/m2447736590-ipad-8e-generatie-10-2-nieuwstaat" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5367da5e-4aa9-4056-ae35-924ddf00a436?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">iPad 8e generatie 10.2 nieuwstaat</div>
-        <div class="lp"><b>bid from €100</b> · Stadskanaal <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/audio-tv-en-foto/videocamera-s-digitaal/m2455521394-sony-filmcamera-en-lederen-tas" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/93a3a5ac-0ad4-4910-bc50-fdb26c970380?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Sony...filmcamera.....en lederen tas</div>
-        <div class="lp"><b>bid from €75</b> · Apeldoorn <span class="badge">NEW</span></div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/telecommunicatie/mobiele-telefoons-oordopjes/m2355535220-airpods4" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/e4/e41028f1-6423-4dfb-8564-5688bd939dfc?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Airpods4</div>
-        <div class="lp"><b>€40</b> · Amsterdam <span class="badge">NEW</span></div>
+        <div class="lp"><b>€35</b> · Amsterdam <span class="badge">NEW</span></div>
       </a></div>
     <h2 class="sec" style="--c:#16a34a">Bikes</h2>
     <div class="grid">
+      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-heren-sportfietsen-en-toerfietsen/m2454593462-racefiets-junior-kind-triban-100" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/01eb9eb4-b9a5-462c-b7f2-639ae2749620?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Racefiets junior kind Triban 100</div>
+        <div class="lp"><b>bid from €175</b> · Veenendaal <span class="badge">NEW</span></div>
+      </a>
+      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-dames-damesfietsen/m2452828295-gazelle-fiets-28-inch-30-fietsen-op-voorraad" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/03d8058f-ee32-44dc-af0f-ef7e1488bd26?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Gazelle fiets 28 inch// 30+ fietsen op voorraad</div>
+        <div class="lp"><b>€80</b> · Amsterdam <span class="badge">NEW</span></div>
+      </a>
       <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-mountainbikes-en-atb/m2455719886-mountainbike-24-26-en-27-5-inch-18-en-21-versnellingen" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/bded4b95-e0b4-44af-b5f9-07597812ad65?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b826f96b-0864-4850-83ab-4ae9875dcc18?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
         <div class="lt">MOUNTAINBIKE 24,26 EN 27,5 INCH 18 EN 21 VERSNELLINGEN</div>
-        <div class="lp"><b>bid from €145</b> · Meppel <span class="badge">NEW</span></div>
+        <div class="lp"><b>bid from €100</b> · Meppel <span class="badge">NEW</span></div>
       </a>
       <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-vouwfietsen/m2455772915-dahon-vouwfiets-compact-en-handig-voor-onderweg" target="_blank" rel="noopener">
         <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/1e321775-89e6-4f38-bd78-2f080225ecac?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
@@ -921,25 +877,20 @@
         <div class="lt">van klein tot groot nieuw en tweedehands fietsen 100</div>
         <div class="lp"><b>€100</b> · Amsterdam</div>
       </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-racefietsen/m2455626475-triban-racefiets-met-spatborden-goede-staat" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d52e1832-c0d6-46f6-a2ed-a86f71fff5c6?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Triban Racefiets met spatborden - Goede staat</div>
-        <div class="lp"><b>bid from €215</b> · Maasdijk</div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-mountainbikes-en-atb/m2456085095-giant-mountain-bike-size-m-150" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/c27a22a3-68e6-4f80-a897-a1ab8e1ab223?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Giant Mountain Bike, size M, €150</div>
+        <div class="lp"><b>bid from €150</b> · Haarlem <span class="badge">NEW</span></div>
       </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-vouwfietsen/m2455613915-dahon-fietsen" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/2b3faf34-64a9-4344-80b3-27ee5e9db045?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Dahon fietsen</div>
-        <div class="lp"><b>€165</b> · Hoofddorp</div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-dames-damesfietsen/m2444100946-stadsfiets-voor-lange-afstanden-500-laag-frame" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/7d762cf5-d835-41cd-bb91-33acd19a72ed?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Stadsfiets voor lange afstanden 500 laag frame</div>
+        <div class="lp"><b>bid from €250</b> · 's-Gravenhage <span class="badge">NEW</span></div>
       </a>
-      <a class="listing" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-dames-damesfietsen/m2455466039-orangina-roetz-fiets-nieuw" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/8379517b-7394-4499-b05d-ec64a6382194?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Orangina Roetz fiets -  nieuw</div>
-        <div class="lp"><b>bid from €135</b> · Bosschenhoofd</div>
-      </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-heren-herenfietsen/m2455847140-sparta-herenfiets" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f790ea63-004d-4698-8967-b11d64c33e29?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Sparta Herenfiets</div>
-        <div class="lp"><b>bid from €55</b> · Hoofddorp <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/fietsen-en-brommers/fietsen-dames-damesfietsen/m2456057350-gazelle-damesfiets-28-inch-zeer-goed" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d64e47bd-a892-4ab1-b6b5-7d9b0b64b0d2?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Gazelle damesfiets (28 inch) - zeer goed</div>
+        <div class="lp"><b>bid from €95</b> · 's-Gravenhage <span class="badge">NEW</span></div>
       </a></div>
     <h2 class="sec" style="--c:#9333ea">Home &amp; furniture</h2>
     <div class="grid">
@@ -988,35 +939,35 @@
         <div class="lt">Aqualine 5 waterfilter</div>
         <div class="lp"><b>€75</b> · Zutphen</div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/tafels-kaptafels/m2454711308-kaptafel" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/5dcb26e7-b1ca-4ad9-a6af-ba3be51fb23f?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Kaptafel</div>
-        <div class="lp"><b>bid from €70</b> · Almelo <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/bureaustoelen/m2450244738-gamestoel-bureaustoel-comfortabel-ergonomisch-zwart-brin-wit" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/490a8153-57d6-49bb-8073-500a02c89945?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Gamestoel-Bureaustoel-Comfortabel-Ergonomisch-Zwart-Brin-Wit</div>
+        <div class="lp"><b>€69,99</b> · Barneveld <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/slaapkamer-slaapbanken/m2443100964-comfortabele-slaapbank-met-engels-design" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/53f4753b-aecf-4279-a396-ebbf7efaf93b?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Comfortabele slaapbank met Engels design</div>
-        <div class="lp"><b>bid from €100</b> · Rotterdam <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/tafels-bijzettafels/m2449612867-robuuste-vierkante-salontafel-van-donker-hout" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b5a31b8f-b3d2-4cae-a366-f660bebd4e5c?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Robuuste vierkante salontafel van donker hout</div>
+        <div class="lp"><b>bid from €50</b> · Breda <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/kasten-lockerkasten/m2455853156-lockerkast-kast-met-8-ruimtes-100x53xh196-cm-20-st" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/f9c7a436-e44a-42b5-a2c6-6b787364b277?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Lockerkast / kast met 8 ruimtes 100x53xH196 cm, 20 st</div>
-        <div class="lp"><b>€100</b> · De Kwakel <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/schoonmaakartikelen/m2455031094-sanova-uitschuifbare-raam-douch-wisser-streeploze-ramen" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/0247c32c-c7b2-48d0-b1b1-8047613cd700?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Sanova uitschuifbare raam/douch wisser streeploze ramen</div>
+        <div class="lp"><b>bid from €27,5</b> · Zevenaar <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-droogbloemen/m2455839013-schelpen-vaas-vazen-opmaak-japandi-2027-nieuwe-collectie" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/62e4bd88-90e5-4a97-b79d-a7c1cc446c91?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Schelpen vaas vazen opmaak japandi 2027 nieuwe collectie</div>
-        <div class="lp"><b>€45</b> · Uithoorn <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/keuken-bestek/m2448171538-nieuwe-amefa-baguette-stonewash-bestekset-24-delig-nieuw" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/b6c99a49-44b9-4a29-be56-756ad0f10fb5?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Nieuwe Amefa Baguette Stonewash Bestekset - 24-delig (Nieuw)</div>
+        <div class="lp"><b>bid from €80</b> · Leiden <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/tafels-salontafels/m2452365918-japandi-salontafel-xl-japandi-tafel-2027-collectie" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/01df448e-d432-4067-9370-a2481f45031a?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Japandi salontafel XL japandi tafel 2027 collectie</div>
-        <div class="lp"><b>€85</b> · Uithoorn <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/tafels-salontafels/m2456056277-2-bolia-posea-marmeren-design-salontafels" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/d1c5e08b-47c1-42b8-a56e-aa5f19b83683?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">2 Bolia Posea marmeren design salontafels</div>
+        <div class="lp"><b>bid from €100</b> · Rijsbergen <span class="badge">NEW</span></div>
       </a>
-      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-wanddecoraties/m2455829756-plexiglas-schilderij-specialist-in-schilderijen-japandi" target="_blank" rel="noopener">
-        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/fe1f9a6f-4a9c-4df6-9bce-1d4cecbe7956?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
-        <div class="lt">Plexiglas schilderij specialist in schilderijen  japandi</div>
-        <div class="lp"><b>€95</b> · Uithoorn <span class="badge">NEW</span></div>
+      <a class="listing new" href="https://www.marktplaats.nl/v/huis-en-inrichting/woonaccessoires-overige/m2455870199-set-van-2-nieuwe-vensterbank-schermen-52cm-hoog" target="_blank" rel="noopener">
+        <img src="https://images.marktplaats.com/api/v1/hz-mp-pro-listing/images/ae9e6396-5eab-48de-8523-73cd6fe6a650?rule=ecg_mp_eps$_82.jpg" alt="" loading="lazy">
+        <div class="lt">Set van 2 Nieuwe Vensterbank Schermen - 52cm Hoog</div>
+        <div class="lp"><b>bid from €50</b> · Hilversum <span class="badge">NEW</span></div>
       </a></div></section>
 </div>
 <script>
