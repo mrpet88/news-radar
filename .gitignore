@@ -9,3 +9,5 @@ data/.dispatched-on
 # Twitter/X cookies for the twitter channel. Never commit these.
 .env
 .DS_Store
+# Lock held while scripts/run-local.sh runs.
+data/.run-local.lock

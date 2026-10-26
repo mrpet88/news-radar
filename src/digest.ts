@@ -153,7 +153,7 @@ export interface DigestDecision {
 
 /**
  * Whether today's automatic digest has already gone out. The cron and the Mac's
- * wake-up trigger race for the day's email: whichever runs first sends, the other
+ * morning trigger race for the day's email: whichever runs first sends, the other
  * only refreshes the dashboard. A run started by hand is exempt, as is a forced one.
  */
 export function sentTodayAlready(state: DigestState, forced: boolean): boolean {

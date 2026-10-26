@@ -28,12 +28,19 @@ export const lanes: Lane[] = [
           ["contract", "testing"], ["mutation", "testing"],
           ["quality", "metrics"], ["defect", "escape"],
           ["testing", "in", "production"],
+          ["test", "leadership"], ["quality", "leadership"],
+          ["quality", "testing"], ["quality", "test"], ["quality", "tester"],
+          ["quality", "assurance"],
         ],
       },
       {
         // Tooling and adjacent practice — useful, ranked below the leadership set.
         tier: "adjacent", weight: 4, groups: [
           ["playwright"], ["cypress"], ["selenium"],
+          // The githubQueries below return these; without the groups every
+          // result of the lane's own query was scored as unmatched and dropped.
+          ["test", "automation"], ["software", "testing"], ["qa"],
+          ["e2e"], ["tdd"], ["bdd"], ["unit", "test"], ["testers"],
           ["test", "coverage"], ["end", "to", "end", "testing"],
           ["ci", "pipeline"], ["continuous", "delivery"],
           ["observability", "testing"], ["chaos", "engineering"],
@@ -52,6 +59,10 @@ export const lanes: Lane[] = [
       // tweet about an autonomous-vehicle test track scored as QA leadership.
       "test track", "crash test", "drug test", "blood test", "covid test",
       "soil test", "emissions test", "highway", "raceway",
+      // Career posts. r/QualityAssurance is mostly these, and once bare "qa"
+      // matched they were the first thing through.
+      "job offer", "job hunt", "job search", "opportunity", "part time", "resume", "cv",
+      "internship", "hiring", "salary",
     ],
     // Exa rewards a description of the ideal *page*, not keywords — and it has no
     // date filter, so "recently published blog post" is the only recency lever we
@@ -66,12 +77,17 @@ export const lanes: Lane[] = [
     twitterQueries: ["quality engineering", "test strategy"],
     // martinfowler.com/feed.atom refuses connections from here (curl gets 000), so
     // it is deliberately absent rather than silently failing every run.
+    // Trusted: these are testing writers, so every post is QA whether or not it
+    // names a keyword. Keyword-only scoring dropped ~85% of them.
     feeds: [
-      { name: "Google Testing Blog", url: "https://testing.googleblog.com/feeds/posts/default" },
-      { name: "Alan Page", url: "https://angryweasel.com/blog/feed/" },
-      { name: "Dan Ashby", url: "https://danashby.co.uk/feed/" },
-      { name: "James Bach", url: "https://www.satisfice.com/feed" },
+      { name: "Google Testing Blog", url: "https://testing.googleblog.com/feeds/posts/default", trusted: true },
+      { name: "Alan Page", url: "https://angryweasel.com/blog/feed/", trusted: true },
+      { name: "Dan Ashby", url: "https://danashby.co.uk/feed/", trusted: true },
+      { name: "James Bach", url: "https://www.satisfice.com/feed", trusted: true },
     ],
+    // Base score for a trusted-feed post that matched no keyword: the adjacent
+    // tier's weight, so a matched post still ranks above it.
+    trustedFeedWeight: 4,
   },
   {
     id: "ai",
@@ -190,7 +206,7 @@ export const delivery = {
   // If no digest has gone out for this many days, send a one-line heartbeat so a
   // broken pipeline is distinguishable from a genuinely quiet stretch.
   heartbeatAfterDays: 3,
-  // Automatic runs — the cron and the Mac's wake-up trigger — send at most one
+  // Automatic runs — the cron and the Mac's morning trigger — send at most one
   // digest per calendar day in `timezone`, whichever lands first. The Mac's trigger
   // is what gets the email out in the morning; GitHub starts the cron hours late, so
   // the cron is the fallback for days the Mac stays shut. Manual runs are exempt.

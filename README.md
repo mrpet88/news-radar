@@ -47,10 +47,12 @@ collected on your Mac and merged in while they are fresh. If the Mac was asleep,
 email still goes out and those channels show as stale. Which channel runs where is
 `collector.cloudChannels` in `src/config.ts`.
 
-**When it arrives.** The Mac starts the Actions run at its first wake of the day, so
-the email lands a few minutes after you open it. GitHub starts scheduled runs hours
-late, so the 06:37 UTC cron is only the fallback for days the Mac stays shut; on those
-days the email comes in the afternoon. Automatic runs send at most one digest per
+**When it arrives.** The Mac starts the Actions run once you are actually using it —
+keyboard or mouse input in the last five minutes, from 06:00 on — so the email lands a
+couple of minutes after you sit down, with that morning's Reddit in it. Being awake is
+not enough: a Mac that never sleeps overnight used to send it at 06:46 every day. GitHub
+starts scheduled runs hours late, so the 06:37 UTC cron is only the fallback for days
+you never open the Mac; on those days the email comes around midday. Automatic runs send at most one digest per
 calendar day between them, so the fallback stays quiet when the Mac got there first.
 A run started by hand from the Actions tab always may send.
 
@@ -89,7 +91,7 @@ npm install && npm run build
 ./scripts/install-agent.sh
 ```
 
-This generates the LaunchAgent from `scripts/news-radar.plist.template`, substituting
+This generates the LaunchAgents from `scripts/*.plist.template`, substituting
 this checkout's path. The plist is generated rather than committed precisely so that no
 absolute path — and therefore no local account name — ever enters the repository.
 
@@ -101,9 +103,13 @@ awake. Each run checks three things first and exits quietly otherwise:
 2. no successful collection in the last 20h
 3. the build succeeds
 
-launchd also re-runs a missed slot at next wake, so no polling loop is needed. The
-first slot that finds the Mac awake also starts the delivery workflow (`gh workflow
-run`), whether or not Chrome is open; `data/.dispatched-on` keeps that to once a day.
+launchd also re-runs a missed slot at next wake, so no polling loop is needed.
+
+A second agent, `local.news-radar.morning` (`scripts/morning-trigger.sh`), ticks every
+5 minutes and almost always exits after one `ioreg` call. The first tick of the day that
+sees recent keyboard or mouse input runs the collector above (so a collection that failed
+while you were away gets another go with Chrome open), then starts the delivery workflow
+(`gh workflow run`). `data/.dispatched-on` keeps that to once a day.
 
 > **The project must live outside `~/Documents`, `~/Desktop` and `~/Downloads`.** macOS
 > TCC blocks LaunchAgents from reading those, and the job dies with an opaque
@@ -166,8 +172,13 @@ cap on how many rows it may contribute to the email:
 }
 ```
 
-A group matches when **all** its terms appear; a tier matches when **any** group does.
-The highest matched weight becomes the score. Lanes are filled independently against
+A group matches when **all** its terms appear (whole words, plural allowed: `agent`
+matches "agents"); a tier matches when **any** group does. The highest matched weight
+becomes the score.
+
+A feed marked `trusted: true` is on-topic by construction, so its posts join the lane
+even when they match no keyword, at `trustedFeedWeight` (default 4, the adjacent tier).
+Use it for single-topic writers, not aggregators — Hacker News stays keyword-scored. Lanes are filled independently against
 their own caps before the global ceiling applies, so a busy week in one lane cannot
 crowd the other out of the email entirely.
 

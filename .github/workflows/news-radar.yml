@@ -31,8 +31,8 @@ on:
         description: "Who started this run — leave as manual"
         type: string
         default: manual
-  # One email a day. The Mac starts this workflow at its first wake of the day
-  # (scripts/run-local.sh), which is what makes the email a morning one: GitHub starts
+  # One email a day. The Mac starts this workflow once you are at it in the morning
+  # (scripts/morning-trigger.sh), which is what makes the email a morning one: GitHub starts
   # scheduled runs hours late (06:37 UTC has landed as late as 15:14 UTC), while a
   # dispatch starts in seconds. The cron is the fallback for days the Mac stays shut;
   # when the Mac got there first, it only refreshes the dashboard.

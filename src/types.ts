@@ -13,7 +13,8 @@ export interface Item {
   id: string;            // stable hash: channel + url (or title when url is unstable)
   channel: Channel;
   lane?: string;         // matched topic lane: "qa" | "ai"
-  tier?: string;         // scoring band once matched: "core" | "adjacent"
+  laneHint?: string;     // lane whose query or feed collected it (set by the collector)
+  tier?: string;         // scoring band once matched: "core" | "adjacent" | "source"
   score?: number;        // tier weight after adjustments; drives ranking
   title: string;
   url: string;
@@ -85,7 +86,9 @@ export interface Lane {
   // Accounts to restrict the twitter channel to. Empty means open search, which
   // is why the channel is disabled by default — see `collector.enabled`.
   twitterHandles?: string[];
-  feeds?: { name: string; url: string }[];
+  // `trusted`: every post belongs in this lane, keyword match or not.
+  feeds?: { name: string; url: string; trusted?: boolean }[];
+  trustedFeedWeight?: number; // base score for an unmatched post from a trusted feed
   maxPerDigest: number;    // hard cap on rows this lane contributes to the email
 }
 

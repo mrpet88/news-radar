@@ -4,11 +4,12 @@ import { noise, channelWeight } from "./config.js";
 
 // Word-boundary match so short tokens can't hit inside longer words ("mcp" must
 // not match "mcphee", "rag" must not match "storage"). Terms containing spaces or
-// hyphens are matched as phrases.
+// hyphens are matched as phrases. A plural suffix is allowed: without it "agent"
+// missed every "AI agents" headline and "test" every "tests".
 const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 export function hasTerm(haystack: string, term: string): boolean {
-  return new RegExp(`(?:^|[^a-z0-9])${escapeRe(term.toLowerCase())}(?:[^a-z0-9]|$)`, "i").test(haystack);
+  return new RegExp(`(?:^|[^a-z0-9])${escapeRe(term.toLowerCase())}(?:e?s)?(?:[^a-z0-9]|$)`, "i").test(haystack);
 }
 
 export const matchAny = (haystack: string, terms: string[]): boolean =>
@@ -85,6 +86,16 @@ export function scoreItem(item: Item, lanes: Lane[]): Item | null {
       const score = tier.weight + (inTitle ? 3 : 0);
       if (!best || score > best.score) best = { lane: lane.id, tier: tier.tier, score };
     }
+  }
+
+  // A lane's trusted feeds are on-topic by construction — a testing blog's post
+  // about responsibility or KPIs never names "test strategy", and keyword matching
+  // dropped nearly all of them. Recency still applies, so old posts still fall out.
+  if (!best && item.channel === "rss" && item.laneHint) {
+    const lane = lanes.find((l) => l.id === item.laneHint);
+    const feed = lane?.feeds?.find((f) => f.name === item.source);
+    if (lane && feed?.trusted && !matchAny(body, lane.excludeKeywords))
+      best = { lane: lane.id, tier: "source", score: lane.trustedFeedWeight ?? 4 };
   }
 
   if (!best) return null;
