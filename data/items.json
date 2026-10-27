@@ -1,22 +1,7 @@
 [
   {
-    "id": "326045a3bb323408",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "exa",
-    "source": "thesocraticleadership.substack.com",
-    "title": "Who Owns Quality When AI Writes the Tests?",
-    "url": "https://thesocraticleadership.substack.com/p/green-because-it-waited",
-    "publishedAt": "2026-10-24T09:01:50.000Z",
-    "summary": "Who Owns Quality When AI Writes the Tests? ### Green proves agreement. These 5 decisions turn it into evidence. Petros Bountis Oct 24, 2026 The build is green. The network is not. Years ago, in the 4G/LTE department of a telecom networks organization, a team builds the control node that manages how phones connect for calls and data, the component its engineers call the mind of the network.   The O",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 18,
-    "isNew": false
-  },
-  {
     "id": "81e3d237342d2d90",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "Seam Cutter",
     "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
@@ -31,7 +16,7 @@
   },
   {
     "id": "50631be4bff9308b",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "Donating Agent Skills to the Agentic AI Foundation",
     "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
@@ -61,7 +46,7 @@
   },
   {
     "id": "7540df4cd78ee528",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "exa",
     "source": "saucelabs.com",
     "title": "How to Scale QA Capacity for AI-Generated Code | Sauce Labs",
@@ -72,11 +57,26 @@
     "lane": "qa",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "326045a3bb323408",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "exa",
+    "source": "thesocraticleadership.substack.com",
+    "title": "Who Owns Quality When AI Writes the Tests?",
+    "url": "https://thesocraticleadership.substack.com/p/green-because-it-waited",
+    "publishedAt": "2026-10-24T09:01:50.000Z",
+    "summary": "Who Owns Quality When AI Writes the Tests? ### Green proves agreement. These 5 decisions turn it into evidence. Petros Bountis Oct 24, 2026 The build is green. The network is not. Years ago, in the 4G/LTE department of a telecom networks organization, a team builds the control node that manages how phones connect for calls and data, the component its engineers call the mind of the network.   The O",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
   },
   {
     "id": "acdf798e8a78179c",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "battledrones v14: Compass Rose, a four player map",
     "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
@@ -91,7 +91,7 @@
   },
   {
     "id": "6194adc95ec4ae8d",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "Quick Study",
     "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
@@ -117,7 +117,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "a419ab3d583f2c3f",
@@ -132,7 +132,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "da3b9c8ae9b83473",
@@ -147,7 +147,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "b8d7ed954b3cb45a",
@@ -162,7 +162,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "db665f27e0edecdc",
@@ -177,7 +177,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "5a93068a14c43f45",
@@ -192,7 +192,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "61468df86db66f88",
@@ -207,7 +207,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "9266dfab23494261",
@@ -237,7 +237,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1ac8fc7a92b4f355",
@@ -256,7 +256,7 @@
   },
   {
     "id": "234778678b9a0b0f",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "exa",
     "source": "circleci.com",
     "title": "How to run fewer tests and speed up CI with CircleCI Smarter Testing - CircleCI",
@@ -271,14 +271,14 @@
   },
   {
     "id": "7d7df05527809e15",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "HKUDS/nanobot — Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
     "url": "https://github.com/HKUDS/nanobot",
     "source": "HKUDS",
     "summary": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-    "stars": 49452,
-    "publishedAt": "2026-10-27T07:50:00Z",
+    "stars": 49474,
+    "publishedAt": "2026-10-27T12:38:22Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -286,31 +286,15 @@
     "isNew": false
   },
   {
-    "id": "fbc91648d10da434",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "id": "0dddcc0d1750b9a6",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
-    "title": "t8y2/dbx — 25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, deskt",
-    "url": "https://github.com/t8y2/dbx",
-    "source": "t8y2",
-    "summary": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
-    "stars": 27883,
-    "publishedAt": "2026-10-27T07:48:53Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "6a2238fde99b6653",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "github",
-    "title": "salitronic/eda-agent — Open-source MCP server that lets an AI drive a live session of Altium Designer, and optionally KiCad or EasyEDA Pro, editing the open design in place while you watch. 560+ tools",
-    "url": "https://github.com/salitronic/eda-agent",
-    "source": "salitronic",
-    "summary": "Open-source MCP server that lets an AI drive a live session of Altium Designer, and optionally KiCad or EasyEDA Pro, editing the open design in place while you watch. 560+ tools: schematic, PCB, library and project automation, design review, audits, rendering, auto-placement, panelization, autonomous design-plan executor. Apache-2.0.",
-    "stars": 279,
-    "publishedAt": "2026-10-27T07:43:15Z",
+    "title": "saltmd/salt.md — The open-source workspace for people and AI agents. Docs, databases and realtime collaboration with an MCP server in the same binary, so agents work in the same workspace on the same ",
+    "url": "https://github.com/saltmd/salt.md",
+    "source": "saltmd",
+    "summary": "The open-source workspace for people and AI agents. Docs, databases and realtime collaboration with an MCP server in the same binary, so agents work in the same workspace on the same permissions. One Go binary, one SQLite file, self-hosted.",
+    "stars": 167,
+    "publishedAt": "2026-10-27T12:38:00Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -318,15 +302,15 @@
     "isNew": true
   },
   {
-    "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "id": "a03f8258ac4343dc",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
-    "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
-    "url": "https://github.com/omnigent-ai/omnigent",
-    "source": "omnigent-ai",
-    "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-    "stars": 11069,
-    "publishedAt": "2026-10-27T07:43:02Z",
+    "title": "zhuyansen/agent-skills-hub — Discover and compare open-source Agent Skills, tools & MCP servers — with quality scoring, trending analysis, and automated GitHub sync",
+    "url": "https://github.com/zhuyansen/agent-skills-hub",
+    "source": "zhuyansen",
+    "summary": "Discover and compare open-source Agent Skills, tools & MCP servers — with quality scoring, trending analysis, and automated GitHub sync",
+    "stars": 475,
+    "publishedAt": "2026-10-27T12:34:35Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -334,15 +318,31 @@
     "isNew": false
   },
   {
-    "id": "078376717e262c10",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "id": "9b24d8c6c6fcca45",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
-    "title": "samanhappy/mcphub — Self-hosted MCP gateway and control plane for connecting, controlling, and operating MCP servers.",
-    "url": "https://github.com/samanhappy/mcphub",
-    "source": "samanhappy",
-    "summary": "Self-hosted MCP gateway and control plane for connecting, controlling, and operating MCP servers.",
-    "stars": 2588,
-    "publishedAt": "2026-10-27T07:42:44Z",
+    "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
+    "url": "https://github.com/omnigent-ai/omnigent",
+    "source": "omnigent-ai",
+    "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+    "stars": 11075,
+    "publishedAt": "2026-10-27T12:33:16Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "5e6931f3d0f0ba1f",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "mattt/iMCP — A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+    "url": "https://github.com/mattt/iMCP",
+    "source": "mattt",
+    "summary": "A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+    "stars": 1884,
+    "publishedAt": "2026-10-27T12:32:35Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -351,14 +351,14 @@
   },
   {
     "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
     "url": "https://github.com/open-compass/opencompass",
     "source": "open-compass",
     "summary": "OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledge, reasoning, coding, science, language, long-context, and safety.",
     "stars": 7551,
-    "publishedAt": "2026-10-27T06:55:35Z",
+    "publishedAt": "2026-10-27T12:17:26Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -366,20 +366,68 @@
     "isNew": false
   },
   {
-    "id": "83798523419137ae",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "id": "7b4fff2b1f4e4470",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
-    "title": "Pal-AI-Lab/Cortico — Event-stream AI Agent framework for building your persona bot 🍊",
-    "url": "https://github.com/Pal-AI-Lab/Cortico",
-    "source": "Pal-AI-Lab",
-    "summary": "Event-stream AI Agent framework for building your persona bot 🍊",
-    "stars": 299,
-    "publishedAt": "2026-10-27T06:25:49Z",
+    "title": "modelstudioai/cli — Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
+    "url": "https://github.com/modelstudioai/cli",
+    "source": "modelstudioai",
+    "summary": "Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
+    "stars": 365,
+    "publishedAt": "2026-10-27T11:51:36Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 10.8,
     "isNew": false
+  },
+  {
+    "id": "62d91df84df3942a",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
+    "url": "https://github.com/datacontract/datacontract-cli",
+    "source": "datacontract",
+    "summary": "Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
+    "stars": 1102,
+    "publishedAt": "2026-10-27T11:42:49Z",
+    "laneHint": "qa",
+    "lane": "qa",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "7ad4a211f53df928",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b",
+    "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
+    "source": "Kohaku-Lab",
+    "summary": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.",
+    "stars": 535,
+    "publishedAt": "2026-10-27T10:19:21Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "29022dba62ecc59b",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "tornikebolokadze1-cyber/awesome-ai-pulse-georgia — A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
+    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+    "source": "tornikebolokadze1-cyber",
+    "summary": "A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
+    "stars": 153,
+    "publishedAt": "2026-10-27T10:17:37Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
   },
   {
     "id": "b9da0e2ada590234",
@@ -394,11 +442,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "b5a2dd0a24139b4a",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio",
     "url": "https://github.com/tugkanboz/awesome-ai-testing",
@@ -414,7 +462,7 @@
   },
   {
     "id": "baab19dff2c9b9be",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
     "url": "https://github.com/speakeasy-api/speakeasy",
@@ -430,7 +478,7 @@
   },
   {
     "id": "a8a354829593c69c",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-js",
@@ -440,38 +488,6 @@
     "publishedAt": "2026-10-27T03:51:49Z",
     "laneHint": "qa",
     "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "ea6b4878f0953657",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "github",
-    "title": "gioblu/NPC-Forge — The open-source neuro-symbolic AI agent framework.",
-    "url": "https://github.com/gioblu/NPC-Forge",
-    "source": "gioblu",
-    "summary": "The open-source neuro-symbolic AI agent framework.",
-    "stars": 272,
-    "publishedAt": "2026-10-27T03:38:35Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "7b4fff2b1f4e4470",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "github",
-    "title": "modelstudioai/cli — Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
-    "url": "https://github.com/modelstudioai/cli",
-    "source": "modelstudioai",
-    "summary": "Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
-    "stars": 365,
-    "publishedAt": "2026-10-27T02:10:50Z",
-    "laneHint": "ai",
-    "lane": "ai",
     "tier": "core",
     "score": 10.8,
     "isNew": false
@@ -489,7 +505,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1cb747ee616557ca",
@@ -503,22 +519,6 @@
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "62d91df84df3942a",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "github",
-    "title": "datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
-    "url": "https://github.com/datacontract/datacontract-cli",
-    "source": "datacontract",
-    "summary": "Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
-    "stars": 1102,
-    "publishedAt": "2026-10-26T23:26:39Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
     "score": 10.8,
     "isNew": false
   },
@@ -534,11 +534,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-go",
@@ -568,24 +568,8 @@
     "isNew": false
   },
   {
-    "id": "49be1ded9973b0ca",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-ruby — Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider proj",
-    "url": "https://github.com/pact-foundation/pact-ruby",
-    "source": "pact-foundation",
-    "summary": "Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.",
-    "stars": 2194,
-    "publishedAt": "2026-10-24T10:41:29Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "8d0f1bc34c49832b",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "GPT-6.1 Terra",
     "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
@@ -596,11 +580,11 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.4,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "690c6347873fc6f5",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "rss",
     "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
     "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
@@ -615,16 +599,48 @@
   },
   {
     "id": "d61e854dbf59119d",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "Zaneris/passenger — An open-source IDE for C# and .NET, built with Avalonia, for Windows, macOS and Linux: a Roslyn-powered editor, its own debugger with Hot Reload, a CPU and memory profiler, XAML to",
     "url": "https://github.com/Zaneris/passenger",
     "source": "Zaneris",
     "summary": "An open-source IDE for C# and .NET, built with Avalonia, for Windows, macOS and Linux: a Roslyn-powered editor, its own debugger with Hot Reload, a CPU and memory profiler, XAML tooling for Avalonia and WPF, and an MCP server for coding agents.",
     "stars": 190,
-    "publishedAt": "2026-10-27T07:47:50Z",
+    "publishedAt": "2026-10-27T12:38:34Z",
     "laneHint": "ai",
     "lane": "ai",
+    "tier": "core",
+    "score": 9,
+    "isNew": false
+  },
+  {
+    "id": "7f853ec03ed53b9b",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "alexgaoth/awesome-reverse-engineered — Don't reverse engineer it twice. 16,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. ",
+    "url": "https://github.com/alexgaoth/awesome-reverse-engineered",
+    "source": "alexgaoth",
+    "summary": "Don't reverse engineer it twice. 16,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server, refreshed nightly.",
+    "stars": 827,
+    "publishedAt": "2026-10-27T12:33:34Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 9,
+    "isNew": true
+  },
+  {
+    "id": "49be1ded9973b0ca",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-ruby — Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider proj",
+    "url": "https://github.com/pact-foundation/pact-ruby",
+    "source": "pact-foundation",
+    "summary": "Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.",
+    "stars": 2194,
+    "publishedAt": "2026-10-24T10:41:29Z",
+    "laneHint": "qa",
+    "lane": "qa",
     "tier": "core",
     "score": 9,
     "isNew": false
@@ -642,7 +658,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7fa0299801092019",
@@ -657,18 +673,18 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "3ba2a23caefcf5c6",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
     "url": "https://github.com/maester365/maester",
     "source": "maester365",
     "summary": "Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
-    "stars": 1160,
-    "publishedAt": "2026-10-27T07:49:26Z",
+    "stars": 1161,
+    "publishedAt": "2026-10-27T12:30:15Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
@@ -677,7 +693,7 @@
   },
   {
     "id": "b7f39f15ac58a954",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
     "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
@@ -693,7 +709,7 @@
   },
   {
     "id": "86c79c8e98b40157",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "github",
     "title": "reqnroll/Reqnroll — Open-source Cucumber-style BDD test automation framework for .NET.",
     "url": "https://github.com/reqnroll/Reqnroll",
@@ -709,7 +725,7 @@
   },
   {
     "id": "583421777c8aa769",
-    "collectedAt": "2026-10-27T07:49:46.474Z",
+    "collectedAt": "2026-10-27T12:38:36.158Z",
     "channel": "exa",
     "source": "cronofy.com",
     "title": "N/A",
