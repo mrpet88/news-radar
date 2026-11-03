@@ -1,7 +1,22 @@
 [
   {
+    "id": "5b38c516f1b82fc4",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "exa",
+    "source": "aiaffairs.com",
+    "title": "Nvidia releases Auto Ontology to ground AI agents in company data",
+    "url": "https://www.aiaffairs.com/technology/nvidia-auto-ontology-open-source-agent-data/",
+    "publishedAt": "2026-11-03T13:05:58.000Z",
+    "summary": "# Nvidia releases Auto Ontology to ground AI agents in company data The Apache 2.0 Python framework serves business definitions through MCP, a command line and an API. Nvidia reports faster ontology creation, while SQL accuracy results remain unpublished. By Wes Tanaka, Technology Editor 3 Nov 2026, 17:05 · 4 min read Photo: Coolcaesar, CC BY-SA 4.0, via Wikimedia Commons (cropped) Nvidia has rele",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 18,
+    "isNew": true
+  },
+  {
     "id": "568a708ddd0db2d5",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "llm 0.37",
     "url": "https://simonwillison.net/2026/Nov/2/llm/",
@@ -12,11 +27,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "8d9240ccf6d95401",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "The U.S. Census Bureau and “Super Intelligence”",
     "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
@@ -27,11 +42,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 17.3,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "45f58cecbf5941f3",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "exa",
     "source": "stresseur.com",
     "title": "Flaky Test Detection in CI: Rerun and Quarantine — Stresseur",
@@ -42,11 +57,26 @@
     "lane": "qa",
     "tier": "core",
     "score": 15,
-    "isNew": true
+    "isNew": false
+  },
+  {
+    "id": "93ccfed943de3512",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "exa",
+    "source": "appwrite.io",
+    "title": "We've built the fastest way to create a one-click remote MCP server by mistake · Appwrite",
+    "url": "https://appwrite.io/blog/post/one-click-remote-mcp-server-by-mistake",
+    "publishedAt": "2026-10-30T13:39:55.000Z",
+    "summary": "We've built the fastest way to create a one-click remote MCP server by mistake · Appwrite # We've built the fastest way to create a one-click remote MCP server by mistake_ We built an email client on Appwrite to test a new feature, then asked an agent for a remote MCP server with OAuth 2.1. It was in production in under a minute. Eldad Fux Founder and CEO Oct 30, 2026 10 min read We were not tryin",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 15,
+    "isNew": false
   },
   {
     "id": "ec3c1b5e3e25ef1c",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "exa",
     "source": "dev.to",
     "title": "How to Build a Production MCP Server for Your SaaS",
@@ -60,37 +90,8 @@
     "isNew": false
   },
   {
-    "id": "93ccfed943de3512",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "exa",
-    "source": "appwrite.io",
-    "title": "We've built the fastest way to create a one-click remote MCP server by mistake · Appwrite",
-    "url": "https://appwrite.io/blog/post/one-click-remote-mcp-server-by-mistake",
-    "publishedAt": "2026-10-30T01:32:32.000Z",
-    "summary": "# We've built the fastest way to create a one-click remote MCP server by mistake_ We built an email client on Appwrite to test a new feature, then asked an agent for a remote MCP server with OAuth 2.1. It was in production in under a minute. Eldad Fux Founder and CEO Oct 30, 2026 10 min read We were not trying to build an MCP platform. We were testing a feature that hasn't shipped yet: email trigg",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 15,
-    "isNew": false
-  },
-  {
-    "id": "792feb7eeeee9e13",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "rss",
-    "title": "Scaling Git at OpenAI",
-    "url": "https://openai.com/index/scaling-git-at-openai/",
-    "source": "Hacker News",
-    "publishedAt": "2026-11-02T23:47:56.000Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "adjacent",
-    "score": 13.8,
-    "isNew": true
-  },
-  {
     "id": "ea566589020cbfff",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "API credits benefit for eligible ChatGPT subscriptions",
     "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
@@ -105,7 +106,7 @@
   },
   {
     "id": "b95bc13dc9e0a1b6",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "Building a multiplayer game world with autonomous Fable-class models",
     "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
@@ -120,7 +121,7 @@
   },
   {
     "id": "88d587f69f473a42",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "Quoting Ben Hylak",
     "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
@@ -146,7 +147,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "5153362a26faea63",
@@ -161,7 +162,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "036abb133ef3f204",
@@ -176,7 +177,7 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "f37526b4efc55df1",
@@ -191,7 +192,7 @@
     "lane": "qa",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "85e544aa94fd02c5",
@@ -206,11 +207,11 @@
     "lane": "ai",
     "tier": "core",
     "score": 13.5,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "1e7fd7562ea8cb02",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "exa",
     "source": "accessnewswire.com",
     "title": "Cognitum One Launches MetaHarness at GitHub Universe 2026",
@@ -221,17 +222,17 @@
     "lane": "ai",
     "tier": "core",
     "score": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "516825691d32a314",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "exa",
     "source": "developers.googleblog.com",
     "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
     "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
-    "publishedAt": "2026-10-28T04:47:24.000Z",
-    "summary": "Hill-Climbing Agent Quality with Agents CLI Evaluation - Google Developers Blog # Hill-Climbing Agent Quality with Agents CLI Evaluation OCT. 28, 2026 Pier Paolo Ippolito Product Manager Elia Secchi Solutions Specialist A live walkthrough of the Agents CLI eval loop, from a first run to regression tracking, model-backend experiments, and automated alerting ## Introduction Building an agent that wo",
+    "publishedAt": "2026-10-28T12:09:51.000Z",
+    "summary": "# Hill-Climbing Agent Quality with Agents CLI Evaluation OCT. 28, 2026 Pier Paolo Ippolito Product Manager Elia Secchi Solutions Specialist A live walkthrough of the Agents CLI eval loop, from a first run to regression tracking, model-backend experiments, and automated alerting ## Introduction Building an agent that works on a demo is a different problem from building an agent that stays working a",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -239,30 +240,15 @@
     "isNew": false
   },
   {
-    "id": "0036ddfe38d717b0",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "exa",
-    "source": "shiftquality.com",
-    "title": "Where Quality Capability Lives: Team Topologies for Quality Leaders",
-    "url": "https://www.shiftquality.com/post/where-quality-capability-lives-team-topologies-for-quality-leaders",
-    "publishedAt": "2026-10-27T13:44:01.000Z",
-    "summary": "Where Quality Capability Lives: Team Topologies for Quality Leaders # Where Quality Capability Lives: Team Topologies for Quality Leaders Shift Quality Editorial 7 days ago Composite scenario, built from common patterns; not a real organisation. A mid-sized insurer dissolved its central QA department and \"embedded\" its fourteen testers across nine product teams. The announcement used the right wor",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 12,
-    "isNew": false
-  },
-  {
-    "id": "e6660962503c79fe",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "dacd31bb9cf1e60a",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "zzet/gortex — High-performance code-intelligence engine for AI agents and IDE, supports 257 languages, multi repositories, based on graph, with access via CLI, MCP Server, and API. AI coding agents te",
-    "url": "https://github.com/zzet/gortex",
-    "source": "zzet",
-    "summary": "High-performance code-intelligence engine for AI agents and IDE, supports 257 languages, multi repositories, based on graph, with access via CLI, MCP Server, and API. AI coding agents teammate - expose only needed information, cutting token usage up to 50x. 100% local. Discord: https://discord.gg/39MFHu3J5d",
-    "stars": 1950,
-    "publishedAt": "2026-11-03T06:24:25Z",
+    "title": "activepieces/activepieces — AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "url": "https://github.com/activepieces/activepieces",
+    "source": "activepieces",
+    "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "stars": 25357,
+    "publishedAt": "2026-11-03T14:38:04Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -270,15 +256,47 @@
     "isNew": false
   },
   {
-    "id": "412dc94db9b8170a",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "23c4a3ca0e29a96e",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "codeofaxel/Kiln — From idea to object, and every version in between. Kiln is the open-source MCP server for 3D printing: AI agents (ChatGPT, Claude, Codex, Cursor, Gemini, Grok, Hermes Agent, or any M",
-    "url": "https://github.com/codeofaxel/Kiln",
-    "source": "codeofaxel",
-    "summary": "From idea to object, and every version in between. Kiln is the open-source MCP server for 3D printing: AI agents (ChatGPT, Claude, Codex, Cursor, Gemini, Grok, Hermes Agent, or any MCP client) design, slice and print on Bambu Lab, Creality, Prusa, Elegoo, Klipper, OctoPrint and more. Git-style version control: branch, merge and undo your designs.",
-    "stars": 236,
-    "publishedAt": "2026-11-03T06:23:09Z",
+    "title": "ggozad/haiku.rag — Agentic RAG for local and self-hosted document search: hybrid retrieval, reranking and multimodal RAG on embedded LanceDB, with Docling parsing and an MCP server",
+    "url": "https://github.com/ggozad/haiku.rag",
+    "source": "ggozad",
+    "summary": "Agentic RAG for local and self-hosted document search: hybrid retrieval, reranking and multimodal RAG on embedded LanceDB, with Docling parsing and an MCP server",
+    "stars": 646,
+    "publishedAt": "2026-11-03T14:36:57Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "95dabed829b079a4",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "iannuttall/seo — SEO for agent-native teams. Your agent gets your real Search Console, Google Analytics, Bing and crawl data through an MCP server and CLI, so it stops guessing.",
+    "url": "https://github.com/iannuttall/seo",
+    "source": "iannuttall",
+    "summary": "SEO for agent-native teams. Your agent gets your real Search Console, Google Analytics, Bing and crawl data through an MCP server and CLI, so it stops guessing.",
+    "stars": 604,
+    "publishedAt": "2026-11-03T14:36:34Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "a8bece4d2ff6c2a7",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "fastcrw/crw — Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x",
+    "url": "https://github.com/fastcrw/crw",
+    "source": "fastcrw",
+    "summary": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
+    "stars": 1215,
+    "publishedAt": "2026-11-03T14:35:54Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
@@ -286,17 +304,113 @@
     "isNew": true
   },
   {
-    "id": "b55a78b125524c5e",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "9b24d8c6c6fcca45",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "MCPJam/inspector — Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-    "url": "https://github.com/MCPJam/inspector",
-    "source": "MCPJam",
-    "summary": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
-    "stars": 2298,
-    "publishedAt": "2026-11-03T06:20:51Z",
+    "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
+    "url": "https://github.com/omnigent-ai/omnigent",
+    "source": "omnigent-ai",
+    "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+    "stars": 11186,
+    "publishedAt": "2026-11-03T13:53:03Z",
     "laneHint": "ai",
     "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "29022dba62ecc59b",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "tornikebolokadze1-cyber/awesome-ai-pulse-georgia — A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
+    "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+    "source": "tornikebolokadze1-cyber",
+    "summary": "A curated collection of cutting-edge AI agent frameworks, developer tools, and automation resources — by AI Pulse Georgia",
+    "stars": 155,
+    "publishedAt": "2026-11-03T12:41:30Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": true
+  },
+  {
+    "id": "7ad4a211f53df928",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "Kohaku-Lab/KohakuTerrarium — KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with b",
+    "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
+    "source": "Kohaku-Lab",
+    "summary": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.",
+    "stars": 543,
+    "publishedAt": "2026-11-03T12:29:39Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "7b4fff2b1f4e4470",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "modelstudioai/cli — Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
+    "url": "https://github.com/modelstudioai/cli",
+    "source": "modelstudioai",
+    "summary": "Official Model Studio CLI（阿里云百炼 CLI）built for AI Agent frameworks, exposing models, search, multimodal, and workflow capabilities as structured tool calls.",
+    "stars": 368,
+    "publishedAt": "2026-11-03T11:54:22Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "baab19dff2c9b9be",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "speakeasy-api/speakeasy — Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
+    "url": "https://github.com/speakeasy-api/speakeasy",
+    "source": "speakeasy-api",
+    "summary": "Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native.",
+    "stars": 457,
+    "publishedAt": "2026-11-03T11:52:29Z",
+    "laneHint": "qa",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "beec6727f3ebe294",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "Cellium-Project/Cellium-Agent — 运行时自扩展工具AI Self-Evolving AI Agent Framework | Decision-Loop Driven Microkernel Architecture with Hot-Pluggable Components & Triple-Layer Memory | Agent Infinite Evoluti",
+    "url": "https://github.com/Cellium-Project/Cellium-Agent",
+    "source": "Cellium-Project",
+    "summary": "运行时自扩展工具AI Self-Evolving AI Agent Framework | Decision-Loop Driven Microkernel Architecture with Hot-Pluggable Components & Triple-Layer Memory | Agent Infinite Evolution Engine that Learns from Failures",
+    "stars": 222,
+    "publishedAt": "2026-11-03T11:43:20Z",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 10.8,
+    "isNew": false
+  },
+  {
+    "id": "49be1ded9973b0ca",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "github",
+    "title": "pact-foundation/pact-ruby — Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider proj",
+    "url": "https://github.com/pact-foundation/pact-ruby",
+    "source": "pact-foundation",
+    "summary": "Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for the service provider project.",
+    "stars": 2195,
+    "publishedAt": "2026-11-03T10:18:16Z",
+    "laneHint": "qa",
+    "lane": "qa",
     "tier": "core",
     "score": 10.8,
     "isNew": false
@@ -314,59 +428,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "920a878adb00a619",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "hashgraph-online/hol-guard — Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-    "url": "https://github.com/hashgraph-online/hol-guard",
-    "source": "hashgraph-online",
-    "summary": "Open-source antivirus and firewall for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers, plugins, and skills at runtime.",
-    "stars": 1056,
-    "publishedAt": "2026-11-03T06:17:09Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
     "isNew": false
-  },
-  {
-    "id": "9b24d8c6c6fcca45",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policie",
-    "url": "https://github.com/omnigent-ai/omnigent",
-    "source": "omnigent-ai",
-    "summary": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-    "stars": 11180,
-    "publishedAt": "2026-11-03T06:16:27Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "4962ac9758773496",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "openlegion-ai/openlegion — Secure autonomous AI agent framework and platform. Build AI teams by describing what you want. Orchestrate agents that can do everything a human can do.",
-    "url": "https://github.com/openlegion-ai/openlegion",
-    "source": "openlegion-ai",
-    "summary": "Secure autonomous AI agent framework and platform. Build AI teams by describing what you want. Orchestrate agents that can do everything a human can do.",
-    "stars": 128,
-    "publishedAt": "2026-11-03T06:06:18Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": true
   },
   {
     "id": "b5a2dd0a24139b4a",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "tugkanboz/awesome-ai-testing — A curated list of AI-powered testing tools, frameworks, and resources for QA engineers. From test generation to self-healing automation, MCP-based testing, LLM evaluatio",
     "url": "https://github.com/tugkanboz/awesome-ai-testing",
@@ -382,7 +448,7 @@
   },
   {
     "id": "d8837e86c5a41ed9",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "open-compass/opencompass — OpenCompass is an LLM evaluation platform, supporting a wide range of models from OpenAI, Anthropic, Gemini, Qwen, GLM, DeepSeek, etc, across 100+ datasets covering knowledg",
     "url": "https://github.com/open-compass/opencompass",
@@ -397,40 +463,8 @@
     "isNew": false
   },
   {
-    "id": "401c10409d3b8cbe",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "framerslab/agentos — TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs",
-    "url": "https://github.com/framerslab/agentos",
-    "source": "framerslab",
-    "summary": "TypeScript AI agent framework: cognitive memory, dynamic personalities, emergent behaviors and self-building designs",
-    "stars": 684,
-    "publishedAt": "2026-11-03T03:04:38Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "83798523419137ae",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "Pal-AI-Lab/Cortico — Event-stream AI Agent framework for building your persona bot 🍊",
-    "url": "https://github.com/Pal-AI-Lab/Cortico",
-    "source": "Pal-AI-Lab",
-    "summary": "Event-stream AI Agent framework for building your persona bot 🍊",
-    "stars": 324,
-    "publishedAt": "2026-11-03T01:59:57Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
     "id": "fbcfa22bd346aec8",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "pact-foundation/pact-python — Python version of Pact. Enables consumer driven contract testing, providing a mock service and DSL for the consumer project, and interaction playback and verification for",
     "url": "https://github.com/pact-foundation/pact-python",
@@ -446,7 +480,7 @@
   },
   {
     "id": "a8a354829593c69c",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "pact-foundation/pact-js — JS version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
     "url": "https://github.com/pact-foundation/pact-js",
@@ -473,22 +507,6 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "0fa4dc311880c0f3",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "aeonfun/aeon — The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever",
-    "url": "https://github.com/aeonfun/aeon",
-    "source": "aeonfun",
-    "summary": "The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever.",
-    "stars": 787,
-    "publishedAt": "2026-11-02T20:01:18Z",
-    "laneHint": "ai",
-    "lane": "ai",
-    "tier": "core",
-    "score": 10.8,
     "isNew": false
   },
   {
@@ -504,11 +522,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "62d91df84df3942a",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "datacontract/datacontract-cli — Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
     "url": "https://github.com/datacontract/datacontract-cli",
@@ -516,22 +534,6 @@
     "summary": "Open-source data contract testing for Snowflake, Databricks, BigQuery, Kafka & 15 more. Built on the Open Data Contract Standard (ODCS). MIT.",
     "stars": 1107,
     "publishedAt": "2026-11-02T12:16:19Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
-    "score": 10.8,
-    "isNew": false
-  },
-  {
-    "id": "f2deacd462e1ba8c",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "ahx/openapi_first — openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "url": "https://github.com/ahx/openapi_first",
-    "source": "ahx",
-    "summary": "openapi_first is a Ruby gem for request / response validation and contract-testing against an OpenAPI API description. It makes APIFirst easy and reliable.",
-    "stars": 226,
-    "publishedAt": "2026-11-02T12:05:51Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "core",
@@ -551,7 +553,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "584c31f5273c377d",
@@ -566,7 +568,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "5c8fb6841068fdbf",
@@ -580,22 +582,6 @@
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
-    "score": 10.8,
-    "isNew": true
-  },
-  {
-    "id": "12692d3ae45feaf9",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
-    "channel": "github",
-    "title": "pact-foundation/pact-go — Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "url": "https://github.com/pact-foundation/pact-go",
-    "source": "pact-foundation",
-    "summary": "Golang version of Pact. Pact is a contract testing framework for HTTP APIs and non-HTTP asynchronous messaging systems.",
-    "stars": 958,
-    "publishedAt": "2026-11-02T00:45:50Z",
-    "laneHint": "qa",
-    "lane": "qa",
-    "tier": "core",
     "score": 10.8,
     "isNew": false
   },
@@ -612,11 +598,11 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 10.8,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "63faf441645c5be9",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "rss",
     "title": "How We Took Over ChatGPT Accounts",
     "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
@@ -630,20 +616,20 @@
     "isNew": false
   },
   {
-    "id": "24118ffdb6ee405f",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "7f853ec03ed53b9b",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "slow-stack/mneme — 🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a mem",
-    "url": "https://github.com/slow-stack/mneme",
-    "source": "slow-stack",
-    "summary": "🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mirrors, autoDream consolidation, 4-way recall (keyword/vector/BM25/entity), and a memory panel. 10 model tools, MCP server, CLI.",
-    "stars": 206,
-    "publishedAt": "2026-11-03T06:24:27Z",
+    "title": "alexgaoth/awesome-reverse-engineered — Don't reverse engineer it twice. 17,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. ",
+    "url": "https://github.com/alexgaoth/awesome-reverse-engineered",
+    "source": "alexgaoth",
+    "summary": "Don't reverse engineer it twice. 17,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server, refreshed nightly.",
+    "stars": 1181,
+    "publishedAt": "2026-11-03T14:35:11Z",
     "laneHint": "ai",
     "lane": "ai",
     "tier": "core",
     "score": 9,
-    "isNew": false
+    "isNew": true
   },
   {
     "id": "13ee6b799e3d85d2",
@@ -658,7 +644,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "7d1f0994726a16a9",
@@ -673,7 +659,7 @@
     "lane": "ai",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "c3f43d8cb7368115",
@@ -688,7 +674,7 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "729c53041b5d5131",
@@ -703,18 +689,18 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 8.1,
-    "isNew": true
+    "isNew": false
   },
   {
-    "id": "b7f39f15ac58a954",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "3ba2a23caefcf5c6",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
-    "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
-    "source": "ShaftHQ",
-    "summary": "Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
-    "stars": 418,
-    "publishedAt": "2026-11-03T06:12:10Z",
+    "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
+    "url": "https://github.com/maester365/maester",
+    "source": "maester365",
+    "summary": "Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
+    "stars": 1173,
+    "publishedAt": "2026-11-03T12:22:15Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
@@ -722,15 +708,15 @@
     "isNew": false
   },
   {
-    "id": "3ba2a23caefcf5c6",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "id": "b7f39f15ac58a954",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
-    "title": "maester365/maester — Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
-    "url": "https://github.com/maester365/maester",
-    "source": "maester365",
-    "summary": "Maester is a test automation framework to help you stay in control of your Microsoft security configuration.",
-    "stars": 1173,
-    "publishedAt": "2026-11-03T01:34:46Z",
+    "title": "ShaftHQ/SHAFT_ENGINE — Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
+    "url": "https://github.com/ShaftHQ/SHAFT_ENGINE",
+    "source": "ShaftHQ",
+    "summary": "Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testing with a fluent API and built-in reporting.",
+    "stars": 418,
+    "publishedAt": "2026-11-03T07:23:21Z",
     "laneHint": "qa",
     "lane": "qa",
     "tier": "adjacent",
@@ -739,7 +725,7 @@
   },
   {
     "id": "86c79c8e98b40157",
-    "collectedAt": "2026-11-03T06:24:46.320Z",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
     "channel": "github",
     "title": "reqnroll/Reqnroll — Open-source Cucumber-style BDD test automation framework for .NET.",
     "url": "https://github.com/reqnroll/Reqnroll",
@@ -751,6 +737,20 @@
     "lane": "qa",
     "tier": "adjacent",
     "score": 7.2,
+    "isNew": false
+  },
+  {
+    "id": "583421777c8aa769",
+    "collectedAt": "2026-11-03T14:38:03.190Z",
+    "channel": "exa",
+    "source": "cronofy.com",
+    "title": "N/A",
+    "url": "https://www.cronofy.com/blog/shipping-a-commercial-mcp-server",
+    "summary": "# Shipping a commercial MCP server What we found when we put the Cronofy MCP server into production: dynamic schemas, agents that lie about API calls, trust asymmetry, idempotency, and why the API fundamentals still hold. Part 2 of 2: what we found when we put the Cronofy MCP server into production — the surprises, the trade-offs, and the decisions we’re still making. ← Back to Part 1: Agents Are",
+    "laneHint": "ai",
+    "lane": "ai",
+    "tier": "core",
+    "score": 7,
     "isNew": false
   }
 ]
