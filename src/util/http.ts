@@ -1,6 +1,6 @@
 // Minimal HTTP helpers — native fetch only, no deps (mirrors job-radar).
 
-const UA = "news-radar/1.0 (personal news digest)";
+export const UA = "news-radar/1.0 (personal news digest)";
 
 export class HttpError extends Error {
   constructor(readonly status: number) {
@@ -69,6 +69,7 @@ const decodeEntities = (s: string): string =>
     .replace(/&#0?39;/g, "'")
     .replace(/&apos;/g, "'")
     .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
     .replace(/&amp;/g, "&");   // last, so &amp;lt; does not decode into a tag
 
 /**

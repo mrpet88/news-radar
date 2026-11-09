@@ -2,7 +2,7 @@
 export type Channel =
   | "exa"        // semantic web search (mcporter → exa MCP)
   | "github"     // gh search repos
-  | "reddit"     // opencli reddit  (needs live Chrome + OpenCLI extension)
+  | "reddit"     // public /r/<subs>/new/.rss Atom feed
   | "twitter"    // twitter-cli     (needs TWITTER_AUTH_TOKEN + TWITTER_CT0)
   | "rss"        // direct feed fetch
   | "v2ex"       // public API

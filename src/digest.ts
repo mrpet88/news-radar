@@ -120,7 +120,7 @@ export function renderDigest(
   `);
 }
 
-// Actions collects every morning regardless of the Mac, so two days without any
+// Actions collects every day, so two days without any
 // fresh collection means something is broken, not quiet — say so.
 const STALLED_AFTER_HOURS = 48;
 const stalled = (h: number | null) => h === null || h > STALLED_AFTER_HOURS;
@@ -152,8 +152,8 @@ export interface DigestDecision {
 }
 
 /**
- * Whether today's automatic digest has already gone out. The cron and the Mac's
- * morning trigger race for the day's email: whichever runs first sends, the other
+ * Whether today's automatic digest has already gone out. If two scheduled runs
+ * ever get past the workflow's gate on one day, the first sends and the other
  * only refreshes the dashboard. A run started by hand is exempt, as is a forced one.
  */
 export function sentTodayAlready(state: DigestState, forced: boolean): boolean {

@@ -200,16 +200,15 @@ export const noise = {
 // ── Delivery rules ──
 export const delivery = {
   // The email is written only when the reach payload is younger than this. Older
-  // than that means the Mac has not collected recently, so there is nothing
+  // than that means the Actions collection has failed, so there is nothing
   // agent-reach-backed to send — the dashboard still updates and shows the age.
   maxReachAgeHours: Number(process.env.NEWS_RADAR_MAX_AGE_HOURS ?? 24),
   // If no digest has gone out for this many days, send a one-line heartbeat so a
   // broken pipeline is distinguishable from a genuinely quiet stretch.
   heartbeatAfterDays: 3,
-  // Automatic runs — the cron and the Mac's morning trigger — send at most one
-  // digest per calendar day in `timezone`, whichever lands first. The Mac's trigger
-  // is what gets the email out in the morning; GitHub starts the cron hours late, so
-  // the cron is the fallback for days the Mac stays shut. Manual runs are exempt.
+  // Scheduled runs send at most one digest per calendar day in `timezone`. The
+  // workflow's gate job already lets only one tick a day through at 12:00; this is
+  // the second line of defence. Manual runs are exempt.
   oneAutoDigestPerDay: true,
   // Hard ceiling on email rows across all lanes, after per-lane caps apply.
   maxRows: 12,
@@ -249,15 +248,13 @@ export const collector = {
   // searching the firehose.
   enabled: ["exa", "github", "rss", "reddit", "news", "marktplaats"] as string[],
 
-  // Where each enabled channel runs. These need nothing but the network (exa is
-  // Exa's hosted MCP endpoint, no key), so Actions collects them every morning and
-  // the email no longer depends on the Mac being awake. Every other channel needs
-  // this Mac's Chrome session and is collected by run-local.sh.
-  cloudChannels: ["exa", "github", "rss", "news", "marktplaats"] as string[],
-  // The Mac's collection is merged into the render while it is younger than this.
-  // 36h, not 24h, so a collection made late in the day still makes the next
-  // morning's email. Older than that, its channels show as stale and the email
-  // goes out without them — it never waits on the Mac.
+  // Where each enabled channel runs. Everything enabled needs nothing but the
+  // network (exa is Exa's hosted MCP endpoint, no key; reddit is its public feed),
+  // so Actions collects it all and no local machine is involved. A channel left out
+  // of this list would have to be collected locally with REACH_SIDE=mac into
+  // data/reach-mac.json — only twitter, which needs a logged-in Chrome, and it is off.
+  cloudChannels: ["exa", "github", "rss", "reddit", "news", "marktplaats"] as string[],
+  // A local collection, if one is ever pushed, is merged in while younger than this.
   macMaxAgeHours: 36,
 
   exaResultsPerQuery: 6,

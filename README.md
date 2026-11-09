@@ -1,6 +1,6 @@
 # News Radar
 
-A personal news radar. It collects from several sources every morning, scores what it
+A personal news radar. It collects from several sources every day, scores what it
 finds against topic lanes you define, and emails you only what is genuinely new —
 with a filterable dashboard behind it.
 
@@ -27,34 +27,32 @@ MIT licensed.
 
 ## How it works
 
-Collection is split by what each channel needs; delivery happens in one place:
+Everything runs in GitHub Actions; no local machine is involved.
 
 ```
-  GITHUB ACTIONS (once a day, see below)    YOUR MAC (launchd, 4×/day)
-  ────────────────────────────────          ──────────────────────────
-  reach-collect.mjs  REACH_SIDE=cloud       reach-collect.mjs  REACH_SIDE=mac
-    → exa, github, rss, news, marktplaats     → reddit (needs Chrome)
-    → data/reach-cloud.json                   → data/reach-mac.json → pushed
+  GITHUB ACTIONS (one delivery a day, 12:00 Amsterdam)
+  ────────────────────────────────────────────────────
+  reach-collect.mjs  REACH_SIDE=cloud
+    → exa, github, rss, reddit, news, marktplaats
+    → data/reach-cloud.json
   npm start
-    → merges both (the Mac's half only while under 36h old)
     → scores, dedupes, diffs vs seen-history
     → writes digest.html + data/index.html, emails if the gate passes
 ```
 
-**The email does not depend on your Mac.** Channels that need only the network are
-collected by Actions every morning. Channels that need a logged-in Chrome session are
-collected on your Mac and merged in while they are fresh. If the Mac was asleep, the
-email still goes out and those channels show as stale. Which channel runs where is
-`collector.cloudChannels` in `src/config.ts`.
+Every enabled channel needs only the network, which is what `collector.cloudChannels`
+in `src/config.ts` lists. A channel left off that list would have to be collected on a
+local machine (`REACH_SIDE=mac` into `data/reach-mac.json`, merged while under 36h old).
+Only twitter needs that, because it drives a logged-in Chrome, and it is off.
 
-**When it arrives.** The Mac starts the Actions run once you are actually using it —
-keyboard or mouse input in the last five minutes, from 06:00 on — so the email lands a
-couple of minutes after you sit down, with that morning's Reddit in it. Being awake is
-not enough: a Mac that never sleeps overnight used to send it at 06:46 every day. GitHub
-starts scheduled runs hours late, so the 06:37 UTC cron is only the fallback for days
-you never open the Mac; on those days the email comes around midday. Automatic runs send at most one digest per
-calendar day between them, so the fallback stays quiet when the Mac got there first.
-A run started by hand from the Actions tab always may send.
+**When it arrives: around 12:00 Amsterdam time.** GitHub starts scheduled runs hours
+late (a 06:37 UTC cron has landed anywhere from 11:08 to 16:03 UTC), so a single noon
+cron would mean an afternoon email. The workflow instead ticks every 30 minutes from
+05:17 to 12:47 UTC, and its `gate` job lets one tick a day through: a tick that lands
+between 10:00 and 12:00 local waits until 12:00 and then delivers; one that lands after
+12:00 delivers at once unless today's run already happened; every other tick ends in
+seconds. If GitHub delays every tick past noon, the email comes with the first one.
+A run started by hand from the Actions tab skips the gate and always may send.
 
 The **freshness gate** still applies: an email is only sent when the merged collection
 behind it is under 24 hours old. In practice that closes only if the Actions collection
@@ -64,16 +62,10 @@ itself fails — and after two days of that the heartbeat says **BROKEN**, not "
 
 ## Requirements
 
-- macOS (the scheduler is a LaunchAgent) and Node 22+
-- [`agent-reach`](https://github.com/Panniantong/Agent-Reach) on the Mac, for OpenCLI
-- `gh` (GitHub CLI), authenticated — for pushing the Mac's collection
-- Chrome, logged in to Reddit, for the `reddit` channel
-
-Actions needs nothing extra for exa, github and rss: the workflow installs `mcporter`
-pointed at Exa's hosted endpoint (no key) and uses the job's own token for `gh`.
+- Node 22+, to run or test it locally
+- A GitHub repository with Actions and Pages enabled. The workflow installs `mcporter`
+  pointed at Exa's hosted endpoint (no key) and uses the job's own token for `gh`.
 - A Gmail account with 2FA, for delivery
-
-Run `agent-reach doctor --json` to see which channels your machine can currently serve.
 
 ---
 
@@ -85,36 +77,11 @@ Run `agent-reach doctor --json` to see which channels your machine can currently
 npm install && npm run build
 ```
 
-### 2. Schedule the collector
+### 2. Schedule
 
-```bash
-./scripts/install-agent.sh
-```
-
-This generates the LaunchAgents from `scripts/*.plist.template`, substituting
-this checkout's path. The plist is generated rather than committed precisely so that no
-absolute path — and therefore no local account name — ever enters the repository.
-
-It fires at **06:45 / 12:45 / 18:45 / 22:45** but does real work **at most once per 20
-hours**. Four times is not four collections; it is four chances to catch the machine
-awake. Each run checks three things first and exits quietly otherwise:
-
-1. Chrome is running (Reddit needs it)
-2. no successful collection in the last 20h
-3. the build succeeds
-
-launchd also re-runs a missed slot at next wake, so no polling loop is needed.
-
-A second agent, `local.news-radar.morning` (`scripts/morning-trigger.sh`), ticks every
-5 minutes and almost always exits after one `ioreg` call. The first tick of the day that
-sees recent keyboard or mouse input runs the collector above (so a collection that failed
-while you were away gets another go with Chrome open), then starts the delivery workflow
-(`gh workflow run`). `data/.dispatched-on` keeps that to once a day.
-
-> **The project must live outside `~/Documents`, `~/Desktop` and `~/Downloads`.** macOS
-> TCC blocks LaunchAgents from reading those, and the job dies with an opaque
-> `can't open input file` even though the same script runs fine by hand. The installer
-> refuses to install from those locations rather than let you discover it at 06:45.
+Nothing to install: the workflow's schedule is in `.github/workflows/news-radar.yml`.
+To change the delivery time, change the hour in its `gate` job (and keep the cron
+range covering it in both CET and CEST).
 
 ### 3. Email delivery
 
@@ -191,8 +158,8 @@ crowd the other out of the email entirely.
 | `exa` | semantic web search | Actions | nothing (hosted MCP endpoint) |
 | `rss` | curated publisher feeds | Actions | nothing |
 | `github` | `gh search repos` | Actions | the job token |
-| `reddit` | named subreddits | Mac | Chrome logged in to Reddit |
-| `twitter` | X search | Mac | Chrome logged in to x.com — **disabled by default** |
+| `reddit` | named subreddits, public feed | Actions | nothing |
+| `twitter` | X search | a local machine | Chrome logged in to x.com — **disabled by default** |
 | `news` | publisher RSS feeds (newspaper) | Actions | nothing |
 | `marktplaats` | Marktplaats search API (newspaper) | Actions | nothing |
 
@@ -294,8 +261,7 @@ a slow news week.
 
 ## Data and privacy
 
-`data/` is committed, because Actions needs the collection your Mac produced and the
-state must survive between runs.
+`data/` is committed, because the state must survive between Actions runs.
 
 Nothing personal goes in it. The collector does not record the collecting machine's
 hostname, and it does not store the usernames of people whose public posts it collects —
@@ -303,21 +269,20 @@ that field existed briefly, was rendered nowhere, and only amounted to committin
 110 third-party identities per run. Titles, links and summaries of public posts are
 retained; the people who wrote them are not named.
 
-The LaunchAgent plist is generated at install time so no absolute path is committed, and
-automated commits use the repository-local git identity rather than inheriting a global
-one — which is how a work address ends up on a personal project.
+Automated commits use a bot identity, and any commit made from a checkout should use the
+repository-local git identity rather than inheriting a global one — which is how a work
+address ends up on a personal project.
 
 | file | written by | purpose |
 |---|---|---|
-| `data/reach-cloud.json` | Actions | exa, github, rss, news and marktplaats collection |
-| `data/reach-mac.json` | your Mac | reddit collection; merged while under 36h old |
+| `data/reach-cloud.json` | Actions | the collection: every enabled channel |
 | `data/seen-history.json` | Actions | what has already been surfaced, 60-day TTL |
 | `data/digest-state.json` | Actions | last digest / heartbeat, for the quiet-period check |
 | `data/items.json`, `data/index.html` | Actions | the rendered dashboard |
 | `data/translations.json` | Actions | DeepL translations of mailed Dutch headlines, 60-day TTL |
 
-Each file has exactly one writer. Both sides writing the same generated files made every
-push a conflict with no meaningful side to prefer.
+Each file has exactly one writer. When a Mac also collected, both sides writing the same
+generated files made every push a conflict with no meaningful side to prefer.
 
 ---
 
@@ -325,19 +290,20 @@ push a conflict with no meaningful side to prefer.
 
 | symptom | cause |
 |---|---|
-| `can't open input file` in `data/launchd.log` | project is under a TCC-protected folder; move it |
 | `535 BadCredentials` from SMTP | app password stored with Google's non-breaking spaces |
 | no email, dashboard still updating | freshness gate — check the Collect step of the Actions run |
-| "BROKEN" heartbeat email | no fresh collection for 48h+ — Actions collect step and `data/launchd.log` |
-| reddit "left out" on the dashboard | the Mac's collection is over 36h old (asleep, Chrome closed, or OpenCLI failing) |
-| a channel reports "skipped" | precondition unmet (Chrome closed, credential absent) |
+| "BROKEN" heartbeat email | no fresh collection for 48h+ — check the Collect step of the Actions run |
+| reddit failed with HTTP 403/429 | Reddit refused or rate-limited the runner's feed request |
+| no email at noon | GitHub delayed every tick; the gate job's log says what each tick decided |
+| a channel reports "skipped" | precondition unmet (credential absent) |
 | digest keeps re-sending the same items | `seen-history.json` is not being committed back |
 
 Useful environment variables:
 
 - `NEWS_RADAR_DIGEST_FORCE=true` — render a digest even when nothing is new
 - `NEWS_RADAR_MAX_AGE_HOURS` — override the 24h freshness gate
-- `REACH_SIDE=cloud` — collect the Actions channels instead of the Mac ones
+- `REACH_SIDE=cloud` — collect the Actions channels (the default collects local-only ones)
+- `REACH_CHANNELS=reddit,rss` — collect only these channels
   (writes `data/reach-cloud.json`); the default is `mac`
 - `REACH_CHANNELS=exa,github` — restrict the collector to named channels of that side,
   including disabled ones

@@ -6,16 +6,16 @@ configuration and the design decisions. This file holds only what is specific to
 
 ## Stack
 TypeScript → `dist/`, Node 22+, **no runtime dependencies** (native `fetch` only).
-The collector is plain ESM (`scripts/reach-collect.mjs`) so launchd runs it without a
-build step; it imports the compiled config from `dist/` so there is one source of truth.
-It runs on both sides: `REACH_SIDE=cloud` in Actions (exa, github, rss, news,
-marktplaats), default `mac`
-on the Mac (reddit). `collector.cloudChannels` is the split.
+The collector is plain ESM (`scripts/reach-collect.mjs`); it imports the compiled config
+from `dist/` so there is one source of truth. **Everything runs in GitHub Actions**
+(`REACH_SIDE=cloud`, every channel in `collector.cloudChannels`). There is no local
+scheduler any more: the Mac side (LaunchAgents, Chrome-driven reddit, idle-time trigger)
+was removed on 2026-11-09 because it ran on a monitored work laptop.
 
 ```bash
 npm install && npm run build
-node scripts/reach-collect.mjs      # Mac channels → data/reach-mac.json
 REACH_SIDE=cloud node scripts/reach-collect.mjs   # → data/reach-cloud.json
+REACH_SIDE=cloud REACH_CHANNELS=reddit node scripts/reach-collect.mjs  # one channel
 npm start                           # render → digest.html + data/index.html
 npm run all                         # both
 ```
@@ -30,22 +30,18 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
   fail the run. A channel that errored must stay distinguishable from one that ran and
   found nothing — the dashboard and the digest both rely on that.
 - **Nothing personal in tracked files.** No absolute home paths, no hostnames, no email
-  addresses, no third-party usernames. The plist is a template and the collector omits
-  both the machine name and post authors for exactly this reason. This repo is
+  addresses, no third-party usernames. The collector omits both the machine name and
+  post authors for exactly this reason. This repo is
   publishable; keep it that way.
-- **One writer per data file.** `reach-mac.json` belongs to the Mac; `reach-cloud.json`,
-  the render outputs and the state files belong to Actions. The Mac publishes with git
-  plumbing onto `origin/main` and never merges, and it does not render locally: the
-  local render plus `pull --autostash` is what wedged the checkout for five weeks. Both sides writing the same file made every push a
-  conflict in generated content.
+- **Actions owns every data file.** Don't render locally and commit the outputs: a local
+  render plus `pull --autostash` is what wedged a checkout for five weeks in 2026.
+- **Don't reintroduce a local scheduler** (LaunchAgents, idle-time polling, browser
+  automation) without asking — those tripped the employer's endpoint security.
 - Commits use the repo-local git identity, which is the GitHub noreply address. Do not
   add `-c user.email=...` overrides — that publishes whatever is hardcoded.
 
 ## Gotchas that cost real time
 
-- **macOS TCC** blocks LaunchAgents from `~/Documents`, `~/Desktop`, `~/Downloads`. The
-  failure is `can't open input file` while the same script runs fine by hand.
-  `install-agent.sh` refuses those locations.
 - **`stripHtml` order is load-bearing.** Feeds deliver entity-encoded markup, so entities
   must be decoded *before* tags are stripped. Decoding afterwards re-creates the tags as
   visible text.
@@ -65,15 +61,22 @@ Sibling project: `job-radar`, same shape, same delivery pattern.
   headlines picked for the email, only when the gate is open, and caches by item id.
   Don't widen it to the dashboard or Marktplaats without redoing the arithmetic.
 - **Exa has no date filter.** Recency is enforced in `scoreItem`, not at query time.
+- **GitHub starts scheduled runs hours late** (06:37 UTC landed 11:08–16:03 UTC). Hence
+  the half-hourly ticks plus the `gate` job that holds one until 12:00 Amsterdam. Jobs
+  check out the branch tip, not `github.sha`: a tick queued behind the noon run would
+  otherwise read stale state and mail again.
+- **Reddit's anonymous feed allows about one request a minute.** Each lane fetches one
+  combined `r/a+b/new/.rss`, and a 429 waits out `x-ratelimit-reset`. Authors are cut
+  from the entry body before parsing.
 
-## Channel status (verified 2026-09-24)
+## Channel status (verified 2026-09-24; reddit 2026-11-09)
 
 | channel | runs on | state | notes |
 |---|---|---|---|
 | exa | Actions | working | ~36/run; hosted endpoint, no key |
 | rss | Actions | working | 4 QA + 3 AI feeds; `martinfowler.com/feed.atom` refuses connections and is out |
 | github | Actions | working | job token; star floor 120, else `--sort updated` returns only fresh personal repos |
-| reddit | Mac | **failing since ~2026-09-13** | `opencli reddit subreddit` times out every run. Public `/r/<sub>/new/.rss` answers 200 from the Mac without Chrome (`.json` is 403) — untested from Actions |
+| reddit | Actions | moved 2026-11-09 | public `/new/.rss`, one combined feed per lane (~32/run from the Mac); first Actions run pending verification |
 | news | Actions | working | 10 feeds across 4 sections, ~150/run |
 | marktplaats | Actions | working | `/lrp/api/search`, no key; ~130/run after subcategory filters |
-| twitter | Mac | works, **disabled** | ~1 keeper per 24, ~60s/run — see README |
+| twitter | local only | **disabled** | needs OpenCLI + logged-in Chrome; ~1 keeper per 24 — see README |

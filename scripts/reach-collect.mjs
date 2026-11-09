@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 // agent-reach collector — runs on both sides, each collecting its own channels.
 //
-//   REACH_SIDE=cloud  (Actions) exa, github, rss   → data/reach-cloud.json
-//   REACH_SIDE=mac    (default) everything else    → data/reach-mac.json
+//   REACH_SIDE=cloud  (Actions) collector.cloudChannels → data/reach-cloud.json
+//   REACH_SIDE=mac    (default) everything else         → data/reach-mac.json
 //
-// The split is collector.cloudChannels. Cloud channels need only the network; the
-// rest need this Mac's live Chrome session with the OpenCLI extension, which a
-// runner cannot have. Each side writes only its own file, and the render merges
-// them, so the email goes out every morning whether or not the Mac was awake.
+// Every enabled channel is a cloud channel today, so only Actions collects. The
+// local side remains for twitter, which needs a logged-in Chrome session with the
+// OpenCLI extension that a runner cannot have, and is disabled.
 //
-// Plain ESM on purpose: launchd runs it directly. It imports the compiled config
-// from dist/ so there is exactly one source of truth for what gets tracked.
+// Plain ESM, so it runs without a build step of its own. It imports the compiled
+// config from dist/ so there is exactly one source of truth for what gets tracked.
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -23,8 +22,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SIDE = process.env.REACH_SIDE === "cloud" ? "cloud" : "mac";
 const OUT = path.join(ROOT, "data", `reach-${SIDE}.json`);
 
-// Optional .env, loaded here as well as in run-local.sh so a credential-backed
-// channel behaves the same however the collector is started. No channel currently
+// Optional .env, so a credential-backed channel can be configured locally. No channel currently
 // needs one — twitter goes through OpenCLI's browser session — but the loader stays
 // so a future one does not repeat the bug where running this script directly
 // silently skipped a channel that the scheduled run collected.
@@ -44,7 +42,7 @@ try {
   console.error("dist/config.js missing — run `npm run build` first.");
   process.exit(1);
 }
-const { getText, stripHtml } = await import(path.join(ROOT, "dist", "util", "http.js"));
+const { getText, stripHtml, UA } = await import(path.join(ROOT, "dist", "util", "http.js"));
 const { hashId, canonicalUrl } = await import(path.join(ROOT, "dist", "util", "id.js"));
 
 const NOW = new Date().toISOString();
@@ -155,34 +153,55 @@ async function collectGithub(lane) {
   return items;
 }
 
-// ── reddit: opencli, needs the Chrome extension actually connected ────────────
-async function collectReddit(lane) {
-  const items = [];
-  for (const sub of lane.subreddits ?? []) {
-    // --window background matters for the unattended run: without it OpenCLI can
-    // pull a Chrome window to the front at 06:45.
-    const raw = await sh("opencli", [
-      "reddit", "subreddit", sub,
-      "--sort", "new",
-      "--limit", String(collector.redditPostsPerSub),
-      "--window", "background",
-      "-f", "json",
-    ], collector.timeoutMs.reddit);
-    let posts;
-    try { posts = JSON.parse(raw); } catch { continue; }
-    for (const p of Array.isArray(posts) ? posts : posts.posts ?? []) {
-      const url = p.url ?? p.permalink;
-      if (!url || !p.title) continue;
-      items.push(mkItem({
-        channel: "reddit",
-        title: p.title,
-        url: url.startsWith("http") ? url : `https://reddit.com${url}`,
-        source: `r/${sub}`,
-        summary: stripHtml(p.selftext ?? p.body ?? "").slice(0, 400) || undefined,
-        points: p.score ?? p.ups,
-        publishedAt: p.created_utc ? new Date(p.created_utc * 1000).toISOString() : undefined,
-      }));
+// ── reddit: the public Atom feed, no browser needed ───────────────────────────
+// Replaced `opencli reddit subreddit`, which timed out most runs from 2026-09-13.
+// `.json` answers 403 without a session; `.rss` answers 200.
+//
+// Anonymous feed access gets about one request per rate-limit window (~60s), so
+// each lane asks for all its subreddits in one combined `r/a+b` feed and a 429
+// waits out the reset the response announces. The feed carries no score, so
+// `points` is gone for reddit items.
+const REDDIT_MAX_WAIT_S = 75;
+
+async function redditFeed(url) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url, {
+      headers: { "user-agent": UA, accept: "application/atom+xml" },
+      signal: AbortSignal.timeout(collector.timeoutMs.reddit),
+    });
+    if (res.ok) return res.text();
+    const reset = Number(res.headers.get("x-ratelimit-reset"));
+    if (res.status !== 429 || attempt > 0 || !(reset <= REDDIT_MAX_WAIT_S)) {
+      throw new Error(`HTTP ${res.status}${res.status === 429 ? ` (rate limit resets in ${reset}s)` : ""}`);
     }
+    await new Promise((r) => setTimeout(r, (reset + 1) * 1000));
+  }
+}
+
+async function collectReddit(lane) {
+  const subs = lane.subreddits ?? [];
+  if (subs.length === 0) return [];
+  const limit = collector.redditPostsPerSub * subs.length;
+  const xml = await redditFeed(`https://www.reddit.com/r/${subs.join("+")}/new/.rss?limit=${limit}`);
+  // The entry body ends with "submitted by /u/<name> [link] [comments]". Cut it
+  // before parsing: post authors stay out of this public repo. The content is
+  // entity-encoded, so no literal "<" can occur before its closing tag.
+  const anon = xml.replace(/submitted by[\s\S]*?(?=<\/content>)/g, "");
+  const items = [];
+  for (const r of parseFeed(anon, "reddit", limit)) {
+    // A combined feed mixes subreddits; the permalink says which one each post is.
+    const sub = /\/r\/([^/]+)\//.exec(r.url)?.[1];
+    const publishedAt = r.publishedAt && !Number.isNaN(Date.parse(r.publishedAt))
+      ? new Date(r.publishedAt).toISOString() : undefined;
+    items.push(mkItem({
+      channel: "reddit",
+      title: r.title,
+      url: r.url,
+      source: sub ? `r/${sub}` : `r/${subs.join("+")}`,
+      // Post bodies are HTML escaped twice over (`&amp;amp;`); parseFeed undoes one.
+      summary: stripHtml(r.summary) || undefined,
+      publishedAt,
+    }));
   }
   return items;
 }

@@ -2,12 +2,6 @@ node_modules/
 dist/
 # Email body for one run — regenerated every time, never committed or published.
 digest.html
-# launchd's stdout/stderr for the scheduled collector.
-data/launchd.log
-# Date the Mac last started the delivery workflow (once a day).
-data/.dispatched-on
-# Twitter/X cookies for the twitter channel. Never commit these.
+# Credentials for a locally collected channel (twitter). Never commit these.
 .env
 .DS_Store
-# Lock held while scripts/run-local.sh runs.
-data/.run-local.lock

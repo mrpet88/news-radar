@@ -4,8 +4,9 @@ import type { Item, ReachPayload, ChannelReport, Channel } from "./types.js";
 import { collector } from "./config.js";
 
 export const DATA_DIR = path.resolve("data");
-// One writer each: Actions collects the network-only channels, the Mac the ones
-// that need its Chrome session. Sharing one file is what made pushes conflict.
+// One writer each: Actions collects the cloud channels; a local machine would write
+// reach-mac.json for any channel left off that list (none today). Sharing one
+// file is what made pushes conflict.
 export const REACH_CLOUD = path.join(DATA_DIR, "reach-cloud.json");
 export const REACH_MAC = path.join(DATA_DIR, "reach-mac.json");
 export const SEEN_FILE = path.join(DATA_DIR, "seen-history.json");
